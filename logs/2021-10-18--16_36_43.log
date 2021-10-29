@@ -1,0 +1,16 @@
+2021-10-18 16:36:43,431 - root - INFO - ********************************************************************************
+2021-10-18 16:36:43,432 - root - INFO - ****************获取存储池管理列表接口开始****************
+2021-10-18 16:36:45,832 - root - INFO - *******测试案例名称： TestCase001_查询存储池管理列表信息 执行开始********
+2021-10-18 16:36:45,833 - root - INFO - *******测试数据： {'page': 1, 'size': 10}
+2021-10-18 16:36:46,494 - root - INFO - *******返回数据： {'code': 0, 'message': 'success', 'data': [{'id': 'c16da6a28dab41c2a8ad2c9f606507cd', 'pool_name': 'LeonaTestPool1018', 'pool_status': 0, 'create_time': '2021-10-18 10:29:50', 'contain_info': {'file_volume_size': 40960, 'true_volume_size': 40960, 'total_size': 61440, 'volume_used_size': 0, 'utilization_rate': 0.0}, 'storage_used_size': 0, 'type': 1}, {'id': '00e28969f9e54f3b9ce8958c69638839', 'pool_name': '测试', 'pool_status': 0, 'create_time': '2021-10-15 17:37:46', 'contain_info': {'file_volume_size': 102400, 'true_volume_size': 102400, 'total_size': 102400, 'volume_used_size': 0, 'utilization_rate': 0.0}, 'storage_used_size': 0, 'type': 1}, {'id': '69d3bf8dc7e8428f8a36ad76d8471541', 'pool_name': '测试网络', 'pool_status': 0, 'create_time': '2021-10-15 14:15:43', 'contain_info': {'file_volume_size': 102400, 'true_volume_size': 102400, 'total_size': 102400, 'volume_used_size': 0, 'utilization_rate': 0.0}, 'storage_used_size': 0, 'type': 1}, {'id': 'fa060e350f7d4f3195b0251296a12abc', 'pool_name': '默认池', 'pool_status': 0, 'create_time': '2021-10-15 11:48:20', 'contain_info': {'file_volume_size': 10240, 'true_volume_size': 10094.13671875, 'total_size': 10240, 'volume_used_size': 145.86328125, 'utilization_rate': 1.42}, 'storage_used_size': 0, 'type': 0}], 'total': 4}
+2021-10-18 16:36:46,497 - root - INFO - *******测试案例名称： TestCase001_查询存储池管理列表信息 执行完毕********
+2021-10-18 16:36:46,497 - root - INFO - ****************获取存储池管理列表接口结束****************
+2021-10-18 16:36:46,498 - root - INFO - ********************************************************************************
+2021-10-18 16:36:46,500 - root - INFO - ********************************************************************************
+2021-10-18 16:36:46,500 - root - INFO - ****************获取存储池管理列表接口开始****************
+2021-10-18 16:36:46,631 - root - INFO - *******测试案例名称： TestCase002_查询存储池管理列表信息-缺少token 执行开始********
+2021-10-18 16:36:46,631 - root - INFO - *******测试数据： {'page': 1, 'size': 10}
+2021-10-18 16:36:46,636 - root - INFO - *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+2021-10-18 16:36:46,637 - root - INFO - *******测试案例名称： TestCase002_查询存储池管理列表信息-缺少token 执行完毕********
+2021-10-18 16:36:46,637 - root - INFO - ****************获取存储池管理列表接口结束****************
+2021-10-18 16:36:46,638 - root - INFO - ********************************************************************************

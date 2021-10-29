@@ -1,0 +1,480 @@
+20-08-05 18:23 root         INFO     ********************************************************************************
+20-08-05 18:23 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-05 18:23 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:23 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22711
+20-08-05 18:23 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-05 18:23 root         INFO     *******测试数据： {}
+20-08-05 18:23 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:23 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 467
+20-08-05 18:23 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 53687059329, 'allocated': 90112, 'unallocated': 51749109760, 'redundancy': 1937859457}, 'object': {'total': 53687123070, 'allocated': 90112, 'unallocated': 51749171200, 'redundancy': 1937861758}, 'block': {'total': 53734228466074.6, 'allocated': 10911364415488.0, 'unallocated': 42812126632346.6, 'redundancy': 10737418240}, 'total': {'total': 53841602648473.6, 'file_total': 53687059329, 'object_total': 53687123070, 'block': 53734228466074.6}}}
+20-08-05 18:23 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-05 18:23 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-05 18:23 root         INFO     ********************************************************************************
+20-08-05 18:23 root         INFO     ********************************************************************************
+20-08-05 18:23 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-05 18:23 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:23 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22711
+20-08-05 18:23 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-05 18:23 root         INFO     *******测试数据： {}
+20-08-05 18:23 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:23 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 467
+20-08-05 18:23 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 53687059329, 'allocated': 90112, 'unallocated': 51749109760, 'redundancy': 1937859457}, 'object': {'total': 53687123070, 'allocated': 90112, 'unallocated': 51749171200, 'redundancy': 1937861758}, 'block': {'total': 53734228466074.6, 'allocated': 10911364415488.0, 'unallocated': 42812126632346.6, 'redundancy': 10737418240}, 'total': {'total': 53841602648473.6, 'file_total': 53687059329, 'object_total': 53687123070, 'block': 53734228466074.6}}}
+20-08-05 18:23 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-05 18:23 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-05 18:23 root         INFO     ********************************************************************************
+20-08-05 18:23 root         INFO     ********************************************************************************
+20-08-05 18:23 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-05 18:23 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:23 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22711
+20-08-05 18:23 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-05 18:23 root         INFO     *******测试数据： {}
+20-08-05 18:23 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:23 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 467
+20-08-05 18:23 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 53687059329, 'allocated': 90112, 'unallocated': 51749109760, 'redundancy': 1937859457}, 'object': {'total': 53687123070, 'allocated': 90112, 'unallocated': 51749171200, 'redundancy': 1937861758}, 'block': {'total': 53734228466074.6, 'allocated': 10911364415488.0, 'unallocated': 42812126632346.6, 'redundancy': 10737418240}, 'total': {'total': 53841602648473.6, 'file_total': 53687059329, 'object_total': 53687123070, 'block': 53734228466074.6}}}
+20-08-05 18:23 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-05 18:23 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-05 18:23 root         INFO     ********************************************************************************
+20-08-05 18:24 root         INFO     ********************************************************************************
+20-08-05 18:24 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-05 18:24 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:24 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22711
+20-08-05 18:24 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-05 18:24 root         INFO     *******测试数据： {}
+20-08-05 18:24 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:24 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 471
+20-08-05 18:24 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 53687059329, 'allocated': 90112, 'unallocated': 51749109760, 'redundancy': 1937859457}, 'object': {'total': 53687123070, 'allocated': 90112, 'unallocated': 51749171200, 'redundancy': 1937861758}, 'block': {'total': 53733895606109.16, 'allocated': 10911364415488.0, 'unallocated': 42811793772381.16, 'redundancy': 10737418240}, 'total': {'total': 53841269788508.16, 'file_total': 53687059329, 'object_total': 53687123070, 'block': 53733895606109.16}}}
+20-08-05 18:24 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-05 18:24 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-05 18:24 root         INFO     ********************************************************************************
+20-08-05 18:24 root         INFO     ********************************************************************************
+20-08-05 18:24 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-05 18:24 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:24 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22711
+20-08-05 18:24 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-05 18:24 root         INFO     *******测试数据： {}
+20-08-05 18:24 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:24 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 471
+20-08-05 18:24 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 53687059329, 'allocated': 90112, 'unallocated': 51749109760, 'redundancy': 1937859457}, 'object': {'total': 53687123070, 'allocated': 90112, 'unallocated': 51749171200, 'redundancy': 1937861758}, 'block': {'total': 53733895606109.16, 'allocated': 10911364415488.0, 'unallocated': 42811793772381.16, 'redundancy': 10737418240}, 'total': {'total': 53841269788508.16, 'file_total': 53687059329, 'object_total': 53687123070, 'block': 53733895606109.16}}}
+20-08-05 18:24 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-05 18:24 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-05 18:24 root         INFO     ********************************************************************************
+20-08-05 18:24 root         INFO     ********************************************************************************
+20-08-05 18:24 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-05 18:24 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:24 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22711
+20-08-05 18:24 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-05 18:24 root         INFO     *******测试数据： {}
+20-08-05 18:24 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:24 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 471
+20-08-05 18:24 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 53687059329, 'allocated': 90112, 'unallocated': 51749109760, 'redundancy': 1937859457}, 'object': {'total': 53687123070, 'allocated': 90112, 'unallocated': 51749171200, 'redundancy': 1937861758}, 'block': {'total': 53733895606109.16, 'allocated': 10911364415488.0, 'unallocated': 42811793772381.16, 'redundancy': 10737418240}, 'total': {'total': 53841269788508.16, 'file_total': 53687059329, 'object_total': 53687123070, 'block': 53733895606109.16}}}
+20-08-05 18:24 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-05 18:24 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-05 18:24 root         INFO     ********************************************************************************
+20-08-05 18:27 root         INFO     ********************************************************************************
+20-08-05 18:27 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-05 18:27 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:27 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22711
+20-08-05 18:27 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-05 18:27 root         INFO     *******测试数据： {}
+20-08-05 18:27 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:27 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 467
+20-08-05 18:27 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 53687059329, 'allocated': 90112, 'unallocated': 51749109760, 'redundancy': 1937859457}, 'object': {'total': 53687123070, 'allocated': 90112, 'unallocated': 51749171200, 'redundancy': 1937861758}, 'block': {'total': 53733906343527.4, 'allocated': 10911364415488.0, 'unallocated': 42811804509799.4, 'redundancy': 10737418240}, 'total': {'total': 53841280525926.4, 'file_total': 53687059329, 'object_total': 53687123070, 'block': 53733906343527.4}}}
+20-08-05 18:27 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-05 18:27 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-05 18:27 root         INFO     ********************************************************************************
+20-08-05 18:27 root         INFO     ********************************************************************************
+20-08-05 18:27 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-05 18:27 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:27 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22711
+20-08-05 18:27 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-05 18:27 root         INFO     *******测试数据： {}
+20-08-05 18:27 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:27 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 467
+20-08-05 18:27 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 53687059329, 'allocated': 90112, 'unallocated': 51749109760, 'redundancy': 1937859457}, 'object': {'total': 53687123070, 'allocated': 90112, 'unallocated': 51749171200, 'redundancy': 1937861758}, 'block': {'total': 53733906343527.4, 'allocated': 10911364415488.0, 'unallocated': 42811804509799.4, 'redundancy': 10737418240}, 'total': {'total': 53841280525926.4, 'file_total': 53687059329, 'object_total': 53687123070, 'block': 53733906343527.4}}}
+20-08-05 18:27 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-05 18:27 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-05 18:27 root         INFO     ********************************************************************************
+20-08-05 18:27 root         INFO     ********************************************************************************
+20-08-05 18:27 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-05 18:27 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:27 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22711
+20-08-05 18:27 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-05 18:27 root         INFO     *******测试数据： {}
+20-08-05 18:27 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:27 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 467
+20-08-05 18:27 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 53687059329, 'allocated': 90112, 'unallocated': 51749109760, 'redundancy': 1937859457}, 'object': {'total': 53687123070, 'allocated': 90112, 'unallocated': 51749171200, 'redundancy': 1937861758}, 'block': {'total': 53733906343527.4, 'allocated': 10911364415488.0, 'unallocated': 42811804509799.4, 'redundancy': 10737418240}, 'total': {'total': 53841280525926.4, 'file_total': 53687059329, 'object_total': 53687123070, 'block': 53733906343527.4}}}
+20-08-05 18:27 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-05 18:27 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-05 18:27 root         INFO     ********************************************************************************
+20-08-05 18:27 root         INFO     ********************************************************************************
+20-08-05 18:27 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-05 18:27 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:28 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22711
+20-08-05 18:28 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-05 18:28 root         INFO     *******测试数据： {}
+20-08-05 18:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:28 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 471
+20-08-05 18:28 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 53687059329, 'allocated': 90112, 'unallocated': 51749109760, 'redundancy': 1937859457}, 'object': {'total': 53687123070, 'allocated': 90112, 'unallocated': 51749171200, 'redundancy': 1937861758}, 'block': {'total': 53733874131272.68, 'allocated': 10911364415488.0, 'unallocated': 42811772297544.68, 'redundancy': 10737418240}, 'total': {'total': 53841248313671.68, 'file_total': 53687059329, 'object_total': 53687123070, 'block': 53733874131272.68}}}
+20-08-05 18:28 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-05 18:28 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-05 18:28 root         INFO     ********************************************************************************
+20-08-05 18:28 root         INFO     ********************************************************************************
+20-08-05 18:28 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-05 18:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:28 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22711
+20-08-05 18:28 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-05 18:28 root         INFO     *******测试数据： {}
+20-08-05 18:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:28 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 471
+20-08-05 18:28 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 53687059329, 'allocated': 90112, 'unallocated': 51749109760, 'redundancy': 1937859457}, 'object': {'total': 53687123070, 'allocated': 90112, 'unallocated': 51749171200, 'redundancy': 1937861758}, 'block': {'total': 53733874131272.68, 'allocated': 10911364415488.0, 'unallocated': 42811772297544.68, 'redundancy': 10737418240}, 'total': {'total': 53841248313671.68, 'file_total': 53687059329, 'object_total': 53687123070, 'block': 53733874131272.68}}}
+20-08-05 18:28 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-05 18:28 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-05 18:28 root         INFO     ********************************************************************************
+20-08-05 18:28 root         INFO     ********************************************************************************
+20-08-05 18:28 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-05 18:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:28 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22711
+20-08-05 18:28 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-05 18:28 root         INFO     *******测试数据： {}
+20-08-05 18:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:28 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 471
+20-08-05 18:28 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 53687059329, 'allocated': 90112, 'unallocated': 51749109760, 'redundancy': 1937859457}, 'object': {'total': 53687123070, 'allocated': 90112, 'unallocated': 51749171200, 'redundancy': 1937861758}, 'block': {'total': 53733874131272.68, 'allocated': 10911364415488.0, 'unallocated': 42811772297544.68, 'redundancy': 10737418240}, 'total': {'total': 53841248313671.68, 'file_total': 53687059329, 'object_total': 53687123070, 'block': 53733874131272.68}}}
+20-08-05 18:28 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-05 18:28 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-05 18:28 root         INFO     ********************************************************************************
+20-08-05 18:29 root         INFO     ********************************************************************************
+20-08-05 18:29 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-05 18:29 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:29 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22711
+20-08-05 18:29 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-05 18:29 root         INFO     *******测试数据： {}
+20-08-05 18:29 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:29 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 471
+20-08-05 18:29 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 53687059329, 'allocated': 90112, 'unallocated': 51749109760, 'redundancy': 1937859457}, 'object': {'total': 53687123070, 'allocated': 90112, 'unallocated': 51749171200, 'redundancy': 1937861758}, 'block': {'total': 53734024455128.04, 'allocated': 10911364415488.0, 'unallocated': 42811922621400.04, 'redundancy': 10737418240}, 'total': {'total': 53841398637527.04, 'file_total': 53687059329, 'object_total': 53687123070, 'block': 53734024455128.04}}}
+20-08-05 18:29 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-05 18:29 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-05 18:29 root         INFO     ********************************************************************************
+20-08-05 18:29 root         INFO     ********************************************************************************
+20-08-05 18:29 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-05 18:29 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:29 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22711
+20-08-05 18:29 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-05 18:29 root         INFO     *******测试数据： {}
+20-08-05 18:29 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:29 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 471
+20-08-05 18:29 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 53687059329, 'allocated': 90112, 'unallocated': 51749109760, 'redundancy': 1937859457}, 'object': {'total': 53687123070, 'allocated': 90112, 'unallocated': 51749171200, 'redundancy': 1937861758}, 'block': {'total': 53734024455128.04, 'allocated': 10911364415488.0, 'unallocated': 42811922621400.04, 'redundancy': 10737418240}, 'total': {'total': 53841398637527.04, 'file_total': 53687059329, 'object_total': 53687123070, 'block': 53734024455128.04}}}
+20-08-05 18:29 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-05 18:29 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-05 18:29 root         INFO     ********************************************************************************
+20-08-05 18:29 root         INFO     ********************************************************************************
+20-08-05 18:29 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-05 18:29 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:29 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22711
+20-08-05 18:29 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-05 18:29 root         INFO     *******测试数据： {}
+20-08-05 18:29 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:29 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 471
+20-08-05 18:29 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 53687059329, 'allocated': 90112, 'unallocated': 51749109760, 'redundancy': 1937859457}, 'object': {'total': 53687123070, 'allocated': 90112, 'unallocated': 51749171200, 'redundancy': 1937861758}, 'block': {'total': 53734024455128.04, 'allocated': 10911364415488.0, 'unallocated': 42811922621400.04, 'redundancy': 10737418240}, 'total': {'total': 53841398637527.04, 'file_total': 53687059329, 'object_total': 53687123070, 'block': 53734024455128.04}}}
+20-08-05 18:29 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-05 18:29 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-05 18:29 root         INFO     ********************************************************************************
+20-08-05 18:30 root         INFO     ********************************************************************************
+20-08-05 18:30 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-05 18:30 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:30 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22711
+20-08-05 18:30 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-05 18:30 root         INFO     *******测试数据： {}
+20-08-05 18:30 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:30 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 471
+20-08-05 18:30 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 53687059329, 'allocated': 90112, 'unallocated': 51749109760, 'redundancy': 1937859457}, 'object': {'total': 53687123070, 'allocated': 90112, 'unallocated': 51749171200, 'redundancy': 1937861758}, 'block': {'total': 53734024455128.04, 'allocated': 10911364415488.0, 'unallocated': 42811922621400.04, 'redundancy': 10737418240}, 'total': {'total': 53841398637527.04, 'file_total': 53687059329, 'object_total': 53687123070, 'block': 53734024455128.04}}}
+20-08-05 18:30 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-05 18:30 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-05 18:30 root         INFO     ********************************************************************************
+20-08-05 18:30 root         INFO     ********************************************************************************
+20-08-05 18:30 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-05 18:30 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:30 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22711
+20-08-05 18:30 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-05 18:30 root         INFO     *******测试数据： {}
+20-08-05 18:30 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:30 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 471
+20-08-05 18:30 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 53687059329, 'allocated': 90112, 'unallocated': 51749109760, 'redundancy': 1937859457}, 'object': {'total': 53687123070, 'allocated': 90112, 'unallocated': 51749171200, 'redundancy': 1937861758}, 'block': {'total': 53734024455128.04, 'allocated': 10911364415488.0, 'unallocated': 42811922621400.04, 'redundancy': 10737418240}, 'total': {'total': 53841398637527.04, 'file_total': 53687059329, 'object_total': 53687123070, 'block': 53734024455128.04}}}
+20-08-05 18:30 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-05 18:30 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-05 18:30 root         INFO     ********************************************************************************
+20-08-05 18:30 root         INFO     ********************************************************************************
+20-08-05 18:30 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-05 18:30 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:30 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22711
+20-08-05 18:30 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-05 18:30 root         INFO     *******测试数据： {}
+20-08-05 18:30 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.200:80
+20-08-05 18:30 urllib3.connectionpool DEBUG    http://192.168.5.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 471
+20-08-05 18:30 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 53687059329, 'allocated': 90112, 'unallocated': 51749109760, 'redundancy': 1937859457}, 'object': {'total': 53687123070, 'allocated': 90112, 'unallocated': 51749171200, 'redundancy': 1937861758}, 'block': {'total': 53734024455128.04, 'allocated': 10911364415488.0, 'unallocated': 42811922621400.04, 'redundancy': 10737418240}, 'total': {'total': 53841398637527.04, 'file_total': 53687059329, 'object_total': 53687123070, 'block': 53734024455128.04}}}
+20-08-05 18:30 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-05 18:30 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-05 18:30 root         INFO     ********************************************************************************
+20-08-06 15:38 root         INFO     ********************************************************************************
+20-08-06 15:38 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-06 15:38 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.2.200:80
+20-08-06 15:38 urllib3.connectionpool DEBUG    http://192.168.2.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22692
+20-08-06 15:38 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-06 15:38 root         INFO     *******测试数据： {}
+20-08-06 15:38 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.2.200:80
+20-08-06 15:38 urllib3.connectionpool DEBUG    http://192.168.2.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 477
+20-08-06 15:38 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 149894008722, 'allocated': 180224, 'unallocated': 92628047463, 'redundancy': 57265781035}, 'object': {'total': 277455237228, 'allocated': 180224, 'unallocated': 215266445721, 'redundancy': 62188611283}, 'block': {'total': 5221369218336.72, 'allocated': 3939558752256.0, 'unallocated': 1260335629600.7197, 'redundancy': 21474836480}, 'total': {'total': 5648718464286.72, 'file_total': 149894008722, 'object_total': 277455237228, 'block': 5221369218336.72}}}
+20-08-06 15:38 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-06 15:38 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-06 15:38 root         INFO     ********************************************************************************
+20-08-06 15:38 root         INFO     ********************************************************************************
+20-08-06 15:38 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-06 15:38 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.2.200:80
+20-08-06 15:38 urllib3.connectionpool DEBUG    http://192.168.2.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22692
+20-08-06 15:38 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-06 15:38 root         INFO     *******测试数据： {}
+20-08-06 15:38 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.2.200:80
+20-08-06 15:38 urllib3.connectionpool DEBUG    http://192.168.2.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 477
+20-08-06 15:38 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 149894008722, 'allocated': 180224, 'unallocated': 92628047463, 'redundancy': 57265781035}, 'object': {'total': 277455237228, 'allocated': 180224, 'unallocated': 215266445721, 'redundancy': 62188611283}, 'block': {'total': 5221369218336.72, 'allocated': 3939558752256.0, 'unallocated': 1260335629600.7197, 'redundancy': 21474836480}, 'total': {'total': 5648718464286.72, 'file_total': 149894008722, 'object_total': 277455237228, 'block': 5221369218336.72}}}
+20-08-06 15:38 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-06 15:38 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-06 15:38 root         INFO     ********************************************************************************
+20-08-06 15:38 root         INFO     ********************************************************************************
+20-08-06 15:38 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-06 15:38 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.2.200:80
+20-08-06 15:38 urllib3.connectionpool DEBUG    http://192.168.2.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22692
+20-08-06 15:38 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-06 15:38 root         INFO     *******测试数据： {}
+20-08-06 15:38 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.2.200:80
+20-08-06 15:38 urllib3.connectionpool DEBUG    http://192.168.2.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 477
+20-08-06 15:38 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 149894008722, 'allocated': 180224, 'unallocated': 92628047463, 'redundancy': 57265781035}, 'object': {'total': 277455237228, 'allocated': 180224, 'unallocated': 215266445721, 'redundancy': 62188611283}, 'block': {'total': 5221369218336.72, 'allocated': 3939558752256.0, 'unallocated': 1260335629600.7197, 'redundancy': 21474836480}, 'total': {'total': 5648718464286.72, 'file_total': 149894008722, 'object_total': 277455237228, 'block': 5221369218336.72}}}
+20-08-06 15:38 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-06 15:38 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-06 15:38 root         INFO     ********************************************************************************
+20-08-06 15:38 root         INFO     ********************************************************************************
+20-08-06 15:38 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-06 15:38 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.2.200:80
+20-08-06 15:38 urllib3.connectionpool DEBUG    http://192.168.2.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22692
+20-08-06 15:38 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-06 15:38 root         INFO     *******测试数据： {}
+20-08-06 15:38 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.2.200:80
+20-08-06 15:38 urllib3.connectionpool DEBUG    http://192.168.2.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 477
+20-08-06 15:38 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 149894008722, 'allocated': 180224, 'unallocated': 92628047463, 'redundancy': 57265781035}, 'object': {'total': 277455237228, 'allocated': 180224, 'unallocated': 215266445721, 'redundancy': 62188611283}, 'block': {'total': 5221369218336.72, 'allocated': 3939558752256.0, 'unallocated': 1260335629600.7197, 'redundancy': 21474836480}, 'total': {'total': 5648718464286.72, 'file_total': 149894008722, 'object_total': 277455237228, 'block': 5221369218336.72}}}
+20-08-06 15:38 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-06 15:38 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-06 15:38 root         INFO     ********************************************************************************
+20-08-06 15:38 root         INFO     ********************************************************************************
+20-08-06 15:38 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-06 15:38 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.2.200:80
+20-08-06 15:38 urllib3.connectionpool DEBUG    http://192.168.2.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22692
+20-08-06 15:38 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-06 15:38 root         INFO     *******测试数据： {}
+20-08-06 15:38 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.2.200:80
+20-08-06 15:38 urllib3.connectionpool DEBUG    http://192.168.2.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 477
+20-08-06 15:38 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 149894008722, 'allocated': 180224, 'unallocated': 92628047463, 'redundancy': 57265781035}, 'object': {'total': 277455237228, 'allocated': 180224, 'unallocated': 215266445721, 'redundancy': 62188611283}, 'block': {'total': 5221369218336.72, 'allocated': 3939558752256.0, 'unallocated': 1260335629600.7197, 'redundancy': 21474836480}, 'total': {'total': 5648718464286.72, 'file_total': 149894008722, 'object_total': 277455237228, 'block': 5221369218336.72}}}
+20-08-06 15:38 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-06 15:38 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-06 15:38 root         INFO     ********************************************************************************
+20-08-06 15:38 root         INFO     ********************************************************************************
+20-08-06 15:38 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-06 15:38 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.2.200:80
+20-08-06 15:38 urllib3.connectionpool DEBUG    http://192.168.2.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22692
+20-08-06 15:38 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-06 15:38 root         INFO     *******测试数据： {}
+20-08-06 15:38 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.2.200:80
+20-08-06 15:38 urllib3.connectionpool DEBUG    http://192.168.2.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 477
+20-08-06 15:38 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 149894008722, 'allocated': 180224, 'unallocated': 92628047463, 'redundancy': 57265781035}, 'object': {'total': 277455237228, 'allocated': 180224, 'unallocated': 215266445721, 'redundancy': 62188611283}, 'block': {'total': 5221369218336.72, 'allocated': 3939558752256.0, 'unallocated': 1260335629600.7197, 'redundancy': 21474836480}, 'total': {'total': 5648718464286.72, 'file_total': 149894008722, 'object_total': 277455237228, 'block': 5221369218336.72}}}
+20-08-06 15:38 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-06 15:38 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-06 15:38 root         INFO     ********************************************************************************
+20-08-06 15:39 root         INFO     ********************************************************************************
+20-08-06 15:39 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-06 15:39 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.2.200:80
+20-08-06 15:39 urllib3.connectionpool DEBUG    http://192.168.2.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22692
+20-08-06 15:39 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-06 15:39 root         INFO     *******测试数据： {}
+20-08-06 15:39 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.2.200:80
+20-08-06 15:39 urllib3.connectionpool DEBUG    http://192.168.2.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 477
+20-08-06 15:39 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 149894008722, 'allocated': 180224, 'unallocated': 92628047463, 'redundancy': 57265781035}, 'object': {'total': 277455237228, 'allocated': 180224, 'unallocated': 215266445721, 'redundancy': 62188611283}, 'block': {'total': 5221370812172.24, 'allocated': 3939558752256.0, 'unallocated': 1260337223436.2402, 'redundancy': 21474836480}, 'total': {'total': 5648720058122.24, 'file_total': 149894008722, 'object_total': 277455237228, 'block': 5221370812172.24}}}
+20-08-06 15:39 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-06 15:39 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-06 15:39 root         INFO     ********************************************************************************
+20-08-06 15:39 root         INFO     ********************************************************************************
+20-08-06 15:39 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-06 15:39 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.2.200:80
+20-08-06 15:39 urllib3.connectionpool DEBUG    http://192.168.2.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22692
+20-08-06 15:39 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-06 15:39 root         INFO     *******测试数据： {}
+20-08-06 15:39 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.2.200:80
+20-08-06 15:39 urllib3.connectionpool DEBUG    http://192.168.2.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 477
+20-08-06 15:39 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 149894008722, 'allocated': 180224, 'unallocated': 92628047463, 'redundancy': 57265781035}, 'object': {'total': 277455237228, 'allocated': 180224, 'unallocated': 215266445721, 'redundancy': 62188611283}, 'block': {'total': 5221391238432.72, 'allocated': 3939558752256.0, 'unallocated': 1260357649696.7197, 'redundancy': 21474836480}, 'total': {'total': 5648740484382.72, 'file_total': 149894008722, 'object_total': 277455237228, 'block': 5221391238432.72}}}
+20-08-06 15:39 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-06 15:39 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-06 15:39 root         INFO     ********************************************************************************
+20-08-06 15:39 root         INFO     ********************************************************************************
+20-08-06 15:39 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-06 15:39 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.2.200:80
+20-08-06 15:39 urllib3.connectionpool DEBUG    http://192.168.2.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22692
+20-08-06 15:39 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-06 15:39 root         INFO     *******测试数据： {}
+20-08-06 15:39 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.2.200:80
+20-08-06 15:39 urllib3.connectionpool DEBUG    http://192.168.2.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 477
+20-08-06 15:39 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 149894008722, 'allocated': 180224, 'unallocated': 92628047463, 'redundancy': 57265781035}, 'object': {'total': 277455237228, 'allocated': 180224, 'unallocated': 215266445721, 'redundancy': 62188611283}, 'block': {'total': 5221391238432.72, 'allocated': 3939558752256.0, 'unallocated': 1260357649696.7197, 'redundancy': 21474836480}, 'total': {'total': 5648740484382.72, 'file_total': 149894008722, 'object_total': 277455237228, 'block': 5221391238432.72}}}
+20-08-06 15:39 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-06 15:39 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-06 15:39 root         INFO     ********************************************************************************
+20-08-06 15:40 root         INFO     ********************************************************************************
+20-08-06 15:40 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-06 15:40 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.2.200:80
+20-08-06 15:40 urllib3.connectionpool DEBUG    http://192.168.2.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22692
+20-08-06 15:40 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-06 15:40 root         INFO     *******测试数据： {}
+20-08-06 15:40 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.2.200:80
+20-08-06 15:40 urllib3.connectionpool DEBUG    http://192.168.2.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 477
+20-08-06 15:40 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 149894008722, 'allocated': 180224, 'unallocated': 92628047463, 'redundancy': 57265781035}, 'object': {'total': 277455237228, 'allocated': 180224, 'unallocated': 215266445721, 'redundancy': 62188611283}, 'block': {'total': 5221338348259.28, 'allocated': 3939558752256.0, 'unallocated': 1260304759523.2803, 'redundancy': 21474836480}, 'total': {'total': 5648687594209.28, 'file_total': 149894008722, 'object_total': 277455237228, 'block': 5221338348259.28}}}
+20-08-06 15:40 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-06 15:40 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-06 15:40 root         INFO     ********************************************************************************
+20-08-06 15:40 root         INFO     ********************************************************************************
+20-08-06 15:40 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-06 15:40 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.2.200:80
+20-08-06 15:40 urllib3.connectionpool DEBUG    http://192.168.2.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22692
+20-08-06 15:40 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-06 15:40 root         INFO     *******测试数据： {}
+20-08-06 15:40 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.2.200:80
+20-08-06 15:40 urllib3.connectionpool DEBUG    http://192.168.2.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 477
+20-08-06 15:40 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 149894008722, 'allocated': 180224, 'unallocated': 92628047463, 'redundancy': 57265781035}, 'object': {'total': 277455237228, 'allocated': 180224, 'unallocated': 215266445721, 'redundancy': 62188611283}, 'block': {'total': 5221338348259.28, 'allocated': 3939558752256.0, 'unallocated': 1260304759523.2803, 'redundancy': 21474836480}, 'total': {'total': 5648687594209.28, 'file_total': 149894008722, 'object_total': 277455237228, 'block': 5221338348259.28}}}
+20-08-06 15:40 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-06 15:40 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-06 15:40 root         INFO     ********************************************************************************
+20-08-06 15:40 root         INFO     ********************************************************************************
+20-08-06 15:40 root         INFO     ****************获取智能存储概况中的存储信息接口开始****************
+20-08-06 15:40 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.2.200:80
+20-08-06 15:40 urllib3.connectionpool DEBUG    http://192.168.2.200:80 "POST /v1//management/login/ HTTP/1.1" 200 22692
+20-08-06 15:40 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行开始********
+20-08-06 15:40 root         INFO     *******测试数据： {}
+20-08-06 15:40 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.2.200:80
+20-08-06 15:40 urllib3.connectionpool DEBUG    http://192.168.2.200:80 "GET /v1/cloud/pools/intel/storage/ HTTP/1.1" 200 477
+20-08-06 15:40 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'file': {'total': 149894008722, 'allocated': 180224, 'unallocated': 92628047463, 'redundancy': 57265781035}, 'object': {'total': 277455237228, 'allocated': 180224, 'unallocated': 215266445721, 'redundancy': 62188611283}, 'block': {'total': 5221338348259.28, 'allocated': 3939558752256.0, 'unallocated': 1260304759523.2803, 'redundancy': 21474836480}, 'total': {'total': 5648687594209.28, 'file_total': 149894008722, 'object_total': 277455237228, 'block': 5221338348259.28}}}
+20-08-06 15:40 root         INFO     *******测试案例名称： TestCase001_查询智能存储概览中的存储详情信息 执行完毕********
+20-08-06 15:40 root         INFO     ****************获取智能存储概况中的存储信息接口结束****************
+20-08-06 15:40 root         INFO     ********************************************************************************
+21-10-19 17:47 root         INFO     ********************************************************************************
+21-10-19 17:47 root         INFO     ****************获取存储池管理列表接口开始****************
+21-10-19 17:47 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.170:80
+21-10-19 17:47 urllib3.connectionpool DEBUG    http://192.168.5.170:80 "POST /v1/account/login HTTP/1.1" 200 936
+21-10-19 17:47 root         INFO     *******测试案例名称： TestCase001_查询存储池管理列表信息 执行开始********
+21-10-19 17:47 root         INFO     *******测试数据： {'page': 1, 'size': 10}
+21-10-19 17:47 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.170:80
+21-10-19 17:48 urllib3.connectionpool DEBUG    http://192.168.5.170:80 "GET /v1/storage/pools HTTP/1.1" 200 1473
+21-10-19 17:48 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': [{'id': '4b40d1028e8b41e5bf25568788004541', 'pool_name': 'P1', 'pool_status': 0, 'create_time': '2021-10-19 14:17:51', 'contain_info': {'file_volume_size': 81920, 'true_volume_size': 81920, 'total_size': 102400, 'volume_used_size': 0, 'utilization_rate': 0.0}, 'storage_used_size': 0, 'type': 1}, {'id': 'c16da6a28dab41c2a8ad2c9f606507cd', 'pool_name': 'LeonaTestPool1018', 'pool_status': 0, 'create_time': '2021-10-18 10:29:50', 'contain_info': {'file_volume_size': 40960, 'true_volume_size': 40960, 'total_size': 61440, 'volume_used_size': 0, 'utilization_rate': 0.0}, 'storage_used_size': 0, 'type': 1}, {'id': '00e28969f9e54f3b9ce8958c69638839', 'pool_name': '测试', 'pool_status': 0, 'create_time': '2021-10-15 17:37:46', 'contain_info': {'file_volume_size': 102400, 'true_volume_size': 102400, 'total_size': 102400, 'volume_used_size': 0, 'utilization_rate': 0.0}, 'storage_used_size': 0, 'type': 1}, {'id': '69d3bf8dc7e8428f8a36ad76d8471541', 'pool_name': '测试网络', 'pool_status': 0, 'create_time': '2021-10-15 14:15:43', 'contain_info': {'file_volume_size': 102400, 'true_volume_size': 102400, 'total_size': 102400, 'volume_used_size': 0, 'utilization_rate': 0.0}, 'storage_used_size': 0, 'type': 1}, {'id': 'fa060e350f7d4f3195b0251296a12abc', 'pool_name': '默认池', 'pool_status': 0, 'create_time': '2021-10-15 11:48:20', 'contain_info': {'file_volume_size': 10240, 'true_volume_size': 10094.13671875, 'total_size': 10240, 'volume_used_size': 145.86328125, 'utilization_rate': 1.42}, 'storage_used_size': 0, 'type': 0}], 'total': 5}
+21-10-19 17:48 root         INFO     *******测试案例名称： TestCase001_查询存储池管理列表信息 执行完毕********
+21-10-19 17:48 root         INFO     ****************获取存储池管理列表接口结束****************
+21-10-19 17:48 root         INFO     ********************************************************************************
+21-10-19 17:48 root         INFO     ********************************************************************************
+21-10-19 17:48 root         INFO     ****************获取存储池管理列表接口开始****************
+21-10-19 17:48 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.170:80
+21-10-19 17:48 urllib3.connectionpool DEBUG    http://192.168.5.170:80 "POST /v1/account/login HTTP/1.1" 200 936
+21-10-19 17:48 root         INFO     *******测试案例名称： TestCase002_查询存储池管理列表信息-缺少token 执行开始********
+21-10-19 17:48 root         INFO     *******测试数据： {'page': 1, 'size': 10}
+21-10-19 17:48 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.170:80
+21-10-19 17:48 urllib3.connectionpool DEBUG    http://192.168.5.170:80 "GET /v1/storage/pools HTTP/1.1" 200 91
+21-10-19 17:48 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+21-10-19 17:48 root         INFO     *******测试案例名称： TestCase002_查询存储池管理列表信息-缺少token 执行完毕********
+21-10-19 17:48 root         INFO     ****************获取存储池管理列表接口结束****************
+21-10-19 17:48 root         INFO     ********************************************************************************
+21-10-19 17:50 root         INFO     ********************************************************************************
+21-10-19 17:50 root         INFO     ****************获取存储池管理列表接口开始****************
+21-10-19 17:50 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.170:80
+21-10-19 17:50 urllib3.connectionpool DEBUG    http://192.168.5.170:80 "POST /v1/account/login HTTP/1.1" 200 936
+21-10-19 17:50 root         INFO     *******测试案例名称： TestCase001_查询存储池管理列表信息 执行开始********
+21-10-19 17:50 root         INFO     *******测试数据： {'page': 1, 'size': 10}
+21-10-19 17:50 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.170:80
+21-10-19 17:50 urllib3.connectionpool DEBUG    http://192.168.5.170:80 "GET /v1/storage/pools HTTP/1.1" 200 1473
+21-10-19 17:50 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': [{'id': '4b40d1028e8b41e5bf25568788004541', 'pool_name': 'P1', 'pool_status': 0, 'create_time': '2021-10-19 14:17:51', 'contain_info': {'file_volume_size': 81920, 'true_volume_size': 81920, 'total_size': 102400, 'volume_used_size': 0, 'utilization_rate': 0.0}, 'storage_used_size': 0, 'type': 1}, {'id': 'c16da6a28dab41c2a8ad2c9f606507cd', 'pool_name': 'LeonaTestPool1018', 'pool_status': 0, 'create_time': '2021-10-18 10:29:50', 'contain_info': {'file_volume_size': 40960, 'true_volume_size': 40960, 'total_size': 61440, 'volume_used_size': 0, 'utilization_rate': 0.0}, 'storage_used_size': 0, 'type': 1}, {'id': '00e28969f9e54f3b9ce8958c69638839', 'pool_name': '测试', 'pool_status': 0, 'create_time': '2021-10-15 17:37:46', 'contain_info': {'file_volume_size': 102400, 'true_volume_size': 102400, 'total_size': 102400, 'volume_used_size': 0, 'utilization_rate': 0.0}, 'storage_used_size': 0, 'type': 1}, {'id': '69d3bf8dc7e8428f8a36ad76d8471541', 'pool_name': '测试网络', 'pool_status': 0, 'create_time': '2021-10-15 14:15:43', 'contain_info': {'file_volume_size': 102400, 'true_volume_size': 102400, 'total_size': 102400, 'volume_used_size': 0, 'utilization_rate': 0.0}, 'storage_used_size': 0, 'type': 1}, {'id': 'fa060e350f7d4f3195b0251296a12abc', 'pool_name': '默认池', 'pool_status': 0, 'create_time': '2021-10-15 11:48:20', 'contain_info': {'file_volume_size': 10240, 'true_volume_size': 10094.13671875, 'total_size': 10240, 'volume_used_size': 145.86328125, 'utilization_rate': 1.42}, 'storage_used_size': 0, 'type': 0}], 'total': 5}
+21-10-19 17:50 root         INFO     *******测试案例名称： TestCase001_查询存储池管理列表信息 执行完毕********
+21-10-19 17:50 root         INFO     ****************获取存储池管理列表接口结束****************
+21-10-19 17:50 root         INFO     ********************************************************************************
+21-10-19 17:50 root         INFO     ********************************************************************************
+21-10-19 17:50 root         INFO     ****************获取存储池管理列表接口开始****************
+21-10-19 17:50 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.170:80
+21-10-19 17:50 urllib3.connectionpool DEBUG    http://192.168.5.170:80 "POST /v1/account/login HTTP/1.1" 200 936
+21-10-19 17:50 root         INFO     *******测试案例名称： TestCase002_查询存储池管理列表信息-缺少token 执行开始********
+21-10-19 17:50 root         INFO     *******测试数据： {'page': 1, 'size': 10}
+21-10-19 17:50 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.170:80
+21-10-19 17:50 urllib3.connectionpool DEBUG    http://192.168.5.170:80 "GET /v1/storage/pools HTTP/1.1" 200 91
+21-10-19 17:50 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+21-10-19 17:50 root         INFO     *******测试案例名称： TestCase002_查询存储池管理列表信息-缺少token 执行完毕********
+21-10-19 17:50 root         INFO     ****************获取存储池管理列表接口结束****************
+21-10-19 17:50 root         INFO     ********************************************************************************
+21-10-19 17:51 root         INFO     ********************************************************************************
+21-10-19 17:51 root         INFO     ****************获取存储池管理列表接口开始****************
+21-10-19 17:51 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.170:80
+21-10-19 17:51 urllib3.connectionpool DEBUG    http://192.168.5.170:80 "POST /v1/account/login HTTP/1.1" 200 936
+21-10-19 17:51 root         INFO     *******测试案例名称： TestCase001_查询存储池管理列表信息 执行开始********
+21-10-19 17:51 root         INFO     *******测试数据： {'page': 1, 'size': 10}
+21-10-19 17:51 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.170:80
+21-10-19 17:51 urllib3.connectionpool DEBUG    http://192.168.5.170:80 "GET /v1/storage/pools HTTP/1.1" 200 1473
+21-10-19 17:51 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': [{'id': '4b40d1028e8b41e5bf25568788004541', 'pool_name': 'P1', 'pool_status': 0, 'create_time': '2021-10-19 14:17:51', 'contain_info': {'file_volume_size': 81920, 'true_volume_size': 81920, 'total_size': 102400, 'volume_used_size': 0, 'utilization_rate': 0.0}, 'storage_used_size': 0, 'type': 1}, {'id': 'c16da6a28dab41c2a8ad2c9f606507cd', 'pool_name': 'LeonaTestPool1018', 'pool_status': 0, 'create_time': '2021-10-18 10:29:50', 'contain_info': {'file_volume_size': 40960, 'true_volume_size': 40960, 'total_size': 61440, 'volume_used_size': 0, 'utilization_rate': 0.0}, 'storage_used_size': 0, 'type': 1}, {'id': '00e28969f9e54f3b9ce8958c69638839', 'pool_name': '测试', 'pool_status': 0, 'create_time': '2021-10-15 17:37:46', 'contain_info': {'file_volume_size': 102400, 'true_volume_size': 102400, 'total_size': 102400, 'volume_used_size': 0, 'utilization_rate': 0.0}, 'storage_used_size': 0, 'type': 1}, {'id': '69d3bf8dc7e8428f8a36ad76d8471541', 'pool_name': '测试网络', 'pool_status': 0, 'create_time': '2021-10-15 14:15:43', 'contain_info': {'file_volume_size': 102400, 'true_volume_size': 102400, 'total_size': 102400, 'volume_used_size': 0, 'utilization_rate': 0.0}, 'storage_used_size': 0, 'type': 1}, {'id': 'fa060e350f7d4f3195b0251296a12abc', 'pool_name': '默认池', 'pool_status': 0, 'create_time': '2021-10-15 11:48:20', 'contain_info': {'file_volume_size': 10240, 'true_volume_size': 10094.13671875, 'total_size': 10240, 'volume_used_size': 145.86328125, 'utilization_rate': 1.42}, 'storage_used_size': 0, 'type': 0}], 'total': 5}
+21-10-19 17:51 root         INFO     *******测试案例名称： TestCase001_查询存储池管理列表信息 执行完毕********
+21-10-19 17:51 root         INFO     ****************获取存储池管理列表接口结束****************
+21-10-19 17:51 root         INFO     ********************************************************************************
+21-10-19 17:51 root         INFO     ********************************************************************************
+21-10-19 17:51 root         INFO     ****************获取存储池管理列表接口开始****************
+21-10-19 17:51 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.170:80
+21-10-19 17:51 urllib3.connectionpool DEBUG    http://192.168.5.170:80 "POST /v1/account/login HTTP/1.1" 200 936
+21-10-19 17:51 root         INFO     *******测试案例名称： TestCase002_查询存储池管理列表信息-缺少token 执行开始********
+21-10-19 17:51 root         INFO     *******测试数据： {'page': 1, 'size': 10}
+21-10-19 17:51 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.170:80
+21-10-19 17:51 urllib3.connectionpool DEBUG    http://192.168.5.170:80 "GET /v1/storage/pools HTTP/1.1" 200 91
+21-10-19 17:51 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+21-10-19 17:51 root         INFO     *******测试案例名称： TestCase002_查询存储池管理列表信息-缺少token 执行完毕********
+21-10-19 17:51 root         INFO     ****************获取存储池管理列表接口结束****************
+21-10-19 17:51 root         INFO     ********************************************************************************
+21-10-19 17:54 root         INFO     ********************************************************************************
+21-10-19 17:54 root         INFO     ****************获取存储池管理列表接口开始****************
+21-10-19 17:54 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.170:80
+21-10-19 17:54 urllib3.connectionpool DEBUG    http://192.168.5.170:80 "POST /v1/account/login HTTP/1.1" 200 936
+21-10-19 17:54 root         INFO     *******测试案例名称： TestCase001_查询存储池管理列表信息 执行开始********
+21-10-19 17:54 root         INFO     *******测试数据： {'page': 1, 'size': 10}
+21-10-19 17:54 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.170:80
+21-10-19 17:54 urllib3.connectionpool DEBUG    http://192.168.5.170:80 "GET /v1/storage/pools HTTP/1.1" 200 1473
+21-10-19 17:54 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': [{'id': '4b40d1028e8b41e5bf25568788004541', 'pool_name': 'P1', 'pool_status': 0, 'create_time': '2021-10-19 14:17:51', 'contain_info': {'file_volume_size': 81920, 'true_volume_size': 81920, 'total_size': 102400, 'volume_used_size': 0, 'utilization_rate': 0.0}, 'storage_used_size': 0, 'type': 1}, {'id': 'c16da6a28dab41c2a8ad2c9f606507cd', 'pool_name': 'LeonaTestPool1018', 'pool_status': 0, 'create_time': '2021-10-18 10:29:50', 'contain_info': {'file_volume_size': 40960, 'true_volume_size': 40960, 'total_size': 61440, 'volume_used_size': 0, 'utilization_rate': 0.0}, 'storage_used_size': 0, 'type': 1}, {'id': '00e28969f9e54f3b9ce8958c69638839', 'pool_name': '测试', 'pool_status': 0, 'create_time': '2021-10-15 17:37:46', 'contain_info': {'file_volume_size': 102400, 'true_volume_size': 102400, 'total_size': 102400, 'volume_used_size': 0, 'utilization_rate': 0.0}, 'storage_used_size': 0, 'type': 1}, {'id': '69d3bf8dc7e8428f8a36ad76d8471541', 'pool_name': '测试网络', 'pool_status': 0, 'create_time': '2021-10-15 14:15:43', 'contain_info': {'file_volume_size': 102400, 'true_volume_size': 102400, 'total_size': 102400, 'volume_used_size': 0, 'utilization_rate': 0.0}, 'storage_used_size': 0, 'type': 1}, {'id': 'fa060e350f7d4f3195b0251296a12abc', 'pool_name': '默认池', 'pool_status': 0, 'create_time': '2021-10-15 11:48:20', 'contain_info': {'file_volume_size': 10240, 'true_volume_size': 10094.13671875, 'total_size': 10240, 'volume_used_size': 145.86328125, 'utilization_rate': 1.42}, 'storage_used_size': 0, 'type': 0}], 'total': 5}
+21-10-19 17:54 root         INFO     *******测试案例名称： TestCase001_查询存储池管理列表信息 执行完毕********
+21-10-19 17:54 root         INFO     ****************获取存储池管理列表接口结束****************
+21-10-19 17:54 root         INFO     ********************************************************************************
+21-10-19 17:54 root         INFO     ********************************************************************************
+21-10-19 17:54 root         INFO     ****************获取存储池管理列表接口开始****************
+21-10-19 17:54 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.170:80
+21-10-19 17:54 urllib3.connectionpool DEBUG    http://192.168.5.170:80 "POST /v1/account/login HTTP/1.1" 200 936
+21-10-19 17:54 root         INFO     *******测试案例名称： TestCase002_查询存储池管理列表信息-缺少token 执行开始********
+21-10-19 17:54 root         INFO     *******测试数据： {'page': 1, 'size': 10}
+21-10-19 17:54 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.170:80
+21-10-19 17:54 urllib3.connectionpool DEBUG    http://192.168.5.170:80 "GET /v1/storage/pools HTTP/1.1" 200 91
+21-10-19 17:54 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+21-10-19 17:54 root         INFO     *******测试案例名称： TestCase002_查询存储池管理列表信息-缺少token 执行完毕********
+21-10-19 17:54 root         INFO     ****************获取存储池管理列表接口结束****************
+21-10-19 17:54 root         INFO     ********************************************************************************
+21-10-29 11:37 root         INFO     ********************************************************************************
+21-10-29 11:37 root         INFO     ****************获取存储池管理列表接口开始****************
+21-10-29 11:37 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.170:80
+21-10-29 11:37 urllib3.connectionpool DEBUG    http://192.168.5.170:80 "POST /v1/account/login HTTP/1.1" 200 935
+21-10-29 11:37 root         INFO     *******测试案例名称： TestCase001_查询存储池管理列表信息 执行开始********
+21-10-29 11:37 root         INFO     *******测试数据： {'page': 1, 'size': 10}
+21-10-29 11:37 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.170:80
+21-10-29 11:37 urllib3.connectionpool DEBUG    http://192.168.5.170:80 "GET /v1/storage/pools HTTP/1.1" 200 1772
+21-10-29 11:37 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': [{'id': 'a12bfffcebb04a3c8c40311634716d46', 'pool_name': '测试池', 'pool_status': 0, 'create_time': '2021-10-22 13:56:25', 'contain_info': {'file_volume_size': 10240, 'true_volume_size': 10240, 'volume_used_size': 10240, 'utilization_rate': 100.0}, 'type': 1}, {'id': '3a0943a0a1d34446a338afeb0df5b174', 'pool_name': 'HJtest', 'pool_status': 0, 'create_time': '2021-10-22 09:50:02', 'contain_info': {'file_volume_size': 102400, 'true_volume_size': 102400, 'volume_used_size': 0, 'utilization_rate': 0.0}, 'type': 1}, {'id': 'c6d2bccab7e3480dbd63a46772fc7332', 'pool_name': 'LeonaTestPool1022', 'pool_status': 0, 'create_time': '2021-10-22 09:49:49', 'contain_info': {'file_volume_size': 40960, 'true_volume_size': 40960, 'volume_used_size': 17408, 'utilization_rate': 42.5}, 'type': 1}, {'id': 'b0a43c552a0f4963b950da6e0c13d041', 'pool_name': 'test_wang', 'pool_status': 0, 'create_time': '2021-10-20 18:30:50', 'contain_info': {'file_volume_size': 30720, 'true_volume_size': 30720, 'volume_used_size': 14336, 'utilization_rate': 46.67}, 'type': 1}, {'id': 'c16da6a28dab41c2a8ad2c9f606507cd', 'pool_name': 'LeonaTestPool1018', 'pool_status': 0, 'create_time': '2021-10-18 10:29:50', 'contain_info': {'file_volume_size': 40960, 'true_volume_size': 40960, 'volume_used_size': 0, 'utilization_rate': 0.0}, 'type': 1}, {'id': '69d3bf8dc7e8428f8a36ad76d8471541', 'pool_name': '测试网络', 'pool_status': 0, 'create_time': '2021-10-15 14:15:43', 'contain_info': {'file_volume_size': 102400, 'true_volume_size': 102400, 'volume_used_size': 3072, 'utilization_rate': 3.0}, 'type': 1}, {'id': 'fa060e350f7d4f3195b0251296a12abc', 'pool_name': '默认池', 'pool_status': 0, 'create_time': '2021-10-15 11:48:20', 'contain_info': {'file_volume_size': 10240, 'true_volume_size': 10093.984375, 'volume_used_size': 146.015625, 'utilization_rate': 1.43}, 'type': 0}], 'total': 7}
+21-10-29 11:37 root         INFO     *******测试案例名称： TestCase001_查询存储池管理列表信息 执行完毕********
+21-10-29 11:37 root         INFO     ****************获取存储池管理列表接口结束****************
+21-10-29 11:37 root         INFO     ********************************************************************************
+21-10-29 11:37 root         INFO     ********************************************************************************
+21-10-29 11:37 root         INFO     ****************获取存储池管理列表接口开始****************
+21-10-29 11:37 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.170:80
+21-10-29 11:37 urllib3.connectionpool DEBUG    http://192.168.5.170:80 "POST /v1/account/login HTTP/1.1" 200 935
+21-10-29 11:37 root         INFO     *******测试案例名称： TestCase002_查询存储池管理列表信息-缺少token 执行开始********
+21-10-29 11:37 root         INFO     *******测试数据： {'page': 1, 'size': 10}
+21-10-29 11:37 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.170:80
+21-10-29 11:37 urllib3.connectionpool DEBUG    http://192.168.5.170:80 "GET /v1/storage/pools HTTP/1.1" 200 91
+21-10-29 11:37 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+21-10-29 11:37 root         INFO     *******测试案例名称： TestCase002_查询存储池管理列表信息-缺少token 执行完毕********
+21-10-29 11:37 root         INFO     ****************获取存储池管理列表接口结束****************
+21-10-29 11:37 root         INFO     ********************************************************************************
