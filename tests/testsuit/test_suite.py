@@ -13,7 +13,7 @@ def myrunner():
     #生成报告文件的参数
     basedir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     #discover 这个方法可以递归地去识别路径下所有符合pattern的文件，将这些文件加入套件
-    suite = unittest.defaultTestLoader.discover(basedir+ '/tests/testcase/',pattern='*.py')
+    suite = unittest.defaultTestLoader.discover(basedir+ '/tests/testcase/intellengentStorage',pattern='*.py')
 
     #生成报告文件的参数
     report_title = 'Panacube4.0 接口自动化测试结果'    #报告名称
@@ -29,3 +29,5 @@ def myrunner():
     send_email1.cr_zip('Panacube4_API_TestReport.zip',basedir+'/report/')
     send_email1.send_mail_report("【QA-Panacube4-API-test】")
 
+if __name__ == '__main__':
+    myrunner()

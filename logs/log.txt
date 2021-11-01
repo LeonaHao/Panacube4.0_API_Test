@@ -478,3 +478,21 @@
 21-10-29 11:37 root         INFO     *******测试案例名称： TestCase002_查询存储池管理列表信息-缺少token 执行完毕********
 21-10-29 11:37 root         INFO     ****************获取存储池管理列表接口结束****************
 21-10-29 11:37 root         INFO     ********************************************************************************
+21-11-01 16:54 root         INFO     ********************************************************************************
+21-11-01 16:54 root         INFO     ****************获取存储池管理列表接口开始****************
+21-11-01 16:54 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.170:80
+21-11-01 16:54 urllib3.connectionpool DEBUG    http://192.168.5.170:80 "POST /v1/account/login HTTP/1.1" 404 2206
+21-11-01 16:54 root         INFO     *******测试案例名称： TestCase001_查询存储池管理列表信息 执行开始********
+21-11-01 16:54 root         INFO     *******测试数据： {'page': 1, 'size': 10}
+21-11-01 16:54 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.170:80
+21-11-01 16:54 urllib3.connectionpool DEBUG    http://192.168.5.170:80 "GET /v1/storage/pools HTTP/1.1" 404 2205
+21-11-01 16:54 root         INFO     ********************************************************************************
+21-11-01 16:54 root         INFO     ********************************************************************************
+21-11-01 16:54 root         INFO     ****************获取存储池管理列表接口开始****************
+21-11-01 16:54 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.170:80
+21-11-01 16:54 urllib3.connectionpool DEBUG    http://192.168.5.170:80 "POST /v1/account/login HTTP/1.1" 404 2206
+21-11-01 16:54 root         INFO     *******测试案例名称： TestCase002_查询存储池管理列表信息-缺少token 执行开始********
+21-11-01 16:54 root         INFO     *******测试数据： {'page': 1, 'size': 10}
+21-11-01 16:54 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.170:80
+21-11-01 16:54 urllib3.connectionpool DEBUG    http://192.168.5.170:80 "GET /v1/storage/pools HTTP/1.1" 404 2205
+21-11-01 16:54 root         INFO     ********************************************************************************
