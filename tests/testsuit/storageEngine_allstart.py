@@ -1,14 +1,13 @@
 import unittest
-import os
 import time
-import zipfile, os.path
+import os.path
 import sys
 from lib import HTMLTestRunner3
 from lib import send_email
 
 basedir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.append(basedir)
-
+print(sys.path)
 
 
 """unittest.defaultTestLoader(): defaultTestLoader()类，
