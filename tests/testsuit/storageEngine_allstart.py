@@ -2,11 +2,9 @@ import unittest
 import time
 import os.path
 import sys
-from lib import send_email
-
 basedir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.append(basedir)
-
+from lib import send_email
 from lib import HTMLTestRunner3
 print(sys.path)
 
