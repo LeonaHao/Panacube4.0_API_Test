@@ -14,7 +14,7 @@ sys.path.append(basedir)
 """unittest.defaultTestLoader(): defaultTestLoader()类，
 通过该类下面的discover()方法可自动根据测试目录start_dir匹配查找测试用例文件（testcase*.py），
 并将查找到的测试用例组装到测试套件，因此可以直接通过run()方法执行discover"""
-suite = unittest.defaultTestLoader.discover(basedir + '/tests/testcase/', pattern='*.py')
+suite = unittest.defaultTestLoader.discover(basedir + '/tests/testcase/intellengentStorage', pattern='*.py')
 filePath = basedir + "/reports/storageEngineReport.html"
 fp = open(filePath, 'wb')
 
@@ -23,26 +23,6 @@ runner = HTMLTestRunner3.HTMLTestRunner(stream=fp, title='【QA环境】智能�
 runner.run(suite)
 fp.close()
 
-
-
-# def cr_zip(zfname, fpath):
-#     """将basedir + '/reports/'目录下的文件压缩成.zip格式的文件"""
-#     filelist = []
-#     isfp = os.path.basename(fpath)
-#     if isfp:
-#         print('%s is not path' % fpath)
-#         sys.exit(0)
-#     else:
-#         for root, subdirs, files in os.walk(fpath):
-#             for file in files:
-#                 filelist.append(os.path.join(root, file))
-#
-#     zf = zipfile.ZipFile(zfname, 'w', zipfile.ZIP_DEFLATED)
-#     for f in filelist:
-#         zf.write(f)
-#     zf.close()
-#
-# cr_zip('StorageEngineReport.zip', basedir + '/reports/')
 
 time.sleep(5)
 send_email.send_mail_report("【QA环境】智能存储模块功能：接口测试报告")
