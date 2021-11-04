@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a407d88e-2a99-45b8-b82f-bbfd69bc7385" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/logs/2021-11-01--16_54_15.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/PanaCubeCommon.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PanaCubeCommon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datafiles/storagePoolMagData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/datafiles/storagePoolMagData.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Panacube_API_Test_Report.zip" beforeDir="false" afterPath="$PROJECT_DIR$/reports/Panacube_API_Test_Report.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/storageEngineReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/storageEngineReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/testsuit/storageEngine_allstart.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testsuit/storageEngine_allstart.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +61,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in storagePoolMag.py">
+  <component name="RunManager" selected="Python.storageEngine_allstart">
     <configuration name="dd (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PanaCubeProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -154,8 +157,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in storagePoolMag.py" />
         <item itemvalue="Python.storageEngine_allstart" />
+        <item itemvalue="Python tests.pytest in storagePoolMag.py" />
         <item itemvalue="Python.send_email1" />
         <item itemvalue="Python tests.pytest in test_suite.py" />
         <item itemvalue="Python.dd (1)" />
@@ -222,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635757103888</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="更新登录密码信息">
+      <created>1635993052652</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1635993052652</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -243,7 +253,8 @@
     <MESSAGE value="测试" />
     <MESSAGE value="去除未引用的包信息" />
     <MESSAGE value="更新sys.pyth的位置" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新sys.pyth的位置" />
+    <MESSAGE value="更新登录密码信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新登录密码信息" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

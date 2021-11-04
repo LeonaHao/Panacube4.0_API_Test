@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>【QA环境】智能存储模块功能：接口测试报告</title>
+    <title>【QA环境】智能存储模块接口测试报告</title>
     <meta name="generator" content="HTMLTestRunner 0.8.2"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
@@ -192,12 +192,12 @@ function showOutput(id, name) {
 --></script>
 
 <div class='heading'>
-<h1>【QA环境】智能存储模块功能：接口测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2021-11-01 16:54:15</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:00.150003</p>
-<p class='attribute'><strong>Status:</strong> Error 2</p>
+<h1>【QA环境】智能存储模块接口测试报告</h1>
+<p class='attribute'><strong>Start Time:</strong> 2021-11-04 10:55:48</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:00.268808</p>
+<p class='attribute'><strong>Status:</strong> Pass 2</p>
 
-<p class='description'>测试用例执行结果如下所示</p>
+<p class='description'>测试用例结果如下所示：</p>
 </div>
 
 
@@ -225,50 +225,38 @@ function showOutput(id, name) {
     <td class="fonts">View</td>
 </tr>
 
-<tr class='errorClass'>
+<tr class='passClass'>
     <td>storagePoolMgt.storagePoolMag.GetStoragePoolList: 获取智能存储》概况中的存储信息</td>
     <td>2</td>
-    <td>0</td>
-    <td>0</td>
     <td>2</td>
+    <td>0</td>
+    <td>0</td>
     <td><a href="javascript:showClassDetail('c1',2)">Detail</a></td>
 </tr>
 
-<tr id='ft1.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_GetStoragePoolList_001_查询存储池管理列表信息</div></td>
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_GetStoragePoolList_001_查询存储池管理列表信息</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
-        error</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        pass</a>
 
-    <div id='div_ft1.1' class="popup_window">
+    <div id='div_pt1.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft1.1: 2021-11-01 16:54:15,390 - root - INFO - ********************************************************************************
-2021-11-01 16:54:15,404 - root - INFO - ****************获取存储池管理列表接口开始****************
-Expecting value: line 1 column 1 (char 0)
-2021-11-01 16:54:15,454 - root - INFO - *******测试案例名称： TestCase001_查询存储池管理列表信息 执行开始********
-2021-11-01 16:54:15,454 - root - INFO - *******测试数据： {'page': 1, 'size': 10}
-2021-11-01 16:54:15,461 - root - INFO - ********************************************************************************
-Traceback (most recent call last):
-  File "F:\GitProject\PanaCube4\Panacube4.0_API_Test\tests\testcase\intellengentStorage\storagePoolMgt\storagePoolMag.py", line 47, in func
-    self.getTest(arg1)
-  File "F:\GitProject\PanaCube4\Panacube4.0_API_Test\tests\testcase\intellengentStorage\storagePoolMgt\storagePoolMag.py", line 38, in getTest
-    result = r.json()
-  File "D:\Program Files (x86)\Python\Python37\lib\site-packages\requests\models.py", line 898, in json
-    return complexjson.loads(self.text, **kwargs)
-  File "D:\Program Files (x86)\Python\Python37\lib\site-packages\simplejson\__init__.py", line 525, in loads
-    return _default_decoder.decode(s)
-  File "D:\Program Files (x86)\Python\Python37\lib\site-packages\simplejson\decoder.py", line 370, in decode
-    obj, end = self.raw_decode(s)
-  File "D:\Program Files (x86)\Python\Python37\lib\site-packages\simplejson\decoder.py", line 400, in raw_decode
-    return self.scan_once(s, idx=_w(s, idx).end())
-simplejson.errors.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+pt1.1: 2021-11-04 10:55:48,017 - root - INFO - ********************************************************************************
+2021-11-04 10:55:48,017 - root - INFO - ****************获取存储池管理列表接口开始****************
+2021-11-04 10:55:48,143 - root - INFO - *******测试案例名称： TestCase001_查询存储池管理列表信息 执行开始********
+2021-11-04 10:55:48,143 - root - INFO - *******测试数据： {'page': 1, 'size': 10}
+2021-11-04 10:55:48,157 - root - INFO - *******返回数据： {'code': 0, 'message': 'success', 'data': [{'id': 'ac36647cc25a4301b81b6f854a284ef8', 'pool_name': 'aaa', 'pool_status': 1, 'create_time': '2021-11-03 15:47:38', 'contain_info': {'file_volume_size': 0, 'true_volume_size': 0, 'utilization_rate': '-'}, 'type': 1}, {'id': '68c0c098ab394a01a7c009bd50e2fe35', 'pool_name': '测试', 'pool_status': 1, 'create_time': '2021-11-03 15:44:35', 'contain_info': {'file_volume_size': 0, 'true_volume_size': 0, 'utilization_rate': '-'}, 'type': 1}, {'id': '2472731c08d94c57bbce6c3ab12f4c3e', 'pool_name': '默认池', 'pool_status': 0, 'create_time': '2021-11-02 18:58:35', 'contain_info': {'file_volume_size': 0, 'true_volume_size': 0, 'utilization_rate': '-'}, 'type': 0}], 'total': 3}
+2021-11-04 10:55:48,159 - root - INFO - *******测试案例名称： TestCase001_查询存储池管理列表信息 执行完毕********
+2021-11-04 10:55:48,159 - root - INFO - ****************获取存储池管理列表接口结束****************
+2021-11-04 10:55:48,159 - root - INFO - ********************************************************************************
 
 
         </pre>
@@ -278,41 +266,29 @@ simplejson.errors.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
     </td>
 </tr>
 
-<tr id='ft1.2' class='none'>
-    <td class='errorCase'><div class='testcase'>test_GetStoragePoolList_002_查询存储池管理列表信息-缺少token</div></td>
+<tr id='pt1.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_GetStoragePoolList_002_查询存储池管理列表信息-缺少token</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2')" >
-        error</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
+        pass</a>
 
-    <div id='div_ft1.2' class="popup_window">
+    <div id='div_pt1.2' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.2').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft1.2: 2021-11-01 16:54:15,523 - root - INFO - ********************************************************************************
-2021-11-01 16:54:15,524 - root - INFO - ****************获取存储池管理列表接口开始****************
-Expecting value: line 1 column 1 (char 0)
-2021-11-01 16:54:15,531 - root - INFO - *******测试案例名称： TestCase002_查询存储池管理列表信息-缺少token 执行开始********
-2021-11-01 16:54:15,531 - root - INFO - *******测试数据： {'page': 1, 'size': 10}
-2021-11-01 16:54:15,538 - root - INFO - ********************************************************************************
-Traceback (most recent call last):
-  File "F:\GitProject\PanaCube4\Panacube4.0_API_Test\tests\testcase\intellengentStorage\storagePoolMgt\storagePoolMag.py", line 47, in func
-    self.getTest(arg1)
-  File "F:\GitProject\PanaCube4\Panacube4.0_API_Test\tests\testcase\intellengentStorage\storagePoolMgt\storagePoolMag.py", line 38, in getTest
-    result = r.json()
-  File "D:\Program Files (x86)\Python\Python37\lib\site-packages\requests\models.py", line 898, in json
-    return complexjson.loads(self.text, **kwargs)
-  File "D:\Program Files (x86)\Python\Python37\lib\site-packages\simplejson\__init__.py", line 525, in loads
-    return _default_decoder.decode(s)
-  File "D:\Program Files (x86)\Python\Python37\lib\site-packages\simplejson\decoder.py", line 370, in decode
-    obj, end = self.raw_decode(s)
-  File "D:\Program Files (x86)\Python\Python37\lib\site-packages\simplejson\decoder.py", line 400, in raw_decode
-    return self.scan_once(s, idx=_w(s, idx).end())
-simplejson.errors.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+pt1.2: 2021-11-04 10:55:48,160 - root - INFO - ********************************************************************************
+2021-11-04 10:55:48,160 - root - INFO - ****************获取存储池管理列表接口开始****************
+2021-11-04 10:55:48,277 - root - INFO - *******测试案例名称： TestCase002_查询存储池管理列表信息-缺少token 执行开始********
+2021-11-04 10:55:48,277 - root - INFO - *******测试数据： {'page': 1, 'size': 10}
+2021-11-04 10:55:48,283 - root - INFO - *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+2021-11-04 10:55:48,284 - root - INFO - *******测试案例名称： TestCase002_查询存储池管理列表信息-缺少token 执行完毕********
+2021-11-04 10:55:48,285 - root - INFO - ****************获取存储池管理列表接口结束****************
+2021-11-04 10:55:48,285 - root - INFO - ********************************************************************************
 
 
         </pre>
@@ -325,9 +301,9 @@ simplejson.errors.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 <tr id='total_row'>
     <td class="fonts">Total</td>
     <td class="fonts">2</td>
-    <td class="fonts" class="text text-success">0</td>
+    <td class="fonts" class="text text-success">2</td>
     <td class="fonts" class="text text-danger">0</td>
-    <td class="fonts" class="text text-warning">2</td>
+    <td class="fonts" class="text text-warning">0</td>
     <td>&nbsp;</td>
 </tr>
 </table>
