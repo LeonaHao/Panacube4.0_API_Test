@@ -3,11 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="a407d88e-2a99-45b8-b82f-bbfd69bc7385" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/urlConfigs.py" beforeDir="false" afterPath="$PROJECT_DIR$/configs/urlConfigs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datafiles/storagePoolMagData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/datafiles/storagePoolMagData.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PanaCubeCommon.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PanaCubeCommon.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/Panacube_API_Test_Report.zip" beforeDir="false" afterPath="$PROJECT_DIR$/reports/Panacube_API_Test_Report.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/storageEngineReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/storageEngineReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/testsuit/storageEngine_allstart.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testsuit/storageEngine_allstart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt/storagePoolMag.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt/getStoragePoolList.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,22 +33,25 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1SrLwOPcSvwwtSatBKikUIRph1A" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="F:/Projects/QYDAPITest/qyd_Api" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Projects\PanaCube4\tests\testsuit" />
-      <recent name="F:\Projects\PanaCube4\tests\testcase\intellengentStorage" />
-      <recent name="E:\0PanaCubeProject\Tests\StorageEngine\Overview" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\GitProject\PanaCube4\Panacube4.0_API_Test\tests\testcase\intellengentStorage\storagePoolMgt" />
       <recent name="E:\0PanaCubeProject\Lib" />
       <recent name="E:\0PanaCubeProject\Tests\StorageEngine" />
       <recent name="E:\0PanaCubeProject\Datafiles" />
       <recent name="E:\0PanaCubeProject\Tests" />
-      <recent name="E:\0PanaCubeProject\Tools" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Projects\PanaCube4\tests\testsuit" />
+      <recent name="F:\Projects\PanaCube4\tests\testcase\intellengentStorage" />
+      <recent name="E:\0PanaCubeProject\Tests\StorageEngine\Overview" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -61,28 +66,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.storageEngine_allstart">
-    <configuration name="dd (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PanaCubeProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/testsuit" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/testsuit/dd.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.pytest in getProjectslList.py">
     <configuration name="send_email1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PanaCubeProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,7 +109,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in storagePoolMag.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for getProjectslList.GetProjectList" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PanaCubeProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -136,32 +120,47 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt/storagePoolMag.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;getProjectslList.GetProjectList&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_suite.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest in getProjectslList.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PanaCubeProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/testsuit" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/testsuit/test_suite.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt/getProjectslList.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in getStoragePoolList.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="PanaCubeProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt/getStoragePoolList.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in getProjectslList.py" />
+        <item itemvalue="Python tests.pytest for getProjectslList.GetProjectList" />
         <item itemvalue="Python.storageEngine_allstart" />
-        <item itemvalue="Python tests.pytest in storagePoolMag.py" />
+        <item itemvalue="Python tests.pytest in getStoragePoolList.py" />
         <item itemvalue="Python.send_email1" />
-        <item itemvalue="Python tests.pytest in test_suite.py" />
-        <item itemvalue="Python.dd (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -232,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635993052652</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="将testsuit中的open方法改为with open的方式改写">
+      <created>1635994836131</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1635994836131</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -254,7 +260,8 @@
     <MESSAGE value="去除未引用的包信息" />
     <MESSAGE value="更新sys.pyth的位置" />
     <MESSAGE value="更新登录密码信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新登录密码信息" />
+    <MESSAGE value="将testsuit中的open方法改为with open的方式改写" />
+    <option name="LAST_COMMIT_MESSAGE" value="将testsuit中的open方法改为with open的方式改写" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

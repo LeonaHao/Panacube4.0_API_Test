@@ -9,12 +9,12 @@ from lib.log import logger
 
 
 """
-获取存储概况信息
+获取存储池列表信息
 """
 
 
 class GetStoragePoolList(unittest.TestCase):
-    """获取智能存储》概况中的存储信息"""
+    """获取智能存储》存储池管理》存储池列表信息"""
 
 
     def setUp(self):

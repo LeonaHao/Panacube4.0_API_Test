@@ -8,7 +8,8 @@ basePanaCubeUrl = 'http://192.168.5.170/v1/'
 
 '''登录接口'''
 loginUrl = basePanaCubeUrl+'account/login'
-
+'''退出登录接口'''
+logoutUrl = basePanaCubeUrl + 'account/logout'
 
 #*********************************云中心-业务管理*******************************************
 '''云中心-业务管理-业务池列表'''
@@ -22,8 +23,10 @@ overViewStorage = basePanaCubeUrl + 'cloud/pools/intel/storage/'
 
 
 #*********************************智能存储-存储池管理*******************************************
-'''智能存储》存储池管理》获取全部存储池列表'''
+'''智能存储》存储池管理》获取全部存储池列表(包含default池)'''
 storagePoolListUrl = basePanaCubeUrl + 'storage/pools'
+'''智能存储》存储池管理》获取全部业务池列表(不包含default池)'''
+projectListUrl = basePanaCubeUrl + 'cloud/projects'
 
 
 

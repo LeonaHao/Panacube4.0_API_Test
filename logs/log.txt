@@ -544,3 +544,27 @@
 21-11-04 10:55 root         INFO     *******测试案例名称： TestCase002_查询存储池管理列表信息-缺少token 执行完毕********
 21-11-04 10:55 root         INFO     ****************获取存储池管理列表接口结束****************
 21-11-04 10:55 root         INFO     ********************************************************************************
+21-11-04 13:41 root         INFO     ********************************************************************************
+21-11-04 13:41 root         INFO     ****************获取存储池管理列表接口开始****************
+21-11-04 13:41 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.170:80
+21-11-04 13:41 urllib3.connectionpool DEBUG    http://192.168.5.170:80 "POST /v1/account/login HTTP/1.1" 200 935
+21-11-04 13:41 root         INFO     *******测试案例名称： TestCase001_查询存储池管理列表信息 执行开始********
+21-11-04 13:41 root         INFO     *******测试数据： {'page': 1, 'size': 10}
+21-11-04 13:41 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.170:80
+21-11-04 13:41 urllib3.connectionpool DEBUG    http://192.168.5.170:80 "GET /v1/storage/pools HTTP/1.1" 200 541
+21-11-04 13:41 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': [{'id': '0de8dd3e89bb4169b1e55360549a2888', 'pool_name': 'test', 'pool_status': 0, 'create_time': '2021-11-04 11:57:06', 'contain_info': {'file_volume_size': 81920, 'true_volume_size': 81920, 'volume_used_size': 0, 'utilization_rate': 0.0}, 'type': 1}, {'id': '2472731c08d94c57bbce6c3ab12f4c3e', 'pool_name': '默认池', 'pool_status': 0, 'create_time': '2021-11-02 18:58:35', 'contain_info': {'file_volume_size': 10240, 'true_volume_size': 10094.13671875, 'volume_used_size': 145.86328125, 'utilization_rate': 1.42}, 'type': 0}], 'total': 2}
+21-11-04 13:41 root         INFO     *******测试案例名称： TestCase001_查询存储池管理列表信息 执行完毕********
+21-11-04 13:41 root         INFO     ****************获取存储池管理列表接口结束****************
+21-11-04 13:41 root         INFO     ********************************************************************************
+21-11-04 13:41 root         INFO     ********************************************************************************
+21-11-04 13:41 root         INFO     ****************获取存储池管理列表接口开始****************
+21-11-04 13:41 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.170:80
+21-11-04 13:41 urllib3.connectionpool DEBUG    http://192.168.5.170:80 "POST /v1/account/login HTTP/1.1" 200 935
+21-11-04 13:41 root         INFO     *******测试案例名称： TestCase002_查询存储池管理列表信息-缺少token 执行开始********
+21-11-04 13:41 root         INFO     *******测试数据： {'page': 1, 'size': 10}
+21-11-04 13:41 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 192.168.5.170:80
+21-11-04 13:41 urllib3.connectionpool DEBUG    http://192.168.5.170:80 "GET /v1/storage/pools HTTP/1.1" 200 91
+21-11-04 13:41 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+21-11-04 13:41 root         INFO     *******测试案例名称： TestCase002_查询存储池管理列表信息-缺少token 执行完毕********
+21-11-04 13:41 root         INFO     ****************获取存储池管理列表接口结束****************
+21-11-04 13:41 root         INFO     ********************************************************************************
