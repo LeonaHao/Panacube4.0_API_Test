@@ -17,7 +17,7 @@ def login():
         reqUrl = urlConfigs.loginUrl
         reqParam = {
             "username":"admin",
-            "password":"P@ssw0rd"
+            "password":"Aa12345678"    #P@ssw0rd
         }
         urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
         result = requests.post(url=reqUrl, headers=headers,json=reqParam,verify=False).json()

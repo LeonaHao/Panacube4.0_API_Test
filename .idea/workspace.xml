@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a407d88e-2a99-45b8-b82f-bbfd69bc7385" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-01--16_54_15.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/Panacube_API_Test_Report.zip" beforeDir="false" afterPath="$PROJECT_DIR$/reports/Panacube_API_Test_Report.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/storageEngineReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/storageEngineReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/testsuit/storageEngine_allstart.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testsuit/storageEngine_allstart.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/testsuit/test_suite.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testsuit/test_suite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PanaCubeCommon.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PanaCubeCommon.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +58,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.storageEngine_allstart">
+  <component name="RunManager" selected="Python tests.pytest in storagePoolMag.py">
     <configuration name="dd (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PanaCubeProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -75,27 +72,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/testsuit/dd.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="dd" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PanaCubeProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/reports" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="F:\Projects\PanaCube4\tests\testsuit\dd.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -146,6 +122,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in storagePoolMag.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="PanaCubeProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt/storagePoolMag.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest in test_suite.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PanaCubeProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -163,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in storagePoolMag.py" />
         <item itemvalue="Python.storageEngine_allstart" />
         <item itemvalue="Python.send_email1" />
         <item itemvalue="Python tests.pytest in test_suite.py" />
         <item itemvalue="Python.dd (1)" />
-        <item itemvalue="Python.dd" />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +208,21 @@
       <option name="project" value="LOCAL" />
       <updated>1635754543031</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="更新sys.pyth的位置">
+      <created>1635757007351</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1635757007351</updated>
+    </task>
+    <task id="LOCAL-00007" summary="更新sys.pyth的位置">
+      <created>1635757103888</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1635757103888</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,7 +242,8 @@
     <MESSAGE value="更新testsuit，去除已注释代码" />
     <MESSAGE value="测试" />
     <MESSAGE value="去除未引用的包信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="去除未引用的包信息" />
+    <MESSAGE value="更新sys.pyth的位置" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新sys.pyth的位置" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
