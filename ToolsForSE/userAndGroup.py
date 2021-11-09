@@ -1,33 +1,31 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @author: Leona
-# @time: 2020-06-17
+# @time: 2021-11-09
 
 import requests
 import urllib3
 from configs import urlConfigs
-from lib.PanaCubeCommon import login,  getProjectInfo
+from lib.PanaCubeCommon import login
 
+Token = login()
 
 '''创建用户--------------待完成'''
-def createUser(poolId,num):
-    projectInfo = getProjectInfo()
-    projectId = projectInfo[int(poolId)][0]
-    projectName = projectInfo[int(poolId)][1]
+def createUser(projectId,projectName,num):
 
     headers ={
         "Content-Type":"application/json",
-        "Authorization": login(),
-        "POOL-ID": poolId,
-        "PROJECT-ID": projectId,
-        "PROJECT-NAME": projectName
-
+        "Authorization": Token
     }
     reqUrl = urlConfigs.userUrl
     reqParam = {
-        "name": "user"+ str(num),
-        "password": "11111111",
-        "group": []
+        "name": "LeonaUser"+ str(num),
+        "password": "test1234",
+        "confirmPassword":"test1234",
+        "confirmPassword":"test1234",
+        "group": [],
+        "PROJECT-ID": projectId,
+        "PROJECT-NAME": projectName
     }
     print("请求参数是:  {}".format(reqParam))
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -39,28 +37,23 @@ def createUser(poolId,num):
         print("*******************创建共享用户失败，响应结果为：{}".format(result))
 
 '''批量创建用户'''
-def batchCreateUser(n, poolId,num):
+def batchCreateUser(n, projectId,projectName,num):
     for i in range(n):
-        createUser(poolId,num)
+        createUser(projectId,projectName,num)
         num = num + 1
 
 '''创建用户组--------------待完成'''
-def createUserGroup(poolId,num):
-    projectInfo = getProjectInfo()
-    projectId = projectInfo[int(poolId)][0]
-    projectName = projectInfo[int(poolId)][1]
+def createUserGroup(num):
 
     headers ={
         "Content-Type":"application/json",
-        "Authorization": login(),
-        "POOL-ID": poolId,
-        "PROJECT-ID": projectId,
-        "PROJECT-NAME": projectName
+        "Authorization": Token
 
     }
     reqUrl = urlConfigs.userGroupUrl
     reqParam = {
-        "name":"userGroup" + str(num),
+        "name":"LeonaUG" + str(num),
+        "members":[]
     }
     print("请求参数是:  {}".format(reqParam))
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -72,24 +65,17 @@ def createUserGroup(poolId,num):
         print("*******************创建用户组失败，响应结果为：{}".format(result))
 
 '''批量创建用户组'''
-def batchCreateUserGroup(n, poolId,num):
+def batchCreateUserGroup(n, num):
     for i in range(n):
-        createUserGroup(poolId,num)
+        createUserGroup(num)
         num = num + 1
 
 '''获取用户列表'''
 def getUserList():
-    # projectInfo = getProjectInfo()
-    # projectId = projectInfo[int(poolId)][0]
-    # projectName = projectInfo[int(poolId)][1]
 
     headers ={
         "Content-Type":"application/json",
-        "Authorization": login()
-        # "POOL-ID": poolId,
-        # "PROJECT-ID": projectId,
-        # "PROJECT-NAME": projectName
-
+        "Authorization": Token,
     }
     reqUrl = urlConfigs.userUrl
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -111,21 +97,16 @@ def getUserList():
         print("*******************获取共享用户列表信息失败，响应结果为：{}".format(result))
 
 '''删除用户列表'''
-def delUser():
-    # projectInfo = getProjectInfo()
-    # projectId = projectInfo[int(poolId)][0]
-    # projectName = projectInfo[int(poolId)][1]
+def delUser(projectId,projectName):
 
     headers ={
         "Content-Type":"application/json",
-        "Authorization": login()
-        # "POOL-ID": poolId,
-        # "PROJECT-ID": projectId,
-        # "PROJECT-NAME": projectName
+        "Authorization": Token,
+        "PROJECT-ID": projectId,
+        "PROJECT-NAME": projectName
     }
 
     userList = getUserList()
-
     if len(userList) > 0:
         reqUrl = urlConfigs.userDelUrl
         reqParam = {
@@ -142,16 +123,9 @@ def delUser():
 
 '''获取用户组列表'''
 def getUserGroupList():
-    # projectInfo = getProjectInfo()
-    # projectId = projectInfo[int(poolId)][0]
-    # projectName = projectInfo[int(poolId)][1]
-
     headers ={
         "Content-Type":"application/json",
-        "Authorization": login()
-        # "POOL-ID": poolId,
-        # "PROJECT-ID": projectId,
-        # "PROJECT-NAME": projectName
+        "Authorization": Token
 
     }
     reqUrl = urlConfigs.userGroupUrl
@@ -175,17 +149,11 @@ def getUserGroupList():
 
 
 '''删除用户组列表'''
-def delUserGroup():
-    # projectInfo = getProjectInfo()
-    # projectId = projectInfo[int(poolId)][0]
-    # projectName = projectInfo[int(poolId)][1]
+def delUserGroup(projectId,projectName):
 
     headers ={
         "Content-Type":"application/json",
-        "Authorization": login()
-        # "POOL-ID": poolId,
-        # "PROJECT-ID": projectId,
-        # "PROJECT-NAME": projectName
+        "Authorization": Token
     }
 
     userGroupList = getUserGroupList()
@@ -193,7 +161,9 @@ def delUserGroup():
     if len(userGroupList) > 0:
         reqUrl = urlConfigs.userGroupDelUrl
         reqParam = {
-            "names": userGroupList
+            "names": userGroupList,
+            "PROJECT-ID": projectId,
+            "PROJECT-NAME": projectName
         }
         urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
         userGroupDelRes = requests.post(headers=headers,url=reqUrl,json=reqParam,verify=False).json()
@@ -204,11 +174,12 @@ def delUserGroup():
             print("*******************共享用户组列表删除失败,接口返回结果为：{}".format(userGroupDelRes))
 
 
-# createUser("40",2)
-# batchCreateUser(10,"676",1)
-# createUserGroup("40",1)
-# batchCreateUserGroup(10,"676",1)
+
+# createUser("5ae68febc398443190a87057c6966fd4","ceshi",2)  #createUser(projectId,projectName,num)
+# batchCreateUser(15,"5ae68febc398443190a87057c6966fd4","ceshi",1)    #batchCreateUser(n, projectId,projectName,num)
+# createUserGroup(2)       #createUserGroup(num)
+# batchCreateUserGroup(10,13)   #batchCreateUserGroup(n, num)
 # getUserList()
-delUser()
-# getUserGroupList("5")
-delUserGroup()
+# delUser("5ae68febc398443190a87057c6966fd4","ceshi")
+# getUserGroupList()
+# delUserGroup("5ae68febc398443190a87057c6966fd4","ceshi")
