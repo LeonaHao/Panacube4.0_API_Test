@@ -10,7 +10,7 @@ from lib.PanaCubeCommon import login
 
 Token = login()
 
-'''创建用户--------------待完成'''
+'''创建用户'''
 def createUser(projectId,projectName,num):
 
     headers ={
@@ -42,7 +42,7 @@ def batchCreateUser(n, projectId,projectName,num):
         createUser(projectId,projectName,num)
         num = num + 1
 
-'''创建用户组--------------待完成'''
+'''创建用户组'''
 def createUserGroup(num):
 
     headers ={
