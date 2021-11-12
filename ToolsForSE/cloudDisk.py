@@ -5,9 +5,11 @@
 
 import requests
 import urllib3
+import random
 from configs import urlConfigs
 from lib.PanaCubeCommon import login
 from ToolsForSE.Snaps import delDiskSnap
+
 
 Token = login()
 
@@ -167,35 +169,23 @@ def delCloudDisk():
     #         print("*******************缓存盘列表删除失败,接口返回结果为：{}".format(cacheDelRes))
 
 '''创建快照'''
-def creCloudDiskSnapshot(poolId):
-    projectInfo = getProjectInfo()
-    projectId = projectInfo[int(poolId)][0]
-    projectName = projectInfo[int(poolId)][1]
-
+def creCloudDiskSnapshot(volumeId):
     headers = {
         "Content-Type": "application/json",
-        "Authorization": login(),
-        "POOL-ID": poolId,
-        "PROJECT-ID": projectId,
-        "PROJECT-NAME": projectName
+        "Authorization": Token
     }
 
-    dataDiskList,sysDiskLIst,cacheDiskList = getCloudDiskList(poolId)
-    for dataDisk in dataDiskList:
-        reqUrl = urlConfigs.cloudDiskSnapshot
-        reqParam = {
-        "name":[
-            "snapShot_"+dataDisk
-        ],
-        "description":"create snapshot",
-        "volume_id":[
-            dataDisk
-    ]
+    reqUrl = urlConfigs.dataDiskSnapshot
+    print(reqUrl)
+    reqParam = {
+    "name":"snapShot_"+str(random.randint(1,100)),
+    "description":"create snapshot for datadisk",
+    "volume": volumeId
 }
-        print("云硬盘{}创建快照的请求参数是：{}".format(dataDisk,reqParam))
-        urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-        result = requests.post(url=reqUrl, headers=headers, json=reqParam,verify=False).json()
-        print("云硬盘{}创建快照的响应结果是: {}".format(dataDisk,result))
+    print("数据盘创建快照的请求参数是：{}".format(reqParam))
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+    result = requests.post(url=reqUrl, headers=headers, json=reqParam,verify=False).json()
+    print("数据盘创建快照的响应结果是: {}".format(result))
 
 
 '''卸载数据盘'''
@@ -251,10 +241,10 @@ def datachDataCloudDisk():
 
 
 
-createCloudDisk("1","c6d2bccab7e3480dbd63a46772fc7332", "LeonaTestPool1022")
-# batchCreateCloudDisk(10,2,"c6d2bccab7e3480dbd63a46772fc7332", "LeonaTestPool1022")
+# createCloudDisk("1","76edcd32140e47bca8c182b4d3d6c90a", "LeonaTestPool")
+# batchCreateCloudDisk(5,1,"76edcd32140e47bca8c182b4d3d6c90a", "LeonaTestPool")
 # getCloudDiskList()
 # delCloudDisk()
-# creCloudDiskSnapshot("40")
+# creCloudDiskSnapshot("eff1759c-dde9-4508-93e7-b8cb57bf470e")
 # datachDataCloudDisk()
 
