@@ -8,7 +8,7 @@ import urllib3
 import random
 from configs import urlConfigs
 from lib.PanaCubeCommon import login
-from ToolsForSE.Snaps import delDiskSnap
+from toolsForSE.snaps import delDiskSnap
 
 
 Token = login()

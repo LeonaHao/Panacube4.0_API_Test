@@ -5,7 +5,7 @@ import random
 import time
 
 '''
-筋斗云》智能存储》卷   相关操作
+筋斗云》智能存储》快照   相关操作
 '''
 import requests
 import urllib3
@@ -15,45 +15,45 @@ from lib.PanaCubeCommon import login
 
 Token = login()
 
-
-'''创建卷'''
-def createVolume(poolId,num):
-    compressionList = ['off','gzip-1','gzip-6','gzip-9','zle','lzjb','lz4']
-    dedupList = ['on','off','verify']
-    casesensitivityList = ['sensitive','insensitive','mixed']
-    atimeList = ['off','on']
+'''获取业务池信息,返回业务池的id和名称'''
+def getPoolInfo(projectId):
+    reqUrl = urlConfigs.cloudPoolListUrl + '/'+ str(projectId)
     headers ={
         "Content-Type":"application/json",
-        "Authorization": login(),
-        "POOL-ID": poolId
+        "Authorization": Token
     }
-    reqUrl = urlConfigs.volume
-    reqParam = {
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+    result = requests.get(url=reqUrl, headers=headers,verify=False).json()
+    # print("响应结果为： {}".format(result))
+    return result['data']['id'],result['data']['name']
 
-        "name":"LV"+str(num),
-        "compression":random.choice(compressionList),
-        "dedup":random.choice(dedupList),
-        "casesensitivity":random.choice(casesensitivityList),
-        "atime":random.choice(atimeList),
-        "size":1,
-        "unit":"G",
-        "parent":"UD_POOL/UDNAS",
-        "type":"filesystem"
+
+'''创建业务池快照'''
+def createPoolSnapshot(projectId):
+    reqUrl = urlConfigs.poolSnap
+    headers ={
+        "Content-Type":"application/json",
+        "Authorization": Token
+    }
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+    projectName = getPoolInfo(projectId)
+    reqParam = {
+        "name":"poolSnapshot4" + str(projectName[1]) + str(random.randint(0,1000)),
+        "project_id":projectId
     }
     print("请求参数是:  {}".format(reqParam))
-    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-    result = requests.post(url=reqUrl, headers=headers,json=reqParam,verify=False).json()
+    result = requests.post(url=reqUrl, headers=headers,json=reqParam, verify=False).json()
     print("响应结果是:  {}".format(result))
     if result['message']=='success':
-        print("*******************成功创建卷**************************")
+        print("*******************创建业务池快照成功**************************")
     else:
-        print("*******************创建卷失败**************************")
+        print("*******************创建业务池快照失败**************************")
 
-'''批量创建卷'''
-def batchCreateVolume(n, poolId,num):
+'''批量创建业务池快照'''
+def batchCreatePoolSnapshot(n, projectId):
     for i in range(n):
-        createVolume(poolId,num)
-        num = num + 1
+        createPoolSnapshot(projectId)
+
 
 '''获取业务池快照列表'''
 def getPoolSnapList():
@@ -80,6 +80,27 @@ def getPoolSnapList():
         return idList
     else:
         print("*******************获取业务池快照列表**************************")
+
+
+'''删除业务池快照'''
+def delPoolSnap():
+    poolSnapList = getPoolSnapList()
+    time.sleep(30)
+    headers ={
+        "Content-Type":"application/json",
+        "Authorization": Token
+    }
+    reqUrl = urlConfigs.delPoolSnap
+    reqParam ={
+            "ids":poolSnapList
+    }
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+    result = requests.delete(url=reqUrl, headers=headers,json=reqParam,verify=False).json()
+    if result['message'] == "success":
+        print("*******************业务池快照删除成功**************************")
+    else:
+        print("*******************业务池快照删除失败:{}**************************".format(result))
+
 
 
 '''获取云组件快照列表'''
@@ -130,24 +151,7 @@ def getDiskSnapshotList():
         print("*******************获取云硬盘快照列表失败**************************")
 
 
-'''删除业务池快照'''
-def delPoolSnap():
-    poolSnapList = getPoolSnapList()
-    # time.sleep(30)
-    headers ={
-        "Content-Type":"application/json",
-        "Authorization": Token
-    }
-    reqUrl = urlConfigs.delPoolSnap
-    reqParam ={
-            "ids":poolSnapList
-    }
-    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-    result = requests.delete(url=reqUrl, headers=headers,json=reqParam,verify=False).json()
-    if result['message'] == "success":
-        print("*******************业务池快照删除成功**************************")
-    else:
-        print("*******************业务池快照删除失败:{}**************************".format(result))
+
 
 
 '''删除云组件快照'''
@@ -194,12 +198,13 @@ def delDiskSnap():
 
 
 
-
-
-
+# createPoolSnapshot("76edcd32140e47bca8c182b4d3d6c90a")
+batchCreatePoolSnapshot(2,"76edcd32140e47bca8c182b4d3d6c90a")
+# getPoolSnapList()
+# delPoolSnap()
 # createVolume("225", 1)
 # batchCreateVolume(5,"228",1)
-# getPoolSnapList()
+
 # getInstanceSnapshotList()
 # getDiskSnapshotList()
 # delPoolSnap()

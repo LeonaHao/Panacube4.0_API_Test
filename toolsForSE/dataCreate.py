@@ -3,11 +3,11 @@
 # @author: Leona
 # @time: 2020-06-17
 import time
-from ToolsForSE.Snaps import batchCreateVolume, createVolumeSnapShot
-from ToolsForSE.cloudDisk import batchCreateCloudDisk, creCloudDiskSnapshot
-from ToolsForSE.share import batchCreateShare
-from ToolsForSE.userAndGroup import batchCreateUser,batchCreateUserGroup
-from ToolsForSE.objectShare import batchCreateObjShare
+from toolsForSE.snaps import batchCreateVolume, createVolumeSnapShot
+from toolsForSE.cloudDisk import batchCreateCloudDisk, creCloudDiskSnapshot
+from toolsForSE.share import batchCreateShare
+from toolsForSE.userAndGroup import batchCreateUser,batchCreateUserGroup
+from toolsForSE.objectShare import batchCreateObjShare
 
 def createData(n, poolId,num):
     #创建卷

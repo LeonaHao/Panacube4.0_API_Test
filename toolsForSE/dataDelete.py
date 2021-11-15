@@ -3,10 +3,10 @@
 # @author: Leona
 # @time: 2020-06-17
 
-from ToolsForSE.userAndGroup import delUser,delUserGroup
-from ToolsForSE.share import delShare
-from ToolsForSE.Snaps import delDiskSnap,delInstanceSnap,delPoolSnap
-from ToolsForSE.cloudDisk import delCloudDisk
+from toolsForSE.userAndGroup import delUser,delUserGroup
+from toolsForSE.share import delShare
+from toolsForSE.snaps import delDiskSnap,delInstanceSnap,delPoolSnap
+from toolsForSE.cloudDisk import delCloudDisk
 
 
 def clearEnv():

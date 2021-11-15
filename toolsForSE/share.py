@@ -198,6 +198,6 @@ def delShare(projectId,projectName):
 
 
 # createShare(2,"1732f00b451a48eb8ee65a7362dbb5dc","默认池","s")
-# batchCreateShare(3,3,"1732f00b451a48eb8ee65a7362dbb5dc","默认池","n")
+# batchCreateShare(3,1,"1732f00b451a48eb8ee65a7362dbb5dc","默认池","n")
 # getShareList("1732f00b451a48eb8ee65a7362dbb5dc","%E9%BB%98%E8%AE%A4%E6%B1%A0")
 # delShare("1732f00b451a48eb8ee65a7362dbb5dc","%E9%BB%98%E8%AE%A4%E6%B1%A0")
