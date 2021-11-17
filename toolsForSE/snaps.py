@@ -102,6 +102,9 @@ def delPoolSnap():
         print("*******************业务池快照删除失败:{}**************************".format(result))
 
 
+'''获取组件列表'''
+
+
 
 '''获取云组件快照列表'''
 def getInstanceSnapshotList():
@@ -199,9 +202,11 @@ def delDiskSnap():
 
 
 # createPoolSnapshot("76edcd32140e47bca8c182b4d3d6c90a")
-batchCreatePoolSnapshot(2,"76edcd32140e47bca8c182b4d3d6c90a")
+# batchCreatePoolSnapshot(2,"76edcd32140e47bca8c182b4d3d6c90a")
 # getPoolSnapList()
 # delPoolSnap()
+
+
 # createVolume("225", 1)
 # batchCreateVolume(5,"228",1)
 

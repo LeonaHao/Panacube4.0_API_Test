@@ -3,6 +3,8 @@
 import pymysql
 from configs import config
 from lib.log import logger
+
+
 class MySQLHelper(object):
 
     def __init__(self, dbName):

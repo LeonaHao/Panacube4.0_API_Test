@@ -9,6 +9,7 @@ import random
 import requests
 import urllib3
 from configs import urlConfigs
+from lib import MySQLHelper
 
 #获取登录token
 def login():
@@ -29,8 +30,6 @@ def login():
 
 
 
-
-
 def paramCombine(**kwargs):
     a = ""
     # x是key值，y是value值, 通过循环，拼接参数
@@ -38,6 +37,9 @@ def paramCombine(**kwargs):
         a += "%s=%s" % (x, y) + "&"
     # return时要剔除最后的&符号
     return a[0:len(a) - 1]
+
+
+
 
 
 
