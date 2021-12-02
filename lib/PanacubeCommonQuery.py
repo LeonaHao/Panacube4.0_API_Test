@@ -60,6 +60,13 @@ def getDefaultPoolUsage():
     return res
 
 
+#获取任意一个非默认池
+def getNonDefaultPool():
+    sql = 'select id,name from cloud_pool WHERE type=1 order by create_time desc limit 1;'
+    param = ()
+    res= MySQLHelper('panacube').get_one(sql,param)
+    return  res['id'],res['name']
+
 
 
 # getVolumeId()
@@ -69,3 +76,4 @@ def getDefaultPoolUsage():
 # getSysDiskUsageByNode()
 # getNonDefaultPoolUsage('LeonaTestPool')
 # getDefaultPoolUsage()
+# getNonDefaultPool()
