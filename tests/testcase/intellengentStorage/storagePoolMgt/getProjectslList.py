@@ -6,7 +6,7 @@
 import unittest
 import requests
 import json
-from configs.urlConfigs import projectListUrl,logoutUrl
+from configs.urlConfigs import projectUrl,logoutUrl
 from lib.PanaCubeCommon import login
 from lib.generateTestCases import __generateTestCases
 from lib.log import logger
@@ -32,7 +32,7 @@ class GetProjectList(unittest.TestCase):
         logger.info("****************获取业务池列表接口开始****************")
         headers ={'Content-Type':'application/json',
                   'Authorization': token}
-        reqUrl = projectListUrl
+        reqUrl = projectUrl
         caseNum = tx['test_num']
         caseName = tx['test_name']
         code = tx['code']

@@ -24,11 +24,16 @@ overViewStorage = basePanaCubeUrl + 'cloud/pools/intel/storage/'
 
 #*********************************智能存储-存储池管理*******************************************
 '''智能存储》存储池管理》获取全部存储池列表(包含default池)'''
-storagePoolListUrl = basePanaCubeUrl + 'storage/pools'
+storagePoolUrl = basePanaCubeUrl + 'storage/pools'
 '''智能存储》存储池管理》获取全部业务池列表(不包含default池)'''
-projectListUrl = basePanaCubeUrl + 'cloud/projects'
+projectUrl = basePanaCubeUrl + 'cloud/projects'
 '''智能存储》存储池管理》存储池详情'''
 storagePoolInfoUrl = basePanaCubeUrl + 'storage/pools'
+'''智能存储》存储池管理》系统配额'''
+systemQuotasUrl = basePanaCubeUrl + 'sysmgmt/quotas'
+'''智能存储》存储池管理》存储剩余空间'''
+storageRemain = basePanaCubeUrl + 'cloud/storage-pools/remain'
+
 
 
 

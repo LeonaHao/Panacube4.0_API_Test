@@ -62,10 +62,10 @@ def getDefaultPoolUsage():
 
 #获取任意一个非默认池
 def getNonDefaultPool():
-    sql = 'select id,name from cloud_pool WHERE type=1 order by create_time desc limit 1;'
+    sql = 'select id,name,storage_limit from cloud_pool WHERE type=1 order by create_time desc limit 1;'
     param = ()
     res= MySQLHelper('panacube').get_one(sql,param)
-    return  res['id'],res['name']
+    return  res['id'],res['name'],res['storage_limit']
 
 
 

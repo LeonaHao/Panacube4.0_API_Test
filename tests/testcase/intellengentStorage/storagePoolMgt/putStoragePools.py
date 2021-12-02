@@ -6,7 +6,7 @@
 import unittest
 import requests
 import json
-from configs.urlConfigs import storagePoolInfoUrl,logoutUrl
+from configs.urlConfigs import storagePoolUrl,logoutUrl
 from lib.PanaCubeCommon import login
 from lib.PanacubeCommonQuery import getNonDefaultPool
 from lib.generateTestCases import __generateTestCases
@@ -14,11 +14,11 @@ from lib.log import logger
 
 
 """
-获取智能存储》存储池管理》存储池详情
+获取智能存储》存储池管理》系统配额信息
 """
 
 
-class getStoragePoolInfo(unittest.TestCase):
+class putStoragePools(unittest.TestCase):
     """获取智能存储》概况中的存储信息"""
     @classmethod
     def setUpClass(cls) -> None:
@@ -30,32 +30,35 @@ class getStoragePoolInfo(unittest.TestCase):
         logger.info("*" * 80)
 
     def getTest(self, tx):
-        logger.info("****************获取存储池详情接口开始****************")
-        projectInfo = getNonDefaultPool()
-        projectId = projectInfo[0]
-        projectName = projectInfo[1]
+        logger.info("****************配置业务池接口开始****************")
         headers ={'Content-Type':'application/json',
-                  'Authorization': token,
-                  'PROJECT-ID': projectId
+                  'Authorization': token
                    }
-        reqUrl = storagePoolInfoUrl
+        reqUrl = storagePoolUrl
         caseNum = tx['test_num']
         caseName = tx['test_name']
         code = tx['code']
+        msg = tx['error_msg']
         flag = tx['flag']
         logger.info("*******测试案例名称： TestCase" + caseNum + "_" + caseName + " 执行开始********")
+
         reqParam = json.JSONDecoder().decode(tx['params'])
+        storagePoolInfo = getNonDefaultPool()
+        projectId = storagePoolInfo[0]
+        storageLimit = storagePoolInfo[2]
+        reqParam['project_id']= projectId
+        reqParam['storage_limit']=storageLimit
         logger.info("*******测试数据： " + str(reqParam))
         if flag == 1:
             headers['Authorization'] = ''
-        r = requests.get(url=reqUrl, headers=headers,data=reqParam)
+        r = requests.put(url=reqUrl, headers=headers,json=reqParam)
         result = r.json()
         logger.info("*******返回数据： " + str(result))
         self.assertEqual(result['code'], code)
-        if flag != 1:
-            self.assertEqual(result['data'][0]['pool_name'],projectName)
+        if result['code']!=0:
+            self.assertEqual(result['message'], msg)
         logger.info("*******测试案例名称： TestCase" + caseNum + "_" + caseName + " 执行完毕********")
-        logger.info("****************获取存储池详情接口结束****************")
+        logger.info("****************配置业务池接口结束****************")
 
     @staticmethod
     def getTestFunc(arg1):
@@ -76,7 +79,7 @@ class getStoragePoolInfo(unittest.TestCase):
         if resJson['code'] == 0:
             logger.info("**********************************************完成teardown class，退出登录**********************************************")
 
-__generateTestCases(getStoragePoolInfo, "getStoragePoolInfo", "storagePoolMagData.xlsx", "getStoragePoolInfo")
+__generateTestCases(putStoragePools, "putStoragePools", "storagePoolMagData.xlsx", "putStoragePools")
 
 if __name__ == '__main__':
     unittest.main()

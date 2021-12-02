@@ -2,7 +2,7 @@
 import unittest
 import requests
 import json
-from configs.urlConfigs import storagePoolListUrl
+from configs.urlConfigs import storagePoolUrl
 from lib.PanaCubeCommon import login
 from lib.generateTestCases import __generateTestCases
 from lib.log import logger
@@ -24,7 +24,7 @@ class GetStoragePoolList(unittest.TestCase):
         logger.info("****************获取存储池管理列表接口开始****************")
         headers ={'Content-Type':'application/json',
                   'Authorization': login()}
-        reqUrl = storagePoolListUrl
+        reqUrl = storagePoolUrl
         caseNum = tx['test_num']
         caseName = tx['test_name']
         code = tx['code']
