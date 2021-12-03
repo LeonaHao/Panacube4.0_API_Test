@@ -33,7 +33,10 @@ storagePoolInfoUrl = basePanaCubeUrl + 'storage/pools'
 systemQuotasUrl = basePanaCubeUrl + 'sysmgmt/quotas'
 '''智能存储》存储池管理》存储剩余空间'''
 storageRemain = basePanaCubeUrl + 'cloud/storage-pools/remain'
-
+'''智能存储》存储池管理》监控'''
+storageMonitor = basePanaCubeUrl + 'storage/pools/monitor'
+'''智能存储》存储池管理》存储流量监控'''
+storageFlowMonitor = basePanaCubeUrl + 'storage/pools/monitor/flow'
 
 
 
