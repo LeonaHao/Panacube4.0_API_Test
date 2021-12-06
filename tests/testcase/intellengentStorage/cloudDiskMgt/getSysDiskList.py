@@ -22,6 +22,7 @@ class getSysDiskList(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         logger.info("**********************************************开始setupClass，进行登录**********************************************")
+        global token
         token = login()
 
     def setUp(self):
