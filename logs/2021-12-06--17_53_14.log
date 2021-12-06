@@ -1,0 +1,51 @@
+2021-12-06 17:53:14,713 - root - INFO - **********************************************开始setupClass，进行登录**********************************************
+2021-12-06 17:53:15,001 - root - INFO - ********************************************************************************
+2021-12-06 17:53:15,002 - root - INFO - ****************编辑数据盘列表接口开始****************
+2021-12-06 17:53:15,224 - root - INFO - *******测试案例名称： TestCase001_编辑数据盘-name为空 执行开始********
+2021-12-06 17:53:15,766 - root - INFO - *******测试数据： {'name': '', 'description': '编辑数据盘-name为空', 'id': 'bda64c37-4a8d-44a3-bffc-b7cdff65d943', 'size': 1024, 'disk_type': 0, 'disk_status': 1, 'share_vol': 1, 'created_time': '2021-12-03 10:28:16', 'is_snapshoted': 0, 'instances': [None], 'path': [{'diskdetailmodel__path': None}], 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+2021-12-06 17:53:15,791 - root - INFO - *******返回数据： {'code': 1, 'message': '服务异常', 'data': None, 'level': 1}
+2021-12-06 17:53:15,791 - root - INFO - ********************************************************************************
+2021-12-06 17:53:15,904 - root - INFO - ********************************************************************************
+2021-12-06 17:53:15,905 - root - INFO - ****************编辑数据盘列表接口开始****************
+2021-12-06 17:53:16,158 - root - INFO - *******测试案例名称： TestCase002_编辑数据盘-name为特殊字符 执行开始********
+2021-12-06 17:53:16,661 - root - INFO - *******测试数据： {'name': '@￥@#%￥#%￥', 'description': '编辑数据盘-name为特殊字符', 'id': 'bda64c37-4a8d-44a3-bffc-b7cdff65d943', 'size': 1024, 'disk_type': 0, 'disk_status': 1, 'share_vol': 1, 'created_time': '2021-12-03 10:28:16', 'is_snapshoted': 0, 'instances': [None], 'path': [{'diskdetailmodel__path': None}], 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+2021-12-06 17:53:16,679 - root - INFO - *******返回数据： {'code': 1, 'message': '服务异常', 'data': None, 'level': 1}
+2021-12-06 17:53:16,680 - root - INFO - ********************************************************************************
+2021-12-06 17:53:16,721 - root - INFO - ********************************************************************************
+2021-12-06 17:53:16,721 - root - INFO - ****************编辑数据盘列表接口开始****************
+2021-12-06 17:53:16,947 - root - INFO - *******测试案例名称： TestCase003_编辑数据盘-name为中文名称 执行开始********
+2021-12-06 17:53:17,435 - root - INFO - *******测试数据： {'name': '中文名称数据盘', 'description': '编辑数据盘-name为中文名称', 'id': 'bda64c37-4a8d-44a3-bffc-b7cdff65d943', 'size': 1024, 'disk_type': 0, 'disk_status': 1, 'share_vol': 1, 'created_time': '2021-12-03 10:28:16', 'is_snapshoted': 0, 'instances': [None], 'path': [{'diskdetailmodel__path': None}], 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+2021-12-06 17:53:17,453 - root - INFO - *******返回数据： {'code': 1, 'message': '服务异常', 'data': None, 'level': 1}
+2021-12-06 17:53:17,453 - root - INFO - ********************************************************************************
+2021-12-06 17:53:17,498 - root - INFO - ********************************************************************************
+2021-12-06 17:53:17,499 - root - INFO - ****************编辑数据盘列表接口开始****************
+2021-12-06 17:53:17,726 - root - INFO - *******测试案例名称： TestCase004_编辑数据盘-name为数字 执行开始********
+2021-12-06 17:53:18,201 - root - INFO - *******测试数据： {'name': '123456', 'description': '编辑数据盘-name为数字', 'id': 'bda64c37-4a8d-44a3-bffc-b7cdff65d943', 'size': 1024, 'disk_type': 0, 'disk_status': 1, 'share_vol': 1, 'created_time': '2021-12-03 10:28:16', 'is_snapshoted': 0, 'instances': [None], 'path': [{'diskdetailmodel__path': None}], 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+2021-12-06 17:53:18,219 - root - INFO - *******返回数据： {'code': 1, 'message': '服务异常', 'data': None, 'level': 1}
+2021-12-06 17:53:18,219 - root - INFO - ********************************************************************************
+2021-12-06 17:53:18,255 - root - INFO - ********************************************************************************
+2021-12-06 17:53:18,256 - root - INFO - ****************编辑数据盘列表接口开始****************
+2021-12-06 17:53:18,491 - root - INFO - *******测试案例名称： TestCase005_编辑数据盘-name为下划线 执行开始********
+2021-12-06 17:53:18,983 - root - INFO - *******测试数据： {'name': '______', 'description': '编辑数据盘-name为下划线', 'id': 'bda64c37-4a8d-44a3-bffc-b7cdff65d943', 'size': 1024, 'disk_type': 0, 'disk_status': 1, 'share_vol': 1, 'created_time': '2021-12-03 10:28:16', 'is_snapshoted': 0, 'instances': [None], 'path': [{'diskdetailmodel__path': None}], 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+2021-12-06 17:53:19,002 - root - INFO - *******返回数据： {'code': 1, 'message': '服务异常', 'data': None, 'level': 1}
+2021-12-06 17:53:19,002 - root - INFO - ********************************************************************************
+2021-12-06 17:53:19,042 - root - INFO - ********************************************************************************
+2021-12-06 17:53:19,043 - root - INFO - ****************编辑数据盘列表接口开始****************
+2021-12-06 17:53:19,276 - root - INFO - *******测试案例名称： TestCase006_编辑数据盘-name为短横线 执行开始********
+2021-12-06 17:53:19,872 - root - INFO - *******测试数据： {'name': '-----', 'description': '编辑数据盘-name为下划线', 'id': 'bda64c37-4a8d-44a3-bffc-b7cdff65d943', 'size': 1024, 'disk_type': 0, 'disk_status': 1, 'share_vol': 1, 'created_time': '2021-12-03 10:28:16', 'is_snapshoted': 0, 'instances': [None], 'path': [{'diskdetailmodel__path': None}], 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+2021-12-06 17:53:19,895 - root - INFO - *******返回数据： {'code': 1, 'message': '服务异常', 'data': None, 'level': 1}
+2021-12-06 17:53:19,895 - root - INFO - ********************************************************************************
+2021-12-06 17:53:19,938 - root - INFO - ********************************************************************************
+2021-12-06 17:53:19,938 - root - INFO - ****************编辑数据盘列表接口开始****************
+2021-12-06 17:53:20,302 - root - INFO - *******测试案例名称： TestCase007_编辑数据盘-name超过32个字符 执行开始********
+2021-12-06 17:53:20,954 - root - INFO - *******测试数据： {'name': 'DatanameIsOver32DatanameIsOve32DatanameOver32', 'description': '编辑数据盘-name超过32个字符', 'id': 'bda64c37-4a8d-44a3-bffc-b7cdff65d943', 'size': 1024, 'disk_type': 0, 'disk_status': 1, 'share_vol': 1, 'created_time': '2021-12-03 10:28:16', 'is_snapshoted': 0, 'instances': [None], 'path': [{'diskdetailmodel__path': None}], 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+2021-12-06 17:53:20,973 - root - INFO - *******返回数据： {'code': 1, 'message': '服务异常', 'data': None, 'level': 1}
+2021-12-06 17:53:20,974 - root - INFO - ********************************************************************************
+2021-12-06 17:53:21,013 - root - INFO - ********************************************************************************
+2021-12-06 17:53:21,014 - root - INFO - ****************编辑数据盘列表接口开始****************
+2021-12-06 17:53:21,332 - root - INFO - *******测试案例名称： TestCase008_编辑数据盘-name等于32个字符 执行开始********
+2021-12-06 17:53:21,916 - root - INFO - *******测试数据： {'name': 'DatanameIs32DatanameIs32Dataname', 'description': '编辑数据盘-name等于32个字符', 'id': 'bda64c37-4a8d-44a3-bffc-b7cdff65d943', 'size': 1024, 'disk_type': 0, 'disk_status': 1, 'share_vol': 1, 'created_time': '2021-12-03 10:28:16', 'is_snapshoted': 0, 'instances': [None], 'path': [{'diskdetailmodel__path': None}], 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+2021-12-06 17:53:21,940 - root - INFO - *******返回数据： {'code': 1, 'message': '服务异常', 'data': None, 'level': 1}
+2021-12-06 17:53:21,941 - root - INFO - ********************************************************************************
+2021-12-06 17:53:21,993 - root - INFO - ********************************************************************************
+2021-12-06 17:53:21,994 - root - INFO - ****************编辑数据盘列表接口开始****************
