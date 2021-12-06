@@ -1,0 +1,3 @@
+2021-12-02 16:12:45,611 - root - INFO - the sql is : select id,name from cloud_pool WHERE type=1 order by create_time desc limit 1;
+2021-12-02 16:12:45,612 - root - INFO - the params is : ()
+2021-12-02 16:12:45,613 - root - INFO - the result data is :{'id': 'f9d31e23e30c41b1a42d53ef95c8dec6', 'name': 'LeonaHashPool'}

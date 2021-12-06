@@ -1,0 +1,3 @@
+2021-11-17 14:41:37,096 - root - INFO - the sql is :SELECT * FROM cloud_instance WHERE project_id=(select id from cloud_pool where name =%s)
+2021-11-17 14:41:37,112 - root - INFO - the params is : LeonaTestPool
+2021-11-17 14:41:37,115 - root - INFO - the result data is :()

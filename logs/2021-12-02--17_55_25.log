@@ -1,0 +1,40 @@
+2021-12-02 17:55:25,822 - root - INFO - **********************************************开始setupClass，进行登录**********************************************
+2021-12-02 17:55:26,165 - root - INFO - ********************************************************************************
+2021-12-02 17:55:26,166 - root - INFO - ****************配置业务池接口开始****************
+2021-12-02 17:55:26,166 - root - INFO - *******测试案例名称： TestCase001_配置存储池空间--原始值配置--成功 执行开始********
+2021-12-02 17:55:26,170 - root - INFO - the sql is : select id,name,storage_limit from cloud_pool WHERE type=1 order by create_time desc limit 1;
+2021-12-02 17:55:26,171 - root - INFO - the params is : ()
+2021-12-02 17:55:26,174 - root - INFO - the result data is :{'id': 'f9d31e23e30c41b1a42d53ef95c8dec6', 'name': 'LeonaHashPool', 'storage_limit': 10}
+2021-12-02 17:55:26,178 - root - INFO - *******测试数据： {'storage_limit': 10, 'add_size': 0, 'project_id': 'f9d31e23e30c41b1a42d53ef95c8dec6'}
+2021-12-02 17:55:26,226 - root - INFO - *******返回数据： {'code': 1002, 'message': 'Json格式错误', 'data': None, 'level': 1}
+2021-12-02 17:55:26,226 - root - INFO - ********************************************************************************
+2021-12-02 17:55:26,352 - root - INFO - ********************************************************************************
+2021-12-02 17:55:26,352 - root - INFO - ****************配置业务池接口开始****************
+2021-12-02 17:55:26,353 - root - INFO - *******测试案例名称： TestCase002_配置存储池空间--addsize为超大值配置 执行开始********
+2021-12-02 17:55:26,379 - root - INFO - the sql is : select id,name,storage_limit from cloud_pool WHERE type=1 order by create_time desc limit 1;
+2021-12-02 17:55:26,380 - root - INFO - the params is : ()
+2021-12-02 17:55:26,382 - root - INFO - the result data is :{'id': 'f9d31e23e30c41b1a42d53ef95c8dec6', 'name': 'LeonaHashPool', 'storage_limit': 10}
+2021-12-02 17:55:26,383 - root - INFO - *******测试数据： {'storage_limit': 10, 'add_size': 99999999999999999999, 'project_id': 'f9d31e23e30c41b1a42d53ef95c8dec6'}
+2021-12-02 17:55:26,409 - root - INFO - *******返回数据： {'code': 1002, 'message': 'Json格式错误', 'data': None, 'level': 1}
+2021-12-02 17:55:26,410 - root - INFO - ********************************************************************************
+2021-12-02 17:55:26,457 - root - INFO - ********************************************************************************
+2021-12-02 17:55:26,457 - root - INFO - ****************配置业务池接口开始****************
+2021-12-02 17:55:26,458 - root - INFO - *******测试案例名称： TestCase003_配置存储池空间--addsize为空配置 执行开始********
+2021-12-02 17:55:26,472 - root - INFO - the sql is : select id,name,storage_limit from cloud_pool WHERE type=1 order by create_time desc limit 1;
+2021-12-02 17:55:26,473 - root - INFO - the params is : ()
+2021-12-02 17:55:26,475 - root - INFO - the result data is :{'id': 'f9d31e23e30c41b1a42d53ef95c8dec6', 'name': 'LeonaHashPool', 'storage_limit': 10}
+2021-12-02 17:55:26,475 - root - INFO - *******测试数据： {'storage_limit': 10, 'add_size': None, 'project_id': 'f9d31e23e30c41b1a42d53ef95c8dec6'}
+2021-12-02 17:55:26,498 - root - INFO - *******返回数据： {'code': 1002, 'message': 'Json格式错误', 'data': None, 'level': 1}
+2021-12-02 17:55:26,499 - root - INFO - ********************************************************************************
+2021-12-02 17:55:26,537 - root - INFO - ********************************************************************************
+2021-12-02 17:55:26,538 - root - INFO - ****************配置业务池接口开始****************
+2021-12-02 17:55:26,538 - root - INFO - *******测试案例名称： TestCase004_配置存储池空间-缺少token 执行开始********
+2021-12-02 17:55:26,541 - root - INFO - the sql is : select id,name,storage_limit from cloud_pool WHERE type=1 order by create_time desc limit 1;
+2021-12-02 17:55:26,542 - root - INFO - the params is : ()
+2021-12-02 17:55:26,544 - root - INFO - the result data is :{'id': 'f9d31e23e30c41b1a42d53ef95c8dec6', 'name': 'LeonaHashPool', 'storage_limit': 10}
+2021-12-02 17:55:26,544 - root - INFO - *******测试数据： {'storage_limit': 10, 'add_size': 0, 'project_id': 'f9d31e23e30c41b1a42d53ef95c8dec6'}
+2021-12-02 17:55:26,554 - root - INFO - *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+2021-12-02 17:55:26,554 - root - INFO - *******测试案例名称： TestCase004_配置存储池空间-缺少token 执行完毕********
+2021-12-02 17:55:26,554 - root - INFO - ****************配置业务池接口结束****************
+2021-12-02 17:55:26,555 - root - INFO - ********************************************************************************
+2021-12-02 17:55:26,578 - root - INFO - **********************************************完成teardown class，退出登录**********************************************

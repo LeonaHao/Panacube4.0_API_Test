@@ -1,0 +1,3 @@
+2021-11-17 10:40:21,593 - root - INFO - the sql is :select file_store_id from cloud_pool;
+2021-11-17 10:40:21,594 - root - INFO - the params is : ()
+2021-11-17 10:40:21,596 - root - INFO - the result data is :[{'file_store_id': '055788482c4746448be388e31e85090d'}, {'file_store_id': 'ff43a1993a5e4138839dc15145e62b3f'}, {'file_store_id': 'a32ae95cfc6c4077adbe891a6c92af88'}, {'file_store_id': '56b4f42066344ebd8247280ae9cc37b8'}, {'file_store_id': 'c318073c3aff4b25b3e5808706b5cd07'}, {'file_store_id': 'a6fad39402c5469cb0737f59f3b56de9'}, {'file_store_id': 'ddafe98ad0904c00bc3077a9742dd6d5'}]

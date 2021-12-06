@@ -1,21 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a407d88e-2a99-45b8-b82f-bbfd69bc7385" name="Default Changelist" comment="增加getProjectList接口脚本">
+    <list default="true" id="a407d88e-2a99-45b8-b82f-bbfd69bc7385" name="Default Changelist" comment="新增">
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--10_33_33.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--10_36_37.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--10_39_30.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--10_40_21.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--10_40_52.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--10_41_34.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--10_41_57.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--10_42_18.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--10_47_29.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--10_47_46.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--10_50_40.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--10_51_36.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--10_52_10.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--10_53_52.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--10_55_14.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--10_56_43.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--10_57_16.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--10_57_44.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--10_58_20.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--10_59_05.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--11_12_32.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--11_13_02.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--11_13_14.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--11_37_34.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--11_41_12.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--11_41_37.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--11_41_57.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--11_42_14.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--11_44_23.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--11_44_44.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--11_47_38.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--11_48_08.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--11_48_33.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-11-17--14_41_36.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-12-02--16_05_01.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-12-02--16_12_06.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-12-02--16_12_45.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-12-02--16_13_09.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-12-02--16_17_09.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-12-02--16_20_10.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-12-02--16_23_01.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-12-02--16_24_30.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-12-02--16_54_43.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-12-02--17_20_14.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-12-02--17_27_37.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-12-02--17_55_25.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-12-02--17_56_55.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-12-02--18_02_16.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-12-02--18_02_48.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-12-02--18_06_00.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-12-03--10_17_44.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-12-03--10_28_17.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-12-03--10_30_06.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-12-03--10_41_16.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-12-03--14_54_13.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-12-03--14_55_46.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-12-03--14_56_17.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-12-03--14_56_57.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-12-03--16_36_05.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-12-03--16_38_23.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-12-03--16_42_18.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-12-03--16_43_43.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-12-03--16_50_15.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt/getFlowMonitor_notDone.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToolsForSE/Snaps.py" beforeDir="false" afterPath="$PROJECT_DIR$/toolsForSE/snaps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToolsForSE/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/toolsForSE/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToolsForSE/cloudDisk.py" beforeDir="false" afterPath="$PROJECT_DIR$/toolsForSE/cloudDisk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToolsForSE/cloudDiskSnapShot.py" beforeDir="false" afterPath="$PROJECT_DIR$/toolsForSE/snapShot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToolsForSE/cloudPoolList.py" beforeDir="false" afterPath="$PROJECT_DIR$/toolsForSE/cloudPoolList.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToolsForSE/dataCreate.py" beforeDir="false" afterPath="$PROJECT_DIR$/toolsForSE/dataCreate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToolsForSE/dataDelete.py" beforeDir="false" afterPath="$PROJECT_DIR$/toolsForSE/dataDelete.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToolsForSE/objectShare.py" beforeDir="false" afterPath="$PROJECT_DIR$/toolsForSE/objectShare.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToolsForSE/service.py" beforeDir="false" afterPath="$PROJECT_DIR$/toolsForSE/service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToolsForSE/share.py" beforeDir="false" afterPath="$PROJECT_DIR$/toolsForSE/share.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToolsForSE/userAndGroup.py" beforeDir="false" afterPath="$PROJECT_DIR$/toolsForSE/userAndGroup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datafiles/storagePoolMagData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/datafiles/storagePoolMagData.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ssh_linux.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PanaCubeCommon.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PanaCubeCommon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt/getCloudDiskList.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt/getCloudDiskList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt/getProjectslList.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt/getProjectslList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt/getStoragePool.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt/getStoragePool.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt/getStoragePoolList.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt/getStoragePoolList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt/getStorageRemain.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt/getStorageRemain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt/getSystemQuotas.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt/getSystemQuotas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt/putStoragePools.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt/putStoragePools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/toolsForSE/userAndGroup.py" beforeDir="false" afterPath="$PROJECT_DIR$/toolsForSE/userAndGroup.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,21 +106,21 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Projects\PanaCube4\tests\testsuit" />
+      <recent name="F:\Projects\PanaCube4\tests\testcase\intellengentStorage" />
+      <recent name="E:\0PanaCubeProject\Tests\StorageEngine\Overview" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\GitProject\PanaCube4\Panacube4.0_API_Test\tests\testcase\intellengentStorage\storagePoolMgt" />
       <recent name="E:\0PanaCubeProject\Lib" />
       <recent name="E:\0PanaCubeProject\Tests\StorageEngine" />
       <recent name="E:\0PanaCubeProject\Datafiles" />
       <recent name="E:\0PanaCubeProject\Tests" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Projects\PanaCube4\tests\testsuit" />
-      <recent name="F:\Projects\PanaCube4\tests\testcase\intellengentStorage" />
-      <recent name="E:\0PanaCubeProject\Tests\StorageEngine\Overview" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -72,8 +135,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.dataGenerate">
-    <configuration name="Snaps" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.D">
+    <configuration name="D" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PanaCubeProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -81,11 +144,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ToolsForSE" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ToolsForSE/Snaps.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt/D.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -94,49 +157,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="cloudDisk" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PanaCubeProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ToolsForSE" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ToolsForSE/cloudDisk.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="dataGenerate" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PanaCubeProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/testcase/intellengentStorage/dataManage" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/testcase/intellengentStorage/dataManage/dataGenerate.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="linuxXshell" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="PanaCubeCommon" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PanaCubeProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -148,7 +169,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lib/linuxXshell.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lib/PanaCubeCommon.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -157,34 +178,58 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="share" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pytest for getSnapsList.getSnapsList" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PanaCubeProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ToolsForSE" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ToolsForSE/share.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;getSnapsList.getSnapsList&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for tests.testcase.intellengentStorage.storagePoolMgt.getFlowMonitor_notDone.getFlowMonitor" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="PanaCubeProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.testcase.intellengentStorage.storagePoolMgt.getFlowMonitor_notDone.getFlowMonitor&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in getMonitorInfo.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="PanaCubeProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/testcase/intellengentStorage/storagePoolMgt/getMonitorInfo.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.dataGenerate" />
-        <item itemvalue="Python.Snaps" />
-        <item itemvalue="Python.share" />
-        <item itemvalue="Python.linuxXshell" />
-        <item itemvalue="Python.cloudDisk" />
+        <item itemvalue="Python.D" />
+        <item itemvalue="Python tests.pytest for tests.testcase.intellengentStorage.storagePoolMgt.getFlowMonitor_notDone.getFlowMonitor" />
+        <item itemvalue="Python.PanaCubeCommon" />
+        <item itemvalue="Python tests.pytest for getSnapsList.getSnapsList" />
+        <item itemvalue="Python tests.pytest in getMonitorInfo.py" />
       </list>
     </recent_temporary>
   </component>
@@ -318,7 +363,70 @@
       <option name="project" value="LOCAL" />
       <updated>1636961125563</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="更新toolsForSE">
+      <created>1636970562620</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1636970562620</updated>
+    </task>
+    <task id="LOCAL-00019" summary="新增PanacubeCommonQuery文件">
+      <created>1637121036812</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1637121036812</updated>
+    </task>
+    <task id="LOCAL-00020" summary="新增getStoragePool接口">
+      <created>1638434749747</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1638434749747</updated>
+    </task>
+    <task id="LOCAL-00021" summary="更新Config.py">
+      <created>1638434956891</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1638434956891</updated>
+    </task>
+    <task id="LOCAL-00022" summary="新增getStorageRemain, getSystemQuotas,putStoragePools接口用例">
+      <created>1638439858954</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1638439858954</updated>
+    </task>
+    <task id="LOCAL-00023" summary="更新测试数据">
+      <created>1638439898551</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1638439898551</updated>
+    </task>
+    <task id="LOCAL-00024" summary="更新备注">
+      <created>1638441211800</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1638441211800</updated>
+    </task>
+    <task id="LOCAL-00025" summary="新增">
+      <created>1638526979692</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1638526979692</updated>
+    </task>
+    <task id="LOCAL-00026" summary="新增getCloudDiskList, getMonitoreInfo,getSnapsList接口">
+      <created>1638527044807</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1638527044807</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -347,7 +455,16 @@
     <MESSAGE value="增加云硬盘相关操作脚本" />
     <MESSAGE value="增加getProjectList接口脚本" />
     <MESSAGE value="增加共享创建与删除脚本" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加共享创建与删除脚本" />
+    <MESSAGE value="更新toolsForSE" />
+    <MESSAGE value="新增PanacubeCommonQuery文件" />
+    <MESSAGE value="新增getStoragePool接口" />
+    <MESSAGE value="更新Config.py" />
+    <MESSAGE value="新增getStorageRemain, getSystemQuotas,putStoragePools接口用例" />
+    <MESSAGE value="更新测试数据" />
+    <MESSAGE value="更新备注" />
+    <MESSAGE value="新增" />
+    <MESSAGE value="新增getCloudDiskList, getMonitoreInfo,getSnapsList接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增getCloudDiskList, getMonitoreInfo,getSnapsList接口" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

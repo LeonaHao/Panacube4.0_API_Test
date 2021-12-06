@@ -1,0 +1,2 @@
+2021-11-17 11:13:02,740 - root - INFO - the sql is :SELECT int(sum(cpu_limit)) as cpuUse, int(sum(memory_limit)/1024) as memUse, int(sum(file_store_alloc)/1024) as storageUse from cloud_pool;
+2021-11-17 11:13:02,741 - root - INFO - the params is : ()

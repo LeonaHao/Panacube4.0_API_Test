@@ -1,0 +1,2 @@
+2021-11-17 10:47:29,790 - root - INFO - the sql is :select id，name, status,cpu_limit,memory_limit, storage_limit, gpu_limit, file_store_id,file_store_alloc, file_store_acutal from cloud_pool;
+2021-11-17 10:47:29,791 - root - INFO - the params is : ()

@@ -1,0 +1,29 @@
+2021-12-02 16:13:09,085 - root - INFO - the sql is : select id,name from cloud_pool WHERE type=1 order by create_time desc limit 1;
+2021-12-02 16:13:09,086 - root - INFO - the params is : ()
+2021-12-02 16:13:09,087 - root - INFO - the result data is :{'id': 'f9d31e23e30c41b1a42d53ef95c8dec6', 'name': 'LeonaHashPool'}
+2021-12-02 16:13:09,211 - root - INFO - **********************************************开始setupClass，进行登录**********************************************
+2021-12-02 16:13:09,505 - root - INFO - ********************************************************************************
+2021-12-02 16:13:09,505 - root - INFO - ****************获取业务池列表接口开始****************
+2021-12-02 16:13:09,519 - root - INFO - the sql is : select id,name from cloud_pool WHERE type=1 order by create_time desc limit 1;
+2021-12-02 16:13:09,520 - root - INFO - the params is : ()
+2021-12-02 16:13:09,522 - root - INFO - the result data is :{'id': 'f9d31e23e30c41b1a42d53ef95c8dec6', 'name': 'LeonaHashPool'}
+2021-12-02 16:13:09,526 - root - INFO - the sql is : select id,name from cloud_pool WHERE type=1 order by create_time desc limit 1;
+2021-12-02 16:13:09,529 - root - INFO - the params is : ()
+2021-12-02 16:13:09,530 - root - INFO - the result data is :{'id': 'f9d31e23e30c41b1a42d53ef95c8dec6', 'name': 'LeonaHashPool'}
+2021-12-02 16:13:09,531 - root - INFO - *******测试案例名称： TestCase001_查询业务池详情信息 执行开始********
+2021-12-02 16:13:09,531 - root - INFO - *******测试数据： {}
+2021-12-02 16:13:11,304 - root - INFO - *******返回数据： {'code': 0, 'message': 'success', 'data': [{'id': 'f9d31e23e30c41b1a42d53ef95c8dec6', 'pool_name': 'LeonaHashPool', 'pool_status': 0, 'create_time': '2021-11-26 11:46:39', 'contain_info': {'file_volume_size': 10240, 'true_volume_size': 10240, 'volume_used_size': 10240, 'utilization_rate': 100.0}, 'story_limit': 10, 'volume_type': 0, 'size': 6.0, 'type': 1, 'disperse_data': None, 'redundancy_data': None, 'brick_number': 5, 'copy_number': None, 'pg_number': None}], 'total': 1}
+2021-12-02 16:13:11,305 - root - INFO - ********************************************************************************
+2021-12-02 16:13:11,356 - root - INFO - ********************************************************************************
+2021-12-02 16:13:11,357 - root - INFO - ****************获取业务池列表接口开始****************
+2021-12-02 16:13:11,371 - root - INFO - the sql is : select id,name from cloud_pool WHERE type=1 order by create_time desc limit 1;
+2021-12-02 16:13:11,372 - root - INFO - the params is : ()
+2021-12-02 16:13:11,373 - root - INFO - the result data is :{'id': 'f9d31e23e30c41b1a42d53ef95c8dec6', 'name': 'LeonaHashPool'}
+2021-12-02 16:13:11,387 - root - INFO - the sql is : select id,name from cloud_pool WHERE type=1 order by create_time desc limit 1;
+2021-12-02 16:13:11,388 - root - INFO - the params is : ()
+2021-12-02 16:13:11,389 - root - INFO - the result data is :{'id': 'f9d31e23e30c41b1a42d53ef95c8dec6', 'name': 'LeonaHashPool'}
+2021-12-02 16:13:11,390 - root - INFO - *******测试案例名称： TestCase002_查询业务池详情信息-缺少token 执行开始********
+2021-12-02 16:13:11,390 - root - INFO - *******测试数据： {}
+2021-12-02 16:13:11,398 - root - INFO - *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+2021-12-02 16:13:11,399 - root - INFO - ********************************************************************************
+2021-12-02 16:13:11,436 - root - INFO - **********************************************完成teardown class，退出登录**********************************************

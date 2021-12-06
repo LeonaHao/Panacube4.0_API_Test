@@ -1,0 +1,3 @@
+2021-11-17 11:41:37,822 - root - INFO - the sql is :SELECT location, sum(size) from cloud_instance GROUP BY location;
+2021-11-17 11:41:37,823 - root - INFO - the params is : ()
+2021-11-17 11:41:37,824 - root - INFO - the result data is :[{'location': 'node-1', 'sum(size)': Decimal('0')}, {'location': 'node-2', 'sum(size)': Decimal('0')}, {'location': 'node-3', 'sum(size)': Decimal('0')}]

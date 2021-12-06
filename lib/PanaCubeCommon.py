@@ -40,6 +40,8 @@ def paramCombine(**kwargs):
     return a[0:len(a) - 1]
 
 
+paramCombine()
+
 
 
 

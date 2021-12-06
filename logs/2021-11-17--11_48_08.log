@@ -1,0 +1,3 @@
+2021-11-17 11:48:08,595 - root - INFO - the sql is : SELECT sum(d.size)/cp.file_store_alloc as defaultPoolUsage from disk d INNER JOIN cloud_pool cp ON d.pool_id=cp.id WHERE cp.type=0;
+2021-11-17 11:48:08,596 - root - INFO - the params is : ()
+2021-11-17 11:48:08,598 - root - INFO - the result data is :{'defaultPoolUsage': None}

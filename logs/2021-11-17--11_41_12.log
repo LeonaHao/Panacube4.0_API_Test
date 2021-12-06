@@ -1,0 +1,2 @@
+2021-11-17 11:41:12,347 - root - INFO - the sql is :SELECT location, sum(size) from cloud_instance GROUP BY location;)
+2021-11-17 11:41:12,348 - root - INFO - the params is : ()

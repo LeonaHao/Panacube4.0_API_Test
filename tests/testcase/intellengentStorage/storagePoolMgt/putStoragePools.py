@@ -14,12 +14,12 @@ from lib.log import logger
 
 
 """
-获取智能存储》存储池管理》系统配额信息
+获取智能存储》存储池管理》配置业务池
 """
 
 
 class putStoragePools(unittest.TestCase):
-    """获取智能存储》概况中的存储信息"""
+    """更新智能存储》存储池管理》配置业务池信息"""
     @classmethod
     def setUpClass(cls) -> None:
         logger.info("**********************************************开始setupClass，进行登录**********************************************")

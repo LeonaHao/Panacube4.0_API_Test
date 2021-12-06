@@ -175,7 +175,7 @@ def delUserGroup(projectId,projectName):
 
 
 
-# createUser("5ae68febc398443190a87057c6966fd4","ceshi",2)  #createUser(projectId,projectName,num)
+createUser("5ae68febc398443190a87057c6966fd4","ceshi",2)  #createUser(projectId,projectName,num)
 # batchCreateUser(15,"5ae68febc398443190a87057c6966fd4","ceshi",1)    #batchCreateUser(n, projectId,projectName,num)
 # createUserGroup(2)       #createUserGroup(num)
 # batchCreateUserGroup(10,13)   #batchCreateUserGroup(n, num)

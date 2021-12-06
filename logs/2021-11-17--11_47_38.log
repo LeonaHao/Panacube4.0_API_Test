@@ -1,0 +1,2 @@
+2021-11-17 11:47:38,619 - root - INFO - the sql is : SELECT sum(d.size)/cp.file_store_alloc ad defaultPoolUsage from disk d INNER JOIN cloud_pool cp ON d.pool_id=cp.id WHERE cp.type=0;
+2021-11-17 11:47:38,620 - root - INFO - the params is : ()
