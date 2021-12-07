@@ -68,6 +68,9 @@ dataDiskSnapshot = basePanaCubeUrl + 'storage/snapshots/file'
 batchDeleteSnapshot = basePanaCubeUrl + 'storage/snapshots/batch-delete/'
 '''智能存储》块存储》云硬盘》加载的云硬盘'''
 attachCDInfo = basePanaCubeUrl + 'storage/detach-volumes/'
+'''智能存储》块存储》云硬盘》强制删除云硬盘'''
+forceDelCD = basePanaCubeUrl + '/storage/volumes/force-delete'
+
 #
 #*********************************文件存储*******************************************
 '''智能存储》文件存储》文件共享'''

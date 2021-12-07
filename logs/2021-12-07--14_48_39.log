@@ -1,0 +1,21 @@
+2021-12-07 14:48:39,190 - root - INFO - **********************************************开始setupClass，进行登录**********************************************
+2021-12-07 14:48:39,513 - root - INFO - the sql is : select d.id as diskId, d.name as diskName, d.size as diskSize, d.status as diskStatus,             i.id as vmId, i.name as vmName, i.status as vmStatus, p.id as projectId, p.name as projectName              from  disk d LEFT JOIN cloud_instance i on i.project_id=d.pool_id INNER JOIN cloud_pool p on p.id=d.pool_id           where i.status in (1,3) and d.store_type=0 and d.status=1 ORDER BY d.create_time desc limit 1;
+2021-12-07 14:48:39,516 - root - INFO - the params is : ()
+2021-12-07 14:48:39,520 - root - INFO - the result data is :{'diskId': '70b9fd1d-acb5-4fba-b71c-7b71ad3a14c9', 'diskName': 'YYD4Attach', 'diskSize': 2048, 'diskStatus': 1, 'vmId': 'ins-8d228d8d402b4df282f3fb85bc026c48', 'vmName': 'LC6', 'vmStatus': 1, 'projectId': 'ddac080c671b473e885714538fd1ed6e', 'projectName': 'LeonaTestPool1125'}
+2021-12-07 14:48:39,522 - root - INFO - ********************************************************************************
+2021-12-07 14:48:39,523 - root - INFO - ****************加载数据盘列表接口开始****************
+2021-12-07 14:48:39,524 - root - INFO - *******测试案例名称： TestCase001_加载数据盘 执行开始********
+2021-12-07 14:48:39,525 - root - INFO - *******测试数据： {'volume': '70b9fd1d-acb5-4fba-b71c-7b71ad3a14c9', 'action': 'attach', 'path': '/mnt/test_YYD4Attach', 'instance': ['ins-8d228d8d402b4df282f3fb85bc026c48'], 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+2021-12-07 14:48:40,317 - root - INFO - *******返回数据： {'code': 0, 'message': 'success', 'data': None}
+2021-12-07 14:48:40,317 - root - INFO - *******测试案例名称： TestCase001_加载数据盘 执行完毕********
+2021-12-07 14:48:40,318 - root - INFO - ****************加载数据盘列表接口结束****************
+2021-12-07 14:48:40,318 - root - INFO - ********************************************************************************
+2021-12-07 14:48:40,323 - root - INFO - ********************************************************************************
+2021-12-07 14:48:40,323 - root - INFO - ****************加载数据盘列表接口开始****************
+2021-12-07 14:48:40,324 - root - INFO - *******测试案例名称： TestCase002_搜索数据盘-缺少token 执行开始********
+2021-12-07 14:48:40,324 - root - INFO - *******测试数据： {'volume': '70b9fd1d-acb5-4fba-b71c-7b71ad3a14c9', 'path': '/mnt/test_YYD4Attach', 'instance': ['ins-8d228d8d402b4df282f3fb85bc026c48'], 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+2021-12-07 14:48:40,338 - root - INFO - *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+2021-12-07 14:48:40,339 - root - INFO - *******测试案例名称： TestCase002_搜索数据盘-缺少token 执行完毕********
+2021-12-07 14:48:40,340 - root - INFO - ****************加载数据盘列表接口结束****************
+2021-12-07 14:48:40,340 - root - INFO - ********************************************************************************
+2021-12-07 14:48:40,368 - root - INFO - **********************************************完成teardown class，退出登录**********************************************

@@ -46,7 +46,7 @@ def createCloudDisk(num,projectId, projectName):
         print(e)
 
 '''批量创建云硬盘'''
-def batchCreateCloudDisk(n, num, projectId,projectName,):
+def batchCreateCloudDisk(n, num, projectId,projectName):
     for i in range(n):
         createCloudDisk(num,projectId,projectName)
         num = num + 1

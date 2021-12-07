@@ -68,6 +68,15 @@ def getNonDefaultPool():
     return  res['id'],res['name'],res['storage_limit']
 
 
+#获取可加载的数据盘信息
+def getAttachableDisk():
+    sql = 'select d.id as diskId, d.name as diskName, d.size as diskSize, d.status as diskStatus,\
+             i.id as vmId, i.name as vmName, i.status as vmStatus, p.id as projectId, p.name as projectName \
+             from  disk d LEFT JOIN cloud_instance i on i.project_id=d.pool_id INNER JOIN cloud_pool p on p.id=d.pool_id\
+           where i.status in (1,3) and d.store_type=0 and d.status=1 ORDER BY d.create_time desc limit 1;'
+    param = ()
+    res= MySQLHelper('panacube').get_one(sql,param)
+    return  res
 
 # getVolumeId()
 # matchVolume("192.168.5.174",22, "root","Admin@9000")
@@ -77,3 +86,4 @@ def getNonDefaultPool():
 # getNonDefaultPoolUsage('LeonaTestPool')
 # getDefaultPoolUsage()
 # getNonDefaultPool()
+# getAttachableDisk()
