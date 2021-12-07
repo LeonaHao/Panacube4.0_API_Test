@@ -1,26 +1,24 @@
 # -*- coding: utf-8 -*-
-# @Time: 2021/12/03 10:46
+# @Time: 2021/12/07 11:45
 # @Author: Leona
-# @File: getFlowMonitor_notDone.py
+# @File: searchDataDisk.py
 
 import unittest
 import requests
 import json
-import datetime
-from configs.urlConfigs import storageFlowMonitor,logoutUrl
+from configs.urlConfigs import cloudDisk,logoutUrl
 from lib.PanaCubeCommon import login
-from lib.PanacubeCommonQuery import getNonDefaultPool
 from lib.generateTestCases import __generateTestCases
 from lib.log import logger
 
 
 """
-获取智能存储》存储池管理》存储池监控信息
+查询智能存储》云硬盘管理》数据统盘信息
 """
 
 
-class getFlowMonitor(unittest.TestCase):
-    """获取智能存储》存储池管理》管理》存储池监控信息"""
+class searchDataDisk(unittest.TestCase):
+    """查询智能存储》云硬盘管理》数据统盘信息"""
     @classmethod
     def setUpClass(cls) -> None:
         logger.info("**********************************************开始setupClass，进行登录**********************************************")
@@ -31,35 +29,27 @@ class getFlowMonitor(unittest.TestCase):
         logger.info("*" * 80)
 
     def getTest(self, tx):
-        logger.info("****************获取存储流量监控接口开始****************")
+        logger.info("****************搜索数据盘接口开始****************")
+
         headers ={'Content-Type':'application/json',
                   'Authorization': token
                    }
+        reqUrl = cloudDisk + '?page=1&size=10&search_field=name&search=data&info=data'
         caseNum = tx['test_num']
         caseName = tx['test_name']
         code = tx['code']
-        msg = tx ['error_msg']
         flag = tx['flag']
         logger.info("*******测试案例名称： TestCase" + caseNum + "_" + caseName + " 执行开始********")
-        reqUrl = storageFlowMonitor
         reqParam = json.JSONDecoder().decode(tx['params'])
-        reqParam['end_time'] = datetime.datetime.now()
-        #开始时间为当前时间往前推30分钟
-        reqParam['start_time'] = reqParam['end_time'] - datetime.timedelta(minutes=30)
         logger.info("*******测试数据： " + str(reqParam))
-        projectInfo = getNonDefaultPool()
-        projectId = projectInfo[0]
         if flag == 1:
             headers['Authorization'] = ''
-        headers['PROJECT-ID'] = projectId
         r = requests.get(url=reqUrl, headers=headers,data=reqParam)
         result = r.json()
         logger.info("*******返回数据： " + str(result))
         self.assertEqual(result['code'], code)
-        if code!= 0:
-            self.assertEqual(result['message'], msg)
         logger.info("*******测试案例名称： TestCase" + caseNum + "_" + caseName + " 执行完毕********")
-        logger.info("****************获取存储流量监控接口结束****************")
+        logger.info("****************搜索数据盘接口结束****************")
 
     @staticmethod
     def getTestFunc(arg1):
@@ -80,7 +70,7 @@ class getFlowMonitor(unittest.TestCase):
         if resJson['code'] == 0:
             logger.info("**********************************************完成teardown class，退出登录**********************************************")
 
-__generateTestCases(getFlowMonitor, "getFlowMonitor", "storagePoolMagData.xlsx", "getFlowMonitor")
+__generateTestCases(searchDataDisk, "searchDataDisk", "cloudDiskMagData.xlsx", "searchDataDisk")
 
 if __name__ == '__main__':
     unittest.main()

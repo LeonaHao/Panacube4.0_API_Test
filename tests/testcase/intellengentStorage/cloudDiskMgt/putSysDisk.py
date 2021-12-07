@@ -44,17 +44,18 @@ class putSysDisk(unittest.TestCase):
         if len(result1['data']) != 0:
             sysDiskInfo = result1['data'][0]
             sysDiskId = sysDiskInfo['id']
+            sysDiskName = sysDiskInfo['name']
             sysDisksize = sysDiskInfo['size']
             sysDisktype = sysDiskInfo['disk_type']
             sysDiskStatus = sysDiskInfo['disk_status']
             sysDiskCreTime = sysDiskInfo['created_time']
+            sysDiskDes = sysDiskInfo['description']
             sysDiskSnap = sysDiskInfo['is_snapshoted']
             projectName = sysDiskInfo['project_name']
             projectId = sysDiskInfo['project_id']
             poolName = sysDiskInfo['pool_name']
 
             '''执行更新系统盘的测试用例'''
-
             caseNum = tx['test_num']
             caseName = tx['test_name']
             code = tx['code']
@@ -74,6 +75,9 @@ class putSysDisk(unittest.TestCase):
             logger.info("*******测试数据： " + str(reqParam))
             if flag == 1:
                 headers['Authorization'] = ''
+            if flag == 2:
+                reqParam['name'] = sysDiskName
+                reqParam['description'] = sysDiskDes
             r = requests.put(url=reqUrl + '/'+ str(reqParam['id']) , headers=headers,json=reqParam)
             result = r.json()
             logger.info("*******返回数据： " + str(result))

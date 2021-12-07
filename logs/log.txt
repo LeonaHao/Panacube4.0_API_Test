@@ -6757,3 +6757,1332 @@
 21-12-06 18:00 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
 21-12-06 18:00 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/account/logout HTTP/1.1" 200 42
 21-12-06 18:00 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+21-12-07 09:37 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+21-12-07 09:37 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+21-12-07 09:37 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+21-12-07 09:37 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+21-12-07 09:37 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+21-12-07 09:37 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+21-12-07 09:37 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+21-12-07 09:37 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+21-12-07 09:37 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+21-12-07 09:37 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+21-12-07 09:37 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+21-12-07 09:37 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+21-12-07 09:37 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+21-12-07 09:37 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+21-12-07 09:37 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+21-12-07 09:37 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+21-12-07 09:37 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+21-12-07 09:37 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+21-12-07 09:37 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 09:37 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+21-12-07 09:37 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+21-12-07 09:37 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+21-12-07 09:37 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+21-12-07 09:37 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 09:37 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+21-12-07 09:37 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+21-12-07 09:37 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+21-12-07 09:37 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+21-12-07 09:37 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+21-12-07 09:37 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+21-12-07 09:37 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+21-12-07 09:37 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+21-12-07 09:37 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+21-12-07 09:37 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+21-12-07 09:37 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 09:37 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 09:37 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+21-12-07 09:37 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+21-12-07 09:37 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 09:37 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+21-12-07 09:37 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 09:37 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/account/login HTTP/1.1" 200 935
+21-12-07 09:37 root         INFO     ********************************************************************************
+21-12-07 09:37 root         INFO     ****************获取存储流量监控接口开始****************
+21-12-07 09:37 root         INFO     *******测试案例名称： TestCase001_查看存储流量监控信息 执行开始********
+21-12-07 09:37 root         INFO     *******测试数据： {'start_time': 1638497102849, 'end_time': 1638498902849}
+21-12-07 09:37 root         INFO     the sql is : select id,name,storage_limit from cloud_pool WHERE type=1 order by create_time desc limit 1;
+21-12-07 09:37 root         INFO     the params is : ()
+21-12-07 09:37 root         INFO     the result data is :{'id': '461d48b474aa49edb563cf45ee769639', 'name': 'shepg_test', 'storage_limit': 10}
+21-12-07 09:37 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 09:37 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/pools/monitor/flow HTTP/1.1" 500 27
+21-12-07 09:37 root         INFO     ********************************************************************************
+21-12-07 09:37 root         INFO     ********************************************************************************
+21-12-07 09:37 root         INFO     ****************获取存储流量监控接口开始****************
+21-12-07 09:37 root         INFO     *******测试案例名称： TestCase002_查看存储流量监控信息-缺少token 执行开始********
+21-12-07 09:37 root         INFO     *******测试数据： {}
+21-12-07 09:37 root         INFO     the sql is : select id,name,storage_limit from cloud_pool WHERE type=1 order by create_time desc limit 1;
+21-12-07 09:37 root         INFO     the params is : ()
+21-12-07 09:37 root         INFO     the result data is :{'id': '461d48b474aa49edb563cf45ee769639', 'name': 'shepg_test', 'storage_limit': 10}
+21-12-07 09:37 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 09:37 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/pools/monitor/flow HTTP/1.1" 200 91
+21-12-07 09:37 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+21-12-07 09:37 root         INFO     *******测试案例名称： TestCase002_查看存储流量监控信息-缺少token 执行完毕********
+21-12-07 09:37 root         INFO     ****************获取存储流量监控接口结束****************
+21-12-07 09:37 root         INFO     ********************************************************************************
+21-12-07 09:37 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 09:37 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/account/logout HTTP/1.1" 200 42
+21-12-07 09:37 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+21-12-07 09:41 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+21-12-07 09:41 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+21-12-07 09:41 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+21-12-07 09:41 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+21-12-07 09:41 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+21-12-07 09:41 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+21-12-07 09:41 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+21-12-07 09:41 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+21-12-07 09:41 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+21-12-07 09:41 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+21-12-07 09:41 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+21-12-07 09:41 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+21-12-07 09:41 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+21-12-07 09:41 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+21-12-07 09:41 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+21-12-07 09:41 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+21-12-07 09:41 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+21-12-07 09:41 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+21-12-07 09:41 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 09:41 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+21-12-07 09:41 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+21-12-07 09:41 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+21-12-07 09:41 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+21-12-07 09:41 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 09:41 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+21-12-07 09:41 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+21-12-07 09:41 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+21-12-07 09:41 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+21-12-07 09:41 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+21-12-07 09:41 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+21-12-07 09:41 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+21-12-07 09:41 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+21-12-07 09:41 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+21-12-07 09:41 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+21-12-07 09:41 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 09:41 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 09:41 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+21-12-07 09:41 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+21-12-07 09:41 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 09:41 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+21-12-07 09:41 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 09:41 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/account/login HTTP/1.1" 200 935
+21-12-07 09:41 root         INFO     ********************************************************************************
+21-12-07 09:41 root         INFO     ****************获取存储流量监控接口开始****************
+21-12-07 09:41 root         INFO     *******测试案例名称： TestCase001_查看存储流量监控信息 执行开始********
+21-12-07 09:41 root         INFO     *******测试数据： {'start_time': 1638497102849, 'end_time': 1638498902849}
+21-12-07 09:41 root         INFO     the sql is : select id,name,storage_limit from cloud_pool WHERE type=1 order by create_time desc limit 1;
+21-12-07 09:41 root         INFO     the params is : ()
+21-12-07 09:41 root         INFO     the result data is :{'id': '461d48b474aa49edb563cf45ee769639', 'name': 'shepg_test', 'storage_limit': 10}
+21-12-07 09:41 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 09:41 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/pools/monitor/flow?start_time=1638497102849&end_time=1638498902849 HTTP/1.1" 200 40
+21-12-07 09:41 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': []}
+21-12-07 09:41 root         INFO     *******测试案例名称： TestCase001_查看存储流量监控信息 执行完毕********
+21-12-07 09:41 root         INFO     ****************获取存储流量监控接口结束****************
+21-12-07 09:41 root         INFO     ********************************************************************************
+21-12-07 09:41 root         INFO     ********************************************************************************
+21-12-07 09:41 root         INFO     ****************获取存储流量监控接口开始****************
+21-12-07 09:41 root         INFO     *******测试案例名称： TestCase002_查看存储流量监控信息-缺少token 执行开始********
+21-12-07 09:41 root         INFO     *******测试数据： {}
+21-12-07 09:41 root         INFO     the sql is : select id,name,storage_limit from cloud_pool WHERE type=1 order by create_time desc limit 1;
+21-12-07 09:41 root         INFO     the params is : ()
+21-12-07 09:41 root         INFO     the result data is :{'id': '461d48b474aa49edb563cf45ee769639', 'name': 'shepg_test', 'storage_limit': 10}
+21-12-07 09:41 root         INFO     ********************************************************************************
+21-12-07 09:41 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 09:41 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/account/logout HTTP/1.1" 200 42
+21-12-07 09:41 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+21-12-07 09:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+21-12-07 09:43 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+21-12-07 09:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+21-12-07 09:43 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+21-12-07 09:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+21-12-07 09:43 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+21-12-07 09:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+21-12-07 09:43 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+21-12-07 09:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+21-12-07 09:43 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+21-12-07 09:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+21-12-07 09:43 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+21-12-07 09:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+21-12-07 09:43 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+21-12-07 09:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+21-12-07 09:43 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+21-12-07 09:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+21-12-07 09:43 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+21-12-07 09:43 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 09:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+21-12-07 09:43 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+21-12-07 09:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+21-12-07 09:43 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+21-12-07 09:43 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 09:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+21-12-07 09:43 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+21-12-07 09:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+21-12-07 09:43 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+21-12-07 09:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+21-12-07 09:43 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+21-12-07 09:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+21-12-07 09:43 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+21-12-07 09:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+21-12-07 09:43 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+21-12-07 09:43 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 09:43 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 09:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+21-12-07 09:43 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+21-12-07 09:43 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 09:43 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+21-12-07 09:43 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 09:43 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/account/login HTTP/1.1" 200 935
+21-12-07 09:43 root         INFO     ********************************************************************************
+21-12-07 09:43 root         INFO     ****************获取存储流量监控接口开始****************
+21-12-07 09:43 root         INFO     *******测试案例名称： TestCase001_查看存储流量监控信息 执行开始********
+21-12-07 09:43 root         INFO     *******测试数据： {'start_time': 1638497102849, 'end_time': 1638498902849}
+21-12-07 09:43 root         INFO     the sql is : select id,name,storage_limit from cloud_pool WHERE type=1 order by create_time desc limit 1;
+21-12-07 09:43 root         INFO     the params is : ()
+21-12-07 09:43 root         INFO     the result data is :{'id': '461d48b474aa49edb563cf45ee769639', 'name': 'shepg_test', 'storage_limit': 10}
+21-12-07 09:43 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 09:43 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/pools/monitor/flow?start_time=1638497102849&end_time=1638498902849 HTTP/1.1" 200 40
+21-12-07 09:43 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': []}
+21-12-07 09:43 root         INFO     *******测试案例名称： TestCase001_查看存储流量监控信息 执行完毕********
+21-12-07 09:43 root         INFO     ****************获取存储流量监控接口结束****************
+21-12-07 09:43 root         INFO     ********************************************************************************
+21-12-07 09:43 root         INFO     ********************************************************************************
+21-12-07 09:43 root         INFO     ****************获取存储流量监控接口开始****************
+21-12-07 09:43 root         INFO     *******测试案例名称： TestCase002_查看存储流量监控信息-缺少token 执行开始********
+21-12-07 09:43 root         INFO     *******测试数据： {}
+21-12-07 09:43 root         INFO     ********************************************************************************
+21-12-07 09:43 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 09:43 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/account/logout HTTP/1.1" 200 42
+21-12-07 09:43 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+21-12-07 09:44 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+21-12-07 09:44 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+21-12-07 09:44 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+21-12-07 09:44 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+21-12-07 09:44 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+21-12-07 09:44 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+21-12-07 09:44 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+21-12-07 09:44 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+21-12-07 09:44 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+21-12-07 09:44 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+21-12-07 09:44 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+21-12-07 09:44 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+21-12-07 09:44 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+21-12-07 09:44 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+21-12-07 09:44 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+21-12-07 09:44 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+21-12-07 09:44 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+21-12-07 09:44 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+21-12-07 09:44 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 09:44 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+21-12-07 09:44 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+21-12-07 09:44 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+21-12-07 09:44 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+21-12-07 09:44 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 09:44 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+21-12-07 09:44 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+21-12-07 09:44 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+21-12-07 09:44 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+21-12-07 09:44 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+21-12-07 09:44 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+21-12-07 09:44 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+21-12-07 09:44 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+21-12-07 09:44 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+21-12-07 09:44 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+21-12-07 09:44 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 09:44 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 09:44 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+21-12-07 09:44 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+21-12-07 09:44 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 09:44 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+21-12-07 09:44 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 09:44 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/account/login HTTP/1.1" 200 935
+21-12-07 09:44 root         INFO     ********************************************************************************
+21-12-07 09:44 root         INFO     ****************获取存储流量监控接口开始****************
+21-12-07 09:44 root         INFO     *******测试案例名称： TestCase001_查看存储流量监控信息 执行开始********
+21-12-07 09:44 root         INFO     *******测试数据： {'start_time': 1638497102849, 'end_time': 1638498902849}
+21-12-07 09:44 root         INFO     the sql is : select id,name,storage_limit from cloud_pool WHERE type=1 order by create_time desc limit 1;
+21-12-07 09:44 root         INFO     the params is : ()
+21-12-07 09:44 root         INFO     the result data is :{'id': '461d48b474aa49edb563cf45ee769639', 'name': 'shepg_test', 'storage_limit': 10}
+21-12-07 09:44 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 09:44 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/pools/monitor/flow?start_time=1638497102849&end_time=1638498902849 HTTP/1.1" 200 40
+21-12-07 09:44 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': []}
+21-12-07 09:44 root         INFO     *******测试案例名称： TestCase001_查看存储流量监控信息 执行完毕********
+21-12-07 09:44 root         INFO     ****************获取存储流量监控接口结束****************
+21-12-07 09:44 root         INFO     ********************************************************************************
+21-12-07 09:44 root         INFO     ********************************************************************************
+21-12-07 09:44 root         INFO     ****************获取存储流量监控接口开始****************
+21-12-07 09:44 root         INFO     *******测试案例名称： TestCase002_查看存储流量监控信息-缺少token 执行开始********
+21-12-07 09:44 root         INFO     *******测试数据： {'start_time': 1638497102849, 'end_time': 1638498902849}
+21-12-07 09:44 root         INFO     the sql is : select id,name,storage_limit from cloud_pool WHERE type=1 order by create_time desc limit 1;
+21-12-07 09:44 root         INFO     the params is : ()
+21-12-07 09:44 root         INFO     the result data is :{'id': '461d48b474aa49edb563cf45ee769639', 'name': 'shepg_test', 'storage_limit': 10}
+21-12-07 09:44 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 09:44 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/pools/monitor/flow?start_time=1638497102849&end_time=1638498902849 HTTP/1.1" 200 91
+21-12-07 09:44 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+21-12-07 09:44 root         INFO     *******测试案例名称： TestCase002_查看存储流量监控信息-缺少token 执行完毕********
+21-12-07 09:44 root         INFO     ****************获取存储流量监控接口结束****************
+21-12-07 09:44 root         INFO     ********************************************************************************
+21-12-07 09:44 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 09:44 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/account/logout HTTP/1.1" 200 42
+21-12-07 09:44 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+21-12-07 10:49 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+21-12-07 10:49 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+21-12-07 10:49 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+21-12-07 10:49 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+21-12-07 10:49 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+21-12-07 10:49 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+21-12-07 10:49 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+21-12-07 10:49 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+21-12-07 10:49 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+21-12-07 10:49 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+21-12-07 10:49 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+21-12-07 10:49 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+21-12-07 10:49 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+21-12-07 10:49 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+21-12-07 10:49 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+21-12-07 10:49 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+21-12-07 10:49 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+21-12-07 10:49 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+21-12-07 10:49 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 10:49 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+21-12-07 10:49 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+21-12-07 10:49 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+21-12-07 10:49 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+21-12-07 10:49 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 10:49 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+21-12-07 10:49 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+21-12-07 10:49 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+21-12-07 10:49 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+21-12-07 10:49 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+21-12-07 10:49 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+21-12-07 10:49 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+21-12-07 10:49 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+21-12-07 10:49 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+21-12-07 10:49 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+21-12-07 10:49 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 10:49 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 10:49 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+21-12-07 10:49 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+21-12-07 10:49 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 10:49 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+21-12-07 10:49 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 10:49 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/account/login HTTP/1.1" 200 935
+21-12-07 10:49 root         INFO     ********************************************************************************
+21-12-07 10:49 root         INFO     ****************获取存储流量监控接口开始****************
+21-12-07 10:49 root         INFO     *******测试案例名称： TestCase001_查看存储流量监控信息 执行开始********
+21-12-07 10:49 root         INFO     ********************************************************************************
+21-12-07 10:49 root         INFO     ********************************************************************************
+21-12-07 10:49 root         INFO     ****************获取存储流量监控接口开始****************
+21-12-07 10:49 root         INFO     *******测试案例名称： TestCase002_查看存储流量监控信息-缺少token 执行开始********
+21-12-07 10:49 root         INFO     ********************************************************************************
+21-12-07 10:49 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 10:49 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/account/logout HTTP/1.1" 200 42
+21-12-07 10:49 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+21-12-07 10:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+21-12-07 10:50 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+21-12-07 10:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+21-12-07 10:50 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+21-12-07 10:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+21-12-07 10:50 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+21-12-07 10:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+21-12-07 10:50 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+21-12-07 10:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+21-12-07 10:50 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+21-12-07 10:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+21-12-07 10:50 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+21-12-07 10:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+21-12-07 10:50 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+21-12-07 10:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+21-12-07 10:50 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+21-12-07 10:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+21-12-07 10:50 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+21-12-07 10:50 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 10:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+21-12-07 10:50 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+21-12-07 10:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+21-12-07 10:50 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+21-12-07 10:50 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 10:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+21-12-07 10:50 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+21-12-07 10:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+21-12-07 10:50 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+21-12-07 10:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+21-12-07 10:50 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+21-12-07 10:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+21-12-07 10:50 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+21-12-07 10:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+21-12-07 10:50 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+21-12-07 10:50 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 10:50 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 10:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+21-12-07 10:50 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+21-12-07 10:50 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 10:50 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+21-12-07 10:50 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 10:50 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/account/login HTTP/1.1" 200 935
+21-12-07 10:50 root         INFO     ********************************************************************************
+21-12-07 10:50 root         INFO     ****************获取存储流量监控接口开始****************
+21-12-07 10:50 root         INFO     *******测试案例名称： TestCase001_查看存储流量监控信息 执行开始********
+21-12-07 10:50 root         INFO     ********************************************************************************
+21-12-07 10:50 root         INFO     ********************************************************************************
+21-12-07 10:50 root         INFO     ****************获取存储流量监控接口开始****************
+21-12-07 10:50 root         INFO     *******测试案例名称： TestCase002_查看存储流量监控信息-缺少token 执行开始********
+21-12-07 10:50 root         INFO     ********************************************************************************
+21-12-07 10:50 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 10:50 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/account/logout HTTP/1.1" 200 42
+21-12-07 10:50 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+21-12-07 10:51 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+21-12-07 10:51 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+21-12-07 10:51 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+21-12-07 10:51 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+21-12-07 10:51 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+21-12-07 10:51 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+21-12-07 10:51 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+21-12-07 10:51 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+21-12-07 10:51 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+21-12-07 10:51 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+21-12-07 10:51 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+21-12-07 10:51 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+21-12-07 10:51 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+21-12-07 10:51 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+21-12-07 10:51 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+21-12-07 10:51 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+21-12-07 10:51 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+21-12-07 10:51 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+21-12-07 10:51 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 10:51 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+21-12-07 10:51 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+21-12-07 10:51 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+21-12-07 10:51 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+21-12-07 10:51 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 10:51 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+21-12-07 10:51 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+21-12-07 10:51 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+21-12-07 10:51 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+21-12-07 10:51 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+21-12-07 10:51 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+21-12-07 10:51 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+21-12-07 10:51 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+21-12-07 10:51 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+21-12-07 10:51 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+21-12-07 10:51 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 10:51 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 10:51 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+21-12-07 10:51 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+21-12-07 10:51 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 10:51 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+21-12-07 10:51 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 10:51 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/account/login HTTP/1.1" 200 935
+21-12-07 10:51 root         INFO     ********************************************************************************
+21-12-07 10:51 root         INFO     ****************获取存储流量监控接口开始****************
+21-12-07 10:51 root         INFO     *******测试案例名称： TestCase001_查看存储流量监控信息 执行开始********
+21-12-07 10:51 root         INFO     *******测试数据： {'start_time': 1638843680000, 'end_time': 1638845480000}
+21-12-07 10:51 root         INFO     the sql is : select id,name,storage_limit from cloud_pool WHERE type=1 order by create_time desc limit 1;
+21-12-07 10:51 root         INFO     the params is : ()
+21-12-07 10:51 root         INFO     the result data is :{'id': '461d48b474aa49edb563cf45ee769639', 'name': 'shepg_test', 'storage_limit': 10}
+21-12-07 10:51 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 10:51 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/pools/monitor/flow?start_time=1638843680000&end_time=1638845480000 HTTP/1.1" 200 2053
+21-12-07 10:51 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': [{'time': '2021-12-07T02:21:00Z', 'read': 0.0, 'write': 0.0, 'total': 0.0}, {'time': '2021-12-07T02:22:00Z', 'read': 0.0, 'write': 0.0, 'total': 0.0}, {'time': '2021-12-07T02:23:00Z', 'read': 0.0, 'write': 0.0, 'total': 0.0}, {'time': '2021-12-07T02:24:00Z', 'read': 0.0, 'write': 0.01, 'total': 0.01}, {'time': '2021-12-07T02:25:00Z', 'read': 0.0, 'write': 0.0, 'total': 0.0}, {'time': '2021-12-07T02:26:00Z', 'read': 0.0, 'write': 0.0, 'total': 0.0}, {'time': '2021-12-07T02:27:00Z', 'read': 0.0, 'write': 0.0, 'total': 0.0}, {'time': '2021-12-07T02:28:00Z', 'read': 0.0, 'write': 0.0, 'total': 0.0}, {'time': '2021-12-07T02:29:00Z', 'read': 0.0, 'write': 0.0, 'total': 0.0}, {'time': '2021-12-07T02:30:00Z', 'read': 0.0, 'write': 0.0, 'total': 0.0}, {'time': '2021-12-07T02:31:00Z', 'read': 0.0, 'write': 0.0, 'total': 0.0}, {'time': '2021-12-07T02:32:00Z', 'read': 0.0, 'write': 0.0, 'total': 0.0}, {'time': '2021-12-07T02:33:00Z', 'read': 0.0, 'write': 0.0, 'total': 0.0}, {'time': '2021-12-07T02:34:00Z', 'read': 0.0, 'write': 0.0, 'total': 0.0}, {'time': '2021-12-07T02:35:00Z', 'read': 0.0, 'write': 0.0, 'total': 0.0}, {'time': '2021-12-07T02:36:00Z', 'read': 0.0, 'write': 0.0, 'total': 0.0}, {'time': '2021-12-07T02:37:00Z', 'read': 0.0, 'write': 0.0, 'total': 0.0}, {'time': '2021-12-07T02:38:00Z', 'read': 0.0, 'write': 0.0, 'total': 0.0}, {'time': '2021-12-07T02:39:00Z', 'read': 0.0, 'write': 0.0, 'total': 0.0}, {'time': '2021-12-07T02:40:00Z', 'read': 0.0, 'write': 0.0, 'total': 0.0}, {'time': '2021-12-07T02:41:00Z', 'read': 0.0, 'write': 0.0, 'total': 0.0}, {'time': '2021-12-07T02:42:00Z', 'read': 0.0, 'write': 0.0, 'total': 0.0}, {'time': '2021-12-07T02:43:00Z', 'read': 0.0, 'write': 0.0, 'total': 0.0}, {'time': '2021-12-07T02:44:00Z', 'read': 0.0, 'write': 0.0, 'total': 0.0}, {'time': '2021-12-07T02:45:00Z', 'read': 0.0, 'write': 0.0, 'total': 0.0}, {'time': '2021-12-07T02:46:00Z', 'read': 0.0, 'write': 0.0, 'total': 0.0}, {'time': '2021-12-07T02:47:00Z', 'read': 0.0, 'write': 0.0, 'total': 0.0}, {'time': '2021-12-07T02:48:00Z', 'read': 0.0, 'write': 0.0, 'total': 0.0}, {'time': '2021-12-07T02:49:00Z', 'read': 0.0, 'write': 0.01, 'total': 0.01}, {'time': '2021-12-07T02:50:00Z', 'read': 0.0, 'write': 0.0, 'total': 0.0}]}
+21-12-07 10:51 root         INFO     *******测试案例名称： TestCase001_查看存储流量监控信息 执行完毕********
+21-12-07 10:51 root         INFO     ****************获取存储流量监控接口结束****************
+21-12-07 10:51 root         INFO     ********************************************************************************
+21-12-07 10:51 root         INFO     ********************************************************************************
+21-12-07 10:51 root         INFO     ****************获取存储流量监控接口开始****************
+21-12-07 10:51 root         INFO     *******测试案例名称： TestCase002_查看存储流量监控信息-缺少token 执行开始********
+21-12-07 10:51 root         INFO     *******测试数据： {'start_time': 1638843680000, 'end_time': 1638845480000}
+21-12-07 10:51 root         INFO     the sql is : select id,name,storage_limit from cloud_pool WHERE type=1 order by create_time desc limit 1;
+21-12-07 10:51 root         INFO     the params is : ()
+21-12-07 10:51 root         INFO     the result data is :{'id': '461d48b474aa49edb563cf45ee769639', 'name': 'shepg_test', 'storage_limit': 10}
+21-12-07 10:51 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 10:51 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/pools/monitor/flow?start_time=1638843680000&end_time=1638845480000 HTTP/1.1" 200 91
+21-12-07 10:51 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+21-12-07 10:51 root         INFO     *******测试案例名称： TestCase002_查看存储流量监控信息-缺少token 执行完毕********
+21-12-07 10:51 root         INFO     ****************获取存储流量监控接口结束****************
+21-12-07 10:51 root         INFO     ********************************************************************************
+21-12-07 10:51 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 10:51 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/account/logout HTTP/1.1" 200 42
+21-12-07 10:51 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+21-12-07 11:24 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+21-12-07 11:24 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+21-12-07 11:24 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+21-12-07 11:24 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+21-12-07 11:24 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+21-12-07 11:24 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+21-12-07 11:24 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+21-12-07 11:24 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+21-12-07 11:24 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+21-12-07 11:24 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+21-12-07 11:24 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+21-12-07 11:24 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+21-12-07 11:24 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+21-12-07 11:24 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+21-12-07 11:24 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+21-12-07 11:24 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+21-12-07 11:24 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+21-12-07 11:24 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+21-12-07 11:24 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:24 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+21-12-07 11:24 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+21-12-07 11:24 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+21-12-07 11:24 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+21-12-07 11:24 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:24 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+21-12-07 11:24 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+21-12-07 11:24 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+21-12-07 11:24 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+21-12-07 11:24 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+21-12-07 11:24 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+21-12-07 11:24 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+21-12-07 11:24 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+21-12-07 11:24 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+21-12-07 11:24 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+21-12-07 11:24 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:24 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:24 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+21-12-07 11:24 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+21-12-07 11:24 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:24 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+21-12-07 11:24 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:24 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/account/login HTTP/1.1" 200 935
+21-12-07 11:24 root         INFO     ********************************************************************************
+21-12-07 11:24 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:24 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:24 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2891
+21-12-07 11:24 root         INFO     ********************************************************************************
+21-12-07 11:24 root         INFO     ********************************************************************************
+21-12-07 11:24 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:24 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:24 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2891
+21-12-07 11:24 root         INFO     ********************************************************************************
+21-12-07 11:24 root         INFO     ********************************************************************************
+21-12-07 11:24 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:24 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:24 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2891
+21-12-07 11:24 root         INFO     ********************************************************************************
+21-12-07 11:24 root         INFO     ********************************************************************************
+21-12-07 11:24 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:24 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:24 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2891
+21-12-07 11:24 root         INFO     ********************************************************************************
+21-12-07 11:24 root         INFO     ********************************************************************************
+21-12-07 11:24 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:24 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:24 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2891
+21-12-07 11:24 root         INFO     ********************************************************************************
+21-12-07 11:24 root         INFO     ********************************************************************************
+21-12-07 11:24 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:24 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:24 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2891
+21-12-07 11:24 root         INFO     ********************************************************************************
+21-12-07 11:24 root         INFO     ********************************************************************************
+21-12-07 11:24 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:24 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:24 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2891
+21-12-07 11:24 root         INFO     ********************************************************************************
+21-12-07 11:24 root         INFO     ********************************************************************************
+21-12-07 11:24 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:24 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:24 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2891
+21-12-07 11:24 root         INFO     ********************************************************************************
+21-12-07 11:24 root         INFO     ********************************************************************************
+21-12-07 11:24 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:24 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:24 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2891
+21-12-07 11:24 root         INFO     ********************************************************************************
+21-12-07 11:24 root         INFO     ********************************************************************************
+21-12-07 11:24 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:24 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:24 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2891
+21-12-07 11:24 root         INFO     ********************************************************************************
+21-12-07 11:24 root         INFO     ********************************************************************************
+21-12-07 11:24 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:24 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:24 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2891
+21-12-07 11:24 root         INFO     ********************************************************************************
+21-12-07 11:24 root         INFO     ********************************************************************************
+21-12-07 11:24 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:24 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:24 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2891
+21-12-07 11:24 root         INFO     ********************************************************************************
+21-12-07 11:24 root         INFO     ********************************************************************************
+21-12-07 11:24 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:24 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:24 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2891
+21-12-07 11:24 root         INFO     ********************************************************************************
+21-12-07 11:24 root         INFO     ********************************************************************************
+21-12-07 11:24 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:24 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:24 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2891
+21-12-07 11:24 root         INFO     ********************************************************************************
+21-12-07 11:24 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:24 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/account/logout HTTP/1.1" 200 42
+21-12-07 11:24 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+21-12-07 11:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+21-12-07 11:25 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+21-12-07 11:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+21-12-07 11:25 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+21-12-07 11:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+21-12-07 11:25 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+21-12-07 11:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+21-12-07 11:25 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+21-12-07 11:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+21-12-07 11:25 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+21-12-07 11:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+21-12-07 11:25 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+21-12-07 11:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+21-12-07 11:25 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+21-12-07 11:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+21-12-07 11:25 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+21-12-07 11:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+21-12-07 11:25 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+21-12-07 11:25 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+21-12-07 11:25 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+21-12-07 11:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+21-12-07 11:25 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+21-12-07 11:25 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+21-12-07 11:25 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+21-12-07 11:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+21-12-07 11:25 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+21-12-07 11:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+21-12-07 11:25 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+21-12-07 11:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+21-12-07 11:25 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+21-12-07 11:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+21-12-07 11:25 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+21-12-07 11:25 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:25 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+21-12-07 11:25 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+21-12-07 11:25 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:25 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/account/login HTTP/1.1" 200 935
+21-12-07 11:25 root         INFO     ********************************************************************************
+21-12-07 11:25 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2891
+21-12-07 11:25 root         INFO     *******测试案例名称： TestCase001_编辑系统盘-name为空 执行开始********
+21-12-07 11:25 root         INFO     *******测试数据： {'name': '', 'description': '编辑系统盘-name为空', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 91
+21-12-07 11:25 root         INFO     *******返回数据： {'code': 1001, 'message': '请求参数错误', 'data': None, 'level': 2}
+21-12-07 11:25 root         INFO     *******测试案例名称： TestCase001_编辑系统盘-name为空 执行完毕********
+21-12-07 11:25 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:25 root         INFO     ********************************************************************************
+21-12-07 11:25 root         INFO     ********************************************************************************
+21-12-07 11:25 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2891
+21-12-07 11:25 root         INFO     *******测试案例名称： TestCase002_编辑系统盘-name为特殊字符 执行开始********
+21-12-07 11:25 root         INFO     *******测试数据： {'name': '@￥@#%￥#%￥', 'description': '编辑系统盘-name为特殊字符', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 207
+21-12-07 11:25 root         INFO     *******返回数据： {'code': 214024, 'message': '云硬盘名称只能输入字母、数字、汉字、横线以及下划线', 'data': None, 'level': 3}
+21-12-07 11:25 root         INFO     *******测试案例名称： TestCase002_编辑系统盘-name为特殊字符 执行完毕********
+21-12-07 11:25 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:25 root         INFO     ********************************************************************************
+21-12-07 11:25 root         INFO     ********************************************************************************
+21-12-07 11:25 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2891
+21-12-07 11:25 root         INFO     *******测试案例名称： TestCase003_编辑系统盘-name为中文名称 执行开始********
+21-12-07 11:25 root         INFO     *******测试数据： {'name': '中文名称系统盘', 'description': '编辑系统盘-name为中文名称', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 122
+21-12-07 11:25 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'name': '中文名称系统盘', 'description': '编辑系统盘-name为中文名称'}}
+21-12-07 11:25 root         INFO     *******测试案例名称： TestCase003_编辑系统盘-name为中文名称 执行完毕********
+21-12-07 11:25 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:25 root         INFO     ********************************************************************************
+21-12-07 11:25 root         INFO     ********************************************************************************
+21-12-07 11:25 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2933
+21-12-07 11:25 root         INFO     *******测试案例名称： TestCase004_编辑系统盘-name为数字 执行开始********
+21-12-07 11:25 root         INFO     *******测试数据： {'name': '123456', 'description': '编辑系统盘-name为数字', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 101
+21-12-07 11:25 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'name': '123456', 'description': '编辑系统盘-name为数字'}}
+21-12-07 11:25 root         INFO     *******测试案例名称： TestCase004_编辑系统盘-name为数字 执行完毕********
+21-12-07 11:25 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:25 root         INFO     ********************************************************************************
+21-12-07 11:25 root         INFO     ********************************************************************************
+21-12-07 11:25 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2912
+21-12-07 11:25 root         INFO     *******测试案例名称： TestCase005_编辑系统盘-name为下划线 执行开始********
+21-12-07 11:25 root         INFO     *******测试数据： {'name': '______', 'description': '编辑系统盘-name为下划线', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 104
+21-12-07 11:25 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'name': '______', 'description': '编辑系统盘-name为下划线'}}
+21-12-07 11:25 root         INFO     *******测试案例名称： TestCase005_编辑系统盘-name为下划线 执行完毕********
+21-12-07 11:25 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:25 root         INFO     ********************************************************************************
+21-12-07 11:25 root         INFO     ********************************************************************************
+21-12-07 11:25 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2915
+21-12-07 11:25 root         INFO     *******测试案例名称： TestCase006_编辑系统盘-name为短横线 执行开始********
+21-12-07 11:25 root         INFO     *******测试数据： {'name': '-----', 'description': '编辑系统盘-name为下划线', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 103
+21-12-07 11:25 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'name': '-----', 'description': '编辑系统盘-name为下划线'}}
+21-12-07 11:25 root         INFO     *******测试案例名称： TestCase006_编辑系统盘-name为短横线 执行完毕********
+21-12-07 11:25 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:25 root         INFO     ********************************************************************************
+21-12-07 11:25 root         INFO     ********************************************************************************
+21-12-07 11:25 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2914
+21-12-07 11:25 root         INFO     *******测试案例名称： TestCase007_编辑系统盘-name超过32个字符 执行开始********
+21-12-07 11:25 root         INFO     *******测试数据： {'name': 'SysnameIsOver32SysnameIsOve32SysnameOver32', 'description': '编辑系统盘-name超过32个字符', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 91
+21-12-07 11:25 root         INFO     *******返回数据： {'code': 1001, 'message': '请求参数错误', 'data': None, 'level': 2}
+21-12-07 11:25 root         INFO     *******测试案例名称： TestCase007_编辑系统盘-name超过32个字符 执行完毕********
+21-12-07 11:25 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:25 root         INFO     ********************************************************************************
+21-12-07 11:25 root         INFO     ********************************************************************************
+21-12-07 11:25 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2914
+21-12-07 11:25 root         INFO     *******测试案例名称： TestCase008_编辑系统盘-name等于32个字符 执行开始********
+21-12-07 11:25 root         INFO     *******测试数据： {'name': 'SysnameIs32SysnameIs32SysnameH32', 'description': '编辑系统盘-name等于32个字符', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 135
+21-12-07 11:25 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'name': 'SysnameIs32SysnameIs32SysnameH32', 'description': '编辑系统盘-name等于32个字符'}}
+21-12-07 11:25 root         INFO     *******测试案例名称： TestCase008_编辑系统盘-name等于32个字符 执行完毕********
+21-12-07 11:25 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:25 root         INFO     ********************************************************************************
+21-12-07 11:25 root         INFO     ********************************************************************************
+21-12-07 11:25 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2946
+21-12-07 11:25 root         INFO     *******测试案例名称： TestCase009_查看云硬盘列表-缺少token 执行开始********
+21-12-07 11:25 root         INFO     *******测试数据： {'storage_limit': 10, 'add_size': 0, 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'pool_name': 'test_wang'}
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 91
+21-12-07 11:25 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+21-12-07 11:25 root         INFO     *******测试案例名称： TestCase009_查看云硬盘列表-缺少token 执行完毕********
+21-12-07 11:25 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:25 root         INFO     ********************************************************************************
+21-12-07 11:25 root         INFO     ********************************************************************************
+21-12-07 11:25 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2946
+21-12-07 11:25 root         INFO     *******测试案例名称： TestCase010_编辑系统盘-Des大于100个字符 执行开始********
+21-12-07 11:25 root         INFO     *******测试数据： {'name': 'SysDesIsOver100Chars', 'description': 'DesIsOver100Chars！#@@%#%DesIsOver100Chars！#@@%#%DesIsOver100Chars！#@@%#%DesIsOver100Chars！#@@%#%DesIsOver100Chars！#@@%#%', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 91
+21-12-07 11:25 root         INFO     *******返回数据： {'code': 1001, 'message': '请求参数错误', 'data': None, 'level': 2}
+21-12-07 11:25 root         INFO     *******测试案例名称： TestCase010_编辑系统盘-Des大于100个字符 执行完毕********
+21-12-07 11:25 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:25 root         INFO     ********************************************************************************
+21-12-07 11:25 root         INFO     ********************************************************************************
+21-12-07 11:25 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2946
+21-12-07 11:25 root         INFO     *******测试案例名称： TestCase011_编辑系统盘-Des等于100个字符 执行开始********
+21-12-07 11:25 root         INFO     *******测试数据： {'name': 'SysDesIs100Chars', 'description': 'DesIs100Chars！#@@%#%DesIs100Chars！#@@%#%DesIs100Chars！#@@%#%DesIs100Chars！#@@%#%DesIs100Chars！#@@%#%', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 192
+21-12-07 11:25 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'name': 'SysDesIs100Chars', 'description': 'DesIs100Chars！#@@%#%DesIs100Chars！#@@%#%DesIs100Chars！#@@%#%DesIs100Chars！#@@%#%DesIs100Chars！#@@%#%'}}
+21-12-07 11:25 root         INFO     *******测试案例名称： TestCase011_编辑系统盘-Des等于100个字符 执行完毕********
+21-12-07 11:25 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:25 root         INFO     ********************************************************************************
+21-12-07 11:25 root         INFO     ********************************************************************************
+21-12-07 11:25 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 3003
+21-12-07 11:25 root         INFO     *******测试案例名称： TestCase012_编辑系统盘-Des为空 执行开始********
+21-12-07 11:25 root         INFO     *******测试数据： {'name': 'SysDesIsNull', 'description': '', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 78
+21-12-07 11:25 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'name': 'SysDesIsNull', 'description': ''}}
+21-12-07 11:25 root         INFO     *******测试案例名称： TestCase012_编辑系统盘-Des为空 执行完毕********
+21-12-07 11:25 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:25 root         INFO     ********************************************************************************
+21-12-07 11:25 root         INFO     ********************************************************************************
+21-12-07 11:25 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2889
+21-12-07 11:25 root         INFO     *******测试案例名称： TestCase013_编辑系统盘-Des为单个字符 执行开始********
+21-12-07 11:25 root         INFO     *******测试数据： {'name': 'SysDesIs1Char', 'description': 'A', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 80
+21-12-07 11:25 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'name': 'SysDesIs1Char', 'description': 'A'}}
+21-12-07 11:25 root         INFO     *******测试案例名称： TestCase013_编辑系统盘-Des为单个字符 执行完毕********
+21-12-07 11:25 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:25 root         INFO     ********************************************************************************
+21-12-07 11:25 root         INFO     ********************************************************************************
+21-12-07 11:25 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2891
+21-12-07 11:25 root         INFO     *******测试案例名称： TestCase014_编辑系统盘-数据还原 执行开始********
+21-12-07 11:25 root         INFO     *******测试数据： {'name': '', 'description': '', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 80
+21-12-07 11:25 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'name': 'SysDesIs1Char', 'description': 'A'}}
+21-12-07 11:25 root         INFO     *******测试案例名称： TestCase014_编辑系统盘-数据还原 执行完毕********
+21-12-07 11:25 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:25 root         INFO     ********************************************************************************
+21-12-07 11:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/account/logout HTTP/1.1" 200 42
+21-12-07 11:25 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+21-12-07 11:26 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+21-12-07 11:26 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+21-12-07 11:26 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+21-12-07 11:26 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+21-12-07 11:26 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+21-12-07 11:26 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+21-12-07 11:26 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+21-12-07 11:26 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+21-12-07 11:26 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+21-12-07 11:26 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+21-12-07 11:26 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+21-12-07 11:26 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+21-12-07 11:26 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+21-12-07 11:26 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+21-12-07 11:26 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+21-12-07 11:26 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+21-12-07 11:26 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+21-12-07 11:26 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+21-12-07 11:26 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:26 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+21-12-07 11:26 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+21-12-07 11:26 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+21-12-07 11:26 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+21-12-07 11:26 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:26 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+21-12-07 11:26 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+21-12-07 11:26 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+21-12-07 11:26 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+21-12-07 11:26 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+21-12-07 11:26 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+21-12-07 11:26 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+21-12-07 11:26 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+21-12-07 11:26 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+21-12-07 11:26 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+21-12-07 11:26 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:26 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:26 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+21-12-07 11:26 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+21-12-07 11:26 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:26 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/account/login HTTP/1.1" 200 935
+21-12-07 11:26 root         INFO     ********************************************************************************
+21-12-07 11:26 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2894
+21-12-07 11:26 root         INFO     *******测试案例名称： TestCase001_编辑系统盘-name为空 执行开始********
+21-12-07 11:26 root         INFO     *******测试数据： {'name': '', 'description': '编辑系统盘-name为空', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 91
+21-12-07 11:26 root         INFO     *******返回数据： {'code': 1001, 'message': '请求参数错误', 'data': None, 'level': 2}
+21-12-07 11:26 root         INFO     *******测试案例名称： TestCase001_编辑系统盘-name为空 执行完毕********
+21-12-07 11:26 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:26 root         INFO     ********************************************************************************
+21-12-07 11:26 root         INFO     ********************************************************************************
+21-12-07 11:26 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2894
+21-12-07 11:26 root         INFO     *******测试案例名称： TestCase002_编辑系统盘-name为特殊字符 执行开始********
+21-12-07 11:26 root         INFO     *******测试数据： {'name': '@￥@#%￥#%￥', 'description': '编辑系统盘-name为特殊字符', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 207
+21-12-07 11:26 root         INFO     *******返回数据： {'code': 214024, 'message': '云硬盘名称只能输入字母、数字、汉字、横线以及下划线', 'data': None, 'level': 3}
+21-12-07 11:26 root         INFO     *******测试案例名称： TestCase002_编辑系统盘-name为特殊字符 执行完毕********
+21-12-07 11:26 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:26 root         INFO     ********************************************************************************
+21-12-07 11:26 root         INFO     ********************************************************************************
+21-12-07 11:26 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2894
+21-12-07 11:26 root         INFO     *******测试案例名称： TestCase003_编辑系统盘-name为中文名称 执行开始********
+21-12-07 11:26 root         INFO     *******测试数据： {'name': '中文名称系统盘', 'description': '编辑系统盘-name为中文名称', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 122
+21-12-07 11:26 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'name': '中文名称系统盘', 'description': '编辑系统盘-name为中文名称'}}
+21-12-07 11:26 root         INFO     *******测试案例名称： TestCase003_编辑系统盘-name为中文名称 执行完毕********
+21-12-07 11:26 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:26 root         INFO     ********************************************************************************
+21-12-07 11:26 root         INFO     ********************************************************************************
+21-12-07 11:26 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2933
+21-12-07 11:26 root         INFO     *******测试案例名称： TestCase004_编辑系统盘-name为数字 执行开始********
+21-12-07 11:26 root         INFO     *******测试数据： {'name': '123456', 'description': '编辑系统盘-name为数字', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 101
+21-12-07 11:26 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'name': '123456', 'description': '编辑系统盘-name为数字'}}
+21-12-07 11:26 root         INFO     *******测试案例名称： TestCase004_编辑系统盘-name为数字 执行完毕********
+21-12-07 11:26 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:26 root         INFO     ********************************************************************************
+21-12-07 11:26 root         INFO     ********************************************************************************
+21-12-07 11:26 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2912
+21-12-07 11:26 root         INFO     *******测试案例名称： TestCase005_编辑系统盘-name为下划线 执行开始********
+21-12-07 11:26 root         INFO     *******测试数据： {'name': '______', 'description': '编辑系统盘-name为下划线', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 104
+21-12-07 11:26 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'name': '______', 'description': '编辑系统盘-name为下划线'}}
+21-12-07 11:26 root         INFO     *******测试案例名称： TestCase005_编辑系统盘-name为下划线 执行完毕********
+21-12-07 11:26 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:26 root         INFO     ********************************************************************************
+21-12-07 11:26 root         INFO     ********************************************************************************
+21-12-07 11:26 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2915
+21-12-07 11:26 root         INFO     *******测试案例名称： TestCase006_编辑系统盘-name为短横线 执行开始********
+21-12-07 11:26 root         INFO     *******测试数据： {'name': '-----', 'description': '编辑系统盘-name为下划线', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 103
+21-12-07 11:26 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'name': '-----', 'description': '编辑系统盘-name为下划线'}}
+21-12-07 11:26 root         INFO     *******测试案例名称： TestCase006_编辑系统盘-name为短横线 执行完毕********
+21-12-07 11:26 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:26 root         INFO     ********************************************************************************
+21-12-07 11:26 root         INFO     ********************************************************************************
+21-12-07 11:26 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2914
+21-12-07 11:26 root         INFO     *******测试案例名称： TestCase007_编辑系统盘-name超过32个字符 执行开始********
+21-12-07 11:26 root         INFO     *******测试数据： {'name': 'SysnameIsOver32SysnameIsOve32SysnameOver32', 'description': '编辑系统盘-name超过32个字符', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 91
+21-12-07 11:26 root         INFO     *******返回数据： {'code': 1001, 'message': '请求参数错误', 'data': None, 'level': 2}
+21-12-07 11:26 root         INFO     *******测试案例名称： TestCase007_编辑系统盘-name超过32个字符 执行完毕********
+21-12-07 11:26 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:26 root         INFO     ********************************************************************************
+21-12-07 11:26 root         INFO     ********************************************************************************
+21-12-07 11:26 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2914
+21-12-07 11:26 root         INFO     *******测试案例名称： TestCase008_编辑系统盘-name等于32个字符 执行开始********
+21-12-07 11:26 root         INFO     *******测试数据： {'name': 'SysnameIs32SysnameIs32SysnameH32', 'description': '编辑系统盘-name等于32个字符', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 135
+21-12-07 11:26 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'name': 'SysnameIs32SysnameIs32SysnameH32', 'description': '编辑系统盘-name等于32个字符'}}
+21-12-07 11:26 root         INFO     *******测试案例名称： TestCase008_编辑系统盘-name等于32个字符 执行完毕********
+21-12-07 11:26 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:26 root         INFO     ********************************************************************************
+21-12-07 11:26 root         INFO     ********************************************************************************
+21-12-07 11:26 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2946
+21-12-07 11:26 root         INFO     *******测试案例名称： TestCase009_查看云硬盘列表-缺少token 执行开始********
+21-12-07 11:26 root         INFO     *******测试数据： {'storage_limit': 10, 'add_size': 0, 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'pool_name': 'test_wang'}
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 91
+21-12-07 11:26 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+21-12-07 11:26 root         INFO     *******测试案例名称： TestCase009_查看云硬盘列表-缺少token 执行完毕********
+21-12-07 11:26 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:26 root         INFO     ********************************************************************************
+21-12-07 11:26 root         INFO     ********************************************************************************
+21-12-07 11:26 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2946
+21-12-07 11:26 root         INFO     *******测试案例名称： TestCase010_编辑系统盘-Des大于100个字符 执行开始********
+21-12-07 11:26 root         INFO     *******测试数据： {'name': 'SysDesIsOver100Chars', 'description': 'DesIsOver100Chars！#@@%#%DesIsOver100Chars！#@@%#%DesIsOver100Chars！#@@%#%DesIsOver100Chars！#@@%#%DesIsOver100Chars！#@@%#%', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 91
+21-12-07 11:26 root         INFO     *******返回数据： {'code': 1001, 'message': '请求参数错误', 'data': None, 'level': 2}
+21-12-07 11:26 root         INFO     *******测试案例名称： TestCase010_编辑系统盘-Des大于100个字符 执行完毕********
+21-12-07 11:26 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:26 root         INFO     ********************************************************************************
+21-12-07 11:26 root         INFO     ********************************************************************************
+21-12-07 11:26 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2946
+21-12-07 11:26 root         INFO     *******测试案例名称： TestCase011_编辑系统盘-Des等于100个字符 执行开始********
+21-12-07 11:26 root         INFO     *******测试数据： {'name': 'SysDesIs100Chars', 'description': 'DesIs100Chars！#@@%#%DesIs100Chars！#@@%#%DesIs100Chars！#@@%#%DesIs100Chars！#@@%#%DesIs100Chars！#@@%#%', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 192
+21-12-07 11:26 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'name': 'SysDesIs100Chars', 'description': 'DesIs100Chars！#@@%#%DesIs100Chars！#@@%#%DesIs100Chars！#@@%#%DesIs100Chars！#@@%#%DesIs100Chars！#@@%#%'}}
+21-12-07 11:26 root         INFO     *******测试案例名称： TestCase011_编辑系统盘-Des等于100个字符 执行完毕********
+21-12-07 11:26 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:26 root         INFO     ********************************************************************************
+21-12-07 11:26 root         INFO     ********************************************************************************
+21-12-07 11:26 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 3003
+21-12-07 11:26 root         INFO     *******测试案例名称： TestCase012_编辑系统盘-Des为空 执行开始********
+21-12-07 11:26 root         INFO     *******测试数据： {'name': 'SysDesIsNull', 'description': '', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 78
+21-12-07 11:26 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'name': 'SysDesIsNull', 'description': ''}}
+21-12-07 11:26 root         INFO     *******测试案例名称： TestCase012_编辑系统盘-Des为空 执行完毕********
+21-12-07 11:26 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:26 root         INFO     ********************************************************************************
+21-12-07 11:26 root         INFO     ********************************************************************************
+21-12-07 11:26 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2889
+21-12-07 11:26 root         INFO     *******测试案例名称： TestCase013_编辑系统盘-Des为单个字符 执行开始********
+21-12-07 11:26 root         INFO     *******测试数据： {'name': 'SysDesIs1Char', 'description': 'A', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 80
+21-12-07 11:26 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'name': 'SysDesIs1Char', 'description': 'A'}}
+21-12-07 11:26 root         INFO     *******测试案例名称： TestCase013_编辑系统盘-Des为单个字符 执行完毕********
+21-12-07 11:26 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:26 root         INFO     ********************************************************************************
+21-12-07 11:26 root         INFO     ********************************************************************************
+21-12-07 11:26 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2891
+21-12-07 11:26 root         INFO     *******测试案例名称： TestCase014_编辑系统盘-数据还原 执行开始********
+21-12-07 11:26 root         INFO     *******测试数据： {'name': '', 'description': '', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 80
+21-12-07 11:26 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'name': 'SysDesIs1Char', 'description': 'A'}}
+21-12-07 11:26 root         INFO     *******测试案例名称： TestCase014_编辑系统盘-数据还原 执行完毕********
+21-12-07 11:26 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:26 root         INFO     ********************************************************************************
+21-12-07 11:26 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:26 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/account/logout HTTP/1.1" 200 42
+21-12-07 11:26 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+21-12-07 11:28 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+21-12-07 11:28 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+21-12-07 11:28 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+21-12-07 11:28 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+21-12-07 11:28 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+21-12-07 11:28 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+21-12-07 11:28 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+21-12-07 11:28 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+21-12-07 11:28 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+21-12-07 11:28 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+21-12-07 11:28 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+21-12-07 11:28 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+21-12-07 11:28 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+21-12-07 11:28 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+21-12-07 11:28 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+21-12-07 11:28 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+21-12-07 11:28 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+21-12-07 11:28 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+21-12-07 11:28 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:28 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+21-12-07 11:28 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+21-12-07 11:28 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+21-12-07 11:28 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+21-12-07 11:28 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:28 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+21-12-07 11:28 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+21-12-07 11:28 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+21-12-07 11:28 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+21-12-07 11:28 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+21-12-07 11:28 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+21-12-07 11:28 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+21-12-07 11:28 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+21-12-07 11:28 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+21-12-07 11:28 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+21-12-07 11:28 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:28 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:28 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+21-12-07 11:28 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+21-12-07 11:28 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:28 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/account/login HTTP/1.1" 200 935
+21-12-07 11:28 root         INFO     ********************************************************************************
+21-12-07 11:28 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2894
+21-12-07 11:28 root         INFO     *******测试案例名称： TestCase001_编辑系统盘-name为空 执行开始********
+21-12-07 11:28 root         INFO     *******测试数据： {'name': '', 'description': '编辑系统盘-name为空', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 91
+21-12-07 11:28 root         INFO     *******返回数据： {'code': 1001, 'message': '请求参数错误', 'data': None, 'level': 2}
+21-12-07 11:28 root         INFO     *******测试案例名称： TestCase001_编辑系统盘-name为空 执行完毕********
+21-12-07 11:28 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:28 root         INFO     ********************************************************************************
+21-12-07 11:28 root         INFO     ********************************************************************************
+21-12-07 11:28 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2894
+21-12-07 11:28 root         INFO     *******测试案例名称： TestCase002_编辑系统盘-name为特殊字符 执行开始********
+21-12-07 11:28 root         INFO     *******测试数据： {'name': '@￥@#%￥#%￥', 'description': '编辑系统盘-name为特殊字符', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 207
+21-12-07 11:28 root         INFO     *******返回数据： {'code': 214024, 'message': '云硬盘名称只能输入字母、数字、汉字、横线以及下划线', 'data': None, 'level': 3}
+21-12-07 11:28 root         INFO     *******测试案例名称： TestCase002_编辑系统盘-name为特殊字符 执行完毕********
+21-12-07 11:28 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:28 root         INFO     ********************************************************************************
+21-12-07 11:28 root         INFO     ********************************************************************************
+21-12-07 11:28 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2894
+21-12-07 11:28 root         INFO     *******测试案例名称： TestCase003_编辑系统盘-name为中文名称 执行开始********
+21-12-07 11:28 root         INFO     *******测试数据： {'name': '中文名称系统盘', 'description': '编辑系统盘-name为中文名称', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 122
+21-12-07 11:28 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'name': '中文名称系统盘', 'description': '编辑系统盘-name为中文名称'}}
+21-12-07 11:28 root         INFO     *******测试案例名称： TestCase003_编辑系统盘-name为中文名称 执行完毕********
+21-12-07 11:28 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:28 root         INFO     ********************************************************************************
+21-12-07 11:28 root         INFO     ********************************************************************************
+21-12-07 11:28 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2933
+21-12-07 11:28 root         INFO     *******测试案例名称： TestCase004_编辑系统盘-name为数字 执行开始********
+21-12-07 11:28 root         INFO     *******测试数据： {'name': '123456', 'description': '编辑系统盘-name为数字', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 101
+21-12-07 11:28 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'name': '123456', 'description': '编辑系统盘-name为数字'}}
+21-12-07 11:28 root         INFO     *******测试案例名称： TestCase004_编辑系统盘-name为数字 执行完毕********
+21-12-07 11:28 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:28 root         INFO     ********************************************************************************
+21-12-07 11:28 root         INFO     ********************************************************************************
+21-12-07 11:28 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2912
+21-12-07 11:28 root         INFO     *******测试案例名称： TestCase005_编辑系统盘-name为下划线 执行开始********
+21-12-07 11:28 root         INFO     *******测试数据： {'name': '______', 'description': '编辑系统盘-name为下划线', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 104
+21-12-07 11:28 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'name': '______', 'description': '编辑系统盘-name为下划线'}}
+21-12-07 11:28 root         INFO     *******测试案例名称： TestCase005_编辑系统盘-name为下划线 执行完毕********
+21-12-07 11:28 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:28 root         INFO     ********************************************************************************
+21-12-07 11:28 root         INFO     ********************************************************************************
+21-12-07 11:28 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2915
+21-12-07 11:28 root         INFO     *******测试案例名称： TestCase006_编辑系统盘-name为短横线 执行开始********
+21-12-07 11:28 root         INFO     *******测试数据： {'name': '-----', 'description': '编辑系统盘-name为下划线', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 103
+21-12-07 11:28 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'name': '-----', 'description': '编辑系统盘-name为下划线'}}
+21-12-07 11:28 root         INFO     *******测试案例名称： TestCase006_编辑系统盘-name为短横线 执行完毕********
+21-12-07 11:28 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:28 root         INFO     ********************************************************************************
+21-12-07 11:28 root         INFO     ********************************************************************************
+21-12-07 11:28 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2914
+21-12-07 11:28 root         INFO     *******测试案例名称： TestCase007_编辑系统盘-name超过32个字符 执行开始********
+21-12-07 11:28 root         INFO     *******测试数据： {'name': 'SysnameIsOver32SysnameIsOve32SysnameOver32', 'description': '编辑系统盘-name超过32个字符', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 91
+21-12-07 11:28 root         INFO     *******返回数据： {'code': 1001, 'message': '请求参数错误', 'data': None, 'level': 2}
+21-12-07 11:28 root         INFO     *******测试案例名称： TestCase007_编辑系统盘-name超过32个字符 执行完毕********
+21-12-07 11:28 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:28 root         INFO     ********************************************************************************
+21-12-07 11:28 root         INFO     ********************************************************************************
+21-12-07 11:28 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2914
+21-12-07 11:28 root         INFO     *******测试案例名称： TestCase008_编辑系统盘-name等于32个字符 执行开始********
+21-12-07 11:28 root         INFO     *******测试数据： {'name': 'SysnameIs32SysnameIs32SysnameH32', 'description': '编辑系统盘-name等于32个字符', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 135
+21-12-07 11:28 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'name': 'SysnameIs32SysnameIs32SysnameH32', 'description': '编辑系统盘-name等于32个字符'}}
+21-12-07 11:28 root         INFO     *******测试案例名称： TestCase008_编辑系统盘-name等于32个字符 执行完毕********
+21-12-07 11:28 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:28 root         INFO     ********************************************************************************
+21-12-07 11:28 root         INFO     ********************************************************************************
+21-12-07 11:28 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2946
+21-12-07 11:28 root         INFO     *******测试案例名称： TestCase009_查看云硬盘列表-缺少token 执行开始********
+21-12-07 11:28 root         INFO     *******测试数据： {'storage_limit': 10, 'add_size': 0, 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'pool_name': 'test_wang'}
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 91
+21-12-07 11:28 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+21-12-07 11:28 root         INFO     *******测试案例名称： TestCase009_查看云硬盘列表-缺少token 执行完毕********
+21-12-07 11:28 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:28 root         INFO     ********************************************************************************
+21-12-07 11:28 root         INFO     ********************************************************************************
+21-12-07 11:28 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2946
+21-12-07 11:28 root         INFO     *******测试案例名称： TestCase010_编辑系统盘-Des大于100个字符 执行开始********
+21-12-07 11:28 root         INFO     *******测试数据： {'name': 'SysDesIsOver100Chars', 'description': 'DesIsOver100Chars！#@@%#%DesIsOver100Chars！#@@%#%DesIsOver100Chars！#@@%#%DesIsOver100Chars！#@@%#%DesIsOver100Chars！#@@%#%', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 91
+21-12-07 11:28 root         INFO     *******返回数据： {'code': 1001, 'message': '请求参数错误', 'data': None, 'level': 2}
+21-12-07 11:28 root         INFO     *******测试案例名称： TestCase010_编辑系统盘-Des大于100个字符 执行完毕********
+21-12-07 11:28 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:28 root         INFO     ********************************************************************************
+21-12-07 11:28 root         INFO     ********************************************************************************
+21-12-07 11:28 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2946
+21-12-07 11:28 root         INFO     *******测试案例名称： TestCase011_编辑系统盘-Des等于100个字符 执行开始********
+21-12-07 11:28 root         INFO     *******测试数据： {'name': 'SysDesIs100Chars', 'description': 'DesIs100Chars！#@@%#%DesIs100Chars！#@@%#%DesIs100Chars！#@@%#%DesIs100Chars！#@@%#%DesIs100Chars！#@@%#%', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 192
+21-12-07 11:28 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'name': 'SysDesIs100Chars', 'description': 'DesIs100Chars！#@@%#%DesIs100Chars！#@@%#%DesIs100Chars！#@@%#%DesIs100Chars！#@@%#%DesIs100Chars！#@@%#%'}}
+21-12-07 11:28 root         INFO     *******测试案例名称： TestCase011_编辑系统盘-Des等于100个字符 执行完毕********
+21-12-07 11:28 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:28 root         INFO     ********************************************************************************
+21-12-07 11:28 root         INFO     ********************************************************************************
+21-12-07 11:28 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 3003
+21-12-07 11:28 root         INFO     *******测试案例名称： TestCase012_编辑系统盘-Des为空 执行开始********
+21-12-07 11:28 root         INFO     *******测试数据： {'name': 'SysDesIsNull', 'description': '', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 78
+21-12-07 11:28 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'name': 'SysDesIsNull', 'description': ''}}
+21-12-07 11:28 root         INFO     *******测试案例名称： TestCase012_编辑系统盘-Des为空 执行完毕********
+21-12-07 11:28 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:28 root         INFO     ********************************************************************************
+21-12-07 11:28 root         INFO     ********************************************************************************
+21-12-07 11:28 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2889
+21-12-07 11:28 root         INFO     *******测试案例名称： TestCase013_编辑系统盘-Des为单个字符 执行开始********
+21-12-07 11:28 root         INFO     *******测试数据： {'name': 'SysDesIs1Char', 'description': 'A', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 80
+21-12-07 11:28 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'name': 'SysDesIs1Char', 'description': 'A'}}
+21-12-07 11:28 root         INFO     *******测试案例名称： TestCase013_编辑系统盘-Des为单个字符 执行完毕********
+21-12-07 11:28 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:28 root         INFO     ********************************************************************************
+21-12-07 11:28 root         INFO     ********************************************************************************
+21-12-07 11:28 root         INFO     ****************编辑系统盘列表接口开始****************
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&info=sys HTTP/1.1" 200 2891
+21-12-07 11:28 root         INFO     *******测试案例名称： TestCase014_编辑系统盘-数据还原 执行开始********
+21-12-07 11:28 root         INFO     *******测试数据： {'name': '', 'description': '', 'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0, 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang'}
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "PUT http://192.168.5.170/v1/storage/volumes/ins-b3c6c8f21e744d5ea05de73dfbc6b2a3 HTTP/1.1" 200 80
+21-12-07 11:28 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'name': 'SysDesIs1Char', 'description': 'A'}}
+21-12-07 11:28 root         INFO     *******测试案例名称： TestCase014_编辑系统盘-数据还原 执行完毕********
+21-12-07 11:28 root         INFO     ****************编辑系统盘列表接口结束****************
+21-12-07 11:28 root         INFO     ********************************************************************************
+21-12-07 11:28 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:28 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/account/logout HTTP/1.1" 200 42
+21-12-07 11:28 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+21-12-07 11:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+21-12-07 11:43 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+21-12-07 11:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+21-12-07 11:43 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+21-12-07 11:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+21-12-07 11:43 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+21-12-07 11:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+21-12-07 11:43 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+21-12-07 11:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+21-12-07 11:43 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+21-12-07 11:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+21-12-07 11:43 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+21-12-07 11:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+21-12-07 11:43 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+21-12-07 11:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+21-12-07 11:43 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+21-12-07 11:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+21-12-07 11:43 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+21-12-07 11:43 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+21-12-07 11:43 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+21-12-07 11:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+21-12-07 11:43 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+21-12-07 11:43 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+21-12-07 11:43 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+21-12-07 11:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+21-12-07 11:43 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+21-12-07 11:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+21-12-07 11:43 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+21-12-07 11:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+21-12-07 11:43 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+21-12-07 11:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+21-12-07 11:43 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+21-12-07 11:43 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:43 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:43 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+21-12-07 11:43 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+21-12-07 11:43 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:43 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+21-12-07 11:43 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:43 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/account/login HTTP/1.1" 200 935
+21-12-07 11:43 root         INFO     ********************************************************************************
+21-12-07 11:43 root         INFO     ****************获取系统盘列表接口开始****************
+21-12-07 11:43 root         INFO     *******测试案例名称： TestCase001_搜索系统盘 执行开始********
+21-12-07 11:43 root         INFO     *******测试数据： {}
+21-12-07 11:43 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:43 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&search_field=name&search=Sys&info=sys&order=1&sort=description HTTP/1.1" 200 986
+21-12-07 11:43 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': [{'id': 'ins-8d228d8d402b4df282f3fb85bc026c48', 'project_name': 'LeonaTestPool1125', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'pool_name': 'LeonaTestPool1125', 'name': 'SysnameIs32SysnameIs32SysnameH32', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'description': 'A', 'created_time': '2021-12-02 15:07:04', 'is_snapshoted': 0}, {'id': 'ins-b3c6c8f21e744d5ea05de73dfbc6b2a3', 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang', 'name': 'SysDesIs1Char', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'description': 'A', 'created_time': '2021-12-02 17:51:06', 'is_snapshoted': 0}, {'id': 'ins-19fde113ee404b2b83fdac6b4cb68a23', 'project_name': 'LeonaTestPool1125', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'pool_name': 'LeonaTestPool1125', 'name': 'SysnameIs32SysnameIs32SysnameH32', 'size': 1024, 'disk_type': 0, 'disk_status': 0, 'description': '系统盘名称为_', 'created_time': '2021-11-25 11:37:11', 'is_snapshoted': 0}], 'total': 3}
+21-12-07 11:43 root         INFO     *******测试案例名称： TestCase001_搜索系统盘 执行完毕********
+21-12-07 11:43 root         INFO     ****************获取系统盘列表接口结束****************
+21-12-07 11:43 root         INFO     ********************************************************************************
+21-12-07 11:43 root         INFO     ********************************************************************************
+21-12-07 11:43 root         INFO     ****************获取系统盘列表接口开始****************
+21-12-07 11:43 root         INFO     *******测试案例名称： TestCase002_搜索系统盘-缺少token 执行开始********
+21-12-07 11:43 root         INFO     *******测试数据： {}
+21-12-07 11:43 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:43 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&search_field=name&search=Sys&info=sys&order=1&sort=description HTTP/1.1" 200 91
+21-12-07 11:43 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+21-12-07 11:43 root         INFO     *******测试案例名称： TestCase002_搜索系统盘-缺少token 执行完毕********
+21-12-07 11:43 root         INFO     ****************获取系统盘列表接口结束****************
+21-12-07 11:43 root         INFO     ********************************************************************************
+21-12-07 11:43 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:43 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/account/logout HTTP/1.1" 200 42
+21-12-07 11:43 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+21-12-07 11:46 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+21-12-07 11:46 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+21-12-07 11:46 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+21-12-07 11:46 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+21-12-07 11:46 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+21-12-07 11:46 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+21-12-07 11:46 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+21-12-07 11:46 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+21-12-07 11:46 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+21-12-07 11:46 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+21-12-07 11:46 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+21-12-07 11:46 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+21-12-07 11:46 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+21-12-07 11:46 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+21-12-07 11:46 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+21-12-07 11:46 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+21-12-07 11:46 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+21-12-07 11:46 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+21-12-07 11:46 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:46 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+21-12-07 11:46 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+21-12-07 11:46 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+21-12-07 11:46 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+21-12-07 11:46 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:46 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+21-12-07 11:46 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+21-12-07 11:46 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+21-12-07 11:46 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+21-12-07 11:46 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+21-12-07 11:46 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+21-12-07 11:46 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+21-12-07 11:46 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+21-12-07 11:46 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+21-12-07 11:46 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+21-12-07 11:46 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:46 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:46 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+21-12-07 11:46 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+21-12-07 11:46 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-07 11:46 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+21-12-07 11:46 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:46 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/account/login HTTP/1.1" 200 935
+21-12-07 11:46 root         INFO     ********************************************************************************
+21-12-07 11:46 root         INFO     ****************获取系统盘列表接口开始****************
+21-12-07 11:46 root         INFO     *******测试案例名称： TestCase001_搜索数据盘 执行开始********
+21-12-07 11:46 root         INFO     *******测试数据： {}
+21-12-07 11:46 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:46 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&search_field=name&search=data&info=data HTTP/1.1" 200 406
+21-12-07 11:46 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': [{'instances': [None], 'id': 'bda64c37-4a8d-44a3-bffc-b7cdff65d943', 'project_name': 'test_wang', 'project_id': 'e6451dede2ed41c08b5049b40d5b1daf', 'pool_name': 'test_wang', 'name': 'DataDesIs1Char', 'size': 1024, 'disk_type': 0, 'disk_status': 1, 'description': 'A', 'share_vol': 1, 'created_time': '2021-12-03 10:28:16', 'path': [{'diskdetailmodel__path': None}], 'is_snapshoted': 0}], 'total': 1}
+21-12-07 11:46 root         INFO     *******测试案例名称： TestCase001_搜索数据盘 执行完毕********
+21-12-07 11:46 root         INFO     ****************获取系统盘列表接口结束****************
+21-12-07 11:46 root         INFO     ********************************************************************************
+21-12-07 11:46 root         INFO     ********************************************************************************
+21-12-07 11:46 root         INFO     ****************获取系统盘列表接口开始****************
+21-12-07 11:46 root         INFO     *******测试案例名称： TestCase002_搜索数据盘-缺少token 执行开始********
+21-12-07 11:46 root         INFO     *******测试数据： {}
+21-12-07 11:46 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:46 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes?page=1&size=10&search_field=name&search=data&info=data HTTP/1.1" 200 91
+21-12-07 11:46 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+21-12-07 11:46 root         INFO     *******测试案例名称： TestCase002_搜索数据盘-缺少token 执行完毕********
+21-12-07 11:46 root         INFO     ****************获取系统盘列表接口结束****************
+21-12-07 11:46 root         INFO     ********************************************************************************
+21-12-07 11:46 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-07 11:46 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/account/logout HTTP/1.1" 200 42
+21-12-07 11:46 root         INFO     **********************************************完成teardown class，退出登录**********************************************
