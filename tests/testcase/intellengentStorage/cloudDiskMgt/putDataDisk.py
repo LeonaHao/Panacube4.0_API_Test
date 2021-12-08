@@ -41,7 +41,7 @@ class putDataDisk(unittest.TestCase):
         reqUrl1 = cloudDisk + '?page=1&size=10&info=data'
         urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
         result1 = requests.get(url=reqUrl, headers=headers, verify=False).json()
-        print(result1)
+        # print(result1)
         if len(result1['data']) != 0:
             dataDiskInfo = result1['data'][0]
             dataDiskId = dataDiskInfo['id']
@@ -92,6 +92,7 @@ class putDataDisk(unittest.TestCase):
 
         else:
             logger.info("**************没有数据盘信息******************")
+            pass
 
 
     @staticmethod

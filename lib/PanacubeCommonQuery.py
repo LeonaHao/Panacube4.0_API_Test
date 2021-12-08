@@ -78,6 +78,17 @@ def getAttachableDisk():
     res= MySQLHelper('panacube').get_one(sql,param)
     return  res
 
+
+def getLatestDataDisk(poolId):
+    sql = 'select id from disk where store_type=0 and pool_id=%s order by create_time desc limit 1;'
+    param = (poolId)
+    res= MySQLHelper('panacube').get_one(sql,param)
+    return  res
+
+
+
+
+
 # getVolumeId()
 # matchVolume("192.168.5.174",22, "root","Admin@9000")
 # getGeneralUsageInfo()
@@ -87,3 +98,4 @@ def getAttachableDisk():
 # getDefaultPoolUsage()
 # getNonDefaultPool()
 # getAttachableDisk()
+# getLatestDataDisk('ddac080c671b473e885714538fd1ed6e')

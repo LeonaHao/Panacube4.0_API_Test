@@ -1,27 +1,27 @@
 # -*- coding: utf-8 -*-
 # @Time: 2021/12/07 14:29
 # @Author: Leona
-# @File: attachDataDisk.py
+# @File: snap4DataDisk.py
 
 import unittest
 import requests
 import json
 import urllib3
 import time
-from configs.urlConfigs import cloudDisk,cloudDiskDetach,forceDelCD, logoutUrl
+from configs.urlConfigs import cloudDisk,dataDiskSnapshot,forceDelCD, logoutUrl
 from lib.PanaCubeCommon import login
-from lib.PanacubeCommonQuery import getAttachableDisk
+from lib.PanacubeCommonQuery import getLatestDataDisk
 from lib.generateTestCases import __generateTestCases
 from lib.log import logger
 
 
 """
-智能存储》云硬盘管理》加载数据盘
+智能存储》云硬盘管理》为数据盘创建快照
 """
 
 
-class attachDataDisk(unittest.TestCase):
-    """智能存储》云硬盘管理》加载数据盘"""
+class snap4DataDisk(unittest.TestCase):
+    """智能存储》云硬盘管理》为数据盘创建快照"""
     @classmethod
     def setUpClass(cls) -> None:
         logger.info("**********************************************开始setupClass，进行登录**********************************************")
@@ -35,7 +35,7 @@ class attachDataDisk(unittest.TestCase):
                   'Authorization': token
                    }
         reqParam1 = {
-            "name":"CloudDisk4CI",
+            "name":"CloudDisk4Snapshot",
             "size":"1",
             "disk_type": 0,
             "description": "",
@@ -49,19 +49,19 @@ class attachDataDisk(unittest.TestCase):
         result1 = requests.post(url=cloudDisk, headers=headers1, json=reqParam1, verify=False).json()
         time.sleep(5)
 
-        '''获取可加载的数据盘信息'''
-        global attachAbleDiskInfo
-        attachAbleDiskInfo = getAttachableDisk()
+        '''获取用于创建快照的数据盘信息'''
+        global DataDiskId
+        DataDiskId = getLatestDataDisk(projectId)['id']
 
     def setUp(self):
         logger.info("*" * 80)
 
     def getTest(self, tx):
-        logger.info("****************加载数据盘列表接口开始****************")
+        logger.info("****************创建数据盘快照接口开始****************")
         headers2 ={'Content-Type':'application/json',
                   'Authorization': token
                    }
-        reqUrl2 = cloudDiskDetach
+        reqUrl2 = dataDiskSnapshot
 
         '''执行加载数据盘的测试用例'''
         caseNum = tx['test_num']
@@ -71,23 +71,21 @@ class attachDataDisk(unittest.TestCase):
         flag = tx['flag']
         logger.info("*******测试案例名称： TestCase" + caseNum + "_" + caseName + " 执行开始********")
         reqParam2 = json.JSONDecoder().decode(tx['params'])
-        reqParam2['instance'] = [attachAbleDiskInfo['vmId']]
-        reqParam2['project_id'] = attachAbleDiskInfo['projectId']
-        reqParam2['project_name'] = attachAbleDiskInfo['projectName']
         logger.info("*******测试数据： " + str(reqParam2))
 
-        if flag == 0:
-            reqParam2['volume'] = attachAbleDiskInfo['diskId']
         if flag == 1:
             headers2['Authorization'] = ''
+        if flag == 2:
+            reqParam2['volume'] = DataDiskId
+        urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
         r = requests.post(url=reqUrl2, headers=headers2, json=reqParam2)
         result2 = r.json()
         logger.info("*******返回数据： " + str(result2))
         self.assertEqual(result2['code'], code)
-        if result2['code'] != 0:
-            self.assertEqual(result2['message'], msg)
+        if not (result2['code'] == 0 or result2['code'] == 1001):
+            self.assertEqual(result2['message'],str(msg) )
         logger.info("*******测试案例名称： TestCase" + caseNum + "_" + caseName + " 执行完毕********")
-        logger.info("****************加载数据盘列表接口结束****************")
+        logger.info("****************创建数据盘快照接口结束****************")
 
     @staticmethod
     def getTestFunc(arg1):
@@ -106,21 +104,21 @@ class attachDataDisk(unittest.TestCase):
         reqUrl3 = forceDelCD
         reqParam3 ={
             "disk_ids":[
-                attachAbleDiskInfo['diskId']
+                DataDiskId
             ],
             "project_id": projectId,
             "project_name":projectName
         }
-        print("***************强制删除参数为： {}***".format(reqParam3))
+        # print("***************强制删除参数为： {}***".format(reqParam3))
         result3 = requests.post(url=reqUrl3, headers=headers3, json=reqParam3,verify=False).json()
-        print(result3)
+        # print(result3)
         reqUrl4 = logoutUrl
         res = requests.get(reqUrl4,headers=headers3)
         resJson = res.json()
         if resJson['code'] == 0:
             logger.info("**********************************************完成teardown class，退出登录**********************************************")
 
-__generateTestCases(attachDataDisk, "attachDataDisk", "cloudDiskMagData.xlsx", "attachDataDisk")
+__generateTestCases(snap4DataDisk, "snap4DataDisk", "cloudDiskMagData.xlsx", "snap4DataDisk")
 
 if __name__ == '__main__':
     unittest.main()
