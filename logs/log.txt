@@ -11431,3 +11431,753 @@
 21-12-08 14:35 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
 21-12-08 14:35 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/account/logout HTTP/1.1" 200 42
 21-12-08 14:35 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+21-12-09 13:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+21-12-09 13:59 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+21-12-09 13:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+21-12-09 13:59 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+21-12-09 13:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+21-12-09 13:59 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+21-12-09 13:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+21-12-09 13:59 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+21-12-09 13:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+21-12-09 13:59 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+21-12-09 13:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+21-12-09 13:59 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+21-12-09 13:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+21-12-09 13:59 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+21-12-09 13:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+21-12-09 13:59 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+21-12-09 13:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+21-12-09 13:59 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+21-12-09 13:59 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 13:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+21-12-09 13:59 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+21-12-09 13:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+21-12-09 13:59 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+21-12-09 13:59 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 13:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+21-12-09 13:59 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+21-12-09 13:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+21-12-09 13:59 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+21-12-09 13:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+21-12-09 13:59 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+21-12-09 13:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+21-12-09 13:59 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+21-12-09 13:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+21-12-09 13:59 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+21-12-09 13:59 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 13:59 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 13:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+21-12-09 13:59 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+21-12-09 13:59 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 13:59 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+21-12-09 13:59 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 13:59 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/account/login HTTP/1.1" 200 935
+21-12-09 13:59 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 13:59 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes HTTP/1.1" 200 319
+21-12-09 13:59 root         INFO     the sql is : select id from disk where store_type=0 and pool_id=%s order by create_time desc limit 1;
+21-12-09 13:59 root         INFO     the params is : ddac080c671b473e885714538fd1ed6e
+21-12-09 13:59 root         INFO     the result data is :{'id': 'c9a05909-b11d-4df6-b7cb-78d9bf0f267b'}
+21-12-09 13:59 root         INFO     ********************************************************************************
+21-12-09 13:59 root         INFO     ****************数据盘扩容接口开始****************
+21-12-09 13:59 root         INFO     *******测试案例名称： TestCase001_新建快照-缺少token 执行开始********
+21-12-09 13:59 root         INFO     *******测试数据： {'volume': 'c9a05909-b11d-4df6-b7cb-78d9bf0f267b', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 13:59 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 13:59 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumesc9a05909-b11d-4df6-b7cb-78d9bf0f267b HTTP/1.1" 200 91
+21-12-09 13:59 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+21-12-09 13:59 root         INFO     *******测试案例名称： TestCase001_新建快照-缺少token 执行完毕********
+21-12-09 13:59 root         INFO     ****************数据盘扩容接口结束****************
+21-12-09 13:59 root         INFO     ********************************************************************************
+21-12-09 13:59 root         INFO     ********************************************************************************
+21-12-09 13:59 root         INFO     ****************数据盘扩容接口开始****************
+21-12-09 13:59 root         INFO     *******测试案例名称： TestCase002_数据盘扩容-add_size为负整数 执行开始********
+21-12-09 13:59 root         INFO     *******测试数据： {'add_size': '-3', 'id': '70b9fd1d-acb5-4fba-b71c-7b71ad3a14c9', 'volume': 'c9a05909-b11d-4df6-b7cb-78d9bf0f267b', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 13:59 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 13:59 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumesc9a05909-b11d-4df6-b7cb-78d9bf0f267b HTTP/1.1" 200 103
+21-12-09 13:59 root         INFO     *******返回数据： {'code': 1404, 'message': '/v1/storage/volumesc9a05909-b11d-4df6-b7cb-78d9bf0f267b 未找到', 'data': None}
+21-12-09 13:59 root         INFO     ********************************************************************************
+21-12-09 13:59 root         INFO     ********************************************************************************
+21-12-09 13:59 root         INFO     ****************数据盘扩容接口开始****************
+21-12-09 13:59 root         INFO     *******测试案例名称： TestCase003_数据盘扩容-add_size为0 执行开始********
+21-12-09 13:59 root         INFO     *******测试数据： {'add_size': '0', 'id': '70b9fd1d-acb5-4fba-b71c-7b71ad3a14c9', 'volume': 'c9a05909-b11d-4df6-b7cb-78d9bf0f267b', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 13:59 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 13:59 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumesc9a05909-b11d-4df6-b7cb-78d9bf0f267b HTTP/1.1" 200 103
+21-12-09 13:59 root         INFO     *******返回数据： {'code': 1404, 'message': '/v1/storage/volumesc9a05909-b11d-4df6-b7cb-78d9bf0f267b 未找到', 'data': None}
+21-12-09 13:59 root         INFO     ********************************************************************************
+21-12-09 13:59 root         INFO     ********************************************************************************
+21-12-09 13:59 root         INFO     ****************数据盘扩容接口开始****************
+21-12-09 13:59 root         INFO     *******测试案例名称： TestCase004_数据盘扩容-add_size为小数 执行开始********
+21-12-09 13:59 root         INFO     *******测试数据： {'add_size': '0.36', 'id': '70b9fd1d-acb5-4fba-b71c-7b71ad3a14c9', 'volume': 'c9a05909-b11d-4df6-b7cb-78d9bf0f267b', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 13:59 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 13:59 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumesc9a05909-b11d-4df6-b7cb-78d9bf0f267b HTTP/1.1" 200 103
+21-12-09 13:59 root         INFO     *******返回数据： {'code': 1404, 'message': '/v1/storage/volumesc9a05909-b11d-4df6-b7cb-78d9bf0f267b 未找到', 'data': None}
+21-12-09 13:59 root         INFO     ********************************************************************************
+21-12-09 13:59 root         INFO     ********************************************************************************
+21-12-09 13:59 root         INFO     ****************数据盘扩容接口开始****************
+21-12-09 13:59 root         INFO     *******测试案例名称： TestCase005_数据盘扩容-add_size为字符串 执行开始********
+21-12-09 13:59 root         INFO     *******测试数据： {'add_size': 'abc', 'id': '70b9fd1d-acb5-4fba-b71c-7b71ad3a14c9', 'volume': 'c9a05909-b11d-4df6-b7cb-78d9bf0f267b', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 13:59 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 13:59 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumesc9a05909-b11d-4df6-b7cb-78d9bf0f267b HTTP/1.1" 200 103
+21-12-09 13:59 root         INFO     *******返回数据： {'code': 1404, 'message': '/v1/storage/volumesc9a05909-b11d-4df6-b7cb-78d9bf0f267b 未找到', 'data': None}
+21-12-09 13:59 root         INFO     ********************************************************************************
+21-12-09 13:59 root         INFO     ********************************************************************************
+21-12-09 13:59 root         INFO     ****************数据盘扩容接口开始****************
+21-12-09 13:59 root         INFO     *******测试案例名称： TestCase006_数据盘扩容-add_size为超大值 执行开始********
+21-12-09 13:59 root         INFO     *******测试数据： {'add_size': '99999999999999999', 'id': '70b9fd1d-acb5-4fba-b71c-7b71ad3a14c9', 'volume': 'c9a05909-b11d-4df6-b7cb-78d9bf0f267b', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 13:59 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 13:59 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumesc9a05909-b11d-4df6-b7cb-78d9bf0f267b HTTP/1.1" 200 103
+21-12-09 13:59 root         INFO     *******返回数据： {'code': 1404, 'message': '/v1/storage/volumesc9a05909-b11d-4df6-b7cb-78d9bf0f267b 未找到', 'data': None}
+21-12-09 13:59 root         INFO     ********************************************************************************
+21-12-09 13:59 root         INFO     ********************************************************************************
+21-12-09 13:59 root         INFO     ****************数据盘扩容接口开始****************
+21-12-09 13:59 root         INFO     *******测试案例名称： TestCase007_数据盘扩容-add_size比当前值大1 执行开始********
+21-12-09 13:59 root         INFO     *******测试数据： {'add_size': '2', 'id': '70b9fd1d-acb5-4fba-b71c-7b71ad3a14c9', 'volume': 'c9a05909-b11d-4df6-b7cb-78d9bf0f267b', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 13:59 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 13:59 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumesc9a05909-b11d-4df6-b7cb-78d9bf0f267b HTTP/1.1" 200 103
+21-12-09 13:59 root         INFO     *******返回数据： {'code': 1404, 'message': '/v1/storage/volumesc9a05909-b11d-4df6-b7cb-78d9bf0f267b 未找到', 'data': None}
+21-12-09 13:59 root         INFO     ********************************************************************************
+21-12-09 13:59 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 13:59 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1//storage/volumes/force-delete HTTP/1.1" 200 42
+21-12-09 13:59 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 13:59 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/account/logout HTTP/1.1" 200 42
+21-12-09 13:59 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+21-12-09 14:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+21-12-09 14:00 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+21-12-09 14:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+21-12-09 14:00 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+21-12-09 14:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+21-12-09 14:00 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+21-12-09 14:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+21-12-09 14:00 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+21-12-09 14:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+21-12-09 14:00 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+21-12-09 14:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+21-12-09 14:00 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+21-12-09 14:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+21-12-09 14:00 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+21-12-09 14:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+21-12-09 14:00 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+21-12-09 14:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+21-12-09 14:00 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+21-12-09 14:00 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 14:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+21-12-09 14:00 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+21-12-09 14:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+21-12-09 14:00 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+21-12-09 14:00 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 14:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+21-12-09 14:00 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+21-12-09 14:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+21-12-09 14:00 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+21-12-09 14:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+21-12-09 14:00 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+21-12-09 14:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+21-12-09 14:00 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+21-12-09 14:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+21-12-09 14:00 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+21-12-09 14:00 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 14:00 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 14:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+21-12-09 14:00 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+21-12-09 14:00 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 14:00 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+21-12-09 14:00 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 14:00 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/account/login HTTP/1.1" 200 935
+21-12-09 14:00 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 14:00 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes HTTP/1.1" 200 319
+21-12-09 14:00 root         INFO     the sql is : select id from disk where store_type=0 and pool_id=%s order by create_time desc limit 1;
+21-12-09 14:00 root         INFO     the params is : ddac080c671b473e885714538fd1ed6e
+21-12-09 14:00 root         INFO     the result data is :{'id': '0190d108-9c44-41d6-b611-47ce26d8a56c'}
+21-12-09 14:00 root         INFO     ********************************************************************************
+21-12-09 14:00 root         INFO     ****************数据盘扩容接口开始****************
+21-12-09 14:00 root         INFO     *******测试案例名称： TestCase001_新建快照-缺少token 执行开始********
+21-12-09 14:00 root         INFO     *******测试数据： {'volume': '0190d108-9c44-41d6-b611-47ce26d8a56c', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 14:00 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 14:00 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/0190d108-9c44-41d6-b611-47ce26d8a56c HTTP/1.1" 200 91
+21-12-09 14:00 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+21-12-09 14:00 root         INFO     *******测试案例名称： TestCase001_新建快照-缺少token 执行完毕********
+21-12-09 14:00 root         INFO     ****************数据盘扩容接口结束****************
+21-12-09 14:00 root         INFO     ********************************************************************************
+21-12-09 14:00 root         INFO     ********************************************************************************
+21-12-09 14:00 root         INFO     ****************数据盘扩容接口开始****************
+21-12-09 14:00 root         INFO     *******测试案例名称： TestCase002_数据盘扩容-add_size为负整数 执行开始********
+21-12-09 14:00 root         INFO     *******测试数据： {'add_size': '-3', 'id': '70b9fd1d-acb5-4fba-b71c-7b71ad3a14c9', 'volume': '0190d108-9c44-41d6-b611-47ce26d8a56c', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 14:00 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 14:00 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/0190d108-9c44-41d6-b611-47ce26d8a56c HTTP/1.1" 200 165
+21-12-09 14:00 root         INFO     *******返回数据： {'code': 214016, 'message': '云硬盘扩容容量不得小于当前云硬盘大小', 'data': None, 'level': 3}
+21-12-09 14:00 root         INFO     *******测试案例名称： TestCase002_数据盘扩容-add_size为负整数 执行完毕********
+21-12-09 14:00 root         INFO     ****************数据盘扩容接口结束****************
+21-12-09 14:00 root         INFO     ********************************************************************************
+21-12-09 14:00 root         INFO     ********************************************************************************
+21-12-09 14:00 root         INFO     ****************数据盘扩容接口开始****************
+21-12-09 14:00 root         INFO     *******测试案例名称： TestCase003_数据盘扩容-add_size为0 执行开始********
+21-12-09 14:00 root         INFO     *******测试数据： {'add_size': '0', 'id': '70b9fd1d-acb5-4fba-b71c-7b71ad3a14c9', 'volume': '0190d108-9c44-41d6-b611-47ce26d8a56c', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 14:00 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 14:00 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/0190d108-9c44-41d6-b611-47ce26d8a56c HTTP/1.1" 200 165
+21-12-09 14:00 root         INFO     *******返回数据： {'code': 214016, 'message': '云硬盘扩容容量不得小于当前云硬盘大小', 'data': None, 'level': 3}
+21-12-09 14:00 root         INFO     *******测试案例名称： TestCase003_数据盘扩容-add_size为0 执行完毕********
+21-12-09 14:00 root         INFO     ****************数据盘扩容接口结束****************
+21-12-09 14:00 root         INFO     ********************************************************************************
+21-12-09 14:00 root         INFO     ********************************************************************************
+21-12-09 14:00 root         INFO     ****************数据盘扩容接口开始****************
+21-12-09 14:00 root         INFO     *******测试案例名称： TestCase004_数据盘扩容-add_size为小数 执行开始********
+21-12-09 14:00 root         INFO     *******测试数据： {'add_size': '0.36', 'id': '70b9fd1d-acb5-4fba-b71c-7b71ad3a14c9', 'volume': '0190d108-9c44-41d6-b611-47ce26d8a56c', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 14:00 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 14:00 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/0190d108-9c44-41d6-b611-47ce26d8a56c HTTP/1.1" 200 91
+21-12-09 14:00 root         INFO     *******返回数据： {'code': 1001, 'message': '请求参数错误', 'data': None, 'level': 2}
+21-12-09 14:00 root         INFO     ********************************************************************************
+21-12-09 14:00 root         INFO     ********************************************************************************
+21-12-09 14:00 root         INFO     ****************数据盘扩容接口开始****************
+21-12-09 14:00 root         INFO     *******测试案例名称： TestCase005_数据盘扩容-add_size为字符串 执行开始********
+21-12-09 14:00 root         INFO     *******测试数据： {'add_size': 'abc', 'id': '70b9fd1d-acb5-4fba-b71c-7b71ad3a14c9', 'volume': '0190d108-9c44-41d6-b611-47ce26d8a56c', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 14:00 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 14:00 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/0190d108-9c44-41d6-b611-47ce26d8a56c HTTP/1.1" 200 91
+21-12-09 14:00 root         INFO     *******返回数据： {'code': 1001, 'message': '请求参数错误', 'data': None, 'level': 2}
+21-12-09 14:00 root         INFO     ********************************************************************************
+21-12-09 14:00 root         INFO     ********************************************************************************
+21-12-09 14:00 root         INFO     ****************数据盘扩容接口开始****************
+21-12-09 14:00 root         INFO     *******测试案例名称： TestCase006_数据盘扩容-add_size为超大值 执行开始********
+21-12-09 14:00 root         INFO     *******测试数据： {'add_size': '99999999999999999', 'id': '70b9fd1d-acb5-4fba-b71c-7b71ad3a14c9', 'volume': '0190d108-9c44-41d6-b611-47ce26d8a56c', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 14:00 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 14:00 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/0190d108-9c44-41d6-b611-47ce26d8a56c HTTP/1.1" 200 99
+21-12-09 14:00 root         INFO     *******返回数据： {'code': 217002, 'message': '存储池空间不足', 'data': None, 'level': 3}
+21-12-09 14:00 root         INFO     *******测试案例名称： TestCase006_数据盘扩容-add_size为超大值 执行完毕********
+21-12-09 14:00 root         INFO     ****************数据盘扩容接口结束****************
+21-12-09 14:00 root         INFO     ********************************************************************************
+21-12-09 14:00 root         INFO     ********************************************************************************
+21-12-09 14:00 root         INFO     ****************数据盘扩容接口开始****************
+21-12-09 14:00 root         INFO     *******测试案例名称： TestCase007_数据盘扩容-add_size比当前值大1 执行开始********
+21-12-09 14:00 root         INFO     *******测试数据： {'add_size': '2', 'id': '70b9fd1d-acb5-4fba-b71c-7b71ad3a14c9', 'volume': '0190d108-9c44-41d6-b611-47ce26d8a56c', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 14:00 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 14:00 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/0190d108-9c44-41d6-b611-47ce26d8a56c HTTP/1.1" 200 52
+21-12-09 14:00 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'add_size': 2}}
+21-12-09 14:00 root         INFO     *******测试案例名称： TestCase007_数据盘扩容-add_size比当前值大1 执行完毕********
+21-12-09 14:00 root         INFO     ****************数据盘扩容接口结束****************
+21-12-09 14:00 root         INFO     ********************************************************************************
+21-12-09 14:00 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 14:00 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1//storage/volumes/force-delete HTTP/1.1" 200 42
+21-12-09 14:00 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 14:00 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/account/logout HTTP/1.1" 200 42
+21-12-09 14:00 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+21-12-09 14:02 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+21-12-09 14:02 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+21-12-09 14:02 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+21-12-09 14:02 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+21-12-09 14:02 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+21-12-09 14:02 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+21-12-09 14:02 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+21-12-09 14:02 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+21-12-09 14:02 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+21-12-09 14:02 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+21-12-09 14:02 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+21-12-09 14:02 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+21-12-09 14:02 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+21-12-09 14:02 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+21-12-09 14:02 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+21-12-09 14:02 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+21-12-09 14:02 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+21-12-09 14:02 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+21-12-09 14:02 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 14:02 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+21-12-09 14:02 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+21-12-09 14:02 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+21-12-09 14:02 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+21-12-09 14:02 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 14:02 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+21-12-09 14:02 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+21-12-09 14:02 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+21-12-09 14:02 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+21-12-09 14:02 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+21-12-09 14:02 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+21-12-09 14:02 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+21-12-09 14:02 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+21-12-09 14:02 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+21-12-09 14:02 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+21-12-09 14:02 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 14:02 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 14:02 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+21-12-09 14:02 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+21-12-09 14:02 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 14:02 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+21-12-09 14:02 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 14:02 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/account/login HTTP/1.1" 200 935
+21-12-09 14:02 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 14:02 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes HTTP/1.1" 200 319
+21-12-09 14:02 root         INFO     the sql is : select id from disk where store_type=0 and pool_id=%s order by create_time desc limit 1;
+21-12-09 14:02 root         INFO     the params is : ddac080c671b473e885714538fd1ed6e
+21-12-09 14:02 root         INFO     the result data is :{'id': 'a8cc904d-0133-49c4-be97-e3e223c25578'}
+21-12-09 14:02 root         INFO     ********************************************************************************
+21-12-09 14:02 root         INFO     ****************数据盘扩容接口开始****************
+21-12-09 14:02 root         INFO     *******测试案例名称： TestCase001_新建快照-缺少token 执行开始********
+21-12-09 14:02 root         INFO     *******测试数据： {'volume': 'a8cc904d-0133-49c4-be97-e3e223c25578', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 14:02 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 14:02 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/a8cc904d-0133-49c4-be97-e3e223c25578 HTTP/1.1" 200 91
+21-12-09 14:02 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+21-12-09 14:02 root         INFO     *******测试案例名称： TestCase001_新建快照-缺少token 执行完毕********
+21-12-09 14:02 root         INFO     ****************数据盘扩容接口结束****************
+21-12-09 14:02 root         INFO     ********************************************************************************
+21-12-09 14:02 root         INFO     ********************************************************************************
+21-12-09 14:02 root         INFO     ****************数据盘扩容接口开始****************
+21-12-09 14:02 root         INFO     *******测试案例名称： TestCase002_数据盘扩容-add_size为负整数 执行开始********
+21-12-09 14:02 root         INFO     *******测试数据： {'add_size': '-3', 'id': '70b9fd1d-acb5-4fba-b71c-7b71ad3a14c9', 'volume': 'a8cc904d-0133-49c4-be97-e3e223c25578', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 14:02 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 14:02 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/a8cc904d-0133-49c4-be97-e3e223c25578 HTTP/1.1" 200 165
+21-12-09 14:02 root         INFO     *******返回数据： {'code': 214016, 'message': '云硬盘扩容容量不得小于当前云硬盘大小', 'data': None, 'level': 3}
+21-12-09 14:02 root         INFO     *******测试案例名称： TestCase002_数据盘扩容-add_size为负整数 执行完毕********
+21-12-09 14:02 root         INFO     ****************数据盘扩容接口结束****************
+21-12-09 14:02 root         INFO     ********************************************************************************
+21-12-09 14:02 root         INFO     ********************************************************************************
+21-12-09 14:02 root         INFO     ****************数据盘扩容接口开始****************
+21-12-09 14:02 root         INFO     *******测试案例名称： TestCase003_数据盘扩容-add_size为0 执行开始********
+21-12-09 14:02 root         INFO     *******测试数据： {'add_size': '0', 'id': '70b9fd1d-acb5-4fba-b71c-7b71ad3a14c9', 'volume': 'a8cc904d-0133-49c4-be97-e3e223c25578', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 14:02 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 14:02 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/a8cc904d-0133-49c4-be97-e3e223c25578 HTTP/1.1" 200 165
+21-12-09 14:02 root         INFO     *******返回数据： {'code': 214016, 'message': '云硬盘扩容容量不得小于当前云硬盘大小', 'data': None, 'level': 3}
+21-12-09 14:02 root         INFO     *******测试案例名称： TestCase003_数据盘扩容-add_size为0 执行完毕********
+21-12-09 14:02 root         INFO     ****************数据盘扩容接口结束****************
+21-12-09 14:02 root         INFO     ********************************************************************************
+21-12-09 14:02 root         INFO     ********************************************************************************
+21-12-09 14:02 root         INFO     ****************数据盘扩容接口开始****************
+21-12-09 14:02 root         INFO     *******测试案例名称： TestCase004_数据盘扩容-add_size为小数 执行开始********
+21-12-09 14:02 root         INFO     *******测试数据： {'add_size': '0.36', 'id': '70b9fd1d-acb5-4fba-b71c-7b71ad3a14c9', 'volume': 'a8cc904d-0133-49c4-be97-e3e223c25578', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 14:02 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 14:02 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/a8cc904d-0133-49c4-be97-e3e223c25578 HTTP/1.1" 200 91
+21-12-09 14:02 root         INFO     *******返回数据： {'code': 1001, 'message': '请求参数错误', 'data': None, 'level': 2}
+21-12-09 14:02 root         INFO     *******测试案例名称： TestCase004_数据盘扩容-add_size为小数 执行完毕********
+21-12-09 14:02 root         INFO     ****************数据盘扩容接口结束****************
+21-12-09 14:02 root         INFO     ********************************************************************************
+21-12-09 14:02 root         INFO     ********************************************************************************
+21-12-09 14:02 root         INFO     ****************数据盘扩容接口开始****************
+21-12-09 14:02 root         INFO     *******测试案例名称： TestCase005_数据盘扩容-add_size为字符串 执行开始********
+21-12-09 14:02 root         INFO     *******测试数据： {'add_size': 'abc', 'id': '70b9fd1d-acb5-4fba-b71c-7b71ad3a14c9', 'volume': 'a8cc904d-0133-49c4-be97-e3e223c25578', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 14:02 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 14:02 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/a8cc904d-0133-49c4-be97-e3e223c25578 HTTP/1.1" 200 91
+21-12-09 14:02 root         INFO     *******返回数据： {'code': 1001, 'message': '请求参数错误', 'data': None, 'level': 2}
+21-12-09 14:02 root         INFO     *******测试案例名称： TestCase005_数据盘扩容-add_size为字符串 执行完毕********
+21-12-09 14:02 root         INFO     ****************数据盘扩容接口结束****************
+21-12-09 14:02 root         INFO     ********************************************************************************
+21-12-09 14:02 root         INFO     ********************************************************************************
+21-12-09 14:02 root         INFO     ****************数据盘扩容接口开始****************
+21-12-09 14:02 root         INFO     *******测试案例名称： TestCase006_数据盘扩容-add_size为超大值 执行开始********
+21-12-09 14:02 root         INFO     *******测试数据： {'add_size': '99999999999999999', 'id': '70b9fd1d-acb5-4fba-b71c-7b71ad3a14c9', 'volume': 'a8cc904d-0133-49c4-be97-e3e223c25578', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 14:02 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 14:02 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/a8cc904d-0133-49c4-be97-e3e223c25578 HTTP/1.1" 200 99
+21-12-09 14:02 root         INFO     *******返回数据： {'code': 217002, 'message': '存储池空间不足', 'data': None, 'level': 3}
+21-12-09 14:02 root         INFO     *******测试案例名称： TestCase006_数据盘扩容-add_size为超大值 执行完毕********
+21-12-09 14:02 root         INFO     ****************数据盘扩容接口结束****************
+21-12-09 14:02 root         INFO     ********************************************************************************
+21-12-09 14:02 root         INFO     ********************************************************************************
+21-12-09 14:02 root         INFO     ****************数据盘扩容接口开始****************
+21-12-09 14:02 root         INFO     *******测试案例名称： TestCase007_数据盘扩容-add_size比当前值大1 执行开始********
+21-12-09 14:02 root         INFO     *******测试数据： {'add_size': '2', 'id': '70b9fd1d-acb5-4fba-b71c-7b71ad3a14c9', 'volume': 'a8cc904d-0133-49c4-be97-e3e223c25578', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 14:02 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 14:02 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/a8cc904d-0133-49c4-be97-e3e223c25578 HTTP/1.1" 200 52
+21-12-09 14:02 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'add_size': 2}}
+21-12-09 14:02 root         INFO     *******测试案例名称： TestCase007_数据盘扩容-add_size比当前值大1 执行完毕********
+21-12-09 14:02 root         INFO     ****************数据盘扩容接口结束****************
+21-12-09 14:02 root         INFO     ********************************************************************************
+21-12-09 14:02 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 14:02 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1//storage/volumes/force-delete HTTP/1.1" 200 42
+21-12-09 14:02 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 14:02 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/account/logout HTTP/1.1" 200 42
+21-12-09 14:02 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+21-12-09 17:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+21-12-09 17:01 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+21-12-09 17:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+21-12-09 17:01 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+21-12-09 17:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+21-12-09 17:01 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+21-12-09 17:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+21-12-09 17:01 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+21-12-09 17:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+21-12-09 17:01 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+21-12-09 17:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+21-12-09 17:01 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+21-12-09 17:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+21-12-09 17:01 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+21-12-09 17:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+21-12-09 17:01 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+21-12-09 17:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+21-12-09 17:01 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+21-12-09 17:01 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 17:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+21-12-09 17:01 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+21-12-09 17:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+21-12-09 17:01 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+21-12-09 17:01 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 17:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+21-12-09 17:01 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+21-12-09 17:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+21-12-09 17:01 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+21-12-09 17:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+21-12-09 17:01 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+21-12-09 17:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+21-12-09 17:01 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+21-12-09 17:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+21-12-09 17:01 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+21-12-09 17:01 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 17:01 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 17:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+21-12-09 17:01 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+21-12-09 17:01 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 17:01 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+21-12-09 17:01 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:01 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/account/login HTTP/1.1" 200 935
+21-12-09 17:01 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:01 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes HTTP/1.1" 200 315
+21-12-09 17:01 root         INFO     the sql is : select d.id as diskId, d.name as diskName, d.size as diskSize, d.status as diskStatus,             i.id as vmId, i.name as vmName, i.status as vmStatus, p.id as projectId, p.name as projectName              from  disk d LEFT JOIN cloud_instance i on i.project_id=d.pool_id INNER JOIN cloud_pool p on p.id=d.pool_id           where i.status in (1,3) and d.store_type=0 and d.status=1 ORDER BY d.create_time desc limit 1;
+21-12-09 17:01 root         INFO     the params is : ()
+21-12-09 17:01 root         INFO     the result data is :{'diskId': 'a2cc278c-43e6-400c-a03e-e3bcf3cab293', 'diskName': 'CloudDisk4CI', 'diskSize': 1024, 'diskStatus': 1, 'vmId': 'ins-b6f3b9cc9f74446089d1cbe2e2065fc3', 'vmName': 'LC3', 'vmStatus': 1, 'projectId': 'ddac080c671b473e885714538fd1ed6e', 'projectName': 'LeonaTestPool1125'}
+21-12-09 17:01 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:01 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/action HTTP/1.1" 200 42
+21-12-09 17:01 root         INFO     ********************************************************************************
+21-12-09 17:01 root         INFO     ****************卸载数据盘列表接口开始****************
+21-12-09 17:01 root         INFO     *******测试案例名称： TestCase001_卸载数据盘-缺少token 执行开始********
+21-12-09 17:01 root         INFO     *******测试数据： {'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 17:01 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:01 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/action HTTP/1.1" 200 91
+21-12-09 17:01 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+21-12-09 17:01 root         INFO     *******测试案例名称： TestCase001_卸载数据盘-缺少token 执行完毕********
+21-12-09 17:01 root         INFO     ****************卸载数据盘列表接口结束****************
+21-12-09 17:01 root         INFO     ********************************************************************************
+21-12-09 17:01 root         INFO     ********************************************************************************
+21-12-09 17:01 root         INFO     ****************卸载数据盘列表接口开始****************
+21-12-09 17:01 root         INFO     *******测试案例名称： TestCase002_卸载数据盘-instance为空 执行开始********
+21-12-09 17:01 root         INFO     *******测试数据： {'instance': [''], 'action': 'detach', 'volume': 'bde97a16-23f7-467d-b4ef-e1465389bde5', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 17:01 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:01 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/action HTTP/1.1" 200 91
+21-12-09 17:01 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+21-12-09 17:01 root         INFO     ********************************************************************************
+21-12-09 17:01 root         INFO     ********************************************************************************
+21-12-09 17:01 root         INFO     ****************卸载数据盘列表接口开始****************
+21-12-09 17:01 root         INFO     *******测试案例名称： TestCase003_卸载数据盘-volume为空 执行开始********
+21-12-09 17:01 root         INFO     *******测试数据： {'instance': ['ins-4b28fa544833425ebcff74ad3c1fb618'], 'action': 'detach', 'volume': '', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 17:01 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:01 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/action HTTP/1.1" 200 91
+21-12-09 17:01 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+21-12-09 17:01 root         INFO     ********************************************************************************
+21-12-09 17:01 root         INFO     ********************************************************************************
+21-12-09 17:01 root         INFO     ****************卸载数据盘列表接口开始****************
+21-12-09 17:01 root         INFO     *******测试案例名称： TestCase003_卸载数据盘-成功 执行开始********
+21-12-09 17:01 root         INFO     *******测试数据： {'instance': ['ins-b6f3b9cc9f74446089d1cbe2e2065fc3'], 'action': 'detach', 'volume': 'a2cc278c-43e6-400c-a03e-e3bcf3cab293', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 17:01 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:01 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/action HTTP/1.1" 200 91
+21-12-09 17:01 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+21-12-09 17:01 root         INFO     ********************************************************************************
+21-12-09 17:01 root         INFO     ********************************************************************************
+21-12-09 17:01 root         INFO     ****************卸载数据盘列表接口开始****************
+21-12-09 17:01 root         INFO     *******测试案例名称： TestCase004_卸载数据盘-重复卸载-失败 执行开始********
+21-12-09 17:01 root         INFO     *******测试数据： {'instance': ['ins-b6f3b9cc9f74446089d1cbe2e2065fc3'], 'action': 'detach', 'volume': 'a2cc278c-43e6-400c-a03e-e3bcf3cab293', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 17:01 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:01 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/action HTTP/1.1" 200 91
+21-12-09 17:01 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+21-12-09 17:01 root         INFO     ********************************************************************************
+21-12-09 17:01 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:01 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1//storage/volumes/force-delete HTTP/1.1" 200 91
+21-12-09 17:01 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:01 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/account/logout HTTP/1.1" 200 91
+21-12-09 17:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+21-12-09 17:03 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+21-12-09 17:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+21-12-09 17:03 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+21-12-09 17:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+21-12-09 17:03 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+21-12-09 17:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+21-12-09 17:03 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+21-12-09 17:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+21-12-09 17:03 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+21-12-09 17:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+21-12-09 17:03 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+21-12-09 17:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+21-12-09 17:03 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+21-12-09 17:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+21-12-09 17:03 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+21-12-09 17:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+21-12-09 17:03 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+21-12-09 17:03 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 17:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+21-12-09 17:03 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+21-12-09 17:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+21-12-09 17:03 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+21-12-09 17:03 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 17:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+21-12-09 17:03 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+21-12-09 17:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+21-12-09 17:03 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+21-12-09 17:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+21-12-09 17:03 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+21-12-09 17:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+21-12-09 17:03 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+21-12-09 17:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+21-12-09 17:03 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+21-12-09 17:03 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 17:03 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 17:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+21-12-09 17:03 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+21-12-09 17:03 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 17:03 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+21-12-09 17:03 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:03 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/account/login HTTP/1.1" 200 935
+21-12-09 17:03 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:03 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes HTTP/1.1" 200 315
+21-12-09 17:03 root         INFO     the sql is : select d.id as diskId, d.name as diskName, d.size as diskSize, d.status as diskStatus,             i.id as vmId, i.name as vmName, i.status as vmStatus, p.id as projectId, p.name as projectName              from  disk d LEFT JOIN cloud_instance i on i.project_id=d.pool_id INNER JOIN cloud_pool p on p.id=d.pool_id           where i.status in (1,3) and d.store_type=0 and d.status=1 ORDER BY d.create_time desc limit 1;
+21-12-09 17:03 root         INFO     the params is : ()
+21-12-09 17:03 root         INFO     the result data is :{'diskId': 'd102ed57-5e70-4000-90e1-316a1aa51cf6', 'diskName': 'CloudDisk4CI', 'diskSize': 1024, 'diskStatus': 1, 'vmId': 'ins-b6f3b9cc9f74446089d1cbe2e2065fc3', 'vmName': 'LC3', 'vmStatus': 1, 'projectId': 'ddac080c671b473e885714538fd1ed6e', 'projectName': 'LeonaTestPool1125'}
+21-12-09 17:03 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:03 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/action HTTP/1.1" 200 147
+21-12-09 17:03 root         INFO     ********************************************************************************
+21-12-09 17:03 root         INFO     ****************卸载数据盘列表接口开始****************
+21-12-09 17:03 root         INFO     *******测试案例名称： TestCase001_卸载数据盘-缺少token 执行开始********
+21-12-09 17:03 root         INFO     *******测试数据： {'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 17:03 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:03 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/action HTTP/1.1" 200 91
+21-12-09 17:03 root         INFO     *******返回数据： {'code': 1001, 'message': '请求参数错误', 'data': None, 'level': 2}
+21-12-09 17:03 root         INFO     ********************************************************************************
+21-12-09 17:03 root         INFO     ********************************************************************************
+21-12-09 17:03 root         INFO     ****************卸载数据盘列表接口开始****************
+21-12-09 17:03 root         INFO     *******测试案例名称： TestCase002_卸载数据盘-instance为空 执行开始********
+21-12-09 17:03 root         INFO     *******测试数据： {'instance': [''], 'action': 'detach', 'volume': 'bde97a16-23f7-467d-b4ef-e1465389bde5', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 17:03 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:03 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/action HTTP/1.1" 200 91
+21-12-09 17:03 root         INFO     *******返回数据： {'code': 1001, 'message': '请求参数错误', 'data': None, 'level': 2}
+21-12-09 17:03 root         INFO     *******测试案例名称： TestCase002_卸载数据盘-instance为空 执行完毕********
+21-12-09 17:03 root         INFO     ****************卸载数据盘列表接口结束****************
+21-12-09 17:03 root         INFO     ********************************************************************************
+21-12-09 17:03 root         INFO     ********************************************************************************
+21-12-09 17:03 root         INFO     ****************卸载数据盘列表接口开始****************
+21-12-09 17:03 root         INFO     *******测试案例名称： TestCase003_卸载数据盘-volume为空 执行开始********
+21-12-09 17:03 root         INFO     *******测试数据： {'instance': ['ins-4b28fa544833425ebcff74ad3c1fb618'], 'action': 'detach', 'volume': '', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 17:03 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:03 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/action HTTP/1.1" 200 91
+21-12-09 17:03 root         INFO     *******返回数据： {'code': 1001, 'message': '请求参数错误', 'data': None, 'level': 2}
+21-12-09 17:03 root         INFO     *******测试案例名称： TestCase003_卸载数据盘-volume为空 执行完毕********
+21-12-09 17:03 root         INFO     ****************卸载数据盘列表接口结束****************
+21-12-09 17:03 root         INFO     ********************************************************************************
+21-12-09 17:03 root         INFO     ********************************************************************************
+21-12-09 17:03 root         INFO     ****************卸载数据盘列表接口开始****************
+21-12-09 17:03 root         INFO     *******测试案例名称： TestCase003_卸载数据盘-成功 执行开始********
+21-12-09 17:03 root         INFO     *******测试数据： {'instance': ['ins-b6f3b9cc9f74446089d1cbe2e2065fc3'], 'action': 'detach', 'volume': 'd102ed57-5e70-4000-90e1-316a1aa51cf6', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 17:03 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:03 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/action HTTP/1.1" 200 141
+21-12-09 17:03 root         INFO     *******返回数据： {'code': 214028, 'message': '非已加载状态下云硬盘不可卸载', 'data': None, 'level': 3}
+21-12-09 17:03 root         INFO     ********************************************************************************
+21-12-09 17:03 root         INFO     ********************************************************************************
+21-12-09 17:03 root         INFO     ****************卸载数据盘列表接口开始****************
+21-12-09 17:03 root         INFO     *******测试案例名称： TestCase004_卸载数据盘-重复卸载-失败 执行开始********
+21-12-09 17:03 root         INFO     *******测试数据： {'instance': ['ins-b6f3b9cc9f74446089d1cbe2e2065fc3'], 'action': 'detach', 'volume': 'd102ed57-5e70-4000-90e1-316a1aa51cf6', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 17:03 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:03 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/action HTTP/1.1" 200 141
+21-12-09 17:03 root         INFO     *******返回数据： {'code': 214028, 'message': '非已加载状态下云硬盘不可卸载', 'data': None, 'level': 3}
+21-12-09 17:03 root         INFO     *******测试案例名称： TestCase004_卸载数据盘-重复卸载-失败 执行完毕********
+21-12-09 17:03 root         INFO     ****************卸载数据盘列表接口结束****************
+21-12-09 17:03 root         INFO     ********************************************************************************
+21-12-09 17:03 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:03 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1//storage/volumes/force-delete HTTP/1.1" 200 91
+21-12-09 17:03 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:03 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/account/logout HTTP/1.1" 200 91
+21-12-09 17:09 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+21-12-09 17:09 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+21-12-09 17:09 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+21-12-09 17:09 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+21-12-09 17:09 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+21-12-09 17:09 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+21-12-09 17:09 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+21-12-09 17:09 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+21-12-09 17:09 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+21-12-09 17:09 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+21-12-09 17:09 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+21-12-09 17:09 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+21-12-09 17:09 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+21-12-09 17:09 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+21-12-09 17:09 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+21-12-09 17:09 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+21-12-09 17:09 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+21-12-09 17:09 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+21-12-09 17:09 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 17:09 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+21-12-09 17:09 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+21-12-09 17:09 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+21-12-09 17:09 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+21-12-09 17:09 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 17:09 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+21-12-09 17:09 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+21-12-09 17:09 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+21-12-09 17:09 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+21-12-09 17:09 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+21-12-09 17:09 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+21-12-09 17:09 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+21-12-09 17:09 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+21-12-09 17:09 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+21-12-09 17:09 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+21-12-09 17:09 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 17:09 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 17:09 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+21-12-09 17:09 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+21-12-09 17:09 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 17:09 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+21-12-09 17:09 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:09 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/account/login HTTP/1.1" 200 935
+21-12-09 17:09 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:09 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes HTTP/1.1" 200 319
+21-12-09 17:09 root         INFO     the sql is : select d.id as diskId, d.name as diskName, d.size as diskSize, d.status as diskStatus,             i.id as vmId, i.name as vmName, i.status as vmStatus, p.id as projectId, p.name as projectName              from  disk d LEFT JOIN cloud_instance i on i.project_id=d.pool_id INNER JOIN cloud_pool p on p.id=d.pool_id           where i.status in (1,3) and d.store_type=0 and d.status=1 ORDER BY d.create_time desc limit 1;
+21-12-09 17:09 root         INFO     the params is : ()
+21-12-09 17:09 root         INFO     the result data is :{'diskId': '5fa565d5-db73-47b7-8b93-5046bcfb5a05', 'diskName': 'CloudDisk4Detach', 'diskSize': 1024, 'diskStatus': 1, 'vmId': 'ins-b6f3b9cc9f74446089d1cbe2e2065fc3', 'vmName': 'LC3', 'vmStatus': 1, 'projectId': 'ddac080c671b473e885714538fd1ed6e', 'projectName': 'LeonaTestPool1125'}
+21-12-09 17:09 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:09 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/action HTTP/1.1" 200 42
+21-12-09 17:09 root         INFO     ********************************************************************************
+21-12-09 17:09 root         INFO     ****************卸载数据盘列表接口开始****************
+21-12-09 17:09 root         INFO     *******测试案例名称： TestCase001_卸载数据盘-缺少token 执行开始********
+21-12-09 17:09 root         INFO     *******测试数据： {'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 17:09 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:09 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/action HTTP/1.1" 200 91
+21-12-09 17:09 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+21-12-09 17:09 root         INFO     *******测试案例名称： TestCase001_卸载数据盘-缺少token 执行完毕********
+21-12-09 17:09 root         INFO     ****************卸载数据盘列表接口结束****************
+21-12-09 17:09 root         INFO     ********************************************************************************
+21-12-09 17:09 root         INFO     ********************************************************************************
+21-12-09 17:09 root         INFO     ****************卸载数据盘列表接口开始****************
+21-12-09 17:09 root         INFO     *******测试案例名称： TestCase002_卸载数据盘-instance为空 执行开始********
+21-12-09 17:09 root         INFO     *******测试数据： {'instance': [''], 'action': 'detach', 'volume': 'bde97a16-23f7-467d-b4ef-e1465389bde5', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 17:09 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:09 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/action HTTP/1.1" 200 91
+21-12-09 17:09 root         INFO     *******返回数据： {'code': 1001, 'message': '请求参数错误', 'data': None, 'level': 2}
+21-12-09 17:09 root         INFO     *******测试案例名称： TestCase002_卸载数据盘-instance为空 执行完毕********
+21-12-09 17:09 root         INFO     ****************卸载数据盘列表接口结束****************
+21-12-09 17:09 root         INFO     ********************************************************************************
+21-12-09 17:09 root         INFO     ********************************************************************************
+21-12-09 17:09 root         INFO     ****************卸载数据盘列表接口开始****************
+21-12-09 17:09 root         INFO     *******测试案例名称： TestCase003_卸载数据盘-volume为空 执行开始********
+21-12-09 17:09 root         INFO     *******测试数据： {'instance': ['ins-4b28fa544833425ebcff74ad3c1fb618'], 'action': 'detach', 'volume': '', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 17:09 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:09 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/action HTTP/1.1" 200 91
+21-12-09 17:09 root         INFO     *******返回数据： {'code': 1001, 'message': '请求参数错误', 'data': None, 'level': 2}
+21-12-09 17:09 root         INFO     *******测试案例名称： TestCase003_卸载数据盘-volume为空 执行完毕********
+21-12-09 17:09 root         INFO     ****************卸载数据盘列表接口结束****************
+21-12-09 17:09 root         INFO     ********************************************************************************
+21-12-09 17:09 root         INFO     ********************************************************************************
+21-12-09 17:09 root         INFO     ****************卸载数据盘列表接口开始****************
+21-12-09 17:09 root         INFO     *******测试案例名称： TestCase003_卸载数据盘-成功 执行开始********
+21-12-09 17:09 root         INFO     *******测试数据： {'instance': ['ins-b6f3b9cc9f74446089d1cbe2e2065fc3'], 'action': 'detach', 'volume': '5fa565d5-db73-47b7-8b93-5046bcfb5a05', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 17:09 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:09 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/action HTTP/1.1" 200 42
+21-12-09 17:09 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': None}
+21-12-09 17:09 root         INFO     *******测试案例名称： TestCase003_卸载数据盘-成功 执行完毕********
+21-12-09 17:09 root         INFO     ****************卸载数据盘列表接口结束****************
+21-12-09 17:09 root         INFO     ********************************************************************************
+21-12-09 17:09 root         INFO     ********************************************************************************
+21-12-09 17:09 root         INFO     ****************卸载数据盘列表接口开始****************
+21-12-09 17:09 root         INFO     *******测试案例名称： TestCase004_卸载数据盘-重复卸载-失败 执行开始********
+21-12-09 17:09 root         INFO     *******测试数据： {'instance': ['ins-b6f3b9cc9f74446089d1cbe2e2065fc3'], 'action': 'detach', 'volume': '5fa565d5-db73-47b7-8b93-5046bcfb5a05', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 17:09 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:09 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/action HTTP/1.1" 200 42
+21-12-09 17:09 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': None}
+21-12-09 17:09 root         INFO     ********************************************************************************
+21-12-09 17:09 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:09 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1//storage/volumes/force-delete HTTP/1.1" 200 76
+21-12-09 17:09 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:09 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/account/logout HTTP/1.1" 200 42
+21-12-09 17:09 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+21-12-09 17:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+21-12-09 17:11 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+21-12-09 17:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+21-12-09 17:11 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+21-12-09 17:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+21-12-09 17:11 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+21-12-09 17:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+21-12-09 17:11 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+21-12-09 17:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+21-12-09 17:11 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+21-12-09 17:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+21-12-09 17:11 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+21-12-09 17:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+21-12-09 17:11 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+21-12-09 17:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+21-12-09 17:11 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+21-12-09 17:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+21-12-09 17:11 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+21-12-09 17:11 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 17:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+21-12-09 17:11 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+21-12-09 17:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+21-12-09 17:11 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+21-12-09 17:11 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 17:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+21-12-09 17:11 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+21-12-09 17:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+21-12-09 17:11 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+21-12-09 17:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+21-12-09 17:11 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+21-12-09 17:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+21-12-09 17:11 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+21-12-09 17:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+21-12-09 17:11 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+21-12-09 17:11 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 17:11 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 17:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+21-12-09 17:11 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+21-12-09 17:11 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-09 17:11 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+21-12-09 17:11 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:11 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/account/login HTTP/1.1" 200 935
+21-12-09 17:11 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:11 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes HTTP/1.1" 200 319
+21-12-09 17:11 root         INFO     the sql is : select d.id as diskId, d.name as diskName, d.size as diskSize, d.status as diskStatus,             i.id as vmId, i.name as vmName, i.status as vmStatus, p.id as projectId, p.name as projectName              from  disk d LEFT JOIN cloud_instance i on i.project_id=d.pool_id INNER JOIN cloud_pool p on p.id=d.pool_id           where i.status in (1,3) and d.store_type=0 and d.status=1 ORDER BY d.create_time desc limit 1;
+21-12-09 17:11 root         INFO     the params is : ()
+21-12-09 17:11 root         INFO     the result data is :{'diskId': '417269eb-da86-4784-ae27-b8cae843e485', 'diskName': 'CloudDisk4Detach', 'diskSize': 1024, 'diskStatus': 1, 'vmId': 'ins-4b28fa544833425ebcff74ad3c1fb618', 'vmName': 'LC1', 'vmStatus': 1, 'projectId': 'ddac080c671b473e885714538fd1ed6e', 'projectName': 'LeonaTestPool1125'}
+21-12-09 17:11 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:11 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/action HTTP/1.1" 200 42
+21-12-09 17:11 root         INFO     ********************************************************************************
+21-12-09 17:11 root         INFO     ****************卸载数据盘列表接口开始****************
+21-12-09 17:11 root         INFO     *******测试案例名称： TestCase001_卸载数据盘-缺少token 执行开始********
+21-12-09 17:11 root         INFO     *******测试数据： {'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 17:11 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:11 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/action HTTP/1.1" 200 91
+21-12-09 17:11 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+21-12-09 17:11 root         INFO     *******测试案例名称： TestCase001_卸载数据盘-缺少token 执行完毕********
+21-12-09 17:11 root         INFO     ****************卸载数据盘列表接口结束****************
+21-12-09 17:11 root         INFO     ********************************************************************************
+21-12-09 17:11 root         INFO     ********************************************************************************
+21-12-09 17:11 root         INFO     ****************卸载数据盘列表接口开始****************
+21-12-09 17:11 root         INFO     *******测试案例名称： TestCase002_卸载数据盘-instance为空 执行开始********
+21-12-09 17:11 root         INFO     *******测试数据： {'instance': [''], 'action': 'detach', 'volume': 'bde97a16-23f7-467d-b4ef-e1465389bde5', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 17:11 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:11 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/action HTTP/1.1" 200 91
+21-12-09 17:11 root         INFO     *******返回数据： {'code': 1001, 'message': '请求参数错误', 'data': None, 'level': 2}
+21-12-09 17:11 root         INFO     *******测试案例名称： TestCase002_卸载数据盘-instance为空 执行完毕********
+21-12-09 17:11 root         INFO     ****************卸载数据盘列表接口结束****************
+21-12-09 17:11 root         INFO     ********************************************************************************
+21-12-09 17:11 root         INFO     ********************************************************************************
+21-12-09 17:11 root         INFO     ****************卸载数据盘列表接口开始****************
+21-12-09 17:11 root         INFO     *******测试案例名称： TestCase003_卸载数据盘-volume为空 执行开始********
+21-12-09 17:11 root         INFO     *******测试数据： {'instance': ['ins-4b28fa544833425ebcff74ad3c1fb618'], 'action': 'detach', 'volume': '', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 17:11 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:11 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/action HTTP/1.1" 200 91
+21-12-09 17:11 root         INFO     *******返回数据： {'code': 1001, 'message': '请求参数错误', 'data': None, 'level': 2}
+21-12-09 17:11 root         INFO     *******测试案例名称： TestCase003_卸载数据盘-volume为空 执行完毕********
+21-12-09 17:11 root         INFO     ****************卸载数据盘列表接口结束****************
+21-12-09 17:11 root         INFO     ********************************************************************************
+21-12-09 17:11 root         INFO     ********************************************************************************
+21-12-09 17:11 root         INFO     ****************卸载数据盘列表接口开始****************
+21-12-09 17:11 root         INFO     *******测试案例名称： TestCase003_卸载数据盘-成功 执行开始********
+21-12-09 17:11 root         INFO     *******测试数据： {'instance': ['ins-4b28fa544833425ebcff74ad3c1fb618'], 'action': 'detach', 'volume': '417269eb-da86-4784-ae27-b8cae843e485', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 17:11 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:11 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/action HTTP/1.1" 200 42
+21-12-09 17:11 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': None}
+21-12-09 17:11 root         INFO     *******测试案例名称： TestCase003_卸载数据盘-成功 执行完毕********
+21-12-09 17:11 root         INFO     ****************卸载数据盘列表接口结束****************
+21-12-09 17:11 root         INFO     ********************************************************************************
+21-12-09 17:11 root         INFO     ********************************************************************************
+21-12-09 17:11 root         INFO     ****************卸载数据盘列表接口开始****************
+21-12-09 17:11 root         INFO     *******测试案例名称： TestCase004_卸载数据盘-重复卸载-失败 执行开始********
+21-12-09 17:11 root         INFO     *******测试数据： {'instance': ['ins-4b28fa544833425ebcff74ad3c1fb618'], 'action': 'detach', 'volume': '417269eb-da86-4784-ae27-b8cae843e485', 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+21-12-09 17:11 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:11 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/storage/volumes/action HTTP/1.1" 200 141
+21-12-09 17:11 root         INFO     *******返回数据： {'code': 214028, 'message': '非已加载状态下云硬盘不可卸载', 'data': None, 'level': 3}
+21-12-09 17:11 root         INFO     *******测试案例名称： TestCase004_卸载数据盘-重复卸载-失败 执行完毕********
+21-12-09 17:11 root         INFO     ****************卸载数据盘列表接口结束****************
+21-12-09 17:11 root         INFO     ********************************************************************************
+21-12-09 17:11 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:11 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1//storage/volumes/force-delete HTTP/1.1" 200 42
+21-12-09 17:11 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-09 17:11 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/account/logout HTTP/1.1" 200 42
+21-12-09 17:11 root         INFO     **********************************************完成teardown class，退出登录**********************************************
