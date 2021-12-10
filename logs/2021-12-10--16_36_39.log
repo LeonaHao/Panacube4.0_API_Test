@@ -1,0 +1,7 @@
+2021-12-10 16:36:39,131 - root - INFO - the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1 
+2021-12-10 16:36:39,131 - root - INFO - the params is : ddac080c671b473e885714538fd1ed6e
+2021-12-10 16:36:39,133 - root - INFO - the result data is :{'server_id': 'ins-b6f3b9cc9f74446089d1cbe2e2065fc3', 'snapshot_name': 'LC3-sys3'}
+2021-12-10 16:36:39,145 - root - INFO - the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1 
+2021-12-10 16:36:39,146 - root - INFO - the params is : ddac080c671b473e885714538fd1ed6e
+2021-12-10 16:36:39,147 - root - INFO - the result data is :{'server_id': 'ins-b6f3b9cc9f74446089d1cbe2e2065fc3', 'snapshot_name': 'LC3-sys3'}
+2021-12-10 16:36:39,276 - root - INFO - **********************************************开始setupClass，进行登录**********************************************

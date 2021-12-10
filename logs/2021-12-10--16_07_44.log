@@ -1,0 +1,3 @@
+2021-12-10 16:07:44,463 - root - INFO - the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s
+2021-12-10 16:07:44,464 - root - INFO - the params is : ddac080c671b473e885714538fd1ed6e
+2021-12-10 16:07:44,465 - root - INFO - the result data is :{'server_id': 'ins-19fde113ee404b2b83fdac6b4cb68a23', 'snapshot_name': 'LCsnap1-sys1'}

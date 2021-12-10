@@ -1,0 +1,76 @@
+2021-12-09 18:20:50,211 - root - INFO - **********************************************开始setupClass，进行登录**********************************************
+2021-12-09 18:20:56,886 - root - INFO - the sql is : select d.id as diskId, d.name as diskName, d.size as diskSize, d.status as diskStatus,             i.id as vmId, i.name as vmName, i.status as vmStatus, p.id as projectId, p.name as projectName              from  disk d LEFT JOIN cloud_instance i on i.project_id=d.pool_id INNER JOIN cloud_pool p on p.id=d.pool_id           where i.status in (1,3) and d.store_type=0 and d.status=1 ORDER BY d.create_time desc limit 1;
+2021-12-09 18:20:56,887 - root - INFO - the params is : ()
+2021-12-09 18:20:56,889 - root - INFO - the result data is :{'diskId': '0492bd2c-444b-4f01-91ea-c193cfc36867', 'diskName': 'CloudDisk4CI', 'diskSize': 1024, 'diskStatus': 1, 'vmId': 'ins-4b28fa544833425ebcff74ad3c1fb618', 'vmName': 'LC1', 'vmStatus': 1, 'projectId': 'ddac080c671b473e885714538fd1ed6e', 'projectName': 'LeonaTestPool1125'}
+2021-12-09 18:20:56,890 - root - INFO - ********************************************************************************
+2021-12-09 18:20:56,890 - root - INFO - ****************加载数据盘列表接口开始****************
+2021-12-09 18:20:56,891 - root - INFO - *******测试案例名称： TestCase001_加载数据盘-volume为空 执行开始********
+2021-12-09 18:20:56,891 - root - INFO - *******测试数据： {'volume': '', 'action': 'attach', 'path': '', 'instance': ['ins-4b28fa544833425ebcff74ad3c1fb618'], 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+2021-12-09 18:20:56,917 - root - INFO - *******返回数据： {'code': 1001, 'message': '请求参数错误', 'data': None, 'level': 2}
+2021-12-09 18:20:56,918 - root - INFO - *******测试案例名称： TestCase001_加载数据盘-volume为空 执行完毕********
+2021-12-09 18:20:56,918 - root - INFO - ****************加载数据盘列表接口结束****************
+2021-12-09 18:20:56,919 - root - INFO - ********************************************************************************
+2021-12-09 18:20:56,919 - root - INFO - ********************************************************************************
+2021-12-09 18:20:56,919 - root - INFO - ****************加载数据盘列表接口开始****************
+2021-12-09 18:20:56,920 - root - INFO - *******测试案例名称： TestCase002_加载数据盘-Path为空 执行开始********
+2021-12-09 18:20:56,920 - root - INFO - *******测试数据： {'volume': 'c7735672-0232-42a2-9838-bb0e8cfe4a7b', 'action': 'attach', 'path': '', 'instance': ['ins-4b28fa544833425ebcff74ad3c1fb618'], 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+2021-12-09 18:20:57,082 - root - INFO - *******返回数据： {'code': 1001, 'message': '请求参数错误', 'data': None, 'level': 2}
+2021-12-09 18:20:57,082 - root - INFO - *******测试案例名称： TestCase002_加载数据盘-Path为空 执行完毕********
+2021-12-09 18:20:57,082 - root - INFO - ****************加载数据盘列表接口结束****************
+2021-12-09 18:20:57,083 - root - INFO - ********************************************************************************
+2021-12-09 18:20:57,083 - root - INFO - ********************************************************************************
+2021-12-09 18:20:57,083 - root - INFO - ****************加载数据盘列表接口开始****************
+2021-12-09 18:20:57,084 - root - INFO - *******测试案例名称： TestCase003_加载数据盘-Path为特殊字符 执行开始********
+2021-12-09 18:20:57,084 - root - INFO - *******测试数据： {'volume': 'c7735672-0232-42a2-9838-bb0e8cfe4a7b', 'action': 'attach', 'path': '/mnt/￥%……￥%……', 'instance': ['ins-4b28fa544833425ebcff74ad3c1fb618'], 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+2021-12-09 18:20:57,238 - root - INFO - *******返回数据： {'code': 214017, 'message': '云硬盘挂载路径不合法', 'data': None, 'level': 3}
+2021-12-09 18:20:57,239 - root - INFO - *******测试案例名称： TestCase003_加载数据盘-Path为特殊字符 执行完毕********
+2021-12-09 18:20:57,239 - root - INFO - ****************加载数据盘列表接口结束****************
+2021-12-09 18:20:57,240 - root - INFO - ********************************************************************************
+2021-12-09 18:20:57,240 - root - INFO - ********************************************************************************
+2021-12-09 18:20:57,240 - root - INFO - ****************加载数据盘列表接口开始****************
+2021-12-09 18:20:57,241 - root - INFO - *******测试案例名称： TestCase003_加载数据盘-Volume不存在 执行开始********
+2021-12-09 18:20:57,241 - root - INFO - *******测试数据： {'volume': 'c1111111-1111-1111-1111-111111111111', 'action': 'attach', 'path': '/mnt/￥%……￥%……', 'instance': ['ins-4b28fa544833425ebcff74ad3c1fb618'], 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+2021-12-09 18:20:57,271 - root - INFO - *******返回数据： {'code': 1, 'message': '服务异常', 'data': None, 'level': 1}
+2021-12-09 18:20:57,271 - root - INFO - ********************************************************************************
+2021-12-09 18:20:57,272 - root - INFO - ********************************************************************************
+2021-12-09 18:20:57,272 - root - INFO - ****************加载数据盘列表接口开始****************
+2021-12-09 18:20:57,272 - root - INFO - *******测试案例名称： TestCase004_加载数据盘-Path>128 执行开始********
+2021-12-09 18:20:57,273 - root - INFO - *******测试数据： {'volume': 'c7735672-0232-42a2-9838-bb0e8cfe4a7b', 'action': 'attach', 'path': '/mnt/test1/test2/test3/test4/test5/test6/test7/test8/test9/test10/test11/test12/test13/test13/test14/test15/test16/test17/test18/test19', 'instance': ['ins-4b28fa544833425ebcff74ad3c1fb618'], 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+2021-12-09 18:20:57,431 - root - INFO - *******返回数据： {'code': 214026, 'message': '云硬盘挂载路径过长', 'data': None, 'level': 3}
+2021-12-09 18:20:57,432 - root - INFO - *******测试案例名称： TestCase004_加载数据盘-Path>128 执行完毕********
+2021-12-09 18:20:57,432 - root - INFO - ****************加载数据盘列表接口结束****************
+2021-12-09 18:20:57,433 - root - INFO - ********************************************************************************
+2021-12-09 18:20:57,433 - root - INFO - ********************************************************************************
+2021-12-09 18:20:57,433 - root - INFO - ****************加载数据盘列表接口开始****************
+2021-12-09 18:20:57,434 - root - INFO - *******测试案例名称： TestCase005_加载数据盘-Path=128 执行开始********
+2021-12-09 18:20:57,434 - root - INFO - *******测试数据： {'volume': 'c7735672-0232-42a2-9838-bb0e8cfe4a7b', 'action': 'attach', 'path': '/mnt/test1/test2/test3/test4/test5/test6/test7/test8/test9/test10/test11/test12/test13/test13/test14/test15/test16/test17/test18/hKK', 'instance': ['ins-4b28fa544833425ebcff74ad3c1fb618'], 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+2021-12-09 18:20:58,045 - root - INFO - *******返回数据： {'code': 0, 'message': 'success', 'data': None}
+2021-12-09 18:20:58,046 - root - INFO - *******测试案例名称： TestCase005_加载数据盘-Path=128 执行完毕********
+2021-12-09 18:20:58,046 - root - INFO - ****************加载数据盘列表接口结束****************
+2021-12-09 18:20:58,047 - root - INFO - ********************************************************************************
+2021-12-09 18:20:58,047 - root - INFO - ********************************************************************************
+2021-12-09 18:20:58,047 - root - INFO - ****************加载数据盘列表接口开始****************
+2021-12-09 18:20:58,048 - root - INFO - *******测试案例名称： TestCase006_加载数据盘-同一路径重复加载-Path=128 执行开始********
+2021-12-09 18:20:58,048 - root - INFO - *******测试数据： {'volume': 'c7735672-0232-42a2-9838-bb0e8cfe4a7b', 'action': 'attach', 'path': '/mnt/test1/test2/test3/test4/test5/test6/test7/test8/test9/test10/test11/test12/test13/test13/test14/test15/test16/test17/test18/hKK', 'instance': ['ins-4b28fa544833425ebcff74ad3c1fb618'], 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+2021-12-09 18:20:58,447 - root - INFO - *******返回数据： {'code': 214021, 'message': '同一挂载路径不能加载多块云硬盘', 'data': None, 'level': 3}
+2021-12-09 18:20:58,448 - root - INFO - *******测试案例名称： TestCase006_加载数据盘-同一路径重复加载-Path=128 执行完毕********
+2021-12-09 18:20:58,448 - root - INFO - ****************加载数据盘列表接口结束****************
+2021-12-09 18:20:58,449 - root - INFO - ********************************************************************************
+2021-12-09 18:20:58,449 - root - INFO - ********************************************************************************
+2021-12-09 18:20:58,449 - root - INFO - ****************加载数据盘列表接口开始****************
+2021-12-09 18:20:58,450 - root - INFO - *******测试案例名称： TestCase007_加载数据盘-缺少token 执行开始********
+2021-12-09 18:20:58,450 - root - INFO - *******测试数据： {'instance': ['ins-4b28fa544833425ebcff74ad3c1fb618'], 'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+2021-12-09 18:20:58,459 - root - INFO - *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+2021-12-09 18:20:58,459 - root - INFO - *******测试案例名称： TestCase007_加载数据盘-缺少token 执行完毕********
+2021-12-09 18:20:58,459 - root - INFO - ****************加载数据盘列表接口结束****************
+2021-12-09 18:20:58,460 - root - INFO - ********************************************************************************
+2021-12-09 18:20:59,348 - root - INFO - **********************************************完成teardown class，退出登录**********************************************
+2021-12-09 18:20:59,348 - root - INFO - **********************************************开始setupClass，进行登录**********************************************
+2021-12-09 18:21:06,487 - root - INFO - the sql is : select d.id as diskId, d.name as diskName, d.size as diskSize, d.status as diskStatus,             i.id as vmId, i.name as vmName, i.status as vmStatus, p.id as projectId, p.name as projectName              from  disk d LEFT JOIN cloud_instance i on i.project_id=d.pool_id INNER JOIN cloud_pool p on p.id=d.pool_id           where i.status in (1,3) and d.store_type=0 and d.status=1 ORDER BY d.create_time desc limit 1;
+2021-12-09 18:21:06,488 - root - INFO - the params is : ()
+2021-12-09 18:21:06,490 - root - INFO - the result data is :{'diskId': '31ae822d-9772-4131-951c-36f0f92fda6f', 'diskName': 'CloudDisk4Detach', 'diskSize': 1024, 'diskStatus': 1, 'vmId': 'ins-4b28fa544833425ebcff74ad3c1fb618', 'vmName': 'LC1', 'vmStatus': 1, 'projectId': 'ddac080c671b473e885714538fd1ed6e', 'projectName': 'LeonaTestPool1125'}
+2021-12-09 18:21:07,105 - root - INFO - ********************************************************************************
+2021-12-09 18:21:07,105 - root - INFO - ****************卸载数据盘列表接口开始****************
+2021-12-09 18:21:07,105 - root - INFO - *******测试案例名称： TestCase001_卸载数据盘-缺少token 执行开始********
+2021-12-09 18:21:07,106 - root - INFO - *******测试数据： {'project_id': 'ddac080c671b473e885714538fd1ed6e', 'project_name': 'LeonaTestPool1125'}
+2021-12-09 18:21:07,115 - root - INFO - *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}

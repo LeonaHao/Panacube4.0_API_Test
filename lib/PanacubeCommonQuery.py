@@ -85,6 +85,25 @@ def getLatestDataDisk(poolId):
     res= MySQLHelper('panacube').get_one(sql,param)
     return  res
 
+def getLatestPoolSnap(poolId):
+    sql = 'SELECT snapshot_id, name from `storage_snapshot` WHERE snapshot_type="pool" and pool_id=%s order by create_time DESC limit 1'
+    param  = (poolId)
+    res = MySQLHelper("panacube").get_one(sql,param)
+    return res
+
+def getLatestDiskSnap(poolId):
+    sql = 'SELECT snapshot_id, name from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1'
+    param  = (poolId)
+    res = MySQLHelper("panacube").get_one(sql,param)
+    return res
+
+def getLatestInstanceSnap(poolId):
+    sql = 'SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1 '
+    param  = (poolId)
+    res = MySQLHelper("panacube").get_one(sql,param)
+    return res
+
+
 
 
 
@@ -99,3 +118,5 @@ def getLatestDataDisk(poolId):
 # getNonDefaultPool()
 # getAttachableDisk()
 # getLatestDataDisk('ddac080c671b473e885714538fd1ed6e')
+# getLatestInstanceSnap('ddac080c671b473e885714538fd1ed6e')
+# print(type(getLatestInstanceSnap('ddac080c671b473e885714538fd1ed6e')))

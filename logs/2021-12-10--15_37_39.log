@@ -1,0 +1,18 @@
+2021-12-10 15:37:39,486 - root - INFO - **********************************************开始setupClass，进行登录**********************************************
+2021-12-10 15:37:39,850 - root - INFO - ********************************************************************************
+2021-12-10 15:37:39,850 - root - INFO - ****************获取业务池快照列表接口开始****************
+2021-12-10 15:37:39,851 - root - INFO - *******测试案例名称： TestCase001_查看业务池快照列表-缺少token 执行开始********
+2021-12-10 15:37:39,851 - root - INFO - *******测试数据： {}
+2021-12-10 15:37:39,861 - root - INFO - *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+2021-12-10 15:37:39,862 - root - INFO - *******测试案例名称： TestCase001_查看业务池快照列表-缺少token 执行完毕********
+2021-12-10 15:37:39,864 - root - INFO - ****************获取业务池快照列表接口结束****************
+2021-12-10 15:37:39,864 - root - INFO - ********************************************************************************
+2021-12-10 15:37:39,868 - root - INFO - ********************************************************************************
+2021-12-10 15:37:39,869 - root - INFO - ****************获取业务池快照列表接口开始****************
+2021-12-10 15:37:39,869 - root - INFO - *******测试案例名称： TestCase002_查看业务池快照列表 执行开始********
+2021-12-10 15:37:39,870 - root - INFO - *******测试数据： {}
+2021-12-10 15:37:39,907 - root - INFO - *******返回数据： {'code': 0, 'message': 'success', 'data': [{'name': 'poolSnap4LeonaTestPool1125_345', 'id': '689bc9e9-aba9-43b9-ac0c-aee6949d39f8', 'snap_type': 'pool', 'project_name': 'LeonaTestPool1125', 'create_time': '2021-12-10T15:19:09.987228', 'create_type': 'hand', 'status': 0}, {'name': 'poolSnap4LeonaTestPool1125_3', 'id': '1513c2d4-60a9-4a00-86ae-40e8cda2b607', 'snap_type': 'pool', 'project_name': 'LeonaTestPool1125', 'create_time': '2021-12-10T15:19:04.734644', 'create_type': 'hand', 'status': 0}, {'name': 'poolSnap4LeonaTestPool1125_123', 'id': 'ae50ef28-9f14-47ce-ba61-01beba2df7dc', 'snap_type': 'pool', 'project_name': 'LeonaTestPool1125', 'create_time': '2021-12-10T15:16:25.688915', 'create_type': 'hand', 'status': 0}, {'name': 'poolSnap4LeonaTestPool1125_1', 'id': 'bd6c9438-9ce7-4cd1-b9bd-c1a74db931cf', 'snap_type': 'pool', 'project_name': 'LeonaTestPool1125', 'create_time': '2021-12-10T15:16:19.220775', 'create_type': 'hand', 'status': 0}, {'name': 'poolSnap1111', 'id': '66e963a3-819b-4fd0-a597-cdae99d7600a', 'snap_type': 'pool', 'project_name': 'LeonaTestPool1125', 'create_time': '2021-12-10T15:09:11.844142', 'create_type': 'hand', 'status': 0}, {'name': 'test123', 'id': '99ef0872-377b-495a-8eb0-eb0f9e98e6f1', 'snap_type': 'pool', 'project_name': 'test_wang', 'create_time': '2021-12-02T10:32:58.807674', 'create_type': 'hand', 'status': 0}, {'name': 'adsfasdf', 'id': '0842ca2b-3f3b-4a11-9994-23d555d657f1', 'snap_type': 'pool', 'project_name': 'LeonaHashPool', 'create_time': '2021-11-29T14:54:46.186977', 'create_type': 'hand', 'status': 0}, {'name': 'PoolSnap1', 'id': '7952fd84-3ff3-4bc5-90c9-1f08410ff07c', 'snap_type': 'pool', 'project_name': 'LeonaTestPool1125', 'create_time': '2021-11-25T13:46:10.553533', 'create_type': 'hand', 'status': 0}]}
+2021-12-10 15:37:39,908 - root - INFO - *******测试案例名称： TestCase002_查看业务池快照列表 执行完毕********
+2021-12-10 15:37:39,908 - root - INFO - ****************获取业务池快照列表接口结束****************
+2021-12-10 15:37:39,909 - root - INFO - ********************************************************************************
+2021-12-10 15:37:39,937 - root - INFO - **********************************************完成teardown class，退出登录**********************************************
