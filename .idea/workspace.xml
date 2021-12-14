@@ -4,10 +4,10 @@
     <list default="true" id="a407d88e-2a99-45b8-b82f-bbfd69bc7385" name="Default Changelist" comment="新增">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datafiles/cloudDiskMagData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/datafiles/cloudDiskMagData.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/PanacubeCommonQuery.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PanacubeCommonQuery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datafiles/snapsMagData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/datafiles/snapsMagData.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/storageEngineReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/storageEngineReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/detachDataDisk.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/detachDataDisk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/attachDataDisk.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/attachDataDisk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/toolsForSE/cloudDisk.py" beforeDir="false" afterPath="$PROJECT_DIR$/toolsForSE/cloudDisk.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +35,7 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -64,8 +64,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in deletePoolSnap.py">
-    <configuration name="PanacubeCommonQuery" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.cloudDisk">
+    <configuration name="cloudDisk" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PanaCubeProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -73,11 +73,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lib" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/toolsForSE" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lib/PanacubeCommonQuery.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/toolsForSE/cloudDisk.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -148,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.cloudDisk" />
         <item itemvalue="Python tests.pytest in deletePoolSnap.py" />
         <item itemvalue="Python tests.pytest for deletePoolSnap.deletePoolSnap" />
         <item itemvalue="Python tests.pytest for delPoolSnap.delPoolSnap" />
         <item itemvalue="Python tests.pytest for restorePoolSnap.restorePoolSnap" />
-        <item itemvalue="Python.PanacubeCommonQuery" />
       </list>
     </recent_temporary>
   </component>
