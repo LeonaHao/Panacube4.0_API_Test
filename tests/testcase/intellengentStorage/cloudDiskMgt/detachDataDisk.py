@@ -27,8 +27,8 @@ class detachDataDisk(unittest.TestCase):
         logger.info("**********************************************开始setupClass，进行登录**********************************************")
         global token, projectId, projectName
         token = login()
-        projectId="ddac080c671b473e885714538fd1ed6e"
-        projectName="LeonaTestPool1125"
+        projectId="577d21c9411744a4b619c8966f69ec18"
+        projectName="LeonaTestPool1213"
 
         '''先创建1个云硬盘'''
         global headers
