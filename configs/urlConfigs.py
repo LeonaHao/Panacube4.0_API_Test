@@ -14,11 +14,24 @@ logoutUrl = basePanaCubeUrl + 'account/logout'
 #*********************************云中心-业务管理*******************************************
 '''云中心-业务管理-业务池列表'''
 cloudPoolListUrl = basePanaCubeUrl + 'cloud/projects'
-
-
-
+'''云中心-业务管理-业务池列表'''
+instanceUrl = basePanaCubeUrl + 'cloud/instances'
 '''智能存储》概况》获取存储情况'''
 overViewStorage = basePanaCubeUrl + 'cloud/pools/intel/storage/'
+
+
+
+
+#*********************************云中心-网络管理*******************************************
+'''云中心-网络管理-网络'''
+networktUrl = basePanaCubeUrl + 'cloud/networks'
+'''云中心-网络管理-安全组'''
+securityGroupUrl = basePanaCubeUrl + 'cloud/securitygroups'
+
+
+#*********************************云中心-镜像管理*******************************************
+'''云中心-镜像管理'''
+imageUrl = basePanaCubeUrl + 'cloud/images'
 
 
 
