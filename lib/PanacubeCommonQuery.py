@@ -103,6 +103,11 @@ def getLatestInstanceSnap(poolId):
     res = MySQLHelper("panacube").get_one(sql,param)
     return res
 
+def getLatestInstance(poolId):
+    sql = 'SELECT id, name from `cloud_instance` WHERE project_id=%s order by create_time DESC limit 1 '
+    param  = (poolId)
+    res = MySQLHelper("panacube").get_one(sql,param)
+    return res
 
 
 
@@ -118,5 +123,7 @@ def getLatestInstanceSnap(poolId):
 # getNonDefaultPool()
 # getAttachableDisk()
 # getLatestDataDisk('ddac080c671b473e885714538fd1ed6e')
-# getLatestInstanceSnap('ddac080c671b473e885714538fd1ed6e')
+# getLatestInstanceSnap('577d21c9411744a4b619c8966f69ec18')
+# getLatestInstance('577d21c9411744a4b619c8966f69ec18')
+
 # print(type(getLatestInstanceSnap('ddac080c671b473e885714538fd1ed6e')))
