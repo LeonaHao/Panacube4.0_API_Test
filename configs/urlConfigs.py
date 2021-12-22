@@ -57,7 +57,7 @@ storageFlowMonitor = basePanaCubeUrl + 'storage/pools/monitor/flow'
 #*********************************快照管理*******************************************
 '''智能存储》快照管理》业务池快照'''
 poolSnap = basePanaCubeUrl + 'storage/snapshots/pool'
-'''智能存储》快照管理》业务池快照'''
+'''智能存储》快照管理》云组件快照'''
 instanceSnap = basePanaCubeUrl + 'storage/snapshots/instance'
 '''智能存储》快照管理》云硬盘快照'''
 diskSnap = basePanaCubeUrl + 'storage/snapshots/file'

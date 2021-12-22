@@ -5,7 +5,6 @@
 
 from lib.MySQLHelper import MySQLHelper
 from lib.linuxXshell import conSSH
-from lib.log import logger
 import time
 
 def getVolumeId():
@@ -86,19 +85,19 @@ def getLatestDataDisk(poolId):
     return  res
 
 def getLatestPoolSnap(poolId):
-    sql = 'SELECT snapshot_id, name from `storage_snapshot` WHERE snapshot_type="pool" and pool_id=%s order by create_time DESC limit 1'
+    sql = 'SELECT snapshot_id, name from `storage_snapshot` WHERE snapshot_type="pool" and pool_id=%s order by create_time DESC limit 1;'
     param  = (poolId)
     res = MySQLHelper("panacube").get_one(sql,param)
     return res
 
 def getLatestDiskSnap(poolId):
-    sql = 'SELECT snapshot_id, name from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1'
+    sql = 'SELECT snapshot_id, name from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1;'
     param  = (poolId)
     res = MySQLHelper("panacube").get_one(sql,param)
     return res
 
 def getLatestInstanceSnap(poolId):
-    sql = 'SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1 '
+    sql = 'SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; '
     param  = (poolId)
     res = MySQLHelper("panacube").get_one(sql,param)
     return res
@@ -126,4 +125,3 @@ def getLatestInstance(poolId):
 # getLatestInstanceSnap('577d21c9411744a4b619c8966f69ec18')
 # getLatestInstance('577d21c9411744a4b619c8966f69ec18')
 
-# print(type(getLatestInstanceSnap('ddac080c671b473e885714538fd1ed6e')))

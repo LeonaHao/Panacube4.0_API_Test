@@ -1,0 +1,4 @@
+2021-12-16 13:41:09,854 - root - INFO - **********************************************开始setupClass，进行登录**********************************************
+2021-12-16 13:41:50,047 - root - INFO - the sql is : SELECT id, name from `cloud_instance` WHERE project_id=%s order by create_time DESC limit 1 
+2021-12-16 13:41:50,047 - root - INFO - the params is : 577d21c9411744a4b619c8966f69ec18
+2021-12-16 13:41:50,049 - root - INFO - the result data is :None

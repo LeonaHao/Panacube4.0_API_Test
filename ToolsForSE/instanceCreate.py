@@ -35,7 +35,7 @@ def creInstance(projectId, projectName):
     reqParam ={
         "name":"LC_"+  str(random.randint(1,1000)),
         "project":projectName,
-        "location":"node-1",
+        "location":"node-3",
         "passwd":"",
         "cpu":1,
         "memory":1024,
@@ -74,7 +74,7 @@ def creInstance(projectId, projectName):
     }
     instanceInfo = requests.post(url=instanceUrl, headers=headers,json=reqParam,verify=False).json()
     #等待1分钟，确保组件创建完成
-    time.sleep(60)
+    time.sleep(30)
     if instanceInfo['code'] == 0:
         print("************************云组件创建成功*****************************")
     else:
@@ -82,5 +82,5 @@ def creInstance(projectId, projectName):
 
 
 
-
-creInstance('577d21c9411744a4b619c8966f69ec18','LeonaTestPool1213')
+if __name__ == '__main__':
+    creInstance('3adfec2c1f044e98a41e6c3649651dc8','LeonaTestPool1220')

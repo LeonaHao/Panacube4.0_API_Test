@@ -19,10 +19,10 @@ def conSSH(hostname,port,username,password,cmd):
         stdin, stdout, stderr = ssh.exec_command(cmd)
         #打印执行结果到控制台
         print((stdout.read().decode('utf-8')))
-        #将结果写入到sshRes.txt文件中
+        # 将结果写入到sshRes.txt文件中
         # with open('sshRes.txt','a+') as res:
         #     res.write(stdout.read().decode('utf-8'))
-        #关闭SSHClient连接
+        # 关闭SSHClient连接
         ssh.close()
     except Exception as e:
         if try_times != 0:

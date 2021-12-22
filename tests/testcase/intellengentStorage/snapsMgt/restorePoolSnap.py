@@ -27,8 +27,8 @@ class restorePoolSnap(unittest.TestCase):
         logger.info("**********************************************开始setupClass，进行登录**********************************************")
         global token, projectId, projectName
         token = login()
-        projectId="ddac080c671b473e885714538fd1ed6e"
-        projectName="LeonaTestPool1125"
+        projectId="3adfec2c1f044e98a41e6c3649651dc8"
+        projectName="LeonaTestPool1220"
         "创建1个业务池快照"
         headers = {
             'Content-Type': 'application/json',
@@ -55,6 +55,7 @@ class restorePoolSnap(unittest.TestCase):
                   'Authorization': token
                    }
         reqUrl2 = poolSnap + '/'+str(poolSnapInfo['snapshot_id'])
+        logger.info("*******请求地址： " +str(reqUrl2))
 
         '''执行测试用例'''
         caseNum = tx['test_num']

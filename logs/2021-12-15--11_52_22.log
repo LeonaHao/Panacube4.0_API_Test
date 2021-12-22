@@ -1,0 +1,3 @@
+2021-12-15 11:52:22,522 - root - INFO - the sql is : SELECT id, name from `cloud_instance` WHERE project_id=%s order by create_time DESC limit 1 
+2021-12-15 11:52:22,523 - root - INFO - the params is : 577d21c9411744a4b619c8966f69ec18
+2021-12-15 11:52:22,525 - root - INFO - the result data is :{'id': 'ins-ce959498ce2e492cb2d5c66afdc7dc5e', 'name': 'LC_85'}
