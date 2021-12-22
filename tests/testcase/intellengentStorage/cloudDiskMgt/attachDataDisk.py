@@ -30,28 +30,29 @@ class attachDataDisk(unittest.TestCase):
         projectId="3adfec2c1f044e98a41e6c3649651dc8"
         projectName="LeonaTestPool1220"
 
-        '''先创建1个云硬盘'''
+        '''先创建2个云硬盘'''
         headers1 ={'Content-Type':'application/json',
                   'Authorization': token
                    }
-        reqParam1 = {
-            "name":"CloudDisk4CI",
-            "size":"1",
-            "disk_type": 0,
-            "description": "",
-            "compression": "off",
-            "dedup": "off",
-            "volblocksize": "512B",
-            "share_vol": 1,
-            "project_id": projectId,
-            "project_name": projectName
-        }
-        result1 = requests.post(url=cloudDisk, headers=headers1, json=reqParam1, verify=False).json()
-        time.sleep(5)
+        for i in range(1,3):
+            reqParam1 = {
+                "name":"CloudDisk4CI"+str(i),
+                "size":"1",
+                "disk_type": 0,
+                "description": "",
+                "compression": "off",
+                "dedup": "off",
+                "volblocksize": "512B",
+                "share_vol": 1,
+                "project_id": projectId,
+                "project_name": projectName
+            }
+            result1 = requests.post(url=cloudDisk, headers=headers1, json=reqParam1, verify=False).json()
+            time.sleep(5)
 
         '''获取可加载的数据盘信息'''
         global attachAbleDiskInfo
-        attachAbleDiskInfo = getAttachableDisk()
+        attachAbleDiskInfo = getAttachableDisk(projectId)
 
     def setUp(self):
         logger.info("*" * 80)
@@ -80,6 +81,10 @@ class attachDataDisk(unittest.TestCase):
             reqParam2['volume'] = attachAbleDiskInfo['diskId']
         if flag == 1:
             headers2['Authorization'] = ''
+        if flag == 2:
+            global attachAbleDiskInfo1
+            attachAbleDiskInfo1 = getAttachableDisk(projectId)
+            reqParam2['volume'] = attachAbleDiskInfo1['diskId']
         r = requests.post(url=reqUrl2, headers=headers2, json=reqParam2)
         result2 = r.json()
         logger.info("*******返回数据： " + str(result2))
@@ -88,6 +93,7 @@ class attachDataDisk(unittest.TestCase):
             self.assertEqual(result2['message'], msg)
         logger.info("*******测试案例名称： TestCase" + caseNum + "_" + caseName + " 执行完毕********")
         logger.info("****************加载数据盘列表接口结束****************")
+        time.sleep(5)
 
     @staticmethod
     def getTestFunc(arg1):
@@ -106,7 +112,7 @@ class attachDataDisk(unittest.TestCase):
         reqUrl3 = forceDelCD
         reqParam3 ={
             "disk_ids":[
-                attachAbleDiskInfo['diskId']
+                attachAbleDiskInfo['diskId'],attachAbleDiskInfo1['diskId']
             ],
             "project_id": projectId,
             "project_name":projectName
