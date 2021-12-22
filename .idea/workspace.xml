@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a407d88e-2a99-45b8-b82f-bbfd69bc7385" name="Default Changelist" comment="新增">
+    <list default="true" id="a407d88e-2a99-45b8-b82f-bbfd69bc7385" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToolsForSE/instanceCreate.py" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsForSE/instanceCreate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/urlConfigs.py" beforeDir="false" afterPath="$PROJECT_DIR$/configs/urlConfigs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datafiles/cloudDiskMagData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/datafiles/cloudDiskMagData.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datafiles/snapsMagData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/datafiles/snapsMagData.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/PanacubeCommonQuery.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PanacubeCommonQuery.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/linuxXshell.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/linuxXshell.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/attachDataDisk.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/attachDataDisk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/detachDataDisk.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/detachDataDisk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt/restorePoolSnap.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt/restorePoolSnap.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/toolsForSE/cloudDisk.py" beforeDir="false" afterPath="$PROJECT_DIR$/toolsForSE/cloudDisk.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -376,7 +368,35 @@
       <option name="project" value="LOCAL" />
       <updated>1639711206059</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="更新业务池信息，保障CI成功">
+      <created>1640164181225</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1640164181225</updated>
+    </task>
+    <task id="LOCAL-00031" summary="新增">
+      <created>1640164317214</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1640164317214</updated>
+    </task>
+    <task id="LOCAL-00032" summary="增加云硬盘创建个数，增加一条测试用例">
+      <created>1640166387708</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1640166387708</updated>
+    </task>
+    <task id="LOCAL-00033" summary="新增">
+      <created>1640166410552</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1640166410552</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -393,7 +413,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="更新testsuit，去除已注释代码" />
     <MESSAGE value="测试" />
     <MESSAGE value="去除未引用的包信息" />
     <MESSAGE value="更新sys.pyth的位置" />
@@ -412,12 +431,14 @@
     <MESSAGE value="新增getStorageRemain, getSystemQuotas,putStoragePools接口用例" />
     <MESSAGE value="更新测试数据" />
     <MESSAGE value="更新备注" />
-    <MESSAGE value="新增" />
     <MESSAGE value="新增getCloudDiskList, getMonitoreInfo,getSnapsList接口" />
     <MESSAGE value="更新不小心丢掉的token信息" />
     <MESSAGE value="新增genCidr.py" />
     <MESSAGE value="更新PanacubeCommonQuery.py中查询组件及快照方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新PanacubeCommonQuery.py中查询组件及快照方法" />
+    <MESSAGE value="更新业务池信息，保障CI成功" />
+    <MESSAGE value="增加云硬盘创建个数，增加一条测试用例" />
+    <MESSAGE value="新增" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

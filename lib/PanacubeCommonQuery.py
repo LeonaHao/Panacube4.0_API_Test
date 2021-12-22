@@ -68,12 +68,12 @@ def getNonDefaultPool():
 
 
 #获取可加载的数据盘信息
-def getAttachableDisk():
+def getAttachableDisk(poolId):
     sql = 'select d.id as diskId, d.name as diskName, d.size as diskSize, d.status as diskStatus,\
              i.id as vmId, i.name as vmName, i.status as vmStatus, p.id as projectId, p.name as projectName \
              from  disk d LEFT JOIN cloud_instance i on i.project_id=d.pool_id INNER JOIN cloud_pool p on p.id=d.pool_id\
-           where i.status in (1,3) and d.store_type=0 and d.status=1 ORDER BY d.create_time desc limit 1;'
-    param = ()
+           where i.status in (1,3) and d.store_type=0 and d.status=1 and p.id=%s ORDER BY d.create_time desc limit 1;'
+    param = (poolId)
     res= MySQLHelper('panacube').get_one(sql,param)
     return  res
 

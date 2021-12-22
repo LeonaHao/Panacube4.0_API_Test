@@ -1,0 +1,19 @@
+2021-12-22 17:32:32,415 - root - INFO - **********************************************开始setupClass，进行登录**********************************************
+2021-12-22 17:32:38,862 - root - INFO - the sql is : select d.id as diskId, d.name as diskName, d.size as diskSize, d.status as diskStatus,             i.id as vmId, i.name as vmName, i.status as vmStatus, p.id as projectId, p.name as projectName              from  disk d LEFT JOIN cloud_instance i on i.project_id=d.pool_id INNER JOIN cloud_pool p on p.id=d.pool_id           where i.status in (1,3) and d.store_type=0 and d.status=1 and p.id=%s ORDER BY d.create_time desc limit 1;
+2021-12-22 17:32:38,864 - root - INFO - the params is : 3adfec2c1f044e98a41e6c3649651dc8
+2021-12-22 17:32:38,867 - root - INFO - the result data is :{'diskId': 'f98ef46d-5c51-4b2e-9ae8-077d62b68d7c', 'diskName': 'CloudDisk4CI', 'diskSize': 1024, 'diskStatus': 1, 'vmId': 'ins-fd16fc23a64b4ca99f67aefe2f6f0572', 'vmName': 'LC_499', 'vmStatus': 1, 'projectId': '3adfec2c1f044e98a41e6c3649651dc8', 'projectName': 'LeonaTestPool1220'}
+2021-12-22 17:32:38,868 - root - INFO - ********************************************************************************
+2021-12-22 17:32:38,868 - root - INFO - ****************加载数据盘列表接口开始****************
+2021-12-22 17:32:38,869 - root - INFO - *******测试案例名称： TestCase001_加载数据盘-volume为空 执行开始********
+2021-12-22 17:32:38,869 - root - INFO - *******测试数据： {'volume': '', 'action': 'attach', 'path': '', 'instance': ['ins-fd16fc23a64b4ca99f67aefe2f6f0572'], 'project_id': '3adfec2c1f044e98a41e6c3649651dc8', 'project_name': 'LeonaTestPool1220'}
+2021-12-22 17:32:38,889 - root - INFO - *******返回数据： {'code': 1001, 'message': '请求参数错误', 'data': None, 'level': 2}
+2021-12-22 17:32:38,889 - root - INFO - *******测试案例名称： TestCase001_加载数据盘-volume为空 执行完毕********
+2021-12-22 17:32:38,889 - root - INFO - ****************加载数据盘列表接口结束****************
+2021-12-22 17:32:43,897 - root - INFO - ********************************************************************************
+2021-12-22 17:32:43,900 - root - INFO - ********************************************************************************
+2021-12-22 17:32:43,900 - root - INFO - ****************加载数据盘列表接口开始****************
+2021-12-22 17:32:43,901 - root - INFO - *******测试案例名称： TestCase002_加载数据盘-Path为空 执行开始********
+2021-12-22 17:32:43,901 - root - INFO - *******测试数据： {'volume': 'c7735672-0232-42a2-9838-bb0e8cfe4a7b', 'action': 'attach', 'path': '', 'instance': ['ins-fd16fc23a64b4ca99f67aefe2f6f0572'], 'project_id': '3adfec2c1f044e98a41e6c3649651dc8', 'project_name': 'LeonaTestPool1220'}
+2021-12-22 17:32:44,085 - root - INFO - *******返回数据： {'code': 1001, 'message': '请求参数错误', 'data': None, 'level': 2}
+2021-12-22 17:32:44,086 - root - INFO - *******测试案例名称： TestCase002_加载数据盘-Path为空 执行完毕********
+2021-12-22 17:32:44,086 - root - INFO - ****************加载数据盘列表接口结束****************
