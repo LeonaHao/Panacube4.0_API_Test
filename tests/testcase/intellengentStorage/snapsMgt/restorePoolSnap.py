@@ -41,7 +41,7 @@ class restorePoolSnap(unittest.TestCase):
         }
         urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
         poolRes = requests.post(url=poolSnap, headers=headers, json=reqParam, verify=False).json()
-        time.sleep(5)
+        time.sleep(15)
 
         '''获取最新的业务池快照信息'''
         global poolSnapInfo
