@@ -52,7 +52,7 @@ class detachDataDisk(unittest.TestCase):
 
         '''获取可加载的数据盘信息'''
         global attachAbleDiskInfo
-        attachAbleDiskInfo = getAttachableDisk()
+        attachAbleDiskInfo = getAttachableDisk(projectId)
 
         '''加载云硬盘'''
         reqParam2 ={

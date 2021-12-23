@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a407d88e-2a99-45b8-b82f-bbfd69bc7385" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datafiles/cloudDiskMagData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/datafiles/cloudDiskMagData.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/PanacubeCommonQuery.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PanacubeCommonQuery.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/detachDataDisk.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/detachDataDisk.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
