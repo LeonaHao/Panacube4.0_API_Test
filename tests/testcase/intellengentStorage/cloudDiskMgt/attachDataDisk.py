@@ -27,8 +27,8 @@ class attachDataDisk(unittest.TestCase):
         logger.info("**********************************************开始setupClass，进行登录**********************************************")
         global token, projectId, projectName
         token = login()
-        projectId="3adfec2c1f044e98a41e6c3649651dc8"
-        projectName="LeonaTestPool1220"
+        projectId="c732c22666064375904c357bbecfeb1a"
+        projectName="HJp0_hash"
 
         '''先创建2个云硬盘'''
         headers1 ={'Content-Type':'application/json',

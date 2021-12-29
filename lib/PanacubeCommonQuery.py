@@ -7,11 +7,14 @@ from lib.MySQLHelper import MySQLHelper
 from lib.linuxXshell import conSSH
 import time
 
+#获取业务池信息
 def getVolumeId():
     sql = 'select id, name, status,cpu_limit,memory_limit, storage_limit, gpu_limit, file_store_id,file_store_alloc,file_store_actual from cloud_pool;'
     param = ()
     res = MySQLHelper('panacube').get_many(sql,param)
     return res
+
+#对比卷信息，排查问题时查看底层卷是否和db中的卷相一致，如果对比后发现有结果，则表示底层和db都存在
 
 def matchVolume(hostname,port,username,password):
     volumes = getVolumeId()
@@ -23,6 +26,7 @@ def matchVolume(hostname,port,username,password):
         cmd = 'gluster v info | grep '+ str(volumeId)
         conSSH(hostname,port,username,password,cmd)
 
+#获取利用率信息
 def getGeneralUsageInfo():
     sql = 'SELECT sum(cpu_limit) as cpuUse, sum(memory_limit)/1024 as memUse, sum(file_store_alloc)/1024 as storageUse from cloud_pool;'
     param = ()
@@ -77,31 +81,35 @@ def getAttachableDisk(poolId):
     res= MySQLHelper('panacube').get_one(sql,param)
     return  res
 
-
+#获取最新的数据盘
 def getLatestDataDisk(poolId):
     sql = 'select id from disk where store_type=0 and pool_id=%s order by create_time desc limit 1;'
     param = (poolId)
     res= MySQLHelper('panacube').get_one(sql,param)
     return  res
 
+#获取最新的数业务池快照
 def getLatestPoolSnap(poolId):
     sql = 'SELECT snapshot_id, name from `storage_snapshot` WHERE snapshot_type="pool" and pool_id=%s order by create_time DESC limit 1;'
     param  = (poolId)
     res = MySQLHelper("panacube").get_one(sql,param)
     return res
 
+#获取最新的数据盘快照
 def getLatestDiskSnap(poolId):
     sql = 'SELECT snapshot_id, name from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1;'
     param  = (poolId)
     res = MySQLHelper("panacube").get_one(sql,param)
     return res
 
+#获取最新的云组件快照
 def getLatestInstanceSnap(poolId):
     sql = 'SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; '
     param  = (poolId)
     res = MySQLHelper("panacube").get_one(sql,param)
     return res
 
+#获取最新的云组件快照
 def getLatestInstance(poolId):
     sql = 'SELECT id, name from `cloud_instance` WHERE project_id=%s order by create_time DESC limit 1 '
     param  = (poolId)
@@ -113,7 +121,7 @@ def getLatestInstance(poolId):
 
 
 # getVolumeId()
-# matchVolume("192.168.5.174",22, "root","Admin@9000")
+matchVolume("192.168.5.174",22, "root","Admin@9000")
 # getGeneralUsageInfo()
 # getInstancesInPool("LeonaTestPool")
 # getSysDiskUsageByNode()
