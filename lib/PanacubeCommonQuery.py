@@ -109,7 +109,7 @@ def getLatestInstanceSnap(poolId):
     res = MySQLHelper("panacube").get_one(sql,param)
     return res
 
-#获取最新的云组件快照
+#获取最新的云组件
 def getLatestInstance(poolId):
     sql = 'SELECT id, name from `cloud_instance` WHERE project_id=%s order by create_time DESC limit 1 '
     param  = (poolId)
@@ -117,11 +117,18 @@ def getLatestInstance(poolId):
     return res
 
 
+#获取可创建云组件快照的云硬盘及组件信息
+def getInsAndDisk(poolId):
+    sql = 'SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id \
+           where d.store_type=1 and i.project_id=%s ORDER BY i.create_time DESC limit 1;'
+    param  = (poolId)
+    res = MySQLHelper("panacube").get_one(sql,param)
+    return res
 
 
 
 # getVolumeId()
-matchVolume("192.168.5.174",22, "root","Admin@9000")
+# matchVolume("192.168.5.174",22, "root","Admin@9000")
 # getGeneralUsageInfo()
 # getInstancesInPool("LeonaTestPool")
 # getSysDiskUsageByNode()

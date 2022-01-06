@@ -35,37 +35,40 @@ def conSSH(hostname,port,username,password,cmd):
 if __name__ == '__main__':
     #conSSH(hostname,port,username,password,cmd):
 
-    #查询卷信息
-    # conSSH("192.168.5.172",22, "root","Admin@9000", "gluster v info glu1636527417")
-    # conSSH("192.168.5.172",22, "root","Admin@9000", "df | grep 'glu1637804974'")  #13973504
-    # conSSH("192.168.5.173",22, "root","Admin@9000", "df | grep 'glu1637804974'")
-    # conSSH("192.168.5.174",22, "root","Admin@9000", "df | grep 'glu1637804974'")
+    # 查询卷信息
+    conSSH("192.168.5.172",22, "root","Admin@9000", "gluster v info glu1640162153")
+    print("*"*30+str("node1:")+"*"*30)
+    conSSH("192.168.5.172",22, "root","Admin@9000", "df | grep 'glu1640162153'")
+    print("*"*30+str("node2:")+"*"*30)
+    conSSH("192.168.5.173",22, "root","Admin@9000", "df | grep 'glu1640162153'")
+    print("*"*30+str("node3:")+"*"*30)
+    conSSH("192.168.5.174",22, "root","Admin@9000", "df | grep 'glu1640162153'")
 
     # 查询docker所在节点
-    print("*"*30+str("node1:")+"*"*30)
-    conSSH("192.168.5.172",22, "root","Admin@9000", "docker ps | grep mana")
-    print("*"*30+str("node2:")+"*"*30)
-    conSSH("192.168.5.173",22, "root","Admin@9000", "docker ps | grep mana")  #8640512
-    print("*"*30+str("node3:")+"*"*30)
-    conSSH("192.168.5.174",22, "root","Admin@9000", "docker ps | grep mana")
+    # print("*"*30+str("node1:")+"*"*30)
+    # conSSH("192.168.5.172",22, "root","Admin@9000", "docker ps | grep mana")
+    # print("*"*30+str("node2:")+"*"*30)
+    # conSSH("192.168.5.173",22, "root","Admin@9000", "docker ps | grep mana")  #8640512
+    # print("*"*30+str("node3:")+"*"*30)
+    # conSSH("192.168.5.174",22, "root","Admin@9000", "docker ps | grep mana")
 
 
     #查询lxc所在节点
-    print("*"*30+str("node1:")+"*"*30)
-    conSSH("192.168.5.172",22, "root","Admin@9000", "lxc-info -n panastor")
-    print("*"*30+str("node2:")+"*"*30)
-    conSSH("192.168.5.173",22, "root","Admin@9000", "lxc-info -n panastor")
-    print("*"*30+str("node3:")+"*"*30)
-    conSSH("192.168.5.174",22, "root","Admin@9000", "lxc-info -n panastor")
+    # print("*"*30+str("node1:")+"*"*30)
+    # conSSH("192.168.5.172",22, "root","Admin@9000", "lxc-info -n panastor")
+    # print("*"*30+str("node2:")+"*"*30)
+    # conSSH("192.168.5.173",22, "root","Admin@9000", "lxc-info -n panastor")
+    # print("*"*30+str("node3:")+"*"*30)
+    # conSSH("192.168.5.174",22, "root","Admin@9000", "lxc-info -n panastor")
 
 
     #查询各节点系统盘使用率
-    print("*"*30+str("node1:")+"*"*30)
-    conSSH("192.168.5.172",22, "root","Admin@9000", "df -h | grep '/$'")
-    print("*"*30+str("node2:")+"*"*30)
-    conSSH("192.168.5.173",22, "root","Admin@9000", "df -h | grep '/$'")
-    print("*"*30+str("node3:")+"*"*30)
-    conSSH("192.168.5.174",22, "root","Admin@9000", "df -h | grep '/$'")
+    # print("*"*30+str("node1:")+"*"*30)
+    # conSSH("192.168.5.172",22, "root","Admin@9000", "df -h | grep '/$'")
+    # print("*"*30+str("node2:")+"*"*30)
+    # conSSH("192.168.5.173",22, "root","Admin@9000", "df -h | grep '/$'")
+    # print("*"*30+str("node3:")+"*"*30)
+    # conSSH("192.168.5.174",22, "root","Admin@9000", "df -h | grep '/$'")
 
 
 

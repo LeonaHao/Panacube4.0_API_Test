@@ -1,0 +1,3 @@
+2021-12-31 11:54:40,241 - root - INFO - the sql is : SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id            where d.store_type=1 and i.project_id=%s ORDER BY i.create_time DESC limit 1;
+2021-12-31 11:54:40,241 - root - INFO - the params is : 10c71a449bf24669906f6be4c82dba48
+2021-12-31 11:54:40,243 - root - INFO - the result data is :{'vmId': 'ins-963cb8905b3044e496aa5febc5fc73ef', 'vmName': 'LC2', 'diskId': 'ins-01d31da4cfe24ddc8666fbae59687dd7', 'diskName': 'test'}

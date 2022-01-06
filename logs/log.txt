@@ -16625,3 +16625,245 @@
 21-12-23 09:53 paramiko.transport DEBUG    [chan 0] EOF sent (0)
 21-12-23 09:53 paramiko.transport DEBUG    Dropping user packet because connection is dead.
 21-12-23 09:53 paramiko.transport DEBUG    Dropping user packet because connection is dead.
+21-12-31 09:59 root         INFO     the sql is :select id, name, status,cpu_limit,memory_limit, storage_limit, gpu_limit, file_store_id,file_store_alloc,file_store_actual from cloud_pool;
+21-12-31 09:59 root         INFO     the params is : ()
+21-12-31 09:59 root         INFO     the result data is :[{'id': '10c71a449bf24669906f6be4c82dba48', 'name': 'meng', 'status': 0, 'cpu_limit': 16, 'memory_limit': 16384, 'storage_limit': 20, 'gpu_limit': 0, 'file_store_id': '01622a50da744344ae1747a1aa710d2a', 'file_store_alloc': 20480, 'file_store_actual': 20480}, {'id': '15d13b913a6b4a38bd130307b14cf66c', 'name': 'ss', 'status': 0, 'cpu_limit': 16, 'memory_limit': 32768, 'storage_limit': 20, 'gpu_limit': 0, 'file_store_id': '86b34b386f0b4cae9b84815e6f3e06fd', 'file_store_alloc': 20480, 'file_store_actual': 20480}, {'id': '1732f00b451a48eb8ee65a7362dbb5dc', 'name': '默认池', 'status': 0, 'cpu_limit': 0, 'memory_limit': 0, 'storage_limit': 216, 'gpu_limit': 0, 'file_store_id': '29e4aba0eef243ed9f0a021e207bf900', 'file_store_alloc': 221184, 'file_store_actual': 220728}, {'id': '4141c9c7589c42269c9e5f46aeaa4e31', 'name': 'test_bug', 'status': 0, 'cpu_limit': 8, 'memory_limit': 10240, 'storage_limit': 20, 'gpu_limit': 0, 'file_store_id': '6f0cc7b41046437da79064d3686a0dc4', 'file_store_alloc': 5120, 'file_store_actual': 5120}, {'id': '57fc33887b24432d858150ef410de875', 'name': '有一个组件跟踪问题', 'status': 0, 'cpu_limit': 50, 'memory_limit': 51200, 'storage_limit': 10, 'gpu_limit': 0, 'file_store_id': 'cbed914e25b94f5184e43cf6188e33eb', 'file_store_alloc': 10240, 'file_store_actual': 10240}, {'id': 'c732c22666064375904c357bbecfeb1a', 'name': 'HJp0_hash', 'status': 0, 'cpu_limit': 10, 'memory_limit': 10240, 'storage_limit': 15, 'gpu_limit': 0, 'file_store_id': '8f4367631f864a3993e4a408ee054b69', 'file_store_alloc': 15360, 'file_store_actual': 15360}, {'id': 'ddac080c671b473e885714538fd1ed6e', 'name': 'LeonaTestPool1125', 'status': 0, 'cpu_limit': 10, 'memory_limit': 20480, 'storage_limit': 60, 'gpu_limit': 0, 'file_store_id': 'de78603abe1848a3a0093948383e7dcd', 'file_store_alloc': 46080, 'file_store_actual': 46080}]
+21-12-31 09:59 paramiko.transport DEBUG    starting thread (client mode): 0xee313a08
+21-12-31 09:59 paramiko.transport DEBUG    Local version/idstring: SSH-2.0-paramiko_2.4.2
+21-12-31 09:59 paramiko.transport DEBUG    Remote version/idstring: SSH-2.0-OpenSSH_7.8
+21-12-31 09:59 paramiko.transport INFO     Connected (version 2.0, client OpenSSH_7.8)
+21-12-31 09:59 paramiko.transport DEBUG    kex algos:['curve25519-sha256', 'curve25519-sha256@libssh.org', 'diffie-hellman-group14-sha1', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group-exchange-sha256'] server key:['rsa-sha2-512', 'rsa-sha2-256', 'ssh-rsa', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com'] client mac:['hmac-sha2-512', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha2-256', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha1', 'hmac-sha1-etm@openssh.com'] server mac:['hmac-sha2-512', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha2-256', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha1', 'hmac-sha1-etm@openssh.com'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+21-12-31 09:59 paramiko.transport DEBUG    Kex agreed: diffie-hellman-group-exchange-sha256
+21-12-31 09:59 paramiko.transport DEBUG    HostKey agreed: ssh-ed25519
+21-12-31 09:59 paramiko.transport DEBUG    Cipher agreed: aes128-ctr
+21-12-31 09:59 paramiko.transport DEBUG    MAC agreed: hmac-sha2-256
+21-12-31 09:59 paramiko.transport DEBUG    Compression agreed: none
+21-12-31 09:59 paramiko.transport DEBUG    Got server p (2048 bits)
+21-12-31 09:59 paramiko.transport DEBUG    kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+21-12-31 09:59 paramiko.transport DEBUG    Switch to new keys ...
+21-12-31 09:59 paramiko.transport DEBUG    Adding ssh-ed25519 host key for 192.168.5.174: b'22e21a7bbddd768418d52ff4f17d1be5'
+21-12-31 09:59 paramiko.transport DEBUG    userauth is OK
+21-12-31 09:59 paramiko.transport INFO     Auth banner: b'\nAuthorized users only. All activities may be monitored and reported.\n'
+21-12-31 09:59 paramiko.transport INFO     Authentication (password) successful!
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] Max packet in: 32768 bytes
+21-12-31 09:59 paramiko.transport DEBUG    Received global request "hostkeys-00@openssh.com"
+21-12-31 09:59 paramiko.transport DEBUG    Rejecting "hostkeys-00@openssh.com" global request from server.
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] Max packet out: 32768 bytes
+21-12-31 09:59 paramiko.transport DEBUG    Secsh channel 0 opened.
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] Sesch channel 0 request ok
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] EOF received (0)
+21-12-31 09:59 paramiko.transport DEBUG    EOF in transport thread
+21-12-31 09:59 paramiko.transport DEBUG    starting thread (client mode): 0xee78abc8
+21-12-31 09:59 paramiko.transport DEBUG    Local version/idstring: SSH-2.0-paramiko_2.4.2
+21-12-31 09:59 paramiko.transport DEBUG    Remote version/idstring: SSH-2.0-OpenSSH_7.8
+21-12-31 09:59 paramiko.transport INFO     Connected (version 2.0, client OpenSSH_7.8)
+21-12-31 09:59 paramiko.transport DEBUG    kex algos:['curve25519-sha256', 'curve25519-sha256@libssh.org', 'diffie-hellman-group14-sha1', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group-exchange-sha256'] server key:['rsa-sha2-512', 'rsa-sha2-256', 'ssh-rsa', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com'] client mac:['hmac-sha2-512', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha2-256', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha1', 'hmac-sha1-etm@openssh.com'] server mac:['hmac-sha2-512', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha2-256', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha1', 'hmac-sha1-etm@openssh.com'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+21-12-31 09:59 paramiko.transport DEBUG    Kex agreed: diffie-hellman-group-exchange-sha256
+21-12-31 09:59 paramiko.transport DEBUG    HostKey agreed: ssh-ed25519
+21-12-31 09:59 paramiko.transport DEBUG    Cipher agreed: aes128-ctr
+21-12-31 09:59 paramiko.transport DEBUG    MAC agreed: hmac-sha2-256
+21-12-31 09:59 paramiko.transport DEBUG    Compression agreed: none
+21-12-31 09:59 paramiko.transport DEBUG    Got server p (2048 bits)
+21-12-31 09:59 paramiko.transport DEBUG    kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+21-12-31 09:59 paramiko.transport DEBUG    Switch to new keys ...
+21-12-31 09:59 paramiko.transport DEBUG    Adding ssh-ed25519 host key for 192.168.5.174: b'22e21a7bbddd768418d52ff4f17d1be5'
+21-12-31 09:59 paramiko.transport DEBUG    userauth is OK
+21-12-31 09:59 paramiko.transport INFO     Auth banner: b'\nAuthorized users only. All activities may be monitored and reported.\n'
+21-12-31 09:59 paramiko.transport INFO     Authentication (password) successful!
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] Max packet in: 32768 bytes
+21-12-31 09:59 paramiko.transport DEBUG    Received global request "hostkeys-00@openssh.com"
+21-12-31 09:59 paramiko.transport DEBUG    Rejecting "hostkeys-00@openssh.com" global request from server.
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] Max packet out: 32768 bytes
+21-12-31 09:59 paramiko.transport DEBUG    Secsh channel 0 opened.
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] Sesch channel 0 request ok
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] EOF received (0)
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] EOF sent (0)
+21-12-31 09:59 paramiko.transport DEBUG    Dropping user packet because connection is dead.
+21-12-31 09:59 paramiko.transport DEBUG    Dropping user packet because connection is dead.
+21-12-31 09:59 paramiko.transport DEBUG    starting thread (client mode): 0xee79c148
+21-12-31 09:59 paramiko.transport DEBUG    Local version/idstring: SSH-2.0-paramiko_2.4.2
+21-12-31 09:59 paramiko.transport DEBUG    Remote version/idstring: SSH-2.0-OpenSSH_7.8
+21-12-31 09:59 paramiko.transport INFO     Connected (version 2.0, client OpenSSH_7.8)
+21-12-31 09:59 paramiko.transport DEBUG    kex algos:['curve25519-sha256', 'curve25519-sha256@libssh.org', 'diffie-hellman-group14-sha1', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group-exchange-sha256'] server key:['rsa-sha2-512', 'rsa-sha2-256', 'ssh-rsa', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com'] client mac:['hmac-sha2-512', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha2-256', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha1', 'hmac-sha1-etm@openssh.com'] server mac:['hmac-sha2-512', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha2-256', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha1', 'hmac-sha1-etm@openssh.com'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+21-12-31 09:59 paramiko.transport DEBUG    Kex agreed: diffie-hellman-group-exchange-sha256
+21-12-31 09:59 paramiko.transport DEBUG    HostKey agreed: ssh-ed25519
+21-12-31 09:59 paramiko.transport DEBUG    Cipher agreed: aes128-ctr
+21-12-31 09:59 paramiko.transport DEBUG    MAC agreed: hmac-sha2-256
+21-12-31 09:59 paramiko.transport DEBUG    Compression agreed: none
+21-12-31 09:59 paramiko.transport DEBUG    Got server p (2048 bits)
+21-12-31 09:59 paramiko.transport DEBUG    kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+21-12-31 09:59 paramiko.transport DEBUG    Switch to new keys ...
+21-12-31 09:59 paramiko.transport DEBUG    Adding ssh-ed25519 host key for 192.168.5.174: b'22e21a7bbddd768418d52ff4f17d1be5'
+21-12-31 09:59 paramiko.transport DEBUG    userauth is OK
+21-12-31 09:59 paramiko.transport INFO     Auth banner: b'\nAuthorized users only. All activities may be monitored and reported.\n'
+21-12-31 09:59 paramiko.transport INFO     Authentication (password) successful!
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] Max packet in: 32768 bytes
+21-12-31 09:59 paramiko.transport DEBUG    Received global request "hostkeys-00@openssh.com"
+21-12-31 09:59 paramiko.transport DEBUG    Rejecting "hostkeys-00@openssh.com" global request from server.
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] Max packet out: 32768 bytes
+21-12-31 09:59 paramiko.transport DEBUG    Secsh channel 0 opened.
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] Sesch channel 0 request ok
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] EOF received (0)
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] EOF sent (0)
+21-12-31 09:59 paramiko.transport DEBUG    Dropping user packet because connection is dead.
+21-12-31 09:59 paramiko.transport DEBUG    Dropping user packet because connection is dead.
+21-12-31 09:59 paramiko.transport DEBUG    starting thread (client mode): 0xee79a548
+21-12-31 09:59 paramiko.transport DEBUG    Local version/idstring: SSH-2.0-paramiko_2.4.2
+21-12-31 09:59 paramiko.transport DEBUG    Remote version/idstring: SSH-2.0-OpenSSH_7.8
+21-12-31 09:59 paramiko.transport INFO     Connected (version 2.0, client OpenSSH_7.8)
+21-12-31 09:59 paramiko.transport DEBUG    kex algos:['curve25519-sha256', 'curve25519-sha256@libssh.org', 'diffie-hellman-group14-sha1', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group-exchange-sha256'] server key:['rsa-sha2-512', 'rsa-sha2-256', 'ssh-rsa', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com'] client mac:['hmac-sha2-512', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha2-256', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha1', 'hmac-sha1-etm@openssh.com'] server mac:['hmac-sha2-512', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha2-256', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha1', 'hmac-sha1-etm@openssh.com'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+21-12-31 09:59 paramiko.transport DEBUG    Kex agreed: diffie-hellman-group-exchange-sha256
+21-12-31 09:59 paramiko.transport DEBUG    HostKey agreed: ssh-ed25519
+21-12-31 09:59 paramiko.transport DEBUG    Cipher agreed: aes128-ctr
+21-12-31 09:59 paramiko.transport DEBUG    MAC agreed: hmac-sha2-256
+21-12-31 09:59 paramiko.transport DEBUG    Compression agreed: none
+21-12-31 09:59 paramiko.transport DEBUG    Got server p (2048 bits)
+21-12-31 09:59 paramiko.transport DEBUG    kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+21-12-31 09:59 paramiko.transport DEBUG    Switch to new keys ...
+21-12-31 09:59 paramiko.transport DEBUG    Adding ssh-ed25519 host key for 192.168.5.174: b'22e21a7bbddd768418d52ff4f17d1be5'
+21-12-31 09:59 paramiko.transport DEBUG    userauth is OK
+21-12-31 09:59 paramiko.transport INFO     Auth banner: b'\nAuthorized users only. All activities may be monitored and reported.\n'
+21-12-31 09:59 paramiko.transport INFO     Authentication (password) successful!
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] Max packet in: 32768 bytes
+21-12-31 09:59 paramiko.transport DEBUG    Received global request "hostkeys-00@openssh.com"
+21-12-31 09:59 paramiko.transport DEBUG    Rejecting "hostkeys-00@openssh.com" global request from server.
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] Max packet out: 32768 bytes
+21-12-31 09:59 paramiko.transport DEBUG    Secsh channel 0 opened.
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] Sesch channel 0 request ok
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] EOF received (0)
+21-12-31 09:59 paramiko.transport DEBUG    Ignoring message for dead channel 0
+21-12-31 09:59 paramiko.transport DEBUG    starting thread (client mode): 0xee7a3848
+21-12-31 09:59 paramiko.transport DEBUG    Local version/idstring: SSH-2.0-paramiko_2.4.2
+21-12-31 09:59 paramiko.transport DEBUG    Remote version/idstring: SSH-2.0-OpenSSH_7.8
+21-12-31 09:59 paramiko.transport INFO     Connected (version 2.0, client OpenSSH_7.8)
+21-12-31 09:59 paramiko.transport DEBUG    kex algos:['curve25519-sha256', 'curve25519-sha256@libssh.org', 'diffie-hellman-group14-sha1', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group-exchange-sha256'] server key:['rsa-sha2-512', 'rsa-sha2-256', 'ssh-rsa', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com'] client mac:['hmac-sha2-512', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha2-256', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha1', 'hmac-sha1-etm@openssh.com'] server mac:['hmac-sha2-512', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha2-256', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha1', 'hmac-sha1-etm@openssh.com'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+21-12-31 09:59 paramiko.transport DEBUG    Kex agreed: diffie-hellman-group-exchange-sha256
+21-12-31 09:59 paramiko.transport DEBUG    HostKey agreed: ssh-ed25519
+21-12-31 09:59 paramiko.transport DEBUG    Cipher agreed: aes128-ctr
+21-12-31 09:59 paramiko.transport DEBUG    MAC agreed: hmac-sha2-256
+21-12-31 09:59 paramiko.transport DEBUG    Compression agreed: none
+21-12-31 09:59 paramiko.transport DEBUG    Got server p (2048 bits)
+21-12-31 09:59 paramiko.transport DEBUG    kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+21-12-31 09:59 paramiko.transport DEBUG    Switch to new keys ...
+21-12-31 09:59 paramiko.transport DEBUG    Adding ssh-ed25519 host key for 192.168.5.174: b'22e21a7bbddd768418d52ff4f17d1be5'
+21-12-31 09:59 paramiko.transport DEBUG    userauth is OK
+21-12-31 09:59 paramiko.transport INFO     Auth banner: b'\nAuthorized users only. All activities may be monitored and reported.\n'
+21-12-31 09:59 paramiko.transport INFO     Authentication (password) successful!
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] Max packet in: 32768 bytes
+21-12-31 09:59 paramiko.transport DEBUG    Received global request "hostkeys-00@openssh.com"
+21-12-31 09:59 paramiko.transport DEBUG    Rejecting "hostkeys-00@openssh.com" global request from server.
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] Max packet out: 32768 bytes
+21-12-31 09:59 paramiko.transport DEBUG    Secsh channel 0 opened.
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] Sesch channel 0 request ok
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] EOF received (0)
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] EOF sent (0)
+21-12-31 09:59 paramiko.transport DEBUG    EOF in transport thread
+21-12-31 09:59 paramiko.transport DEBUG    starting thread (client mode): 0xee7b0308
+21-12-31 09:59 paramiko.transport DEBUG    Local version/idstring: SSH-2.0-paramiko_2.4.2
+21-12-31 09:59 paramiko.transport DEBUG    Remote version/idstring: SSH-2.0-OpenSSH_7.8
+21-12-31 09:59 paramiko.transport INFO     Connected (version 2.0, client OpenSSH_7.8)
+21-12-31 09:59 paramiko.transport DEBUG    kex algos:['curve25519-sha256', 'curve25519-sha256@libssh.org', 'diffie-hellman-group14-sha1', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group-exchange-sha256'] server key:['rsa-sha2-512', 'rsa-sha2-256', 'ssh-rsa', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com'] client mac:['hmac-sha2-512', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha2-256', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha1', 'hmac-sha1-etm@openssh.com'] server mac:['hmac-sha2-512', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha2-256', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha1', 'hmac-sha1-etm@openssh.com'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+21-12-31 09:59 paramiko.transport DEBUG    Kex agreed: diffie-hellman-group-exchange-sha256
+21-12-31 09:59 paramiko.transport DEBUG    HostKey agreed: ssh-ed25519
+21-12-31 09:59 paramiko.transport DEBUG    Cipher agreed: aes128-ctr
+21-12-31 09:59 paramiko.transport DEBUG    MAC agreed: hmac-sha2-256
+21-12-31 09:59 paramiko.transport DEBUG    Compression agreed: none
+21-12-31 09:59 paramiko.transport DEBUG    Got server p (2048 bits)
+21-12-31 09:59 paramiko.transport DEBUG    kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+21-12-31 09:59 paramiko.transport DEBUG    Switch to new keys ...
+21-12-31 09:59 paramiko.transport DEBUG    Adding ssh-ed25519 host key for 192.168.5.174: b'22e21a7bbddd768418d52ff4f17d1be5'
+21-12-31 09:59 paramiko.transport DEBUG    userauth is OK
+21-12-31 09:59 paramiko.transport INFO     Auth banner: b'\nAuthorized users only. All activities may be monitored and reported.\n'
+21-12-31 09:59 paramiko.transport INFO     Authentication (password) successful!
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] Max packet in: 32768 bytes
+21-12-31 09:59 paramiko.transport DEBUG    Received global request "hostkeys-00@openssh.com"
+21-12-31 09:59 paramiko.transport DEBUG    Rejecting "hostkeys-00@openssh.com" global request from server.
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] Max packet out: 32768 bytes
+21-12-31 09:59 paramiko.transport DEBUG    Secsh channel 0 opened.
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] Sesch channel 0 request ok
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] EOF received (0)
+21-12-31 09:59 paramiko.transport DEBUG    EOF in transport thread
+21-12-31 09:59 paramiko.transport DEBUG    starting thread (client mode): 0xee7a3a08
+21-12-31 09:59 paramiko.transport DEBUG    Local version/idstring: SSH-2.0-paramiko_2.4.2
+21-12-31 09:59 paramiko.transport DEBUG    Remote version/idstring: SSH-2.0-OpenSSH_7.8
+21-12-31 09:59 paramiko.transport INFO     Connected (version 2.0, client OpenSSH_7.8)
+21-12-31 09:59 paramiko.transport DEBUG    kex algos:['curve25519-sha256', 'curve25519-sha256@libssh.org', 'diffie-hellman-group14-sha1', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group-exchange-sha256'] server key:['rsa-sha2-512', 'rsa-sha2-256', 'ssh-rsa', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com'] server encrypt:['aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com'] client mac:['hmac-sha2-512', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha2-256', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha1', 'hmac-sha1-etm@openssh.com'] server mac:['hmac-sha2-512', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha2-256', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha1', 'hmac-sha1-etm@openssh.com'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+21-12-31 09:59 paramiko.transport DEBUG    Kex agreed: diffie-hellman-group-exchange-sha256
+21-12-31 09:59 paramiko.transport DEBUG    HostKey agreed: ssh-ed25519
+21-12-31 09:59 paramiko.transport DEBUG    Cipher agreed: aes128-ctr
+21-12-31 09:59 paramiko.transport DEBUG    MAC agreed: hmac-sha2-256
+21-12-31 09:59 paramiko.transport DEBUG    Compression agreed: none
+21-12-31 09:59 paramiko.transport DEBUG    Got server p (2048 bits)
+21-12-31 09:59 paramiko.transport DEBUG    kex engine KexGexSHA256 specified hash_algo <built-in function openssl_sha256>
+21-12-31 09:59 paramiko.transport DEBUG    Switch to new keys ...
+21-12-31 09:59 paramiko.transport DEBUG    Adding ssh-ed25519 host key for 192.168.5.174: b'22e21a7bbddd768418d52ff4f17d1be5'
+21-12-31 09:59 paramiko.transport DEBUG    userauth is OK
+21-12-31 09:59 paramiko.transport INFO     Auth banner: b'\nAuthorized users only. All activities may be monitored and reported.\n'
+21-12-31 09:59 paramiko.transport INFO     Authentication (password) successful!
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] Max packet in: 32768 bytes
+21-12-31 09:59 paramiko.transport DEBUG    Received global request "hostkeys-00@openssh.com"
+21-12-31 09:59 paramiko.transport DEBUG    Rejecting "hostkeys-00@openssh.com" global request from server.
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] Max packet out: 32768 bytes
+21-12-31 09:59 paramiko.transport DEBUG    Secsh channel 0 opened.
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] Sesch channel 0 request ok
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] EOF received (0)
+21-12-31 09:59 paramiko.transport DEBUG    [chan 0] EOF sent (0)
+21-12-31 09:59 paramiko.transport DEBUG    EOF in transport thread
+21-12-31 09:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+21-12-31 09:59 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+21-12-31 09:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+21-12-31 09:59 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+21-12-31 09:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+21-12-31 09:59 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+21-12-31 09:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+21-12-31 09:59 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+21-12-31 09:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+21-12-31 09:59 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+21-12-31 09:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+21-12-31 09:59 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+21-12-31 09:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+21-12-31 09:59 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+21-12-31 09:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+21-12-31 09:59 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+21-12-31 09:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+21-12-31 09:59 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+21-12-31 09:59 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-31 09:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+21-12-31 09:59 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+21-12-31 09:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+21-12-31 09:59 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+21-12-31 09:59 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-31 09:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+21-12-31 09:59 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+21-12-31 09:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+21-12-31 09:59 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+21-12-31 09:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+21-12-31 09:59 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+21-12-31 09:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+21-12-31 09:59 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+21-12-31 09:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+21-12-31 09:59 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+21-12-31 09:59 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-31 09:59 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-31 09:59 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+21-12-31 09:59 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+21-12-31 09:59 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+21-12-31 09:59 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+21-12-31 09:59 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-31 09:59 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/account/login HTTP/1.1" 200 935
+21-12-31 09:59 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-31 09:59 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/account/login HTTP/1.1" 200 935
+21-12-31 09:59 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+21-12-31 09:59 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/cloud/networks HTTP/1.1" 200 11489
+21-12-31 11:54 root         INFO     the sql is : SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id            where d.store_type=1 and i.project_id=%s ORDER BY i.create_time DESC limit 1;
+21-12-31 11:54 root         INFO     the params is : 10c71a449bf24669906f6be4c82dba48
+21-12-31 11:54 root         INFO     the result data is :{'vmId': 'ins-963cb8905b3044e496aa5febc5fc73ef', 'vmName': 'LC2', 'diskId': 'ins-01d31da4cfe24ddc8666fbae59687dd7', 'diskName': 'test'}
+21-12-31 11:54 root         INFO     the sql is : SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id            where d.store_type=1 and i.project_id=%s ORDER BY i.create_time DESC limit 1;
+21-12-31 11:54 root         INFO     the params is : 10c71a449bf24669906f6be4c82dba48
+21-12-31 11:54 root         INFO     the result data is :{'vmId': 'ins-963cb8905b3044e496aa5febc5fc73ef', 'vmName': 'LC2', 'diskId': 'ins-01d31da4cfe24ddc8666fbae59687dd7', 'diskName': 'test'}
+21-12-31 11:57 root         INFO     the sql is : SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id            where d.store_type=1 and i.project_id=%s ORDER BY i.create_time DESC limit 1;
+21-12-31 11:57 root         INFO     the params is : 10c71a449bf24669906f6be4c82dba48
+21-12-31 11:57 root         INFO     the result data is :{'vmId': 'ins-963cb8905b3044e496aa5febc5fc73ef', 'vmName': 'LC2', 'diskId': 'ins-01d31da4cfe24ddc8666fbae59687dd7', 'diskName': 'test'}
+21-12-31 11:57 root         INFO     the sql is : SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id            where d.store_type=1 and i.project_id=%s ORDER BY i.create_time DESC limit 1;
+21-12-31 11:57 root         INFO     the params is : 10c71a449bf24669906f996be4c82dba48
+21-12-31 11:57 root         INFO     the result data is :None
