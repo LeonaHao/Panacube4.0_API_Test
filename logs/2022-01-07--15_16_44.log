@@ -1,0 +1,63 @@
+2022-01-07 15:16:44,492 - root - INFO - **********************************************开始setupClass，进行登录**********************************************
+2022-01-07 15:16:44,787 - root - INFO - the sql is : SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id            where d.store_type=1 and i.project_id=%s ORDER BY i.create_time DESC limit 1;
+2022-01-07 15:16:44,787 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-07 15:16:44,789 - root - INFO - the result data is :{'vmId': 'ins-1dbf636afc9c44389f2b10deac2ad4bf', 'vmName': 'LC1', 'diskId': 'ins-1dbf636afc9c44389f2b10deac2ad4bf', 'diskName': 'SysDesIs1Char'}
+2022-01-07 15:17:15,887 - root - INFO - ********************************************************************************
+2022-01-07 15:17:15,887 - root - INFO - ****************回滚云组件快照接口开始****************
+2022-01-07 15:17:15,888 - root - INFO - *******请求地址： http://192.168.5.170/v1/cloud/instances/ins-1dbf636afc9c44389f2b10deac2ad4bf/restore
+2022-01-07 15:17:15,888 - root - INFO - *******测试案例名称： TestCase001_回滚云组件快照-缺少token 执行开始********
+2022-01-07 15:17:15,902 - root - INFO - the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+2022-01-07 15:17:15,903 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-07 15:17:15,904 - root - INFO - the result data is :{'server_id': 'ins-1dbf636afc9c44389f2b10deac2ad4bf', 'snapshot_name': 'snap4_LC1_35'}
+2022-01-07 15:17:15,904 - root - INFO - *******测试数据： {'project_id': 'c732c22666064375904c357bbecfeb1a', 'volumes_name': ['ins-1dbf636afc9c44389f2b10deac2ad4bf'], 'snapshot_name': 'snap4_LC1_35'}
+2022-01-07 15:17:15,913 - root - INFO - *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+2022-01-07 15:17:15,914 - root - INFO - *******测试案例名称： TestCase001_回滚云组件快照-缺少token 执行完毕********
+2022-01-07 15:17:15,914 - root - INFO - ****************回滚云组件快照接口结束****************
+2022-01-07 15:17:15,915 - root - INFO - ********************************************************************************
+2022-01-07 15:17:15,918 - root - INFO - ********************************************************************************
+2022-01-07 15:17:15,918 - root - INFO - ****************回滚云组件快照接口开始****************
+2022-01-07 15:17:15,919 - root - INFO - *******请求地址： http://192.168.5.170/v1/cloud/instances/ins-1dbf636afc9c44389f2b10deac2ad4bf/restore
+2022-01-07 15:17:15,919 - root - INFO - *******测试案例名称： TestCase002_回滚云组件快照-snapshot_name为空 执行开始********
+2022-01-07 15:17:15,922 - root - INFO - the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+2022-01-07 15:17:15,922 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-07 15:17:15,923 - root - INFO - the result data is :{'server_id': 'ins-1dbf636afc9c44389f2b10deac2ad4bf', 'snapshot_name': 'snap4_LC1_35'}
+2022-01-07 15:17:15,924 - root - INFO - *******测试数据： {'project_id': 'c732c22666064375904c357bbecfeb1a', 'volumes_name': ['ins-1dbf636afc9c44389f2b10deac2ad4bf'], 'snapshot_name': ''}
+2022-01-07 15:17:15,947 - root - INFO - *******返回数据： {'code': 1001, 'message': '请求参数错误', 'data': None, 'level': 2}
+2022-01-07 15:17:15,948 - root - INFO - *******测试案例名称： TestCase002_回滚云组件快照-snapshot_name为空 执行完毕********
+2022-01-07 15:17:15,948 - root - INFO - ****************回滚云组件快照接口结束****************
+2022-01-07 15:17:15,949 - root - INFO - ********************************************************************************
+2022-01-07 15:17:15,951 - root - INFO - ********************************************************************************
+2022-01-07 15:17:15,952 - root - INFO - ****************回滚云组件快照接口开始****************
+2022-01-07 15:17:15,952 - root - INFO - *******请求地址： http://192.168.5.170/v1/cloud/instances/ins-1dbf636afc9c44389f2b10deac2ad4bf/restore
+2022-01-07 15:17:15,952 - root - INFO - *******测试案例名称： TestCase003_回滚云组件快照-volume_name为空 执行开始********
+2022-01-07 15:17:15,978 - root - INFO - the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+2022-01-07 15:17:15,979 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-07 15:17:15,980 - root - INFO - the result data is :{'server_id': 'ins-1dbf636afc9c44389f2b10deac2ad4bf', 'snapshot_name': 'snap4_LC1_35'}
+2022-01-07 15:17:15,981 - root - INFO - *******测试数据： {'project_id': 'c732c22666064375904c357bbecfeb1a', 'volumes_name': [], 'snapshot_name': 'snap4_LC1_35'}
+2022-01-07 15:17:16,388 - root - INFO - *******返回数据： {'code': 0, 'message': '快照回滚进行中-预计时间1分钟', 'data': None}
+2022-01-07 15:17:16,389 - root - INFO - ********************************************************************************
+2022-01-07 15:17:16,471 - root - INFO - ********************************************************************************
+2022-01-07 15:17:16,471 - root - INFO - ****************回滚云组件快照接口开始****************
+2022-01-07 15:17:16,472 - root - INFO - *******请求地址： http://192.168.5.170/v1/cloud/instances/ins-1dbf636afc9c44389f2b10deac2ad4bf/restore
+2022-01-07 15:17:16,472 - root - INFO - *******测试案例名称： TestCase004_回滚云组件快照-project_id为空 执行开始********
+2022-01-07 15:17:16,475 - root - INFO - the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+2022-01-07 15:17:16,475 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-07 15:17:16,476 - root - INFO - the result data is :{'server_id': 'ins-1dbf636afc9c44389f2b10deac2ad4bf', 'snapshot_name': 'snap4_LC1_35'}
+2022-01-07 15:17:16,477 - root - INFO - *******测试数据： {'project_id': '', 'volumes_name': ['ins-1dbf636afc9c44389f2b10deac2ad4bf'], 'snapshot_name': 'snap4_LC1_35'}
+2022-01-07 15:17:16,517 - root - INFO - *******返回数据： {'code': 1001, 'message': '请求参数错误', 'data': None, 'level': 2}
+2022-01-07 15:17:16,518 - root - INFO - *******测试案例名称： TestCase004_回滚云组件快照-project_id为空 执行完毕********
+2022-01-07 15:17:16,518 - root - INFO - ****************回滚云组件快照接口结束****************
+2022-01-07 15:17:16,518 - root - INFO - ********************************************************************************
+2022-01-07 15:17:16,521 - root - INFO - ********************************************************************************
+2022-01-07 15:17:16,521 - root - INFO - ****************回滚云组件快照接口开始****************
+2022-01-07 15:17:16,522 - root - INFO - *******请求地址： http://192.168.5.170/v1/cloud/instances/ins-1dbf636afc9c44389f2b10deac2ad4bf/restore
+2022-01-07 15:17:16,522 - root - INFO - *******测试案例名称： TestCase005_回滚云组件快照-成功 执行开始********
+2022-01-07 15:17:16,525 - root - INFO - the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+2022-01-07 15:17:16,526 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-07 15:17:16,539 - root - INFO - the result data is :{'server_id': 'ins-1dbf636afc9c44389f2b10deac2ad4bf', 'snapshot_name': 'snap4_LC1_35'}
+2022-01-07 15:17:16,540 - root - INFO - *******测试数据： {'project_id': 'c732c22666064375904c357bbecfeb1a', 'volumes_name': ['ins-1dbf636afc9c44389f2b10deac2ad4bf'], 'snapshot_name': 'snap4_LC1_35'}
+2022-01-07 15:17:16,862 - root - INFO - *******返回数据： {'code': 0, 'message': '快照回滚进行中-预计时间1分钟', 'data': None}
+2022-01-07 15:17:16,862 - root - INFO - *******测试案例名称： TestCase005_回滚云组件快照-成功 执行完毕********
+2022-01-07 15:17:16,862 - root - INFO - ****************回滚云组件快照接口结束****************
+2022-01-07 15:17:16,863 - root - INFO - ********************************************************************************
+2022-01-07 15:17:16,886 - root - INFO - **********************************************完成teardown class，退出登录**********************************************

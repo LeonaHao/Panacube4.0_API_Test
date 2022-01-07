@@ -64,7 +64,7 @@ diskSnap = basePanaCubeUrl + 'storage/snapshots/file'
 '''智能存储》快照管理》删除业务池快照'''
 delPoolSnap = basePanaCubeUrl + 'storage/snapshots/pool/batch-delete'
 '''智能存储》快照管理》删除云组件快照'''
-delInstanceSnap = basePanaCubeUrl + 'cloud/instances/'
+cloudInstanceSnap = basePanaCubeUrl + 'cloud/instances/'
 '''智能存储》快照管理》删除云硬盘快照'''
 delDiskSnap = basePanaCubeUrl + 'storage/snapshots/file/batch-delete'
 

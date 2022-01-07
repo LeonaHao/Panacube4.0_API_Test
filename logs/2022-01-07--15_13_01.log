@@ -1,0 +1,3 @@
+2022-01-07 15:13:01,573 - root - INFO - the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+2022-01-07 15:13:01,574 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-07 15:13:01,576 - root - INFO - the result data is :{'server_id': 'ins-1dbf636afc9c44389f2b10deac2ad4bf', 'snapshot_name': 'snap4_LC1_0'}

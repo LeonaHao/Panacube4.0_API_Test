@@ -6,7 +6,6 @@
 import unittest
 import requests
 import json
-import urllib3
 import time
 from configs.urlConfigs import cloudDisk,cloudDiskDetach,forceDelCD, logoutUrl
 from lib.PanaCubeCommon import login

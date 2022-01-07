@@ -168,7 +168,7 @@ def delInstanceSnap():
             "Authorization": Token,
             "PROJECT-ID":instanceInfo[1]
         }
-        reqUrl = urlConfigs.delInstanceSnap + str(instanceId) + '/snapshots/' + str(instanceInfo[0])
+        reqUrl = urlConfigs.cloudInstanceSnap + str(instanceId) + '/snapshots/' + str(instanceInfo[0])
         # reqParam = {}
         urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
         result = requests.delete(url=reqUrl, headers=headers,verify=False).json()

@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a407d88e-2a99-45b8-b82f-bbfd69bc7385" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/urlConfigs.py" beforeDir="false" afterPath="$PROJECT_DIR$/configs/urlConfigs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datafiles/snapsMagData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/datafiles/snapsMagData.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/PanacubeCommonQuery.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PanacubeCommonQuery.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/linuxXshell.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/linuxXshell.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt/restoreInstanceSnapshot.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt/restoreInstanceSnapshot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/attachDataDisk.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/attachDataDisk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/toolsForSE/snaps.py" beforeDir="false" afterPath="$PROJECT_DIR$/toolsForSE/snaps.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,21 +36,21 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt" />
+    <property name="last_opened_file_path" value="F:/Projects/QYDAPITest/QYD_API_Test/qyd_Api" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Projects\PanaCube4\tests\testsuit" />
-      <recent name="F:\Projects\PanaCube4\tests\testcase\intellengentStorage" />
-      <recent name="E:\0PanaCubeProject\Tests\StorageEngine\Overview" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\GitProject\PanaCube4\Panacube4.0_API_Test\tests\testcase\intellengentStorage\snapsMgt" />
       <recent name="F:\GitProject\PanaCube4\Panacube4.0_API_Test\tests\testcase\intellengentStorage\cloudDiskMgt" />
       <recent name="F:\GitProject\PanaCube4\Panacube4.0_API_Test\tests\testcase\intellengentStorage\storagePoolMgt" />
       <recent name="E:\0PanaCubeProject\Lib" />
       <recent name="E:\0PanaCubeProject\Tests\StorageEngine" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Projects\PanaCube4\tests\testsuit" />
+      <recent name="F:\Projects\PanaCube4\tests\testcase\intellengentStorage" />
+      <recent name="E:\0PanaCubeProject\Tests\StorageEngine\Overview" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -64,7 +65,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.PanacubeCommonQuery">
+  <component name="RunManager" selected="Python tests.pytest for tests.testcase.intellengentStorage.snapsMgt.restoreInstanceSnap.restoreInstanceSnap">
     <configuration name="DDD" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PanaCubeProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -143,28 +144,28 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in detachDataDisk.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for tests.testcase.intellengentStorage.snapsMgt.restoreInstanceSnap.restoreInstanceSnap" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PanaCubeProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/detachDataDisk.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;tests.testcase.intellengentStorage.snapsMgt.restoreInstanceSnap.restoreInstanceSnap&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for tests.testcase.intellengentStorage.snapsMgt.restoreInstanceSnap.restoreInstanceSnap" />
         <item itemvalue="Python.PanacubeCommonQuery" />
         <item itemvalue="Python tests.pytest for restoreInstanceSnapshot.restoreInstanceSnap" />
         <item itemvalue="Python.DDD" />
         <item itemvalue="Python.linuxXshell" />
-        <item itemvalue="Python tests.pytest in detachDataDisk.py" />
       </list>
     </recent_temporary>
   </component>

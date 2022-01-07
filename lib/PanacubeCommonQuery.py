@@ -14,18 +14,6 @@ def getVolumeId():
     res = MySQLHelper('panacube').get_many(sql,param)
     return res
 
-#对比卷信息，排查问题时查看底层卷是否和db中的卷相一致，如果对比后发现有结果，则表示底层和db都存在
-
-def matchVolume(hostname,port,username,password):
-    volumes = getVolumeId()
-    time.sleep(2)
-    # logger.info("一共有{}个卷".format(len(volumes)))
-    for i in range(len(volumes)):
-        volumeId = volumes[i]['file_store_id'][:6]
-        print("这是第{}个卷进行对比: ".format(i+1))
-        cmd = 'gluster v info | grep '+ str(volumeId)
-        conSSH(hostname,port,username,password,cmd)
-
 #获取利用率信息
 def getGeneralUsageInfo():
     sql = 'SELECT sum(cpu_limit) as cpuUse, sum(memory_limit)/1024 as memUse, sum(file_store_alloc)/1024 as storageUse from cloud_pool;'
@@ -127,6 +115,17 @@ def getInsAndDisk(poolId):
 
 
 
+#对比卷信息，排查问题时查看底层卷是否和db中的卷相一致，如果对比后发现有结果，则表示底层和db都存在
+def matchVolume(hostname,port,username,password):
+    volumes = getVolumeId()
+    time.sleep(2)
+    # logger.info("一共有{}个卷".format(len(volumes)))
+    for i in range(len(volumes)):
+        volumeId = volumes[i]['file_store_id'][:6]
+        print("这是第{}个卷进行对比: ".format(i+1))
+        cmd = 'gluster v info | grep '+ str(volumeId)
+        conSSH(hostname,port,username,password,cmd)
+
 # getVolumeId()
 # matchVolume("192.168.5.174",22, "root","Admin@9000")
 # getGeneralUsageInfo()
@@ -139,4 +138,8 @@ def getInsAndDisk(poolId):
 # getLatestDataDisk('ddac080c671b473e885714538fd1ed6e')
 # getLatestInstanceSnap('577d21c9411744a4b619c8966f69ec18')
 # getLatestInstance('577d21c9411744a4b619c8966f69ec18')
+
+
+# print(type(getInsAndDisk("c732c22666064375904c357bbecfeb1a")))
+# getLatestInstanceSnap("c732c22666064375904c357bbecfeb1a")
 
