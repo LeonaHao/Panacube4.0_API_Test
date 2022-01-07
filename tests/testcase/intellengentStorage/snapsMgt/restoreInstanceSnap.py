@@ -47,11 +47,11 @@ class restoreInstanceSnap(unittest.TestCase):
             "project_id":projectId,
             "project_name":projectName
 }
-            urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-            reqUrl1 = cloudInstanceSnap + str(insAndDiskInfo['vmId']) + '/snapshots'
-            print(reqUrl1)
-            insSnapRes = requests.post(url=reqUrl1, headers=headers, json=reqParam, verify=False).json()
-            time.sleep(15)
+        urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+        reqUrl1 = cloudInstanceSnap + str(insAndDiskInfo['vmId']) + '/snapshots'
+        print(reqUrl1)
+        insSnapRes = requests.post(url=reqUrl1, headers=headers, json=reqParam, verify=False).json()
+        time.sleep(15)
 
 
     def setUp(self):

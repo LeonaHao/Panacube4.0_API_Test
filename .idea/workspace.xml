@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a407d88e-2a99-45b8-b82f-bbfd69bc7385" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/urlConfigs.py" beforeDir="false" afterPath="$PROJECT_DIR$/configs/urlConfigs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datafiles/snapsMagData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/datafiles/snapsMagData.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/PanacubeCommonQuery.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PanacubeCommonQuery.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/attachDataDisk.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/attachDataDisk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/toolsForSE/snaps.py" beforeDir="false" afterPath="$PROJECT_DIR$/toolsForSE/snaps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt/restoreInstanceSnap.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt/restoreInstanceSnap.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +32,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="F:/Projects/QYDAPITest/QYD_API_Test/qyd_Api" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
