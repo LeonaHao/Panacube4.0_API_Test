@@ -69,14 +69,14 @@ def getAttachableDisk(poolId):
     res= MySQLHelper('panacube').get_one(sql,param)
     return  res
 
-#获取最新的数据盘
+#获取最新的数据盘id
 def getLatestDataDisk(poolId):
     sql = 'select id from disk where store_type=0 and pool_id=%s order by create_time desc limit 1;'
     param = (poolId)
     res= MySQLHelper('panacube').get_one(sql,param)
     return  res
 
-#获取最新的数业务池快照
+#获取最新的业务池快照
 def getLatestPoolSnap(poolId):
     sql = 'SELECT snapshot_id, name from `storage_snapshot` WHERE snapshot_type="pool" and pool_id=%s order by create_time DESC limit 1;'
     param  = (poolId)
@@ -85,7 +85,7 @@ def getLatestPoolSnap(poolId):
 
 #获取最新的数据盘快照
 def getLatestDiskSnap(poolId):
-    sql = 'SELECT snapshot_id, name from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1;'
+    sql = 'SELECT id, snapshot_id, name, disk_id, pool_id from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1;'
     param  = (poolId)
     res = MySQLHelper("panacube").get_one(sql,param)
     return res
@@ -141,5 +141,5 @@ def matchVolume(hostname,port,username,password):
 
 
 # print(type(getInsAndDisk("c732c22666064375904c357bbecfeb1a")))
-getLatestInstanceSnap("c732c22666064375904c357bbecfeb1a")
-
+# getLatestInstanceSnap("c732c22666064375904c357bbecfeb1a")
+getLatestDiskSnap("c732c22666064375904c357bbecfeb1a")

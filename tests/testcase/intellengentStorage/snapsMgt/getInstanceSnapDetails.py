@@ -1,40 +1,42 @@
 # -*- coding: utf-8 -*-
-# @Time: 2022/1/7 16:49
+# @Time: 2022/01/13 10:53
 # @Author: Leona
-# @File: searchInstanceSnap.py
+# @File: getInstanceSnapDetails.py
 
 
 import unittest
 import requests
 import json
-import urllib3
 from configs.urlConfigs import instanceSnap,logoutUrl
 from lib.PanaCubeCommon import login
+from lib.PanacubeCommonQuery import getLatestInstanceSnap
 from lib.generateTestCases import __generateTestCases
 from lib.log import logger
 
 """
-智能存储》快照管理》查询云组件快照
+智能存储》快照管理》获取云组件快照详情信息
 """
 
-class searchInstanceSnap(unittest.TestCase):
-    '''获取智能存储》快照管理》查询云组件快照'''
+class getInstanceSnapDetails(unittest.TestCase):
+    '''获取智能存储》快照管理》获取云组件快照详情信息'''
     @classmethod
     def setUpClass(cls) -> None:
         logger.info(
             "**********************************************开始setupClass，进行登录**********************************************")
-        global token
+        global token, instanceSnapInfo
         token = login()
+        projectId="c732c22666064375904c357bbecfeb1a"
+        instanceSnapInfo = getLatestInstanceSnap(projectId)
 
     def setUp(self):
         logger.info("*" * 80)
 
     def getTest(self, tx):
-        logger.info("****************查询云组件快照接口开始****************")
+        logger.info("****************获取云组件快照详情接口开始****************")
         headers = {'Content-Type': 'application/json',
                    'Authorization': token
                    }
-        reqUrl = instanceSnap + '?'
+        reqUrl = instanceSnap + '/' + str(instanceSnapInfo['server_id']) + '/' + str(instanceSnapInfo['snapshot_name'])
         caseNum = tx['test_num']
         caseName = tx['test_name']
         code = tx['code']
@@ -44,12 +46,12 @@ class searchInstanceSnap(unittest.TestCase):
         logger.info("*******测试数据： " + str(reqParam))
         if flag == 1:
             headers['Authorization'] = ''
-        r = requests.get(url=reqUrl, headers=headers, params=reqParam)
+        r = requests.get(url=reqUrl, headers=headers, data=reqParam)
         result = r.json()
         logger.info("*******返回数据： " + str(result))
         self.assertEqual(result['code'], code)
         logger.info("*******测试案例名称： TestCase" + caseNum + "_" + caseName + " 执行完毕********")
-        logger.info("****************查询云组件快照接口结束****************")
+        logger.info("****************获取云组件快照详情接口结束****************")
 
     @staticmethod
     def getTestFunc(arg1):
@@ -72,7 +74,7 @@ class searchInstanceSnap(unittest.TestCase):
             logger.info(
                 "**********************************************完成teardown class，退出登录**********************************************")
 
-__generateTestCases(searchInstanceSnap, "searchInstanceSnap", "snapsMagData.xlsx", "searchInstanceSnap")
+__generateTestCases(getInstanceSnapDetails, "getInstanceSnapDetails", "snapsMagData.xlsx", "getInstanceSnapDetails")
 
 if __name__ == '__main__':
     unittest.main()

@@ -1,0 +1,123 @@
+2022-01-13 16:32:04,774 - root - INFO - the sql is : SELECT id, snapshot_id, name, disk_id, pool_id from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1;
+2022-01-13 16:32:04,775 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-13 16:32:04,777 - root - INFO - the result data is :{'id': '3325d3bdaf1646079e52eb42823d0364', 'snapshot_id': '37fb92c35c1444afaea37070aeee2e1d', 'name': 'SnapNameUp-1_success', 'disk_id': 'bda84184-9cc2-466c-bd05-47f400bde097', 'pool_id': 'c732c22666064375904c357bbecfeb1a'}
+2022-01-13 16:32:04,916 - root - INFO - **********************************************开始setupClass，进行登录**********************************************
+2022-01-13 16:32:05,160 - root - INFO - ********************************************************************************
+2022-01-13 16:32:05,160 - root - INFO - ****************编辑云硬盘快照名称接口开始****************
+2022-01-13 16:32:05,161 - root - INFO - *******测试案例名称： TestCase001_编辑云硬盘快照-缺少token 执行开始********
+2022-01-13 16:32:05,165 - root - INFO - the sql is : SELECT id, snapshot_id, name, disk_id, pool_id from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1;
+2022-01-13 16:32:05,166 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-13 16:32:05,170 - root - INFO - the result data is :{'id': '3325d3bdaf1646079e52eb42823d0364', 'snapshot_id': '37fb92c35c1444afaea37070aeee2e1d', 'name': 'SnapNameUp-1_success', 'disk_id': 'bda84184-9cc2-466c-bd05-47f400bde097', 'pool_id': 'c732c22666064375904c357bbecfeb1a'}
+2022-01-13 16:32:05,170 - root - INFO - *******请求地址： http://192.168.5.170/v1/storage/snapshots/file/3325d3bdaf1646079e52eb42823d0364
+2022-01-13 16:32:05,171 - root - INFO - *******测试数据： {'name': 'cdSanp2'}
+2022-01-13 16:32:05,183 - root - INFO - *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+2022-01-13 16:32:05,184 - root - INFO - *******测试案例名称： TestCase001_编辑云硬盘快照-缺少token 执行完毕********
+2022-01-13 16:32:05,184 - root - INFO - ****************编辑云硬盘快照名称接口结束****************
+2022-01-13 16:32:05,185 - root - INFO - ********************************************************************************
+2022-01-13 16:32:05,188 - root - INFO - ********************************************************************************
+2022-01-13 16:32:05,189 - root - INFO - ****************编辑云硬盘快照名称接口开始****************
+2022-01-13 16:32:05,189 - root - INFO - *******测试案例名称： TestCase002_编辑云硬盘快照-云硬盘id不存在 执行开始********
+2022-01-13 16:32:05,197 - root - INFO - the sql is : SELECT id, snapshot_id, name, disk_id, pool_id from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1;
+2022-01-13 16:32:05,198 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-13 16:32:05,201 - root - INFO - the result data is :{'id': '3325d3bdaf1646079e52eb42823d0364', 'snapshot_id': '37fb92c35c1444afaea37070aeee2e1d', 'name': 'SnapNameUp-1_success', 'disk_id': 'bda84184-9cc2-466c-bd05-47f400bde097', 'pool_id': 'c732c22666064375904c357bbecfeb1a'}
+2022-01-13 16:32:05,201 - root - INFO - *******请求地址： http://192.168.5.170/v1/storage/snapshots/file/0a0739ff-6f4c-4f2d-895a-04dfd793bae7
+2022-01-13 16:32:05,202 - root - INFO - *******测试数据： {'name': 'cdSanp2'}
+2022-01-13 16:32:05,236 - root - INFO - *******返回数据： {'code': 1, 'message': '服务异常', 'data': None, 'level': 1}
+2022-01-13 16:32:05,236 - root - INFO - ********************************************************************************
+2022-01-13 16:32:05,333 - root - INFO - ********************************************************************************
+2022-01-13 16:32:05,333 - root - INFO - ****************编辑云硬盘快照名称接口开始****************
+2022-01-13 16:32:05,334 - root - INFO - *******测试案例名称： TestCase003_编辑云硬盘快照-name为空 执行开始********
+2022-01-13 16:32:05,337 - root - INFO - the sql is : SELECT id, snapshot_id, name, disk_id, pool_id from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1;
+2022-01-13 16:32:05,337 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-13 16:32:05,339 - root - INFO - the result data is :{'id': '3325d3bdaf1646079e52eb42823d0364', 'snapshot_id': '37fb92c35c1444afaea37070aeee2e1d', 'name': 'SnapNameUp-1_success', 'disk_id': 'bda84184-9cc2-466c-bd05-47f400bde097', 'pool_id': 'c732c22666064375904c357bbecfeb1a'}
+2022-01-13 16:32:05,340 - root - INFO - *******请求地址： http://192.168.5.170/v1/storage/snapshots/file/3325d3bdaf1646079e52eb42823d0364
+2022-01-13 16:32:05,340 - root - INFO - *******测试数据： {'name': ''}
+2022-01-13 16:32:05,382 - root - INFO - *******返回数据： {'code': 1001, 'message': {'name': ['该字段不能为空。']}, 'data': None}
+2022-01-13 16:32:05,382 - root - INFO - *******测试案例名称： TestCase003_编辑云硬盘快照-name为空 执行完毕********
+2022-01-13 16:32:05,383 - root - INFO - ****************编辑云硬盘快照名称接口结束****************
+2022-01-13 16:32:05,383 - root - INFO - ********************************************************************************
+2022-01-13 16:32:05,387 - root - INFO - ********************************************************************************
+2022-01-13 16:32:05,387 - root - INFO - ****************编辑云硬盘快照名称接口开始****************
+2022-01-13 16:32:05,388 - root - INFO - *******测试案例名称： TestCase004_编辑云硬盘快照-name大于32个字符 执行开始********
+2022-01-13 16:32:05,403 - root - INFO - the sql is : SELECT id, snapshot_id, name, disk_id, pool_id from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1;
+2022-01-13 16:32:05,403 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-13 16:32:05,406 - root - INFO - the result data is :{'id': '3325d3bdaf1646079e52eb42823d0364', 'snapshot_id': '37fb92c35c1444afaea37070aeee2e1d', 'name': 'SnapNameUp-1_success', 'disk_id': 'bda84184-9cc2-466c-bd05-47f400bde097', 'pool_id': 'c732c22666064375904c357bbecfeb1a'}
+2022-01-13 16:32:05,407 - root - INFO - *******请求地址： http://192.168.5.170/v1/storage/snapshots/file/3325d3bdaf1646079e52eb42823d0364
+2022-01-13 16:32:05,407 - root - INFO - *******测试数据： {'name': 'aaaaabbbbbaaaaabbbbbaaaaabbbbb12345'}
+2022-01-13 16:32:05,436 - root - INFO - *******返回数据： {'code': 214022, 'message': '快照名称过长', 'data': None, 'level': 3}
+2022-01-13 16:32:05,437 - root - INFO - *******测试案例名称： TestCase004_编辑云硬盘快照-name大于32个字符 执行完毕********
+2022-01-13 16:32:05,437 - root - INFO - ****************编辑云硬盘快照名称接口结束****************
+2022-01-13 16:32:05,438 - root - INFO - ********************************************************************************
+2022-01-13 16:32:05,441 - root - INFO - ********************************************************************************
+2022-01-13 16:32:05,441 - root - INFO - ****************编辑云硬盘快照名称接口开始****************
+2022-01-13 16:32:05,442 - root - INFO - *******测试案例名称： TestCase005_编辑云硬盘快照-name为中文 执行开始********
+2022-01-13 16:32:05,463 - root - INFO - the sql is : SELECT id, snapshot_id, name, disk_id, pool_id from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1;
+2022-01-13 16:32:05,464 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-13 16:32:05,467 - root - INFO - the result data is :{'id': '3325d3bdaf1646079e52eb42823d0364', 'snapshot_id': '37fb92c35c1444afaea37070aeee2e1d', 'name': 'SnapNameUp-1_success', 'disk_id': 'bda84184-9cc2-466c-bd05-47f400bde097', 'pool_id': 'c732c22666064375904c357bbecfeb1a'}
+2022-01-13 16:32:05,467 - root - INFO - *******请求地址： http://192.168.5.170/v1/storage/snapshots/file/3325d3bdaf1646079e52eb42823d0364
+2022-01-13 16:32:05,468 - root - INFO - *******测试数据： {'name': '中文名称云硬盘快照'}
+2022-01-13 16:32:05,501 - root - INFO - *******返回数据： {'code': 214020, 'message': '快照名称只能输入数字、字母、-、_, 只允许以英文开头', 'data': None, 'level': 3}
+2022-01-13 16:32:05,502 - root - INFO - *******测试案例名称： TestCase005_编辑云硬盘快照-name为中文 执行完毕********
+2022-01-13 16:32:05,502 - root - INFO - ****************编辑云硬盘快照名称接口结束****************
+2022-01-13 16:32:05,503 - root - INFO - ********************************************************************************
+2022-01-13 16:32:05,506 - root - INFO - ********************************************************************************
+2022-01-13 16:32:05,507 - root - INFO - ****************编辑云硬盘快照名称接口开始****************
+2022-01-13 16:32:05,508 - root - INFO - *******测试案例名称： TestCase006_编辑云硬盘快照-name为特殊字符 执行开始********
+2022-01-13 16:32:05,515 - root - INFO - the sql is : SELECT id, snapshot_id, name, disk_id, pool_id from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1;
+2022-01-13 16:32:05,515 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-13 16:32:05,518 - root - INFO - the result data is :{'id': '3325d3bdaf1646079e52eb42823d0364', 'snapshot_id': '37fb92c35c1444afaea37070aeee2e1d', 'name': 'SnapNameUp-1_success', 'disk_id': 'bda84184-9cc2-466c-bd05-47f400bde097', 'pool_id': 'c732c22666064375904c357bbecfeb1a'}
+2022-01-13 16:32:05,518 - root - INFO - *******请求地址： http://192.168.5.170/v1/storage/snapshots/file/3325d3bdaf1646079e52eb42823d0364
+2022-01-13 16:32:05,519 - root - INFO - *******测试数据： {'name': '……&……&%……%'}
+2022-01-13 16:32:05,542 - root - INFO - *******返回数据： {'code': 214020, 'message': '快照名称只能输入数字、字母、-、_, 只允许以英文开头', 'data': None, 'level': 3}
+2022-01-13 16:32:05,542 - root - INFO - *******测试案例名称： TestCase006_编辑云硬盘快照-name为特殊字符 执行完毕********
+2022-01-13 16:32:05,543 - root - INFO - ****************编辑云硬盘快照名称接口结束****************
+2022-01-13 16:32:05,543 - root - INFO - ********************************************************************************
+2022-01-13 16:32:05,547 - root - INFO - ********************************************************************************
+2022-01-13 16:32:05,547 - root - INFO - ****************编辑云硬盘快照名称接口开始****************
+2022-01-13 16:32:05,548 - root - INFO - *******测试案例名称： TestCase007_编辑云硬盘快照-name以数字开头 执行开始********
+2022-01-13 16:32:05,552 - root - INFO - the sql is : SELECT id, snapshot_id, name, disk_id, pool_id from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1;
+2022-01-13 16:32:05,553 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-13 16:32:05,555 - root - INFO - the result data is :{'id': '3325d3bdaf1646079e52eb42823d0364', 'snapshot_id': '37fb92c35c1444afaea37070aeee2e1d', 'name': 'SnapNameUp-1_success', 'disk_id': 'bda84184-9cc2-466c-bd05-47f400bde097', 'pool_id': 'c732c22666064375904c357bbecfeb1a'}
+2022-01-13 16:32:05,555 - root - INFO - *******请求地址： http://192.168.5.170/v1/storage/snapshots/file/3325d3bdaf1646079e52eb42823d0364
+2022-01-13 16:32:05,556 - root - INFO - *******测试数据： {'name': '11112222'}
+2022-01-13 16:32:05,583 - root - INFO - *******返回数据： {'code': 214020, 'message': '快照名称只能输入数字、字母、-、_, 只允许以英文开头', 'data': None, 'level': 3}
+2022-01-13 16:32:05,584 - root - INFO - *******测试案例名称： TestCase007_编辑云硬盘快照-name以数字开头 执行完毕********
+2022-01-13 16:32:05,584 - root - INFO - ****************编辑云硬盘快照名称接口结束****************
+2022-01-13 16:32:05,585 - root - INFO - ********************************************************************************
+2022-01-13 16:32:05,588 - root - INFO - ********************************************************************************
+2022-01-13 16:32:05,588 - root - INFO - ****************编辑云硬盘快照名称接口开始****************
+2022-01-13 16:32:05,589 - root - INFO - *******测试案例名称： TestCase008_编辑云硬盘快照-name以下划线开头 执行开始********
+2022-01-13 16:32:05,596 - root - INFO - the sql is : SELECT id, snapshot_id, name, disk_id, pool_id from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1;
+2022-01-13 16:32:05,597 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-13 16:32:05,606 - root - INFO - the result data is :{'id': '3325d3bdaf1646079e52eb42823d0364', 'snapshot_id': '37fb92c35c1444afaea37070aeee2e1d', 'name': 'SnapNameUp-1_success', 'disk_id': 'bda84184-9cc2-466c-bd05-47f400bde097', 'pool_id': 'c732c22666064375904c357bbecfeb1a'}
+2022-01-13 16:32:05,606 - root - INFO - *******请求地址： http://192.168.5.170/v1/storage/snapshots/file/3325d3bdaf1646079e52eb42823d0364
+2022-01-13 16:32:05,607 - root - INFO - *******测试数据： {'name': '__asdada'}
+2022-01-13 16:32:05,634 - root - INFO - *******返回数据： {'code': 214020, 'message': '快照名称只能输入数字、字母、-、_, 只允许以英文开头', 'data': None, 'level': 3}
+2022-01-13 16:32:05,634 - root - INFO - *******测试案例名称： TestCase008_编辑云硬盘快照-name以下划线开头 执行完毕********
+2022-01-13 16:32:05,635 - root - INFO - ****************编辑云硬盘快照名称接口结束****************
+2022-01-13 16:32:05,635 - root - INFO - ********************************************************************************
+2022-01-13 16:32:05,638 - root - INFO - ********************************************************************************
+2022-01-13 16:32:05,639 - root - INFO - ****************编辑云硬盘快照名称接口开始****************
+2022-01-13 16:32:05,639 - root - INFO - *******测试案例名称： TestCase009_编辑云硬盘快照-name以短横线开头 执行开始********
+2022-01-13 16:32:05,642 - root - INFO - the sql is : SELECT id, snapshot_id, name, disk_id, pool_id from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1;
+2022-01-13 16:32:05,643 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-13 16:32:05,649 - root - INFO - the result data is :{'id': '3325d3bdaf1646079e52eb42823d0364', 'snapshot_id': '37fb92c35c1444afaea37070aeee2e1d', 'name': 'SnapNameUp-1_success', 'disk_id': 'bda84184-9cc2-466c-bd05-47f400bde097', 'pool_id': 'c732c22666064375904c357bbecfeb1a'}
+2022-01-13 16:32:05,650 - root - INFO - *******请求地址： http://192.168.5.170/v1/storage/snapshots/file/3325d3bdaf1646079e52eb42823d0364
+2022-01-13 16:32:05,651 - root - INFO - *******测试数据： {'name': '--asdada'}
+2022-01-13 16:32:05,674 - root - INFO - *******返回数据： {'code': 214020, 'message': '快照名称只能输入数字、字母、-、_, 只允许以英文开头', 'data': None, 'level': 3}
+2022-01-13 16:32:05,675 - root - INFO - *******测试案例名称： TestCase009_编辑云硬盘快照-name以短横线开头 执行完毕********
+2022-01-13 16:32:05,675 - root - INFO - ****************编辑云硬盘快照名称接口结束****************
+2022-01-13 16:32:05,676 - root - INFO - ********************************************************************************
+2022-01-13 16:32:05,679 - root - INFO - ********************************************************************************
+2022-01-13 16:32:05,680 - root - INFO - ****************编辑云硬盘快照名称接口开始****************
+2022-01-13 16:32:05,680 - root - INFO - *******测试案例名称： TestCase010_编辑云硬盘快照-合规name编辑成功 执行开始********
+2022-01-13 16:32:05,683 - root - INFO - the sql is : SELECT id, snapshot_id, name, disk_id, pool_id from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1;
+2022-01-13 16:32:05,684 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-13 16:32:05,686 - root - INFO - the result data is :{'id': '3325d3bdaf1646079e52eb42823d0364', 'snapshot_id': '37fb92c35c1444afaea37070aeee2e1d', 'name': 'SnapNameUp-1_success', 'disk_id': 'bda84184-9cc2-466c-bd05-47f400bde097', 'pool_id': 'c732c22666064375904c357bbecfeb1a'}
+2022-01-13 16:32:05,686 - root - INFO - *******请求地址： http://192.168.5.170/v1/storage/snapshots/file/3325d3bdaf1646079e52eb42823d0364
+2022-01-13 16:32:05,687 - root - INFO - *******测试数据： {'name': 'SnapNameUp-1_success'}
+2022-01-13 16:32:05,726 - root - INFO - *******返回数据： {'code': 0, 'message': 'success', 'data': None}
+2022-01-13 16:32:05,726 - root - INFO - *******测试案例名称： TestCase010_编辑云硬盘快照-合规name编辑成功 执行完毕********
+2022-01-13 16:32:05,727 - root - INFO - ****************编辑云硬盘快照名称接口结束****************
+2022-01-13 16:32:05,727 - root - INFO - ********************************************************************************
+2022-01-13 16:32:05,751 - root - INFO - **********************************************完成teardown class，退出登录**********************************************

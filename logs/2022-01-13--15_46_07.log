@@ -1,0 +1,83 @@
+2022-01-13 15:46:08,154 - root - INFO - **********************************************开始setupClass，进行登录**********************************************
+2022-01-13 15:46:08,392 - root - INFO - the sql is : select id from disk where store_type=0 and pool_id=%s order by create_time desc limit 1;
+2022-01-13 15:46:08,393 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-13 15:46:08,394 - root - INFO - the result data is :{'id': 'bda84184-9cc2-466c-bd05-47f400bde097'}
+2022-01-13 15:46:13,550 - root - INFO - the sql is : select id from disk where store_type=0 and pool_id=%s order by create_time desc limit 1;
+2022-01-13 15:46:13,552 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-13 15:46:13,554 - root - INFO - the result data is :{'id': 'bda84184-9cc2-466c-bd05-47f400bde097'}
+2022-01-13 15:46:18,718 - root - INFO - the sql is : select id from disk where store_type=0 and pool_id=%s order by create_time desc limit 1;
+2022-01-13 15:46:18,719 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-13 15:46:18,720 - root - INFO - the result data is :{'id': 'bda84184-9cc2-466c-bd05-47f400bde097'}
+2022-01-13 15:46:23,885 - root - INFO - ********************************************************************************
+2022-01-13 15:46:23,886 - root - INFO - ****************删除云硬盘快照接口开始****************
+2022-01-13 15:46:23,886 - root - INFO - 请求地址为： http://192.168.5.170/v1/storage/snapshots/file/batch-delete
+2022-01-13 15:46:23,887 - root - INFO - *******测试案例名称： TestCase001_删除云硬盘快照-缺少token 执行开始********
+2022-01-13 15:46:23,901 - root - INFO - the sql is : SELECT id, snapshot_id, name, disk_id, pool_id from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1;
+2022-01-13 15:46:23,902 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-13 15:46:23,904 - root - INFO - the result data is :{'id': '772bb407c85f4a2d846aa8636c216d91', 'snapshot_id': '8ff7838e543c4eb59c431327990a5d97', 'name': 'cdSanp3', 'disk_id': 'bda84184-9cc2-466c-bd05-47f400bde097', 'pool_id': 'c732c22666064375904c357bbecfeb1a'}
+2022-01-13 15:46:23,905 - root - INFO - *******测试数据： {'ids': ['772bb407c85f4a2d846aa8636c216d91'], 'project_id': 'c732c22666064375904c357bbecfeb1a', 'project_name': 'HJp0_hash'}
+2022-01-13 15:46:23,915 - root - INFO - *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+2022-01-13 15:46:23,916 - root - INFO - *******测试案例名称： TestCase001_删除云硬盘快照-缺少token 执行完毕********
+2022-01-13 15:46:23,916 - root - INFO - ****************删除云硬盘快照接口结束****************
+2022-01-13 15:46:23,917 - root - INFO - ********************************************************************************
+2022-01-13 15:46:23,919 - root - INFO - ********************************************************************************
+2022-01-13 15:46:23,919 - root - INFO - ****************删除云硬盘快照接口开始****************
+2022-01-13 15:46:23,920 - root - INFO - 请求地址为： http://192.168.5.170/v1/storage/snapshots/file/batch-delete
+2022-01-13 15:46:23,920 - root - INFO - *******测试案例名称： TestCase002_删除云硬盘快照-云硬盘快照ids为空 执行开始********
+2022-01-13 15:46:23,946 - root - INFO - the sql is : SELECT id, snapshot_id, name, disk_id, pool_id from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1;
+2022-01-13 15:46:23,947 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-13 15:46:23,949 - root - INFO - the result data is :{'id': '772bb407c85f4a2d846aa8636c216d91', 'snapshot_id': '8ff7838e543c4eb59c431327990a5d97', 'name': 'cdSanp3', 'disk_id': 'bda84184-9cc2-466c-bd05-47f400bde097', 'pool_id': 'c732c22666064375904c357bbecfeb1a'}
+2022-01-13 15:46:23,949 - root - INFO - *******测试数据： {'ids': [], 'project_id': 'c732c22666064375904c357bbecfeb1a', 'project_name': 'HJp0_hash'}
+2022-01-13 15:46:23,987 - root - INFO - *******返回数据： {'code': 1001, 'message': {'ids': ['Ensure this field has at least 1 elements.']}, 'data': None}
+2022-01-13 15:46:23,988 - root - INFO - *******测试案例名称： TestCase002_删除云硬盘快照-云硬盘快照ids为空 执行完毕********
+2022-01-13 15:46:23,988 - root - INFO - ****************删除云硬盘快照接口结束****************
+2022-01-13 15:46:23,989 - root - INFO - ********************************************************************************
+2022-01-13 15:46:23,991 - root - INFO - ********************************************************************************
+2022-01-13 15:46:23,992 - root - INFO - ****************删除云硬盘快照接口开始****************
+2022-01-13 15:46:23,992 - root - INFO - 请求地址为： http://192.168.5.170/v1/storage/snapshots/file/batch-delete
+2022-01-13 15:46:23,993 - root - INFO - *******测试案例名称： TestCase003_删除云硬盘快照-project_id为空 执行开始********
+2022-01-13 15:46:23,996 - root - INFO - the sql is : SELECT id, snapshot_id, name, disk_id, pool_id from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1;
+2022-01-13 15:46:23,996 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-13 15:46:24,003 - root - INFO - the result data is :{'id': '772bb407c85f4a2d846aa8636c216d91', 'snapshot_id': '8ff7838e543c4eb59c431327990a5d97', 'name': 'cdSanp3', 'disk_id': 'bda84184-9cc2-466c-bd05-47f400bde097', 'pool_id': 'c732c22666064375904c357bbecfeb1a'}
+2022-01-13 15:46:24,004 - root - INFO - *******测试数据： {'ids': ['772bb407c85f4a2d846aa8636c216d91'], 'project_id': '', 'project_name': 'HJp0_hash'}
+2022-01-13 15:46:24,067 - root - INFO - *******返回数据： {'code': 0, 'message': 'success', 'data': None}
+2022-01-13 15:46:24,068 - root - INFO - *******测试案例名称： TestCase003_删除云硬盘快照-project_id为空 执行完毕********
+2022-01-13 15:46:24,068 - root - INFO - ****************删除云硬盘快照接口结束****************
+2022-01-13 15:46:24,069 - root - INFO - ********************************************************************************
+2022-01-13 15:46:24,072 - root - INFO - ********************************************************************************
+2022-01-13 15:46:24,072 - root - INFO - ****************删除云硬盘快照接口开始****************
+2022-01-13 15:46:24,073 - root - INFO - 请求地址为： http://192.168.5.170/v1/storage/snapshots/file/batch-delete
+2022-01-13 15:46:24,073 - root - INFO - *******测试案例名称： TestCase004_删除云硬盘快照-project_name为空 执行开始********
+2022-01-13 15:46:24,086 - root - INFO - the sql is : SELECT id, snapshot_id, name, disk_id, pool_id from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1;
+2022-01-13 15:46:24,087 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-13 15:46:24,089 - root - INFO - the result data is :{'id': '772bb407c85f4a2d846aa8636c216d91', 'snapshot_id': '8ff7838e543c4eb59c431327990a5d97', 'name': 'cdSanp3', 'disk_id': 'bda84184-9cc2-466c-bd05-47f400bde097', 'pool_id': 'c732c22666064375904c357bbecfeb1a'}
+2022-01-13 15:46:24,089 - root - INFO - *******测试数据： {'ids': ['772bb407c85f4a2d846aa8636c216d91'], 'project_id': 'c732c22666064375904c357bbecfeb1a', 'project_name': ''}
+2022-01-13 15:46:24,180 - root - INFO - *******返回数据： {'code': 0, 'message': 'success', 'data': None}
+2022-01-13 15:46:24,181 - root - INFO - *******测试案例名称： TestCase004_删除云硬盘快照-project_name为空 执行完毕********
+2022-01-13 15:46:24,181 - root - INFO - ****************删除云硬盘快照接口结束****************
+2022-01-13 15:46:24,182 - root - INFO - ********************************************************************************
+2022-01-13 15:46:24,184 - root - INFO - ********************************************************************************
+2022-01-13 15:46:24,185 - root - INFO - ****************删除云硬盘快照接口开始****************
+2022-01-13 15:46:24,185 - root - INFO - 请求地址为： http://192.168.5.170/v1/storage/snapshots/file/batch-delete
+2022-01-13 15:46:24,186 - root - INFO - *******测试案例名称： TestCase005_删除云硬盘快照-云硬盘快照删除成功 执行开始********
+2022-01-13 15:46:24,213 - root - INFO - the sql is : SELECT id, snapshot_id, name, disk_id, pool_id from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1;
+2022-01-13 15:46:24,213 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-13 15:46:24,215 - root - INFO - the result data is :{'id': '772bb407c85f4a2d846aa8636c216d91', 'snapshot_id': '8ff7838e543c4eb59c431327990a5d97', 'name': 'cdSanp3', 'disk_id': 'bda84184-9cc2-466c-bd05-47f400bde097', 'pool_id': 'c732c22666064375904c357bbecfeb1a'}
+2022-01-13 15:46:24,215 - root - INFO - *******测试数据： {'ids': ['772bb407c85f4a2d846aa8636c216d91'], 'project_id': 'c732c22666064375904c357bbecfeb1a', 'project_name': 'HJp0_hash'}
+2022-01-13 15:46:24,280 - root - INFO - *******返回数据： {'code': 0, 'message': 'success', 'data': None}
+2022-01-13 15:46:24,281 - root - INFO - *******测试案例名称： TestCase005_删除云硬盘快照-云硬盘快照删除成功 执行完毕********
+2022-01-13 15:46:24,281 - root - INFO - ****************删除云硬盘快照接口结束****************
+2022-01-13 15:46:24,282 - root - INFO - ********************************************************************************
+2022-01-13 15:46:24,284 - root - INFO - ********************************************************************************
+2022-01-13 15:46:24,285 - root - INFO - ****************删除云硬盘快照接口开始****************
+2022-01-13 15:46:24,285 - root - INFO - 请求地址为： http://192.168.5.170/v1/storage/snapshots/file/batch-delete
+2022-01-13 15:46:24,285 - root - INFO - *******测试案例名称： TestCase006_删除云硬盘快照-云硬盘快照ids不存在 执行开始********
+2022-01-13 15:46:24,288 - root - INFO - the sql is : SELECT id, snapshot_id, name, disk_id, pool_id from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1;
+2022-01-13 15:46:24,289 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-13 15:46:24,291 - root - INFO - the result data is :{'id': '3325d3bdaf1646079e52eb42823d0364', 'snapshot_id': '37fb92c35c1444afaea37070aeee2e1d', 'name': 'cdSanp2', 'disk_id': 'bda84184-9cc2-466c-bd05-47f400bde097', 'pool_id': 'c732c22666064375904c357bbecfeb1a'}
+2022-01-13 15:46:24,291 - root - INFO - *******测试数据： {'ids': ['645a64fd-557b-45e2-b418-654cd63daf84'], 'project_id': 'c732c22666064375904c357bbecfeb1a', 'project_name': 'HJp0_hash'}
+2022-01-13 15:46:24,324 - root - INFO - *******返回数据： {'code': 214006, 'message': '云硬盘快照不存在', 'data': None, 'level': 3}
+2022-01-13 15:46:24,325 - root - INFO - *******测试案例名称： TestCase006_删除云硬盘快照-云硬盘快照ids不存在 执行完毕********
+2022-01-13 15:46:24,325 - root - INFO - ****************删除云硬盘快照接口结束****************
+2022-01-13 15:46:24,326 - root - INFO - ********************************************************************************
+2022-01-13 15:46:24,345 - root - INFO - **********************************************完成teardown class，退出登录**********************************************
