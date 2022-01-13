@@ -141,5 +141,5 @@ def matchVolume(hostname,port,username,password):
 
 
 # print(type(getInsAndDisk("c732c22666064375904c357bbecfeb1a")))
-# getLatestInstanceSnap("c732c22666064375904c357bbecfeb1a")
+getLatestInstanceSnap("c732c22666064375904c357bbecfeb1a")
 

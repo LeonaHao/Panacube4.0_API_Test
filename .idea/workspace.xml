@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a407d88e-2a99-45b8-b82f-bbfd69bc7385" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt/restoreInstanceSnap.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt/restoreInstanceSnap.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datafiles/snapsMagData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/datafiles/snapsMagData.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PanacubeCommonQuery.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PanacubeCommonQuery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/linuxXshell.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/linuxXshell.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,21 +34,21 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="F:/Projects/QYDAPITest/QYD_API_Test/qyd_Api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Projects\PanaCube4\tests\testsuit" />
+      <recent name="F:\Projects\PanaCube4\tests\testcase\intellengentStorage" />
+      <recent name="E:\0PanaCubeProject\Tests\StorageEngine\Overview" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\GitProject\PanaCube4\Panacube4.0_API_Test\tests\testcase\intellengentStorage\snapsMgt" />
       <recent name="F:\GitProject\PanaCube4\Panacube4.0_API_Test\tests\testcase\intellengentStorage\cloudDiskMgt" />
       <recent name="F:\GitProject\PanaCube4\Panacube4.0_API_Test\tests\testcase\intellengentStorage\storagePoolMgt" />
       <recent name="E:\0PanaCubeProject\Lib" />
       <recent name="E:\0PanaCubeProject\Tests\StorageEngine" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Projects\PanaCube4\tests\testsuit" />
-      <recent name="F:\Projects\PanaCube4\tests\testcase\intellengentStorage" />
-      <recent name="E:\0PanaCubeProject\Tests\StorageEngine\Overview" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -60,28 +63,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for tests.testcase.intellengentStorage.snapsMgt.restoreInstanceSnap.restoreInstanceSnap">
-    <configuration name="DDD" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PanaCubeProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lib" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lib/DDD.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.pytest in searchInstanceSnap.py">
     <configuration name="PanacubeCommonQuery" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PanaCubeProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -124,7 +106,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for restoreInstanceSnapshot.restoreInstanceSnap" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for deleteInstanceSnap.deleteInstanceSnap" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PanaCubeProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -135,11 +117,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;restoreInstanceSnapshot.restoreInstanceSnap&quot;" />
+      <option name="_new_target" value="&quot;deleteInstanceSnap.deleteInstanceSnap&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for tests.testcase.intellengentStorage.snapsMgt.restoreInstanceSnap.restoreInstanceSnap" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for searchInstanceSnap.searchInstanceSnap" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PanaCubeProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -150,17 +132,32 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.testcase.intellengentStorage.snapsMgt.restoreInstanceSnap.restoreInstanceSnap&quot;" />
+      <option name="_new_target" value="&quot;searchInstanceSnap.searchInstanceSnap&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in searchInstanceSnap.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="PanaCubeProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt/searchInstanceSnap.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for tests.testcase.intellengentStorage.snapsMgt.restoreInstanceSnap.restoreInstanceSnap" />
-        <item itemvalue="Python.PanacubeCommonQuery" />
-        <item itemvalue="Python tests.pytest for restoreInstanceSnapshot.restoreInstanceSnap" />
-        <item itemvalue="Python.DDD" />
+        <item itemvalue="Python tests.pytest in searchInstanceSnap.py" />
         <item itemvalue="Python.linuxXshell" />
+        <item itemvalue="Python tests.pytest for searchInstanceSnap.searchInstanceSnap" />
+        <item itemvalue="Python tests.pytest for deleteInstanceSnap.deleteInstanceSnap" />
+        <item itemvalue="Python.PanacubeCommonQuery" />
       </list>
     </recent_temporary>
   </component>

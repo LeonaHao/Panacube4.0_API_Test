@@ -1,0 +1,7 @@
+2022-01-07 16:28:45,556 - root - INFO - the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+2022-01-07 16:28:45,557 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-07 16:28:45,559 - root - INFO - the result data is :{'server_id': 'ins-1dbf636afc9c44389f2b10deac2ad4bf', 'snapshot_name': 'snap4_LC1_39'}
+2022-01-07 16:28:45,686 - root - INFO - **********************************************开始setupClass，进行登录**********************************************
+2022-01-07 16:28:45,932 - root - INFO - the sql is : SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id            where d.store_type=1 and i.project_id=%s ORDER BY i.create_time DESC limit 1;
+2022-01-07 16:28:45,933 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-07 16:28:45,935 - root - INFO - the result data is :{'vmId': 'ins-1dbf636afc9c44389f2b10deac2ad4bf', 'vmName': 'LC1', 'diskId': 'ins-1dbf636afc9c44389f2b10deac2ad4bf', 'diskName': 'SysDesIs1Char'}

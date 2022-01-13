@@ -1,0 +1,28 @@
+2022-01-07 16:26:52,993 - root - INFO - the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+2022-01-07 16:26:52,994 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-07 16:26:52,996 - root - INFO - the result data is :{'server_id': 'ins-1dbf636afc9c44389f2b10deac2ad4bf', 'snapshot_name': 'snap4_LC1_11'}
+2022-01-07 16:26:53,130 - root - INFO - **********************************************开始setupClass，进行登录**********************************************
+2022-01-07 16:26:53,451 - root - INFO - the sql is : SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id            where d.store_type=1 and i.project_id=%s ORDER BY i.create_time DESC limit 1;
+2022-01-07 16:26:53,453 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-07 16:26:53,455 - root - INFO - the result data is :{'vmId': 'ins-1dbf636afc9c44389f2b10deac2ad4bf', 'vmName': 'LC1', 'diskId': 'ins-1dbf636afc9c44389f2b10deac2ad4bf', 'diskName': 'SysDesIs1Char'}
+2022-01-07 16:27:53,925 - root - INFO - ********************************************************************************
+2022-01-07 16:27:53,925 - root - INFO - ****************删除云组件快照接口开始****************
+2022-01-07 16:27:53,926 - root - INFO - *******测试案例名称： TestCase001_删除云组件快照-缺少token 执行开始********
+2022-01-07 16:27:53,926 - root - INFO - *******测试数据： {}
+2022-01-07 16:27:53,929 - root - INFO - the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+2022-01-07 16:27:53,930 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-07 16:27:53,931 - root - INFO - the result data is :{'server_id': 'ins-1dbf636afc9c44389f2b10deac2ad4bf', 'snapshot_name': 'snap4_LC1_39'}
+2022-01-07 16:27:53,941 - root - INFO - *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+2022-01-07 16:27:53,941 - root - INFO - *******测试案例名称： TestCase001_删除云组件快照-缺少token 执行完毕********
+2022-01-07 16:27:53,942 - root - INFO - ****************删除云组件快照接口结束****************
+2022-01-07 16:27:53,942 - root - INFO - ********************************************************************************
+2022-01-07 16:27:53,945 - root - INFO - ********************************************************************************
+2022-01-07 16:27:53,946 - root - INFO - ****************删除云组件快照接口开始****************
+2022-01-07 16:27:53,946 - root - INFO - *******测试案例名称： TestCase002_删除云组件快照-成功 执行开始********
+2022-01-07 16:27:53,946 - root - INFO - *******测试数据： {}
+2022-01-07 16:27:53,949 - root - INFO - the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+2022-01-07 16:27:53,949 - root - INFO - the params is : c732c22666064375904c357bbecfeb1a
+2022-01-07 16:27:53,951 - root - INFO - the result data is :{'server_id': 'ins-1dbf636afc9c44389f2b10deac2ad4bf', 'snapshot_name': 'snap4_LC1_39'}
+2022-01-07 16:27:53,972 - root - INFO - *******返回数据： {'code': 202105, 'message': '云组件快照不存在', 'data': None, 'level': 3}
+2022-01-07 16:27:53,973 - root - INFO - ********************************************************************************
+2022-01-07 16:27:54,070 - root - INFO - **********************************************完成teardown class，退出登录**********************************************
