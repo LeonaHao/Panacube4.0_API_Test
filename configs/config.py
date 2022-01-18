@@ -19,8 +19,8 @@ logpath = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 
 
 """数据库配置"""
-panacube = dict(host='192.168.5.172', user='root', passwd='P@ssw0rd', port=3306,db='panacube4', charset='utf8', cursorclass=pymysql.cursors.DictCursor)
-panastor = dict(host='192.168.5.172', user='root', passwd='P@ssw0rd', port=3306,db='panastor', charset='utf8', cursorclass=pymysql.cursors.DictCursor)
+panacube = dict(host='192.168.2.141', user='root', passwd='P@ssw0rd', port=3306,db='panacube4', charset='utf8', cursorclass=pymysql.cursors.DictCursor)
+panastor = dict(host='192.168.2.141', user='root', passwd='P@ssw0rd', port=3306,db='panastor', charset='utf8', cursorclass=pymysql.cursors.DictCursor)
 
 """邮件配置"""
 sender = 'Cherry_Leejj@163.com'      #发件人

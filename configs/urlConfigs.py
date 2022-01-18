@@ -3,8 +3,8 @@
 '''
 配置系统中需要的url地址信息
 '''
-#http://192.168.2.200/v1/
-basePanaCubeUrl = 'http://192.168.5.170/v1/'
+
+basePanaCubeUrl = 'http://192.168.2.140/v1/'
 
 '''登录接口'''
 loginUrl = basePanaCubeUrl+'account/login'
@@ -18,7 +18,6 @@ cloudPoolListUrl = basePanaCubeUrl + 'cloud/projects'
 instanceUrl = basePanaCubeUrl + 'cloud/instances'
 '''智能存储》概况》获取存储情况'''
 overViewStorage = basePanaCubeUrl + 'cloud/pools/intel/storage/'
-
 
 
 

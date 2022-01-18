@@ -22693,3 +22693,216 @@
 22-01-13 16:51 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
 22-01-13 16:51 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/account/logout HTTP/1.1" 200 42
 22-01-13 16:51 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+22-01-14 17:50 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+22-01-14 17:50 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-14 17:50 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/account/login HTTP/1.1" 503 None
+22-01-14 17:50 root         INFO     ********************************************************************************
+22-01-14 17:50 root         INFO     ****************获取数据盘列表接口开始****************
+22-01-14 17:50 root         INFO     *******测试案例名称： TestCase001_查看云硬盘列表-数统盘 执行开始********
+22-01-14 17:50 root         INFO     *******测试数据： {'page': 1, 'size': 10, 'info': 'data'}
+22-01-14 17:50 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-14 17:51 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes HTTP/1.1" 503 None
+22-01-14 17:51 root         INFO     ********************************************************************************
+22-01-14 17:51 root         INFO     ********************************************************************************
+22-01-14 17:51 root         INFO     ****************获取数据盘列表接口开始****************
+22-01-14 17:51 root         INFO     *******测试案例名称： TestCase002_查看云硬盘列表-缺少token 执行开始********
+22-01-14 17:51 root         INFO     *******测试数据： {'storage_limit': 10, 'add_size': 0, 'project_id': 'f9d31e23e30c41b1a42d53ef95c8dec6'}
+22-01-14 17:51 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-14 17:51 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/storage/volumes HTTP/1.1" 503 None
+22-01-14 17:51 root         INFO     ********************************************************************************
+22-01-14 17:51 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-14 17:51 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.5.170/v1/account/logout HTTP/1.1" 503 None
+22-01-14 17:51 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+22-01-14 17:51 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-14 17:52 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.5.170/v1/account/login HTTP/1.1" 503 None
+22-01-14 17:52 root         INFO     ********************************************************************************
+22-01-14 17:52 root         INFO     ****************获取系统盘列表接口开始****************
+22-01-14 17:52 root         INFO     *******测试案例名称： TestCase001_查看云硬盘列表-系统盘 执行开始********
+22-01-14 17:52 root         INFO     *******测试数据： {'page': 1, 'size': 10, 'info': 'sys'}
+22-01-14 17:52 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-17 14:23 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+22-01-17 14:23 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+22-01-17 14:23 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+22-01-17 14:23 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+22-01-17 14:23 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+22-01-17 14:23 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+22-01-17 14:23 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+22-01-17 14:23 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+22-01-17 14:23 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+22-01-17 14:23 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+22-01-17 14:23 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+22-01-17 14:23 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+22-01-17 14:23 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+22-01-17 14:23 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+22-01-17 14:23 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+22-01-17 14:23 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+22-01-17 14:23 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+22-01-17 14:23 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+22-01-17 14:23 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-17 14:23 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+22-01-17 14:23 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+22-01-17 14:23 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+22-01-17 14:23 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+22-01-17 14:23 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-17 14:23 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+22-01-17 14:23 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+22-01-17 14:23 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+22-01-17 14:23 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+22-01-17 14:23 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+22-01-17 14:23 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+22-01-17 14:23 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+22-01-17 14:23 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+22-01-17 14:23 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+22-01-17 14:23 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+22-01-17 14:23 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-17 14:23 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-17 14:23 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+22-01-17 14:23 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+22-01-17 14:23 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-17 14:23 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+22-01-17 14:23 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-17 14:23 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/account/login HTTP/1.1" 200 935
+22-01-17 14:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+22-01-17 14:25 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+22-01-17 14:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+22-01-17 14:25 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+22-01-17 14:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+22-01-17 14:25 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+22-01-17 14:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+22-01-17 14:25 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+22-01-17 14:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+22-01-17 14:25 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+22-01-17 14:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+22-01-17 14:25 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+22-01-17 14:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+22-01-17 14:25 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+22-01-17 14:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+22-01-17 14:25 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+22-01-17 14:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+22-01-17 14:25 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+22-01-17 14:25 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-17 14:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+22-01-17 14:25 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+22-01-17 14:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+22-01-17 14:25 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+22-01-17 14:25 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-17 14:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+22-01-17 14:25 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+22-01-17 14:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+22-01-17 14:25 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+22-01-17 14:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+22-01-17 14:25 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+22-01-17 14:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+22-01-17 14:25 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+22-01-17 14:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+22-01-17 14:25 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+22-01-17 14:25 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-17 14:25 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-17 14:25 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+22-01-17 14:25 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+22-01-17 14:25 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-17 14:25 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+22-01-17 14:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-17 14:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/account/login HTTP/1.1" 200 935
+22-01-17 14:25 root         INFO     the sql is : select id from disk where store_type=0 and pool_id=%s order by create_time desc limit 1;
+22-01-17 14:25 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-17 14:25 root         INFO     the result data is :{'id': '28255f92-9a34-40ec-b125-e44f1dae16ef'}
+22-01-17 14:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-17 14:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/storage/snapshots/file HTTP/1.1" 200 42
+22-01-17 14:25 root         INFO     the sql is : select id from disk where store_type=0 and pool_id=%s order by create_time desc limit 1;
+22-01-17 14:25 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-17 14:25 root         INFO     the result data is :{'id': '28255f92-9a34-40ec-b125-e44f1dae16ef'}
+22-01-17 14:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-17 14:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/storage/snapshots/file HTTP/1.1" 200 42
+22-01-17 14:25 root         INFO     the sql is : select id from disk where store_type=0 and pool_id=%s order by create_time desc limit 1;
+22-01-17 14:25 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-17 14:25 root         INFO     the result data is :{'id': '28255f92-9a34-40ec-b125-e44f1dae16ef'}
+22-01-17 14:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-17 14:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/storage/snapshots/file HTTP/1.1" 200 42
+22-01-17 14:25 root         INFO     ********************************************************************************
+22-01-17 14:25 root         INFO     ****************删除云硬盘快照接口开始****************
+22-01-17 14:25 root         INFO     请求地址为： http://192.168.2.140/v1/storage/snapshots/file/batch-delete
+22-01-17 14:25 root         INFO     *******测试案例名称： TestCase001_删除云硬盘快照-缺少token 执行开始********
+22-01-17 14:25 root         INFO     the sql is : SELECT id, snapshot_id, name, disk_id, pool_id from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1;
+22-01-17 14:25 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-17 14:25 root         INFO     the result data is :{'id': '224c61b76e3a4c9792c634714e30adac', 'snapshot_id': '7931b5d7f82c4c978a248932059c6061', 'name': 'cdSanp3', 'disk_id': '28255f92-9a34-40ec-b125-e44f1dae16ef', 'pool_id': '63d8dd6776d848368ac817ed38cf93d6'}
+22-01-17 14:25 root         INFO     *******测试数据： {'ids': ['224c61b76e3a4c9792c634714e30adac'], 'project_id': '63d8dd6776d848368ac817ed38cf93d6', 'project_name': 'LeonaTestPool'}
+22-01-17 14:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-17 14:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/storage/snapshots/file/batch-delete HTTP/1.1" 200 91
+22-01-17 14:25 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+22-01-17 14:25 root         INFO     *******测试案例名称： TestCase001_删除云硬盘快照-缺少token 执行完毕********
+22-01-17 14:25 root         INFO     ****************删除云硬盘快照接口结束****************
+22-01-17 14:25 root         INFO     ********************************************************************************
+22-01-17 14:25 root         INFO     ********************************************************************************
+22-01-17 14:25 root         INFO     ****************删除云硬盘快照接口开始****************
+22-01-17 14:25 root         INFO     请求地址为： http://192.168.2.140/v1/storage/snapshots/file/batch-delete
+22-01-17 14:25 root         INFO     *******测试案例名称： TestCase002_删除云硬盘快照-云硬盘快照ids为空 执行开始********
+22-01-17 14:25 root         INFO     the sql is : SELECT id, snapshot_id, name, disk_id, pool_id from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1;
+22-01-17 14:25 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-17 14:25 root         INFO     the result data is :{'id': '224c61b76e3a4c9792c634714e30adac', 'snapshot_id': '7931b5d7f82c4c978a248932059c6061', 'name': 'cdSanp3', 'disk_id': '28255f92-9a34-40ec-b125-e44f1dae16ef', 'pool_id': '63d8dd6776d848368ac817ed38cf93d6'}
+22-01-17 14:25 root         INFO     *******测试数据： {'ids': [], 'project_id': '63d8dd6776d848368ac817ed38cf93d6', 'project_name': 'LeonaTestPool'}
+22-01-17 14:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-17 14:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/storage/snapshots/file/batch-delete HTTP/1.1" 200 90
+22-01-17 14:25 root         INFO     *******返回数据： {'code': 1001, 'message': {'ids': ['Ensure this field has at least 1 elements.']}, 'data': None}
+22-01-17 14:25 root         INFO     *******测试案例名称： TestCase002_删除云硬盘快照-云硬盘快照ids为空 执行完毕********
+22-01-17 14:25 root         INFO     ****************删除云硬盘快照接口结束****************
+22-01-17 14:25 root         INFO     ********************************************************************************
+22-01-17 14:25 root         INFO     ********************************************************************************
+22-01-17 14:25 root         INFO     ****************删除云硬盘快照接口开始****************
+22-01-17 14:25 root         INFO     请求地址为： http://192.168.2.140/v1/storage/snapshots/file/batch-delete
+22-01-17 14:25 root         INFO     *******测试案例名称： TestCase003_删除云硬盘快照-project_id为空 执行开始********
+22-01-17 14:25 root         INFO     the sql is : SELECT id, snapshot_id, name, disk_id, pool_id from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1;
+22-01-17 14:25 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-17 14:25 root         INFO     the result data is :{'id': '224c61b76e3a4c9792c634714e30adac', 'snapshot_id': '7931b5d7f82c4c978a248932059c6061', 'name': 'cdSanp3', 'disk_id': '28255f92-9a34-40ec-b125-e44f1dae16ef', 'pool_id': '63d8dd6776d848368ac817ed38cf93d6'}
+22-01-17 14:25 root         INFO     *******测试数据： {'ids': ['224c61b76e3a4c9792c634714e30adac'], 'project_id': '', 'project_name': 'LeonaTestPool'}
+22-01-17 14:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-17 14:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/storage/snapshots/file/batch-delete HTTP/1.1" 200 42
+22-01-17 14:25 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': None}
+22-01-17 14:25 root         INFO     *******测试案例名称： TestCase003_删除云硬盘快照-project_id为空 执行完毕********
+22-01-17 14:25 root         INFO     ****************删除云硬盘快照接口结束****************
+22-01-17 14:25 root         INFO     ********************************************************************************
+22-01-17 14:25 root         INFO     ********************************************************************************
+22-01-17 14:25 root         INFO     ****************删除云硬盘快照接口开始****************
+22-01-17 14:25 root         INFO     请求地址为： http://192.168.2.140/v1/storage/snapshots/file/batch-delete
+22-01-17 14:25 root         INFO     *******测试案例名称： TestCase004_删除云硬盘快照-project_name为空 执行开始********
+22-01-17 14:25 root         INFO     the sql is : SELECT id, snapshot_id, name, disk_id, pool_id from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1;
+22-01-17 14:25 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-17 14:25 root         INFO     the result data is :{'id': '224c61b76e3a4c9792c634714e30adac', 'snapshot_id': '7931b5d7f82c4c978a248932059c6061', 'name': 'cdSanp3', 'disk_id': '28255f92-9a34-40ec-b125-e44f1dae16ef', 'pool_id': '63d8dd6776d848368ac817ed38cf93d6'}
+22-01-17 14:25 root         INFO     *******测试数据： {'ids': ['224c61b76e3a4c9792c634714e30adac'], 'project_id': '63d8dd6776d848368ac817ed38cf93d6', 'project_name': ''}
+22-01-17 14:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-17 14:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/storage/snapshots/file/batch-delete HTTP/1.1" 200 42
+22-01-17 14:25 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': None}
+22-01-17 14:25 root         INFO     *******测试案例名称： TestCase004_删除云硬盘快照-project_name为空 执行完毕********
+22-01-17 14:25 root         INFO     ****************删除云硬盘快照接口结束****************
+22-01-17 14:25 root         INFO     ********************************************************************************
+22-01-17 14:25 root         INFO     ********************************************************************************
+22-01-17 14:25 root         INFO     ****************删除云硬盘快照接口开始****************
+22-01-17 14:25 root         INFO     请求地址为： http://192.168.2.140/v1/storage/snapshots/file/batch-delete
+22-01-17 14:25 root         INFO     *******测试案例名称： TestCase005_删除云硬盘快照-云硬盘快照删除成功 执行开始********
+22-01-17 14:25 root         INFO     the sql is : SELECT id, snapshot_id, name, disk_id, pool_id from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1;
+22-01-17 14:25 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-17 14:25 root         INFO     the result data is :{'id': '749f543fd42540cb8d6ae49292b6ccd5', 'snapshot_id': '8a4458f0fbcc4b9abc0dafc7cfba9baf', 'name': 'cdSanp2', 'disk_id': '28255f92-9a34-40ec-b125-e44f1dae16ef', 'pool_id': '63d8dd6776d848368ac817ed38cf93d6'}
+22-01-17 14:25 root         INFO     *******测试数据： {'ids': ['749f543fd42540cb8d6ae49292b6ccd5'], 'project_id': '63d8dd6776d848368ac817ed38cf93d6', 'project_name': 'LeonaTestPool'}
+22-01-17 14:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-17 14:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/storage/snapshots/file/batch-delete HTTP/1.1" 200 42
+22-01-17 14:25 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': None}
+22-01-17 14:25 root         INFO     *******测试案例名称： TestCase005_删除云硬盘快照-云硬盘快照删除成功 执行完毕********
+22-01-17 14:25 root         INFO     ****************删除云硬盘快照接口结束****************
+22-01-17 14:25 root         INFO     ********************************************************************************
+22-01-17 14:25 root         INFO     ********************************************************************************
+22-01-17 14:25 root         INFO     ****************删除云硬盘快照接口开始****************
+22-01-17 14:25 root         INFO     请求地址为： http://192.168.2.140/v1/storage/snapshots/file/batch-delete
+22-01-17 14:25 root         INFO     *******测试案例名称： TestCase006_删除云硬盘快照-云硬盘快照ids不存在 执行开始********
+22-01-17 14:25 root         INFO     the sql is : SELECT id, snapshot_id, name, disk_id, pool_id from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1;
+22-01-17 14:25 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-17 14:25 root         INFO     the result data is :{'id': '749f543fd42540cb8d6ae49292b6ccd5', 'snapshot_id': '8a4458f0fbcc4b9abc0dafc7cfba9baf', 'name': 'cdSanp2', 'disk_id': '28255f92-9a34-40ec-b125-e44f1dae16ef', 'pool_id': '63d8dd6776d848368ac817ed38cf93d6'}
+22-01-17 14:25 root         INFO     *******测试数据： {'ids': ['9b704d1f-e005-43c6-9738-abc2378aec32'], 'project_id': '63d8dd6776d848368ac817ed38cf93d6', 'project_name': 'LeonaTestPool'}
+22-01-17 14:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-17 14:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/storage/snapshots/file/batch-delete HTTP/1.1" 200 105
+22-01-17 14:25 root         INFO     *******返回数据： {'code': 214006, 'message': '云硬盘快照不存在', 'data': None, 'level': 3}
+22-01-17 14:25 root         INFO     *******测试案例名称： TestCase006_删除云硬盘快照-云硬盘快照ids不存在 执行完毕********
+22-01-17 14:25 root         INFO     ****************删除云硬盘快照接口结束****************
+22-01-17 14:25 root         INFO     ********************************************************************************
+22-01-17 14:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-17 14:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.2.140/v1/account/logout HTTP/1.1" 200 42
+22-01-17 14:25 root         INFO     **********************************************完成teardown class，退出登录**********************************************

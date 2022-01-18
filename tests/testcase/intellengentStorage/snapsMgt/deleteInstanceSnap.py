@@ -28,8 +28,8 @@ class deleteInstanceSnap(unittest.TestCase):
         logger.info("**********************************************开始setupClass，进行登录**********************************************")
         global token, projectId, projectName
         token = login()
-        projectId = "c732c22666064375904c357bbecfeb1a"
-        projectName = "HJp0_hash"
+        projectId = "63d8dd6776d848368ac817ed38cf93d6"
+        projectName = "LeonaTestPool"
 
         '''获取可创建云组件快照的云硬盘及组件信息'''
         global insAndDiskInfo
