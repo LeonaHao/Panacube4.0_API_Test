@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a407d88e-2a99-45b8-b82f-bbfd69bc7385" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/PanaCubeProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PanaCubeProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/Panacube_API_Test_Report.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/storageEngineReport.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
