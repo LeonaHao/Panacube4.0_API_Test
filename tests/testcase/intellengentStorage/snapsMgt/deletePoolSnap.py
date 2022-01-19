@@ -27,8 +27,8 @@ class deletePoolSnap(unittest.TestCase):
         logger.info("**********************************************开始setupClass，进行登录**********************************************")
         global token, projectId, projectName
         token = login()
-        projectId="ddac080c671b473e885714538fd1ed6e"
-        projectName="LeonaTestPool1125"
+        projectId="63d8dd6776d848368ac817ed38cf93d6"
+        projectName="LeonaTestPool"
         "创建1个业务池快照"
         headers = {
             'Content-Type': 'application/json',

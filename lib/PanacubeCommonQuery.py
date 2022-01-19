@@ -108,7 +108,7 @@ def getLatestInstance(poolId):
 #获取可创建云组件快照的云硬盘及组件信息
 def getInsAndDisk(poolId):
     sql = 'SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id \
-           where d.store_type=1 and i.project_id=%s ORDER BY i.create_time DESC limit 1;'
+           where d.store_type=1 and i.project_id=%s limit 1;'
     param  = (poolId)
     res = MySQLHelper("panacube").get_one(sql,param)
     return res
@@ -138,8 +138,11 @@ def matchVolume(hostname,port,username,password):
 # getLatestDataDisk('ddac080c671b473e885714538fd1ed6e')
 # getLatestInstanceSnap('577d21c9411744a4b619c8966f69ec18')
 # getLatestInstance('577d21c9411744a4b619c8966f69ec18')
+# getInsAndDisk('63d8dd6776d848368ac817ed38cf93d6')
 
 
 # print(type(getInsAndDisk("c732c22666064375904c357bbecfeb1a")))
 # getLatestInstanceSnap("c732c22666064375904c357bbecfeb1a")
 # getLatestDiskSnap("c732c22666064375904c357bbecfeb1a")
+
+

@@ -22,7 +22,7 @@ from lib.log import logger
 
 
 class restoreCloudDiskSnap(unittest.TestCase):
-    """智能存储》快照管理》回滚业数据盘快照"""
+    """智能存储》快照管理》回滚数据盘快照"""
     @classmethod
     def setUpClass(cls) -> None:
         logger.info("**********************************************开始setupClass，进行登录**********************************************")

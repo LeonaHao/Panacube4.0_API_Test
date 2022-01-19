@@ -22906,3 +22906,973 @@
 22-01-17 14:25 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
 22-01-17 14:25 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.2.140/v1/account/logout HTTP/1.1" 200 42
 22-01-17 14:25 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+22-01-18 10:09 root         INFO     the sql is : SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id            where d.store_type=1 and i.project_id=%s ORDER BY i.create_time DESC limit 1;
+22-01-18 10:09 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-18 10:09 root         INFO     the result data is :{'vmId': 'ins-526a0d8a5c5a4853ace2925c557f32ae', 'vmName': 'LC4', 'diskId': 'ins-3292888190bc4acc983cfff31e75462e', 'diskName': 'LC3'}
+22-01-18 10:10 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+22-01-18 10:10 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+22-01-18 10:10 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+22-01-18 10:10 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+22-01-18 10:10 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+22-01-18 10:10 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+22-01-18 10:10 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+22-01-18 10:10 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+22-01-18 10:10 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+22-01-18 10:10 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+22-01-18 10:10 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+22-01-18 10:10 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+22-01-18 10:10 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+22-01-18 10:10 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+22-01-18 10:10 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+22-01-18 10:10 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+22-01-18 10:10 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+22-01-18 10:10 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+22-01-18 10:10 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-18 10:10 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+22-01-18 10:10 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+22-01-18 10:10 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+22-01-18 10:10 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+22-01-18 10:10 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-18 10:10 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+22-01-18 10:10 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+22-01-18 10:10 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+22-01-18 10:10 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+22-01-18 10:10 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+22-01-18 10:10 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+22-01-18 10:10 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+22-01-18 10:10 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+22-01-18 10:10 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+22-01-18 10:10 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+22-01-18 10:10 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-18 10:10 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-18 10:10 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+22-01-18 10:10 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+22-01-18 10:10 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-18 10:10 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+22-01-18 10:10 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-18 10:10 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/account/login HTTP/1.1" 200 935
+22-01-18 10:10 root         INFO     the sql is : SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id            where d.store_type=1 and i.project_id=%s ORDER BY i.create_time DESC limit 1;
+22-01-18 10:10 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-18 10:10 root         INFO     the result data is :{'vmId': 'ins-526a0d8a5c5a4853ace2925c557f32ae', 'vmName': 'LC4', 'diskId': 'ins-7635f28d08e04159a6eda5985807d6c4', 'diskName': 'LC2'}
+22-01-18 10:10 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-18 10:10 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/cloud/instances/ins-526a0d8a5c5a4853ace2925c557f32ae/snapshots HTTP/1.1" 200 93
+22-01-18 10:10 root         INFO     ********************************************************************************
+22-01-18 10:10 root         INFO     ****************删除云组件快照接口开始****************
+22-01-18 10:10 root         INFO     the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+22-01-18 10:10 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-18 10:10 root         INFO     the result data is :{'server_id': 'ins-7635f28d08e04159a6eda5985807d6c4', 'snapshot_name': 'LC2-all-snap'}
+22-01-18 10:10 root         INFO     *******测试案例名称： TestCase001_删除云组件快照-缺少token 执行开始********
+22-01-18 10:10 root         INFO     *******测试数据： {}
+22-01-18 10:10 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-18 10:10 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "DELETE http://192.168.2.140/v1/cloud/instances/ins-526a0d8a5c5a4853ace2925c557f32ae/snapshots/LC2-all-snap HTTP/1.1" 200 91
+22-01-18 10:10 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+22-01-18 10:10 root         INFO     *******测试案例名称： TestCase001_删除云组件快照-缺少token 执行完毕********
+22-01-18 10:10 root         INFO     ****************删除云组件快照接口结束****************
+22-01-18 10:10 root         INFO     ********************************************************************************
+22-01-18 10:10 root         INFO     ********************************************************************************
+22-01-18 10:10 root         INFO     ****************删除云组件快照接口开始****************
+22-01-18 10:10 root         INFO     the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+22-01-18 10:10 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-18 10:10 root         INFO     the result data is :{'server_id': 'ins-7635f28d08e04159a6eda5985807d6c4', 'snapshot_name': 'LC2-all-snap'}
+22-01-18 10:10 root         INFO     *******测试案例名称： TestCase002_删除云组件快照-成功 执行开始********
+22-01-18 10:10 root         INFO     *******测试数据： {}
+22-01-18 10:10 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-18 10:10 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "DELETE http://192.168.2.140/v1/cloud/instances/ins-526a0d8a5c5a4853ace2925c557f32ae/snapshots/LC2-all-snap HTTP/1.1" 200 105
+22-01-18 10:10 root         INFO     *******返回数据： {'code': 202105, 'message': '云组件快照不存在', 'data': None, 'level': 3}
+22-01-18 10:10 root         INFO     ********************************************************************************
+22-01-18 10:10 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-18 10:10 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.2.140/v1/account/logout HTTP/1.1" 200 42
+22-01-18 10:10 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+22-01-18 10:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+22-01-18 10:11 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+22-01-18 10:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+22-01-18 10:11 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+22-01-18 10:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+22-01-18 10:11 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+22-01-18 10:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+22-01-18 10:11 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+22-01-18 10:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+22-01-18 10:11 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+22-01-18 10:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+22-01-18 10:11 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+22-01-18 10:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+22-01-18 10:11 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+22-01-18 10:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+22-01-18 10:11 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+22-01-18 10:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+22-01-18 10:11 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+22-01-18 10:11 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-18 10:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+22-01-18 10:11 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+22-01-18 10:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+22-01-18 10:11 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+22-01-18 10:11 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-18 10:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+22-01-18 10:11 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+22-01-18 10:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+22-01-18 10:11 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+22-01-18 10:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+22-01-18 10:11 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+22-01-18 10:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+22-01-18 10:11 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+22-01-18 10:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+22-01-18 10:11 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+22-01-18 10:11 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-18 10:11 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-18 10:11 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+22-01-18 10:11 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+22-01-18 10:11 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-18 10:11 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+22-01-18 10:11 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-18 10:11 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/account/login HTTP/1.1" 200 935
+22-01-18 10:11 root         INFO     the sql is : SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id            where d.store_type=1 and i.project_id=%s ORDER BY i.create_time DESC limit 1;
+22-01-18 10:11 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-18 10:11 root         INFO     the result data is :{'vmId': 'ins-526a0d8a5c5a4853ace2925c557f32ae', 'vmName': 'LC4', 'diskId': 'ins-3292888190bc4acc983cfff31e75462e', 'diskName': 'LC3'}
+22-01-18 10:11 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-18 10:11 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/cloud/instances/ins-526a0d8a5c5a4853ace2925c557f32ae/snapshots HTTP/1.1" 200 93
+22-01-18 10:11 root         INFO     ********************************************************************************
+22-01-18 10:11 root         INFO     ****************删除云组件快照接口开始****************
+22-01-18 10:11 root         INFO     the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+22-01-18 10:11 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-18 10:11 root         INFO     the result data is :{'server_id': 'ins-7635f28d08e04159a6eda5985807d6c4', 'snapshot_name': 'LC2-all-snap'}
+22-01-18 10:11 root         INFO     *******测试案例名称： TestCase001_删除云组件快照-缺少token 执行开始********
+22-01-18 10:11 root         INFO     *******测试数据： {}
+22-01-18 10:11 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-18 10:11 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "DELETE http://192.168.2.140/v1/cloud/instances/ins-526a0d8a5c5a4853ace2925c557f32ae/snapshots/LC2-all-snap HTTP/1.1" 200 91
+22-01-18 10:11 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+22-01-18 10:11 root         INFO     *******测试案例名称： TestCase001_删除云组件快照-缺少token 执行完毕********
+22-01-18 10:11 root         INFO     ****************删除云组件快照接口结束****************
+22-01-18 10:11 root         INFO     ********************************************************************************
+22-01-18 10:11 root         INFO     ********************************************************************************
+22-01-18 10:11 root         INFO     ****************删除云组件快照接口开始****************
+22-01-18 10:11 root         INFO     the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+22-01-18 10:11 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-18 10:11 root         INFO     the result data is :{'server_id': 'ins-7635f28d08e04159a6eda5985807d6c4', 'snapshot_name': 'LC2-all-snap'}
+22-01-18 10:11 root         INFO     *******测试案例名称： TestCase002_删除云组件快照-成功 执行开始********
+22-01-18 10:11 root         INFO     *******测试数据： {}
+22-01-18 10:11 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-18 10:11 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "DELETE http://192.168.2.140/v1/cloud/instances/ins-526a0d8a5c5a4853ace2925c557f32ae/snapshots/LC2-all-snap HTTP/1.1" 200 105
+22-01-18 10:11 root         INFO     *******返回数据： {'code': 202105, 'message': '云组件快照不存在', 'data': None, 'level': 3}
+22-01-18 10:11 root         INFO     ********************************************************************************
+22-01-18 10:11 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-18 10:11 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.2.140/v1/account/logout HTTP/1.1" 200 42
+22-01-18 10:11 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+22-01-18 10:13 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+22-01-18 10:13 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+22-01-18 10:13 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+22-01-18 10:13 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+22-01-18 10:13 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+22-01-18 10:13 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+22-01-18 10:13 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+22-01-18 10:13 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+22-01-18 10:13 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+22-01-18 10:13 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+22-01-18 10:13 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+22-01-18 10:13 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+22-01-18 10:13 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+22-01-18 10:13 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+22-01-18 10:13 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+22-01-18 10:13 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+22-01-18 10:13 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+22-01-18 10:13 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+22-01-18 10:13 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-18 10:13 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+22-01-18 10:13 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+22-01-18 10:13 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+22-01-18 10:13 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+22-01-18 10:13 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-18 10:13 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+22-01-18 10:13 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+22-01-18 10:13 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+22-01-18 10:13 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+22-01-18 10:13 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+22-01-18 10:13 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+22-01-18 10:13 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+22-01-18 10:13 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+22-01-18 10:13 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+22-01-18 10:13 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+22-01-18 10:13 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-18 10:13 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-18 10:13 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+22-01-18 10:13 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+22-01-18 10:13 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-18 10:13 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+22-01-18 10:13 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-18 10:13 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/account/login HTTP/1.1" 200 935
+22-01-18 10:13 root         INFO     the sql is : SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id            where d.store_type=1 and i.project_id=%s ORDER BY i.create_time DESC limit 1;
+22-01-18 10:13 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-18 10:13 root         INFO     the result data is :{'vmId': 'ins-526a0d8a5c5a4853ace2925c557f32ae', 'vmName': 'LC4', 'diskId': 'ins-3292888190bc4acc983cfff31e75462e', 'diskName': 'LC3'}
+22-01-18 10:13 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-18 10:13 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/cloud/instances/ins-526a0d8a5c5a4853ace2925c557f32ae/snapshots HTTP/1.1" 200 93
+22-01-18 10:13 root         INFO     ********************************************************************************
+22-01-18 10:13 root         INFO     ****************删除云组件快照接口开始****************
+22-01-18 10:13 root         INFO     the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+22-01-18 10:13 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-18 10:13 root         INFO     the result data is :{'server_id': 'ins-7635f28d08e04159a6eda5985807d6c4', 'snapshot_name': 'LC2-all-snap'}
+22-01-18 10:13 root         INFO     *******测试案例名称： TestCase001_删除云组件快照-缺少token 执行开始********
+22-01-18 10:13 root         INFO     *******测试数据： {}
+22-01-18 10:13 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-18 10:13 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "DELETE http://192.168.2.140/v1/cloud/instances/ins-526a0d8a5c5a4853ace2925c557f32ae/snapshots/LC2-all-snap HTTP/1.1" 200 91
+22-01-18 10:13 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+22-01-18 10:13 root         INFO     *******测试案例名称： TestCase001_删除云组件快照-缺少token 执行完毕********
+22-01-18 10:13 root         INFO     ****************删除云组件快照接口结束****************
+22-01-18 10:13 root         INFO     ********************************************************************************
+22-01-18 10:13 root         INFO     ********************************************************************************
+22-01-18 10:13 root         INFO     ****************删除云组件快照接口开始****************
+22-01-18 10:13 root         INFO     the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+22-01-18 10:13 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-18 10:13 root         INFO     the result data is :{'server_id': 'ins-7635f28d08e04159a6eda5985807d6c4', 'snapshot_name': 'LC2-all-snap'}
+22-01-18 10:13 root         INFO     *******测试案例名称： TestCase002_删除云组件快照-成功 执行开始********
+22-01-18 10:13 root         INFO     *******测试数据： {}
+22-01-18 10:13 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-18 10:13 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "DELETE http://192.168.2.140/v1/cloud/instances/ins-526a0d8a5c5a4853ace2925c557f32ae/snapshots/LC2-all-snap HTTP/1.1" 200 105
+22-01-18 10:13 root         INFO     *******返回数据： {'code': 202105, 'message': '云组件快照不存在', 'data': None, 'level': 3}
+22-01-18 10:13 root         INFO     ********************************************************************************
+22-01-18 10:13 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-18 10:13 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.2.140/v1/account/logout HTTP/1.1" 200 42
+22-01-18 10:13 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+22-01-19 09:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+22-01-19 09:50 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+22-01-19 09:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+22-01-19 09:50 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+22-01-19 09:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+22-01-19 09:50 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+22-01-19 09:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+22-01-19 09:50 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+22-01-19 09:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+22-01-19 09:50 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+22-01-19 09:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+22-01-19 09:50 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+22-01-19 09:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+22-01-19 09:50 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+22-01-19 09:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+22-01-19 09:50 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+22-01-19 09:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+22-01-19 09:50 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+22-01-19 09:50 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 09:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+22-01-19 09:50 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+22-01-19 09:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+22-01-19 09:50 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+22-01-19 09:50 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 09:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+22-01-19 09:50 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+22-01-19 09:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+22-01-19 09:50 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+22-01-19 09:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+22-01-19 09:50 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+22-01-19 09:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+22-01-19 09:50 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+22-01-19 09:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+22-01-19 09:50 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+22-01-19 09:50 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 09:50 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 09:50 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+22-01-19 09:50 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+22-01-19 09:50 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 09:50 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+22-01-19 09:50 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 09:50 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/account/login HTTP/1.1" 200 935
+22-01-19 09:50 root         INFO     the sql is : SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id            where d.store_type=1 and i.project_id=%s ORDER BY i.create_time DESC limit 1;
+22-01-19 09:50 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 09:50 root         INFO     the result data is :{'vmId': 'ins-526a0d8a5c5a4853ace2925c557f32ae', 'vmName': 'LC4', 'diskId': 'ins-7635f28d08e04159a6eda5985807d6c4', 'diskName': 'LC2'}
+22-01-19 09:50 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 09:50 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/cloud/instances/ins-526a0d8a5c5a4853ace2925c557f32ae/snapshots HTTP/1.1" 200 93
+22-01-19 09:50 root         INFO     ********************************************************************************
+22-01-19 09:50 root         INFO     ****************删除云组件快照接口开始****************
+22-01-19 09:50 root         INFO     the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+22-01-19 09:50 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 09:50 root         INFO     the result data is :{'server_id': 'ins-7635f28d08e04159a6eda5985807d6c4', 'snapshot_name': 'LC2-all-snap'}
+22-01-19 09:50 root         INFO     *******测试案例名称： TestCase001_删除云组件快照-缺少token 执行开始********
+22-01-19 09:50 root         INFO     *******测试数据： {}
+22-01-19 09:50 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 09:50 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "DELETE http://192.168.2.140/v1/cloud/instances/ins-526a0d8a5c5a4853ace2925c557f32ae/snapshots/LC2-all-snap HTTP/1.1" 200 91
+22-01-19 09:50 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+22-01-19 09:50 root         INFO     *******测试案例名称： TestCase001_删除云组件快照-缺少token 执行完毕********
+22-01-19 09:50 root         INFO     ****************删除云组件快照接口结束****************
+22-01-19 09:50 root         INFO     ********************************************************************************
+22-01-19 09:50 root         INFO     ********************************************************************************
+22-01-19 09:50 root         INFO     ****************删除云组件快照接口开始****************
+22-01-19 09:50 root         INFO     the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+22-01-19 09:50 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 09:50 root         INFO     the result data is :{'server_id': 'ins-7635f28d08e04159a6eda5985807d6c4', 'snapshot_name': 'LC2-all-snap'}
+22-01-19 09:50 root         INFO     *******测试案例名称： TestCase002_删除云组件快照-成功 执行开始********
+22-01-19 09:50 root         INFO     *******测试数据： {}
+22-01-19 09:50 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 09:50 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "DELETE http://192.168.2.140/v1/cloud/instances/ins-526a0d8a5c5a4853ace2925c557f32ae/snapshots/LC2-all-snap HTTP/1.1" 200 105
+22-01-19 09:50 root         INFO     *******返回数据： {'code': 202105, 'message': '云组件快照不存在', 'data': None, 'level': 3}
+22-01-19 09:50 root         INFO     ********************************************************************************
+22-01-19 09:50 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 09:50 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.2.140/v1/account/logout HTTP/1.1" 200 42
+22-01-19 09:50 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+22-01-19 09:51 root         INFO     the sql is : SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id            where d.store_type=1 and i.project_id=%s ORDER BY i.create_time DESC limit 1;
+22-01-19 09:51 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 09:51 root         INFO     the result data is :{'vmId': 'ins-526a0d8a5c5a4853ace2925c557f32ae', 'vmName': 'LC4', 'diskId': 'ins-3292888190bc4acc983cfff31e75462e', 'diskName': 'LC3'}
+22-01-19 09:58 root         INFO     the sql is : SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id            where d.store_type=1 and i.project_id=%s ORDER BY i.create_time DESC limit 1;
+22-01-19 09:58 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 09:58 root         INFO     the result data is :{'vmId': 'ins-526a0d8a5c5a4853ace2925c557f32ae', 'vmName': 'LC4', 'diskId': 'ins-526a0d8a5c5a4853ace2925c557f32ae', 'diskName': 'SysDesIs1Char'}
+22-01-19 09:58 root         INFO     the sql is : SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id            where d.store_type=1 and i.project_id=%s ORDER BY i.create_time DESC limit 1;
+22-01-19 09:58 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 09:58 root         INFO     the result data is :{'vmId': 'ins-526a0d8a5c5a4853ace2925c557f32ae', 'vmName': 'LC4', 'diskId': 'ins-7635f28d08e04159a6eda5985807d6c4', 'diskName': 'LC2'}
+22-01-19 09:58 root         INFO     the sql is : SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id            where d.store_type=1 and i.project_id=%s ORDER BY i.create_time DESC limit 1;
+22-01-19 09:58 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 09:58 root         INFO     the result data is :{'vmId': 'ins-526a0d8a5c5a4853ace2925c557f32ae', 'vmName': 'LC4', 'diskId': 'ins-526a0d8a5c5a4853ace2925c557f32ae', 'diskName': 'SysDesIs1Char'}
+22-01-19 09:58 root         INFO     the sql is : SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id            where d.store_type=1 and i.project_id=%s ORDER BY i.create_time DESC limit 1;
+22-01-19 09:58 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 09:58 root         INFO     the result data is :{'vmId': 'ins-526a0d8a5c5a4853ace2925c557f32ae', 'vmName': 'LC4', 'diskId': 'ins-3292888190bc4acc983cfff31e75462e', 'diskName': 'LC3'}
+22-01-19 09:59 root         INFO     the sql is : SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id            where d.store_type=1 and i.project_id=%s ;
+22-01-19 09:59 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 09:59 root         INFO     the result data is :{'vmId': 'ins-3292888190bc4acc983cfff31e75462e', 'vmName': 'LC3', 'diskId': 'ins-3292888190bc4acc983cfff31e75462e', 'diskName': 'LC3'}
+22-01-19 09:59 root         INFO     the sql is : SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id            where d.store_type=1 and i.project_id=%s ;
+22-01-19 09:59 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 09:59 root         INFO     the result data is :{'vmId': 'ins-3292888190bc4acc983cfff31e75462e', 'vmName': 'LC3', 'diskId': 'ins-3292888190bc4acc983cfff31e75462e', 'diskName': 'LC3'}
+22-01-19 09:59 root         INFO     the sql is : SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id            where d.store_type=1 and i.project_id=%s ;
+22-01-19 09:59 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 09:59 root         INFO     the result data is :{'vmId': 'ins-3292888190bc4acc983cfff31e75462e', 'vmName': 'LC3', 'diskId': 'ins-3292888190bc4acc983cfff31e75462e', 'diskName': 'LC3'}
+22-01-19 09:59 root         INFO     the sql is : SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id            where d.store_type=1 and i.project_id=%s ;
+22-01-19 09:59 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 09:59 root         INFO     the result data is :{'vmId': 'ins-3292888190bc4acc983cfff31e75462e', 'vmName': 'LC3', 'diskId': 'ins-3292888190bc4acc983cfff31e75462e', 'diskName': 'LC3'}
+22-01-19 09:59 root         INFO     the sql is : SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id            where d.store_type=1 and i.project_id=%s ;
+22-01-19 09:59 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 09:59 root         INFO     the result data is :{'vmId': 'ins-3292888190bc4acc983cfff31e75462e', 'vmName': 'LC3', 'diskId': 'ins-3292888190bc4acc983cfff31e75462e', 'diskName': 'LC3'}
+22-01-19 09:59 root         INFO     the sql is : SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id            where d.store_type=1 and i.project_id=%s limit 1;
+22-01-19 09:59 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 09:59 root         INFO     the result data is :{'vmId': 'ins-3292888190bc4acc983cfff31e75462e', 'vmName': 'LC3', 'diskId': 'ins-3292888190bc4acc983cfff31e75462e', 'diskName': 'LC3'}
+22-01-19 10:00 root         INFO     the sql is : SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id            where d.store_type=1 and i.project_id=%s limit 1;
+22-01-19 10:00 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 10:00 root         INFO     the result data is :{'vmId': 'ins-3292888190bc4acc983cfff31e75462e', 'vmName': 'LC3', 'diskId': 'ins-3292888190bc4acc983cfff31e75462e', 'diskName': 'LC3'}
+22-01-19 10:00 root         INFO     the sql is : SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id            where d.store_type=1 and i.project_id=%s limit 1;
+22-01-19 10:00 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 10:00 root         INFO     the result data is :{'vmId': 'ins-3292888190bc4acc983cfff31e75462e', 'vmName': 'LC3', 'diskId': 'ins-3292888190bc4acc983cfff31e75462e', 'diskName': 'LC3'}
+22-01-19 10:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+22-01-19 10:00 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+22-01-19 10:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+22-01-19 10:00 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+22-01-19 10:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+22-01-19 10:00 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+22-01-19 10:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+22-01-19 10:00 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+22-01-19 10:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+22-01-19 10:00 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+22-01-19 10:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+22-01-19 10:00 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+22-01-19 10:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+22-01-19 10:00 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+22-01-19 10:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+22-01-19 10:00 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+22-01-19 10:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+22-01-19 10:00 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+22-01-19 10:00 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+22-01-19 10:00 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+22-01-19 10:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+22-01-19 10:00 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+22-01-19 10:00 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+22-01-19 10:00 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+22-01-19 10:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+22-01-19 10:00 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+22-01-19 10:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+22-01-19 10:00 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+22-01-19 10:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+22-01-19 10:00 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+22-01-19 10:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+22-01-19 10:00 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+22-01-19 10:00 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:00 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:00 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+22-01-19 10:00 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+22-01-19 10:00 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:00 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+22-01-19 10:00 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:00 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/account/login HTTP/1.1" 200 935
+22-01-19 10:00 root         INFO     the sql is : SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id            where d.store_type=1 and i.project_id=%s limit 1;
+22-01-19 10:00 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 10:00 root         INFO     the result data is :{'vmId': 'ins-3292888190bc4acc983cfff31e75462e', 'vmName': 'LC3', 'diskId': 'ins-3292888190bc4acc983cfff31e75462e', 'diskName': 'LC3'}
+22-01-19 10:00 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:00 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/cloud/instances/ins-3292888190bc4acc983cfff31e75462e/snapshots HTTP/1.1" 200 76
+22-01-19 10:00 root         INFO     ********************************************************************************
+22-01-19 10:00 root         INFO     ****************删除云组件快照接口开始****************
+22-01-19 10:00 root         INFO     the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+22-01-19 10:00 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 10:00 root         INFO     the result data is :{'server_id': 'ins-3292888190bc4acc983cfff31e75462e', 'snapshot_name': 'snap4_LC3_46'}
+22-01-19 10:00 root         INFO     *******测试案例名称： TestCase001_删除云组件快照-缺少token 执行开始********
+22-01-19 10:00 root         INFO     *******测试数据： {}
+22-01-19 10:00 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:00 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "DELETE http://192.168.2.140/v1/cloud/instances/ins-3292888190bc4acc983cfff31e75462e/snapshots/snap4_LC3_46 HTTP/1.1" 200 91
+22-01-19 10:00 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+22-01-19 10:00 root         INFO     *******测试案例名称： TestCase001_删除云组件快照-缺少token 执行完毕********
+22-01-19 10:00 root         INFO     ****************删除云组件快照接口结束****************
+22-01-19 10:00 root         INFO     ********************************************************************************
+22-01-19 10:00 root         INFO     ********************************************************************************
+22-01-19 10:00 root         INFO     ****************删除云组件快照接口开始****************
+22-01-19 10:00 root         INFO     the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+22-01-19 10:00 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 10:00 root         INFO     the result data is :{'server_id': 'ins-3292888190bc4acc983cfff31e75462e', 'snapshot_name': 'snap4_LC3_46'}
+22-01-19 10:00 root         INFO     *******测试案例名称： TestCase002_删除云组件快照-成功 执行开始********
+22-01-19 10:00 root         INFO     *******测试数据： {}
+22-01-19 10:00 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:00 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "DELETE http://192.168.2.140/v1/cloud/instances/ins-3292888190bc4acc983cfff31e75462e/snapshots/snap4_LC3_46 HTTP/1.1" 200 42
+22-01-19 10:00 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': None}
+22-01-19 10:00 root         INFO     *******测试案例名称： TestCase002_删除云组件快照-成功 执行完毕********
+22-01-19 10:00 root         INFO     ****************删除云组件快照接口结束****************
+22-01-19 10:00 root         INFO     ********************************************************************************
+22-01-19 10:00 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:00 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.2.140/v1/account/logout HTTP/1.1" 200 42
+22-01-19 10:00 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+22-01-19 10:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+22-01-19 10:01 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+22-01-19 10:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+22-01-19 10:01 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+22-01-19 10:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+22-01-19 10:01 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+22-01-19 10:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+22-01-19 10:01 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+22-01-19 10:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+22-01-19 10:01 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+22-01-19 10:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+22-01-19 10:01 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+22-01-19 10:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+22-01-19 10:01 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+22-01-19 10:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+22-01-19 10:01 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+22-01-19 10:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+22-01-19 10:01 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+22-01-19 10:01 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+22-01-19 10:01 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+22-01-19 10:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+22-01-19 10:01 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+22-01-19 10:01 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+22-01-19 10:01 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+22-01-19 10:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+22-01-19 10:01 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+22-01-19 10:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+22-01-19 10:01 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+22-01-19 10:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+22-01-19 10:01 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+22-01-19 10:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+22-01-19 10:01 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+22-01-19 10:01 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:01 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:01 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+22-01-19 10:01 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+22-01-19 10:01 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:01 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+22-01-19 10:01 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:01 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/account/login HTTP/1.1" 200 935
+22-01-19 10:01 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:01 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/storage/snapshots/pool HTTP/1.1" 200 42
+22-01-19 10:01 root         INFO     the sql is : SELECT snapshot_id, name from `storage_snapshot` WHERE snapshot_type="pool" and pool_id=%s order by create_time DESC limit 1;
+22-01-19 10:01 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 10:01 root         INFO     the result data is :{'snapshot_id': '', 'name': 'poolSnap4LeonaTestPool'}
+22-01-19 10:01 root         INFO     ********************************************************************************
+22-01-19 10:01 root         INFO     ****************删除业务池快照接口开始****************
+22-01-19 10:01 root         INFO     *******测试案例名称： TestCase001_删除业务池快照-缺少token 执行开始********
+22-01-19 10:01 root         INFO     *******测试数据： {}
+22-01-19 10:01 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:01 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "DELETE http://192.168.2.140/v1/storage/snapshots/pool/batch-delete HTTP/1.1" 200 91
+22-01-19 10:01 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+22-01-19 10:01 root         INFO     *******测试案例名称： TestCase001_删除业务池快照-缺少token 执行完毕********
+22-01-19 10:01 root         INFO     ****************删除业务池快照接口结束****************
+22-01-19 10:01 root         INFO     ********************************************************************************
+22-01-19 10:01 root         INFO     ********************************************************************************
+22-01-19 10:01 root         INFO     ****************删除业务池快照接口开始****************
+22-01-19 10:01 root         INFO     *******测试案例名称： TestCase002_删除业务池快照-id为空 执行开始********
+22-01-19 10:01 root         INFO     *******测试数据： {'ids': []}
+22-01-19 10:01 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:01 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "DELETE http://192.168.2.140/v1/storage/snapshots/pool/batch-delete HTTP/1.1" 200 100
+22-01-19 10:01 root         INFO     *******返回数据： {'code': 1001, 'message': '参数错误', 'data': {'ids': ['Ensure this field has at least 1 elements.']}}
+22-01-19 10:01 root         INFO     *******测试案例名称： TestCase002_删除业务池快照-id为空 执行完毕********
+22-01-19 10:01 root         INFO     ****************删除业务池快照接口结束****************
+22-01-19 10:01 root         INFO     ********************************************************************************
+22-01-19 10:01 root         INFO     ********************************************************************************
+22-01-19 10:01 root         INFO     ****************删除业务池快照接口开始****************
+22-01-19 10:01 root         INFO     *******测试案例名称： TestCase002_删除业务池快照-成功 执行开始********
+22-01-19 10:01 root         INFO     *******测试数据： {'ids': ['']}
+22-01-19 10:01 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:01 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "DELETE http://192.168.2.140/v1/storage/snapshots/pool/batch-delete HTTP/1.1" 200 42
+22-01-19 10:01 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': None}
+22-01-19 10:01 root         INFO     *******测试案例名称： TestCase002_删除业务池快照-成功 执行完毕********
+22-01-19 10:01 root         INFO     ****************删除业务池快照接口结束****************
+22-01-19 10:01 root         INFO     ********************************************************************************
+22-01-19 10:01 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:01 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.2.140/v1/account/logout HTTP/1.1" 200 42
+22-01-19 10:01 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+22-01-19 10:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+22-01-19 10:03 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+22-01-19 10:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+22-01-19 10:03 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+22-01-19 10:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+22-01-19 10:03 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+22-01-19 10:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+22-01-19 10:03 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+22-01-19 10:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+22-01-19 10:03 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+22-01-19 10:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+22-01-19 10:03 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+22-01-19 10:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+22-01-19 10:03 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+22-01-19 10:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+22-01-19 10:03 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+22-01-19 10:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+22-01-19 10:03 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+22-01-19 10:03 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+22-01-19 10:03 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+22-01-19 10:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+22-01-19 10:03 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+22-01-19 10:03 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+22-01-19 10:03 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+22-01-19 10:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+22-01-19 10:03 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+22-01-19 10:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+22-01-19 10:03 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+22-01-19 10:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+22-01-19 10:03 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+22-01-19 10:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+22-01-19 10:03 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+22-01-19 10:03 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:03 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:03 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+22-01-19 10:03 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+22-01-19 10:03 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:03 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+22-01-19 10:03 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:03 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/account/login HTTP/1.1" 200 935
+22-01-19 10:03 root         INFO     the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+22-01-19 10:03 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 10:03 root         INFO     the result data is :{'server_id': 'ins-7635f28d08e04159a6eda5985807d6c4', 'snapshot_name': 'LC2-all-snap'}
+22-01-19 10:03 root         INFO     ********************************************************************************
+22-01-19 10:03 root         INFO     ****************获取云组件快照详情接口开始****************
+22-01-19 10:03 root         INFO     *******测试案例名称： TestCase001_查询云组件快照详情-缺少token 执行开始********
+22-01-19 10:03 root         INFO     *******测试数据： {}
+22-01-19 10:03 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:03 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.2.140/v1/storage/snapshots/instance/ins-7635f28d08e04159a6eda5985807d6c4/LC2-all-snap HTTP/1.1" 200 91
+22-01-19 10:03 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+22-01-19 10:03 root         INFO     *******测试案例名称： TestCase001_查询云组件快照详情-缺少token 执行完毕********
+22-01-19 10:03 root         INFO     ****************获取云组件快照详情接口结束****************
+22-01-19 10:03 root         INFO     ********************************************************************************
+22-01-19 10:03 root         INFO     ********************************************************************************
+22-01-19 10:03 root         INFO     ****************获取云组件快照详情接口开始****************
+22-01-19 10:03 root         INFO     *******测试案例名称： TestCase002_查询云组件快照详情-成功 执行开始********
+22-01-19 10:03 root         INFO     *******测试数据： {}
+22-01-19 10:03 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:03 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.2.140/v1/storage/snapshots/instance/ins-7635f28d08e04159a6eda5985807d6c4/LC2-all-snap HTTP/1.1" 200 699
+22-01-19 10:03 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': {'instance_name': 'LC2', 'instance_id': 'ins-7635f28d08e04159a6eda5985807d6c4', 'project_id': '63d8dd6776d848368ac817ed38cf93d6', 'device': [{'volume_id': 'ins-7635f28d08e04159a6eda5985807d6c4', 'volume_name': 'LC2', 'disk_type': 'root', 'create_time': '2022-01-12T16:18:41', 'store_type': 1}, {'volume_id': '28255f92-9a34-40ec-b125-e44f1dae16ef', 'volume_name': 'DataDesIs1Char', 'disk_type': 'disk', 'create_time': '2022-01-12T16:18:40', 'store_type': 0}, {'volume_id': '3ae873fd-7d37-46e1-bf25-443b98312fb2', 'volume_name': 'LC2_AD2', 'disk_type': 'disk', 'create_time': '2022-01-12T16:18:39', 'store_type': 0}], 'volume_type': 0, 'snapshot_class': 1, 'create_time': '2022-01-12 16:21:51', 'status': 0}}
+22-01-19 10:03 root         INFO     *******测试案例名称： TestCase002_查询云组件快照详情-成功 执行完毕********
+22-01-19 10:03 root         INFO     ****************获取云组件快照详情接口结束****************
+22-01-19 10:03 root         INFO     ********************************************************************************
+22-01-19 10:03 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:03 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.2.140/v1/account/logout HTTP/1.1" 200 42
+22-01-19 10:03 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+22-01-19 10:04 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+22-01-19 10:04 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+22-01-19 10:04 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+22-01-19 10:04 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+22-01-19 10:04 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+22-01-19 10:04 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+22-01-19 10:04 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+22-01-19 10:04 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+22-01-19 10:04 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+22-01-19 10:04 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+22-01-19 10:04 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+22-01-19 10:04 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+22-01-19 10:04 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+22-01-19 10:04 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+22-01-19 10:04 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+22-01-19 10:04 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+22-01-19 10:04 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+22-01-19 10:04 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+22-01-19 10:04 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:04 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+22-01-19 10:04 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+22-01-19 10:04 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+22-01-19 10:04 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+22-01-19 10:04 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:04 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+22-01-19 10:04 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+22-01-19 10:04 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+22-01-19 10:04 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+22-01-19 10:04 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+22-01-19 10:04 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+22-01-19 10:04 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+22-01-19 10:04 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+22-01-19 10:04 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+22-01-19 10:04 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+22-01-19 10:04 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:04 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:04 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+22-01-19 10:04 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+22-01-19 10:04 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:04 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+22-01-19 10:04 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:04 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/account/login HTTP/1.1" 200 935
+22-01-19 10:04 root         INFO     the sql is : SELECT id, snapshot_id, name, disk_id, pool_id from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1;
+22-01-19 10:04 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 10:04 root         INFO     the result data is :{'id': 'a0b52cc063614c5ab1be30e8aaa3d9da', 'snapshot_id': 'def293eea8aa41e9ad60348a97b36316', 'name': 'uyj', 'disk_id': '28255f92-9a34-40ec-b125-e44f1dae16ef', 'pool_id': '63d8dd6776d848368ac817ed38cf93d6'}
+22-01-19 10:04 root         INFO     ********************************************************************************
+22-01-19 10:04 root         INFO     ****************回滚数据盘快照接口开始****************
+22-01-19 10:04 root         INFO     *******请求地址： http://192.168.2.140/v1/storage/snapshots/file/a0b52cc063614c5ab1be30e8aaa3d9da
+22-01-19 10:04 root         INFO     *******测试案例名称： TestCase001_回滚云硬盘快照-缺少token 执行开始********
+22-01-19 10:04 root         INFO     *******测试数据： {'project_id': '63d8dd6776d848368ac817ed38cf93d6', 'project_name': 'LeonaTestPool'}
+22-01-19 10:04 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:04 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/storage/snapshots/file/a0b52cc063614c5ab1be30e8aaa3d9da HTTP/1.1" 200 91
+22-01-19 10:04 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+22-01-19 10:04 root         INFO     *******测试案例名称： TestCase001_回滚云硬盘快照-缺少token 执行完毕********
+22-01-19 10:04 root         INFO     ****************回滚数据盘快照接口结束****************
+22-01-19 10:04 root         INFO     ********************************************************************************
+22-01-19 10:04 root         INFO     ********************************************************************************
+22-01-19 10:04 root         INFO     ****************回滚数据盘快照接口开始****************
+22-01-19 10:04 root         INFO     *******请求地址： http://192.168.2.140/v1/storage/snapshots/file/a0b52cc063614c5ab1be30e8aaa3d9da
+22-01-19 10:04 root         INFO     *******测试案例名称： TestCase002_回滚云硬盘快照-project_id为空 执行开始********
+22-01-19 10:04 root         INFO     *******测试数据： {'project_id': '', 'project_name': 'LeonaTestPool'}
+22-01-19 10:04 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:04 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/storage/snapshots/file/a0b52cc063614c5ab1be30e8aaa3d9da HTTP/1.1" 200 184
+22-01-19 10:04 root         INFO     *******返回数据： {'code': 214025, 'message': '当前云硬盘已被云组件挂载,当云组件处于开机状态中,无法执行快照回滚操作,请将云组件关机后进行快照回滚', 'data': None}
+22-01-19 10:04 root         INFO     ********************************************************************************
+22-01-19 10:04 root         INFO     ********************************************************************************
+22-01-19 10:04 root         INFO     ****************回滚数据盘快照接口开始****************
+22-01-19 10:04 root         INFO     *******请求地址： http://192.168.2.140/v1/storage/snapshots/file/a0b52cc063614c5ab1be30e8aaa3d9da
+22-01-19 10:04 root         INFO     *******测试案例名称： TestCase003_回滚云硬盘快照-project_name为空 执行开始********
+22-01-19 10:04 root         INFO     *******测试数据： {'project_id': '63d8dd6776d848368ac817ed38cf93d6', 'project_name': ''}
+22-01-19 10:04 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:04 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/storage/snapshots/file/a0b52cc063614c5ab1be30e8aaa3d9da HTTP/1.1" 200 184
+22-01-19 10:04 root         INFO     *******返回数据： {'code': 214025, 'message': '当前云硬盘已被云组件挂载,当云组件处于开机状态中,无法执行快照回滚操作,请将云组件关机后进行快照回滚', 'data': None}
+22-01-19 10:04 root         INFO     ********************************************************************************
+22-01-19 10:04 root         INFO     ********************************************************************************
+22-01-19 10:04 root         INFO     ****************回滚数据盘快照接口开始****************
+22-01-19 10:04 root         INFO     *******请求地址： http://192.168.2.140/v1/storage/snapshots/file/a0b52cc063614c5ab1be30e8aaa3d9da
+22-01-19 10:04 root         INFO     *******测试案例名称： TestCase004_回滚云硬盘快照-成功 执行开始********
+22-01-19 10:04 root         INFO     *******测试数据： {'project_id': '63d8dd6776d848368ac817ed38cf93d6', 'volumes_name': ['5c9380cd-7948-44d2-ba40-559a07535cb9'], 'snapshot_name': 'SysAndPartDiskSnap', 'project_name': 'LeonaTestPool'}
+22-01-19 10:04 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:04 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/storage/snapshots/file/a0b52cc063614c5ab1be30e8aaa3d9da HTTP/1.1" 200 184
+22-01-19 10:04 root         INFO     *******返回数据： {'code': 214025, 'message': '当前云硬盘已被云组件挂载,当云组件处于开机状态中,无法执行快照回滚操作,请将云组件关机后进行快照回滚', 'data': None}
+22-01-19 10:04 root         INFO     ********************************************************************************
+22-01-19 10:04 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:04 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.2.140/v1/account/logout HTTP/1.1" 200 42
+22-01-19 10:04 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+22-01-19 10:06 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:06 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+22-01-19 10:06 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:06 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/account/login HTTP/1.1" 200 935
+22-01-19 10:06 root         INFO     the sql is : SELECT id, snapshot_id, name, disk_id, pool_id from `storage_snapshot` WHERE snapshot_type="file" and pool_id=%s order by create_time DESC limit 1;
+22-01-19 10:06 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 10:06 root         INFO     the result data is :{'id': 'a0b52cc063614c5ab1be30e8aaa3d9da', 'snapshot_id': 'def293eea8aa41e9ad60348a97b36316', 'name': 'uyj', 'disk_id': '28255f92-9a34-40ec-b125-e44f1dae16ef', 'pool_id': '63d8dd6776d848368ac817ed38cf93d6'}
+22-01-19 10:06 root         INFO     ********************************************************************************
+22-01-19 10:06 root         INFO     ****************回滚数据盘快照接口开始****************
+22-01-19 10:06 root         INFO     *******请求地址： http://192.168.2.140/v1/storage/snapshots/file/a0b52cc063614c5ab1be30e8aaa3d9da
+22-01-19 10:06 root         INFO     *******测试案例名称： TestCase001_回滚云硬盘快照-缺少token 执行开始********
+22-01-19 10:06 root         INFO     *******测试数据： {'project_id': '63d8dd6776d848368ac817ed38cf93d6', 'project_name': 'LeonaTestPool'}
+22-01-19 10:06 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:06 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/storage/snapshots/file/a0b52cc063614c5ab1be30e8aaa3d9da HTTP/1.1" 200 91
+22-01-19 10:06 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+22-01-19 10:06 root         INFO     *******测试案例名称： TestCase001_回滚云硬盘快照-缺少token 执行完毕********
+22-01-19 10:06 root         INFO     ****************回滚数据盘快照接口结束****************
+22-01-19 10:06 root         INFO     ********************************************************************************
+22-01-19 10:06 root         INFO     ********************************************************************************
+22-01-19 10:06 root         INFO     ****************回滚数据盘快照接口开始****************
+22-01-19 10:06 root         INFO     *******请求地址： http://192.168.2.140/v1/storage/snapshots/file/a0b52cc063614c5ab1be30e8aaa3d9da
+22-01-19 10:06 root         INFO     *******测试案例名称： TestCase002_回滚云硬盘快照-project_id为空 执行开始********
+22-01-19 10:06 root         INFO     *******测试数据： {'project_id': '', 'project_name': 'LeonaTestPool'}
+22-01-19 10:06 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:06 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/storage/snapshots/file/a0b52cc063614c5ab1be30e8aaa3d9da HTTP/1.1" 200 42
+22-01-19 10:06 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': None}
+22-01-19 10:06 root         INFO     *******测试案例名称： TestCase002_回滚云硬盘快照-project_id为空 执行完毕********
+22-01-19 10:06 root         INFO     ****************回滚数据盘快照接口结束****************
+22-01-19 10:06 root         INFO     ********************************************************************************
+22-01-19 10:06 root         INFO     ********************************************************************************
+22-01-19 10:06 root         INFO     ****************回滚数据盘快照接口开始****************
+22-01-19 10:06 root         INFO     *******请求地址： http://192.168.2.140/v1/storage/snapshots/file/a0b52cc063614c5ab1be30e8aaa3d9da
+22-01-19 10:06 root         INFO     *******测试案例名称： TestCase003_回滚云硬盘快照-project_name为空 执行开始********
+22-01-19 10:06 root         INFO     *******测试数据： {'project_id': '63d8dd6776d848368ac817ed38cf93d6', 'project_name': ''}
+22-01-19 10:06 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:06 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/storage/snapshots/file/a0b52cc063614c5ab1be30e8aaa3d9da HTTP/1.1" 200 42
+22-01-19 10:06 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': None}
+22-01-19 10:06 root         INFO     *******测试案例名称： TestCase003_回滚云硬盘快照-project_name为空 执行完毕********
+22-01-19 10:06 root         INFO     ****************回滚数据盘快照接口结束****************
+22-01-19 10:06 root         INFO     ********************************************************************************
+22-01-19 10:06 root         INFO     ********************************************************************************
+22-01-19 10:06 root         INFO     ****************回滚数据盘快照接口开始****************
+22-01-19 10:06 root         INFO     *******请求地址： http://192.168.2.140/v1/storage/snapshots/file/a0b52cc063614c5ab1be30e8aaa3d9da
+22-01-19 10:06 root         INFO     *******测试案例名称： TestCase004_回滚云硬盘快照-成功 执行开始********
+22-01-19 10:06 root         INFO     *******测试数据： {'project_id': '63d8dd6776d848368ac817ed38cf93d6', 'volumes_name': ['5c9380cd-7948-44d2-ba40-559a07535cb9'], 'snapshot_name': 'SysAndPartDiskSnap', 'project_name': 'LeonaTestPool'}
+22-01-19 10:06 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:06 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/storage/snapshots/file/a0b52cc063614c5ab1be30e8aaa3d9da HTTP/1.1" 200 42
+22-01-19 10:06 root         INFO     *******返回数据： {'code': 0, 'message': 'success', 'data': None}
+22-01-19 10:06 root         INFO     *******测试案例名称： TestCase004_回滚云硬盘快照-成功 执行完毕********
+22-01-19 10:06 root         INFO     ****************回滚数据盘快照接口结束****************
+22-01-19 10:06 root         INFO     ********************************************************************************
+22-01-19 10:06 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:06 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.2.140/v1/account/logout HTTP/1.1" 200 42
+22-01-19 10:06 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+22-01-19 10:06 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:06 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+22-01-19 10:06 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:06 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+22-01-19 10:06 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:06 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/account/login HTTP/1.1" 200 935
+22-01-19 10:06 root         INFO     the sql is : SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id            where d.store_type=1 and i.project_id=%s limit 1;
+22-01-19 10:06 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 10:06 root         INFO     the result data is :{'vmId': 'ins-3292888190bc4acc983cfff31e75462e', 'vmName': 'LC3', 'diskId': 'ins-3292888190bc4acc983cfff31e75462e', 'diskName': 'LC3'}
+22-01-19 10:06 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:06 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/cloud/instances/ins-3292888190bc4acc983cfff31e75462e/snapshots HTTP/1.1" 200 76
+22-01-19 10:06 root         INFO     ********************************************************************************
+22-01-19 10:06 root         INFO     ****************回滚云组件快照接口开始****************
+22-01-19 10:06 root         INFO     *******请求地址： http://192.168.2.140/v1/cloud/instances/ins-3292888190bc4acc983cfff31e75462e/restore
+22-01-19 10:06 root         INFO     *******测试案例名称： TestCase001_回滚云组件快照-缺少token 执行开始********
+22-01-19 10:06 root         INFO     the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+22-01-19 10:06 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 10:06 root         INFO     the result data is :{'server_id': 'ins-3292888190bc4acc983cfff31e75462e', 'snapshot_name': 'snap4_LC3_20'}
+22-01-19 10:06 root         INFO     *******测试数据： {'project_id': '63d8dd6776d848368ac817ed38cf93d6', 'volumes_name': ['ins-3292888190bc4acc983cfff31e75462e'], 'snapshot_name': 'snap4_LC3_20'}
+22-01-19 10:06 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:06 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/cloud/instances/ins-3292888190bc4acc983cfff31e75462e/restore HTTP/1.1" 200 91
+22-01-19 10:06 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+22-01-19 10:06 root         INFO     *******测试案例名称： TestCase001_回滚云组件快照-缺少token 执行完毕********
+22-01-19 10:06 root         INFO     ****************回滚云组件快照接口结束****************
+22-01-19 10:06 root         INFO     ********************************************************************************
+22-01-19 10:06 root         INFO     ********************************************************************************
+22-01-19 10:06 root         INFO     ****************回滚云组件快照接口开始****************
+22-01-19 10:06 root         INFO     *******请求地址： http://192.168.2.140/v1/cloud/instances/ins-3292888190bc4acc983cfff31e75462e/restore
+22-01-19 10:06 root         INFO     *******测试案例名称： TestCase002_回滚云组件快照-snapshot_name为空 执行开始********
+22-01-19 10:06 root         INFO     the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+22-01-19 10:06 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 10:06 root         INFO     the result data is :{'server_id': 'ins-3292888190bc4acc983cfff31e75462e', 'snapshot_name': 'snap4_LC3_20'}
+22-01-19 10:06 root         INFO     *******测试数据： {'project_id': '63d8dd6776d848368ac817ed38cf93d6', 'volumes_name': ['ins-3292888190bc4acc983cfff31e75462e'], 'snapshot_name': ''}
+22-01-19 10:06 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:06 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/cloud/instances/ins-3292888190bc4acc983cfff31e75462e/restore HTTP/1.1" 200 159
+22-01-19 10:06 root         INFO     *******返回数据： {'code': 202102, 'message': '云组件运行状态不能进行数据快照回滚', 'data': None, 'level': 3}
+22-01-19 10:06 root         INFO     ********************************************************************************
+22-01-19 10:06 root         INFO     ********************************************************************************
+22-01-19 10:06 root         INFO     ****************回滚云组件快照接口开始****************
+22-01-19 10:06 root         INFO     *******请求地址： http://192.168.2.140/v1/cloud/instances/ins-3292888190bc4acc983cfff31e75462e/restore
+22-01-19 10:06 root         INFO     *******测试案例名称： TestCase003_回滚云组件快照-volume_name为空 执行开始********
+22-01-19 10:06 root         INFO     the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+22-01-19 10:06 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 10:06 root         INFO     the result data is :{'server_id': 'ins-3292888190bc4acc983cfff31e75462e', 'snapshot_name': 'snap4_LC3_20'}
+22-01-19 10:06 root         INFO     *******测试数据： {'project_id': '63d8dd6776d848368ac817ed38cf93d6', 'volumes_name': [], 'snapshot_name': 'snap4_LC3_20'}
+22-01-19 10:06 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:06 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/cloud/instances/ins-3292888190bc4acc983cfff31e75462e/restore HTTP/1.1" 200 159
+22-01-19 10:06 root         INFO     *******返回数据： {'code': 202102, 'message': '云组件运行状态不能进行数据快照回滚', 'data': None, 'level': 3}
+22-01-19 10:06 root         INFO     ********************************************************************************
+22-01-19 10:06 root         INFO     ********************************************************************************
+22-01-19 10:06 root         INFO     ****************回滚云组件快照接口开始****************
+22-01-19 10:06 root         INFO     *******请求地址： http://192.168.2.140/v1/cloud/instances/ins-3292888190bc4acc983cfff31e75462e/restore
+22-01-19 10:06 root         INFO     *******测试案例名称： TestCase004_回滚云组件快照-project_id为空 执行开始********
+22-01-19 10:06 root         INFO     the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+22-01-19 10:06 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 10:06 root         INFO     the result data is :{'server_id': 'ins-3292888190bc4acc983cfff31e75462e', 'snapshot_name': 'snap4_LC3_20'}
+22-01-19 10:06 root         INFO     *******测试数据： {'project_id': '', 'volumes_name': ['ins-3292888190bc4acc983cfff31e75462e'], 'snapshot_name': 'snap4_LC3_20'}
+22-01-19 10:06 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:06 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/cloud/instances/ins-3292888190bc4acc983cfff31e75462e/restore HTTP/1.1" 200 159
+22-01-19 10:06 root         INFO     *******返回数据： {'code': 202102, 'message': '云组件运行状态不能进行数据快照回滚', 'data': None, 'level': 3}
+22-01-19 10:06 root         INFO     ********************************************************************************
+22-01-19 10:06 root         INFO     ********************************************************************************
+22-01-19 10:06 root         INFO     ****************回滚云组件快照接口开始****************
+22-01-19 10:06 root         INFO     *******请求地址： http://192.168.2.140/v1/cloud/instances/ins-3292888190bc4acc983cfff31e75462e/restore
+22-01-19 10:06 root         INFO     *******测试案例名称： TestCase005_回滚云组件快照-成功 执行开始********
+22-01-19 10:06 root         INFO     the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+22-01-19 10:06 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 10:06 root         INFO     the result data is :{'server_id': 'ins-3292888190bc4acc983cfff31e75462e', 'snapshot_name': 'snap4_LC3_20'}
+22-01-19 10:06 root         INFO     *******测试数据： {'project_id': '63d8dd6776d848368ac817ed38cf93d6', 'volumes_name': ['ins-3292888190bc4acc983cfff31e75462e'], 'snapshot_name': 'snap4_LC3_20'}
+22-01-19 10:06 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:06 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/cloud/instances/ins-3292888190bc4acc983cfff31e75462e/restore HTTP/1.1" 200 159
+22-01-19 10:06 root         INFO     *******返回数据： {'code': 202102, 'message': '云组件运行状态不能进行数据快照回滚', 'data': None, 'level': 3}
+22-01-19 10:06 root         INFO     ********************************************************************************
+22-01-19 10:06 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:06 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.2.140/v1/account/logout HTTP/1.1" 200 42
+22-01-19 10:06 root         INFO     **********************************************完成teardown class，退出登录**********************************************
+22-01-19 10:07 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.address`.
+22-01-19 10:07 faker.factory DEBUG    Provider `faker.providers.address` has been localized to `en_US`.
+22-01-19 10:07 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.automotive`.
+22-01-19 10:07 faker.factory DEBUG    Provider `faker.providers.automotive` has been localized to `en_US`.
+22-01-19 10:07 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.bank`.
+22-01-19 10:07 faker.factory DEBUG    Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+22-01-19 10:07 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.barcode`.
+22-01-19 10:07 faker.factory DEBUG    Provider `faker.providers.barcode` has been localized to `en_US`.
+22-01-19 10:07 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.color`.
+22-01-19 10:07 faker.factory DEBUG    Provider `faker.providers.color` has been localized to `en_US`.
+22-01-19 10:07 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.company`.
+22-01-19 10:07 faker.factory DEBUG    Provider `faker.providers.company` has been localized to `en_US`.
+22-01-19 10:07 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.credit_card`.
+22-01-19 10:07 faker.factory DEBUG    Provider `faker.providers.credit_card` has been localized to `en_US`.
+22-01-19 10:07 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.currency`.
+22-01-19 10:07 faker.factory DEBUG    Provider `faker.providers.currency` has been localized to `en_US`.
+22-01-19 10:07 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.date_time`.
+22-01-19 10:07 faker.factory DEBUG    Provider `faker.providers.date_time` has been localized to `en_US`.
+22-01-19 10:07 faker.factory DEBUG    Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:07 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.geo`.
+22-01-19 10:07 faker.factory DEBUG    Provider `faker.providers.geo` has been localized to `en_US`.
+22-01-19 10:07 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.internet`.
+22-01-19 10:07 faker.factory DEBUG    Provider `faker.providers.internet` has been localized to `en_US`.
+22-01-19 10:07 faker.factory DEBUG    Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:07 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.job`.
+22-01-19 10:07 faker.factory DEBUG    Provider `faker.providers.job` has been localized to `en_US`.
+22-01-19 10:07 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.lorem`.
+22-01-19 10:07 faker.factory DEBUG    Provider `faker.providers.lorem` has been localized to `en_US`.
+22-01-19 10:07 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.misc`.
+22-01-19 10:07 faker.factory DEBUG    Provider `faker.providers.misc` has been localized to `en_US`.
+22-01-19 10:07 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.person`.
+22-01-19 10:07 faker.factory DEBUG    Provider `faker.providers.person` has been localized to `en_US`.
+22-01-19 10:07 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.phone_number`.
+22-01-19 10:07 faker.factory DEBUG    Provider `faker.providers.phone_number` has been localized to `en_US`.
+22-01-19 10:07 faker.factory DEBUG    Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:07 faker.factory DEBUG    Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:07 faker.factory DEBUG    Looking for locale `en_US` in provider `faker.providers.ssn`.
+22-01-19 10:07 faker.factory DEBUG    Provider `faker.providers.ssn` has been localized to `en_US`.
+22-01-19 10:07 faker.factory DEBUG    Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+22-01-19 10:07 root         INFO     **********************************************开始setupClass，进行登录**********************************************
+22-01-19 10:07 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:07 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/account/login HTTP/1.1" 200 935
+22-01-19 10:07 root         INFO     the sql is : SELECT i.id as vmId, i.name as vmName, d.id as diskId, d.name as diskName FROM cloud_instance i LEFT JOIN disk d on i.project_id=d.pool_id            where d.store_type=1 and i.project_id=%s limit 1;
+22-01-19 10:07 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 10:07 root         INFO     the result data is :{'vmId': 'ins-3292888190bc4acc983cfff31e75462e', 'vmName': 'LC3', 'diskId': 'ins-3292888190bc4acc983cfff31e75462e', 'diskName': 'LC3'}
+22-01-19 10:07 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:07 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/cloud/instances/ins-3292888190bc4acc983cfff31e75462e/snapshots HTTP/1.1" 200 76
+22-01-19 10:07 root         INFO     ********************************************************************************
+22-01-19 10:07 root         INFO     ****************回滚云组件快照接口开始****************
+22-01-19 10:07 root         INFO     *******请求地址： http://192.168.2.140/v1/cloud/instances/ins-3292888190bc4acc983cfff31e75462e/restore
+22-01-19 10:07 root         INFO     *******测试案例名称： TestCase001_回滚云组件快照-缺少token 执行开始********
+22-01-19 10:07 root         INFO     the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+22-01-19 10:07 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 10:07 root         INFO     the result data is :{'server_id': 'ins-3292888190bc4acc983cfff31e75462e', 'snapshot_name': 'snap4_LC3_35'}
+22-01-19 10:07 root         INFO     *******测试数据： {'project_id': '63d8dd6776d848368ac817ed38cf93d6', 'volumes_name': ['ins-3292888190bc4acc983cfff31e75462e'], 'snapshot_name': 'snap4_LC3_35'}
+22-01-19 10:07 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:07 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/cloud/instances/ins-3292888190bc4acc983cfff31e75462e/restore HTTP/1.1" 200 91
+22-01-19 10:07 root         INFO     *******返回数据： {'code': 1005, 'message': '缺少认证信息', 'data': None, 'level': 3}
+22-01-19 10:07 root         INFO     *******测试案例名称： TestCase001_回滚云组件快照-缺少token 执行完毕********
+22-01-19 10:07 root         INFO     ****************回滚云组件快照接口结束****************
+22-01-19 10:07 root         INFO     ********************************************************************************
+22-01-19 10:07 root         INFO     ********************************************************************************
+22-01-19 10:07 root         INFO     ****************回滚云组件快照接口开始****************
+22-01-19 10:07 root         INFO     *******请求地址： http://192.168.2.140/v1/cloud/instances/ins-3292888190bc4acc983cfff31e75462e/restore
+22-01-19 10:07 root         INFO     *******测试案例名称： TestCase002_回滚云组件快照-snapshot_name为空 执行开始********
+22-01-19 10:07 root         INFO     the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+22-01-19 10:07 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 10:07 root         INFO     the result data is :{'server_id': 'ins-3292888190bc4acc983cfff31e75462e', 'snapshot_name': 'snap4_LC3_35'}
+22-01-19 10:07 root         INFO     *******测试数据： {'project_id': '63d8dd6776d848368ac817ed38cf93d6', 'volumes_name': ['ins-3292888190bc4acc983cfff31e75462e'], 'snapshot_name': ''}
+22-01-19 10:07 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:07 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/cloud/instances/ins-3292888190bc4acc983cfff31e75462e/restore HTTP/1.1" 200 91
+22-01-19 10:07 root         INFO     *******返回数据： {'code': 1001, 'message': '请求参数错误', 'data': None, 'level': 2}
+22-01-19 10:07 root         INFO     *******测试案例名称： TestCase002_回滚云组件快照-snapshot_name为空 执行完毕********
+22-01-19 10:07 root         INFO     ****************回滚云组件快照接口结束****************
+22-01-19 10:07 root         INFO     ********************************************************************************
+22-01-19 10:07 root         INFO     ********************************************************************************
+22-01-19 10:07 root         INFO     ****************回滚云组件快照接口开始****************
+22-01-19 10:07 root         INFO     *******请求地址： http://192.168.2.140/v1/cloud/instances/ins-3292888190bc4acc983cfff31e75462e/restore
+22-01-19 10:07 root         INFO     *******测试案例名称： TestCase003_回滚云组件快照-volume_name为空 执行开始********
+22-01-19 10:07 root         INFO     the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+22-01-19 10:07 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 10:07 root         INFO     the result data is :{'server_id': 'ins-3292888190bc4acc983cfff31e75462e', 'snapshot_name': 'snap4_LC3_35'}
+22-01-19 10:07 root         INFO     *******测试数据： {'project_id': '63d8dd6776d848368ac817ed38cf93d6', 'volumes_name': [], 'snapshot_name': 'snap4_LC3_35'}
+22-01-19 10:07 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:07 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/cloud/instances/ins-3292888190bc4acc983cfff31e75462e/restore HTTP/1.1" 200 76
+22-01-19 10:07 root         INFO     *******返回数据： {'code': 0, 'message': '快照回滚进行中-预计时间1分钟', 'data': None}
+22-01-19 10:07 root         INFO     ********************************************************************************
+22-01-19 10:07 root         INFO     ********************************************************************************
+22-01-19 10:07 root         INFO     ****************回滚云组件快照接口开始****************
+22-01-19 10:07 root         INFO     *******请求地址： http://192.168.2.140/v1/cloud/instances/ins-3292888190bc4acc983cfff31e75462e/restore
+22-01-19 10:07 root         INFO     *******测试案例名称： TestCase004_回滚云组件快照-project_id为空 执行开始********
+22-01-19 10:07 root         INFO     the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+22-01-19 10:07 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 10:07 root         INFO     the result data is :{'server_id': 'ins-3292888190bc4acc983cfff31e75462e', 'snapshot_name': 'snap4_LC3_35'}
+22-01-19 10:07 root         INFO     *******测试数据： {'project_id': '', 'volumes_name': ['ins-3292888190bc4acc983cfff31e75462e'], 'snapshot_name': 'snap4_LC3_35'}
+22-01-19 10:07 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:07 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/cloud/instances/ins-3292888190bc4acc983cfff31e75462e/restore HTTP/1.1" 200 91
+22-01-19 10:07 root         INFO     *******返回数据： {'code': 1001, 'message': '请求参数错误', 'data': None, 'level': 2}
+22-01-19 10:07 root         INFO     *******测试案例名称： TestCase004_回滚云组件快照-project_id为空 执行完毕********
+22-01-19 10:07 root         INFO     ****************回滚云组件快照接口结束****************
+22-01-19 10:07 root         INFO     ********************************************************************************
+22-01-19 10:07 root         INFO     ********************************************************************************
+22-01-19 10:07 root         INFO     ****************回滚云组件快照接口开始****************
+22-01-19 10:07 root         INFO     *******请求地址： http://192.168.2.140/v1/cloud/instances/ins-3292888190bc4acc983cfff31e75462e/restore
+22-01-19 10:07 root         INFO     *******测试案例名称： TestCase005_回滚云组件快照-成功 执行开始********
+22-01-19 10:07 root         INFO     the sql is : SELECT server_id, snapshot_name from `snapshot` WHERE project_id=%s order by create_time DESC limit 1; 
+22-01-19 10:07 root         INFO     the params is : 63d8dd6776d848368ac817ed38cf93d6
+22-01-19 10:07 root         INFO     the result data is :{'server_id': 'ins-3292888190bc4acc983cfff31e75462e', 'snapshot_name': 'snap4_LC3_35'}
+22-01-19 10:07 root         INFO     *******测试数据： {'project_id': '63d8dd6776d848368ac817ed38cf93d6', 'volumes_name': ['ins-3292888190bc4acc983cfff31e75462e'], 'snapshot_name': 'snap4_LC3_35'}
+22-01-19 10:07 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:07 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "POST http://192.168.2.140/v1/cloud/instances/ins-3292888190bc4acc983cfff31e75462e/restore HTTP/1.1" 200 76
+22-01-19 10:07 root         INFO     *******返回数据： {'code': 0, 'message': '快照回滚进行中-预计时间1分钟', 'data': None}
+22-01-19 10:07 root         INFO     *******测试案例名称： TestCase005_回滚云组件快照-成功 执行完毕********
+22-01-19 10:07 root         INFO     ****************回滚云组件快照接口结束****************
+22-01-19 10:07 root         INFO     ********************************************************************************
+22-01-19 10:07 urllib3.connectionpool DEBUG    Starting new HTTP connection (1): 127.0.0.1:56862
+22-01-19 10:07 urllib3.connectionpool DEBUG    http://127.0.0.1:56862 "GET http://192.168.2.140/v1/account/logout HTTP/1.1" 200 42
+22-01-19 10:07 root         INFO     **********************************************完成teardown class，退出登录**********************************************

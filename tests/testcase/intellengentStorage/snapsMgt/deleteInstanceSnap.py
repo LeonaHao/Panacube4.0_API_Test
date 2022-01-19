@@ -16,6 +16,7 @@ from lib.generateTestCases import __generateTestCases
 from lib.log import logger
 
 
+
 """
 智能存储》快照管理》删除云组件快照
 """
@@ -49,6 +50,7 @@ class deleteInstanceSnap(unittest.TestCase):
         urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
         reqUrl1 = cloudInstanceSnap + str(insAndDiskInfo['vmId']) + '/snapshots'
         insSnapRes = requests.post(url=reqUrl1, headers=headers, json=reqParam, verify=False).json()
+        print('*'*80 + str(insSnapRes))
         time.sleep(10)
 
     def setUp(self):
