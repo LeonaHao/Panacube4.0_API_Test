@@ -20,7 +20,6 @@ instanceUrl = basePanaCubeUrl + 'cloud/instances'
 overViewStorage = basePanaCubeUrl + 'cloud/pools/intel/storage/'
 
 
-
 #*********************************云中心-网络管理*******************************************
 '''云中心-网络管理-网络'''
 networktUrl = basePanaCubeUrl + 'cloud/networks'
@@ -31,7 +30,6 @@ securityGroupUrl = basePanaCubeUrl + 'cloud/securitygroups'
 #*********************************云中心-镜像管理*******************************************
 '''云中心-镜像管理'''
 imageUrl = basePanaCubeUrl + 'cloud/images'
-
 
 
 #*********************************智能存储-存储池管理*******************************************

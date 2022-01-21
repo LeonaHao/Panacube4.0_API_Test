@@ -114,6 +114,12 @@ def getInsAndDisk(poolId):
     return res
 
 
+#查询s3共享
+def getS3():
+    sql = 'SELECT id, name from cluster_share where s3=1;'
+    param = ()
+    res = MySQLHelper("panastor").get_one(sql,param)
+    return res
 
 #对比卷信息，排查问题时查看底层卷是否和db中的卷相一致，如果对比后发现有结果，则表示底层和db都存在
 def matchVolume(hostname,port,username,password):
@@ -144,5 +150,6 @@ def matchVolume(hostname,port,username,password):
 # print(type(getInsAndDisk("c732c22666064375904c357bbecfeb1a")))
 # getLatestInstanceSnap("c732c22666064375904c357bbecfeb1a")
 # getLatestDiskSnap("c732c22666064375904c357bbecfeb1a")
+getS3()
 
 
