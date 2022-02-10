@@ -45,12 +45,12 @@ if __name__ == '__main__':
     # conSSH("192.168.5.174",22, "root","Admin@9000", "df | grep 'glu1640162153'")
 
     # 查询docker所在节点
-    # print("*"*30+str("node1:")+"*"*30)
-    # conSSH("192.168.5.172",22, "root","Admin@9000", "docker ps | grep mana")
-    # print("*"*30+str("node2:")+"*"*30)
-    # conSSH("192.168.5.173",22, "root","Admin@9000", "docker ps | grep mana")  #8640512
-    # print("*"*30+str("node3:")+"*"*30)
-    # conSSH("192.168.5.174",22, "root","Admin@9000", "docker ps | grep mana")
+    print("*"*30+str("node1:")+"*"*30)
+    conSSH("192.168.2.141",22, "root","Admin@9000", "docker ps | grep mana")
+    print("*"*30+str("node2:")+"*"*30)
+    conSSH("192.168.2.142",22, "root","Admin@9000", "docker ps | grep mana")  #8640512
+    print("*"*30+str("node3:")+"*"*30)
+    conSSH("192.168.2.143",22, "root","Admin@9000", "docker ps | grep mana")
 
 
     # 查询lxc所在节点
