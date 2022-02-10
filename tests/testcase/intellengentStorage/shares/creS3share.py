@@ -59,6 +59,7 @@ class creS3Share(unittest.TestCase):
         logger.info("*******测试案例名称： TestCase" + caseNum + "_" + caseName + " 执行开始********")
         reqParam = json.JSONDecoder().decode(tx['params'])
         reqParam['project_id'] = projectId
+        reqParam['project_name'] = projectName
         if flag == 1:
             headers1['Authorization'] = ''
         logger.info("*******测试数据： " + str(reqParam))

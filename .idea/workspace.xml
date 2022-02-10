@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a407d88e-2a99-45b8-b82f-bbfd69bc7385" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datafiles/cloudDiskMagData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/datafiles/cloudDiskMagData.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/dadfa.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/dadfa.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/linuxXshell.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/linuxXshell.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datafiles/sharesMagData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/datafiles/sharesMagData.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/Panacube_API_Test_Report.zip" beforeDir="false" afterPath="$PROJECT_DIR$/reports/Panacube_API_Test_Report.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/storageEngineReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/storageEngineReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/shares/creS3share.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/shares/creS3share.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,17 +37,18 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Projects\PanaCube4\tests\testsuit" />
-      <recent name="F:\Projects\PanaCube4\tests\testcase\intellengentStorage" />
-      <recent name="E:\0PanaCubeProject\Tests\StorageEngine\Overview" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\GitProject\PanaCube4\Panacube4.0_API_Test\tests\testcase\shares" />
       <recent name="F:\GitProject\PanaCube4\Panacube4.0_API_Test\tests\testcase\intellengentStorage\snapsMgt" />
       <recent name="F:\GitProject\PanaCube4\Panacube4.0_API_Test\tests\testcase\intellengentStorage\cloudDiskMgt" />
       <recent name="F:\GitProject\PanaCube4\Panacube4.0_API_Test\tests\testcase\intellengentStorage\storagePoolMgt" />
       <recent name="E:\0PanaCubeProject\Lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\GitProject\PanaCube4\Panacube4.0_API_Test\tests\testcase\intellengentStorage" />
+      <recent name="F:\Projects\PanaCube4\tests\testsuit" />
+      <recent name="F:\Projects\PanaCube4\tests\testcase\intellengentStorage" />
+      <recent name="E:\0PanaCubeProject\Tests\StorageEngine\Overview" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -65,7 +63,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.linuxXshell">
+  <component name="RunManager" selected="Python tests.Unittests for creS3share.creS3Share">
     <configuration name="dadfa" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PanaCubeProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -150,27 +148,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in getSharesList.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for creS3share.creS3Share" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="PanaCubeProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/testcase/shares" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/testcase/intellengentStorage/shares" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/testcase/shares/getSharesList.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;creS3share.creS3Share&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests for creS3share.creS3Share" />
         <item itemvalue="Python.linuxXshell" />
         <item itemvalue="Python.intelligentStorage_allstart" />
         <item itemvalue="Python.dadfa" />
         <item itemvalue="Python.getSharesList" />
-        <item itemvalue="Python tests.Unittests in getSharesList.py" />
       </list>
     </recent_temporary>
   </component>
@@ -481,24 +479,14 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/testcase/shares/delS3share.py</url>
+          <url>file://$PROJECT_DIR$/tests/testcase/intellengentStorage/shares/delS3share.py</url>
           <line>87</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/testcase/shares/getSharesList.py</url>
+          <url>file://$PROJECT_DIR$/tests/testcase/intellengentStorage/shares/getSharesList.py</url>
           <line>57</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/lib/dadfa.py</url>
-          <line>12</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/lib/dadfa.py</url>
-          <line>16</line>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
