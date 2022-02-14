@@ -104,6 +104,26 @@ def paramCombine(**kwargs):
 
 
 
+def getShareService():
+    try:
+        Token = login()
+        headers = {"Content-Type":"application/json",
+                   "Authorization":Token}
+        reqUrl = urlConfigs.serviceUrl
+        urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+        result = requests.get(url=reqUrl, headers=headers,verify=False).json()
+        print(result['data'])
+        return result['data']
+
+
+    except Exception as e:
+        print(e)
+
+
+
+getShareService()
+
+
 
 
 

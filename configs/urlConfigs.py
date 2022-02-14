@@ -107,13 +107,12 @@ userGroupDelUrl = basePanaCubeUrl + 'storage/groups/batch-delete'
 #
 #
 #
-# #*********************************服务管理*******************************************
-# '''智能存储》服务管理》获取服务列表'''
-# serviceUrl = baseGatewayUrl + 'services/'
-# '''智能存储》服务管理》开启服务'''
-# startServiceUrl = baseGatewayUrl + 'services/start/'
-# '''智能存储》服务管理》关闭启服务'''
-# stopServiceUrl = baseGatewayUrl + 'services/stop/'
+#*********************************服务管理*******************************************
+'''智能存储》服务管理》获取服务列表'''
+serviceUrl = basePanaCubeUrl + 'storage/services'
+'''智能存储》服务管理》开启服务 or 关闭服务'''
+magServiceUrl = basePanaCubeUrl + 'storage/services/S3/action'
+
 #
 #
 #
