@@ -23,6 +23,17 @@ overViewStorage = basePanaCubeUrl + 'cloud/pools/intel/storage/'
 #*********************************云中心-网络管理*******************************************
 '''云中心-网络管理-网络'''
 networktUrl = basePanaCubeUrl + 'cloud/networks'
+
+'''云中心-网络管理-路由'''
+routertUrl = basePanaCubeUrl + 'cloud/routers'
+
+'''云中心-网络管理-虚拟网卡'''
+virtualNetCardUrl = basePanaCubeUrl + 'cloud/ports'
+
+
+'''云中心-网络管理-公网IP'''
+pubNetIP = basePanaCubeUrl + 'cloud/floatingips'
+
 '''云中心-网络管理-安全组'''
 securityGroupUrl = basePanaCubeUrl + 'cloud/securitygroups'
 
