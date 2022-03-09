@@ -28,8 +28,8 @@ class restoreCloudDiskSnap(unittest.TestCase):
         logger.info("**********************************************开始setupClass，进行登录**********************************************")
         global token, projectId, projectName
         token = login()
-        projectId="63d8dd6776d848368ac817ed38cf93d6"
-        projectName="LeonaTestPool"
+        projectId="abc622b288564a30baffba821f79a188"
+        projectName="LeonaTestPool0305"
 
         '''获取最新的数据盘快照信息'''
         global cloudDiskSnapInfo

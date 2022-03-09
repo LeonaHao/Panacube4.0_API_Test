@@ -27,8 +27,8 @@ class snap4DataDisk(unittest.TestCase):
         logger.info("**********************************************开始setupClass，进行登录**********************************************")
         global token, projectId, projectName
         token = login()
-        projectId="63d8dd6776d848368ac817ed38cf93d6"
-        projectName="LeonaTestPool"
+        projectId="abc622b288564a30baffba821f79a188"
+        projectName="LeonaTestPool0305"
 
         '''先创建1个云硬盘'''
         headers1 ={'Content-Type':'application/json',
