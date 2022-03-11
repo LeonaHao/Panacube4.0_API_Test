@@ -2,12 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a407d88e-2a99-45b8-b82f-bbfd69bc7385" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2022-03-09--17_28_52.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datafiles/cloudDiskMagData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/datafiles/cloudDiskMagData.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datafiles/sharesMagData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/datafiles/sharesMagData.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datafiles/snapsMagData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/datafiles/snapsMagData.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Panacube_API_Test_Report.zip" beforeDir="false" afterPath="$PROJECT_DIR$/reports/Panacube_API_Test_Report.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/storageEngineReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/storageEngineReport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/attachDataDisk.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/attachDataDisk.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/detachDataDisk.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/detachDataDisk.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/extendDataDisk.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/extendDataDisk.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/snap4DataDisk.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/snap4DataDisk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/shares/putS3Info.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/shares/putS3Info.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt/deleteCloudDiskSnap.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt/deleteCloudDiskSnap.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt/deleteInstanceSnap.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt/deleteInstanceSnap.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt/deletePoolSnap.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt/deletePoolSnap.py" afterDir="false" />
@@ -16,7 +24,6 @@
       <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt/restoreCloudDiskSnap.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt/restoreCloudDiskSnap.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt/restoreInstanceSnap.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt/restoreInstanceSnap.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt/restorePoolSnap.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt/restorePoolSnap.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/toolsForSE/dataDelete.py" beforeDir="false" afterPath="$PROJECT_DIR$/toolsForSE/dataDelete.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +104,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="dddddddd" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="intelligentStorage_allstart" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PanaCubeProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -105,11 +112,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/configs" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/testsuit" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/configs/dddddddd.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/testsuit/intelligentStorage_allstart.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -118,55 +125,55 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for getRouterList.getRouterList" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for putS3Info.putS3Info" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="PanaCubeProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/testcase/cloudCenter/netMgt/router" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/testcase/intellengentStorage/shares" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;getRouterList.getRouterList&quot;" />
+      <option name="_new_target" value="&quot;putS3Info.putS3Info&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in getSecuritGroupList.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in putS3Info.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="PanaCubeProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/testcase/cloudCenter/netMgt/securityGroup" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/testcase/intellengentStorage/shares" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/testcase/cloudCenter/netMgt/securityGroup/getSecuritGroupList.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/testcase/intellengentStorage/shares/putS3Info.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in getVirtualNetCardList.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in snap4DataDisk.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="PanaCubeProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/testcase/cloudCenter/netMgt/virtualNetCard" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/testcase/cloudCenter/netMgt/virtualNetCard/getVirtualNetCardList.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/snap4DataDisk.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.dataDelete" />
-        <item itemvalue="Python.dddddddd" />
-        <item itemvalue="Python tests.Unittests in getSecuritGroupList.py" />
-        <item itemvalue="Python tests.Unittests in getVirtualNetCardList.py" />
-        <item itemvalue="Python tests.Unittests for getRouterList.getRouterList" />
+        <item itemvalue="Python tests.Unittests for putS3Info.putS3Info" />
+        <item itemvalue="Python tests.Unittests in putS3Info.py" />
+        <item itemvalue="Python tests.Unittests in snap4DataDisk.py" />
+        <item itemvalue="Python.intelligentStorage_allstart" />
       </list>
     </recent_temporary>
   </component>

@@ -26,8 +26,8 @@ class putCloudDiskSnap(unittest.TestCase):
         logger.info("**********************************************开始setupClass，进行登录**********************************************")
         global token, projectId, projectName
         token = login()
-        projectId="abc622b288564a30baffba821f79a188"
-        projectName="LeonaTestPool0305"
+        projectId="4a18d8c090b74481952fa52f6967d5ed"
+        projectName="LeonaTestPool0310"
     def setUp(self):
         logger.info("*" * 80)
 

@@ -66,6 +66,7 @@ class putS3Info(unittest.TestCase):
         caseNum = tx['test_num']
         caseName = tx['test_name']
         code = tx['code']
+        msg = tx['error_msg']
         flag = tx['flag']
         logger.info("*******测试案例名称： TestCase" + caseNum + "_" + caseName + " 执行开始********")
         reqParam = json.JSONDecoder().decode(tx['params'])
@@ -79,6 +80,7 @@ class putS3Info(unittest.TestCase):
         result = r.json()
         logger.info("*******返回数据： " + str(result))
         self.assertEqual(result['code'], code)
+        self.assertEqual(result['message'], msg)
         logger.info("*******测试案例名称： TestCase" + caseNum + "_" + caseName + " 执行完毕********")
         logger.info("****************更新S3共享接口结束****************")
 
