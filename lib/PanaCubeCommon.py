@@ -121,7 +121,7 @@ def getShareService():
 
 
 
-getShareService()
+# getShareService()
 
 
 

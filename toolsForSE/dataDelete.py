@@ -16,7 +16,7 @@ def clearEnv():
     # delUser()
     # delUserGroup()
     #清理共享
-    delShare("ef7107f3b443415da1ccc56fa8e726b2","%E9%BB%98%E8%AE%A4%E6%B1%A0")
+    # delShare("ef7107f3b443415da1ccc56fa8e726b2","%E9%BB%98%E8%AE%A4%E6%B1%A0")
 
     #清理业务池快照
     delPoolSnap()

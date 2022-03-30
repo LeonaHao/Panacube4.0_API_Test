@@ -24,6 +24,8 @@ overViewStorage = basePanaCubeUrl + 'cloud/pools/intel/storage/'
 '''云中心-网络管理-网络'''
 networktUrl = basePanaCubeUrl + 'cloud/networks'
 
+subnetUrl = basePanaCubeUrl + 'cloud/subnets'
+
 '''云中心-网络管理-路由'''
 routertUrl = basePanaCubeUrl + 'cloud/routers'
 
