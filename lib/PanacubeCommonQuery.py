@@ -77,7 +77,7 @@ def getLatestDataDisk(poolId):
     return  res
 
 #获取最新的业务池快照
-def getLatestPoolSnap(poolId):
+def getLaLeonaTestPoolSnap(poolId):
     sql = 'SELECT snapshot_id, name from `storage_snapshot` WHERE snapshot_type="pool" and pool_id=%s order by create_time DESC limit 1;'
     param  = (poolId)
     res = MySQLHelper("panacube").get_one(sql,param)
@@ -135,9 +135,9 @@ def matchVolume(hostname,port,username,password):
 # getVolumeId()
 # matchVolume("192.168.5.174",22, "root","Admin@9000")
 # getGeneralUsageInfo()
-# getInstancesInPool("LeonaTestPool")
+# getInstancesInPool("LeonaLeonaTestPool")
 # getSysDiskUsageByNode()
-# getNonDefaultPoolUsage('LeonaTestPool')
+# getNonDefaultPoolUsage('LeonaLeonaTestPool')
 # getDefaultPoolUsage()
 # getNonDefaultPool()
 # getAttachableDisk()

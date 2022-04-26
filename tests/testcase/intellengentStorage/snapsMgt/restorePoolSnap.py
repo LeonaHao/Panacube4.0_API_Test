@@ -10,7 +10,7 @@ import urllib3
 import time
 from configs.urlConfigs import poolSnap, logoutUrl
 from lib.PanaCubeCommon import login
-from lib.PanacubeCommonQuery import getLatestPoolSnap
+from lib.PanacubeCommonQuery import getLaLeonaTestPoolSnap
 from lib.generateTestCases import __generateTestCases
 from lib.log import logger
 
@@ -27,8 +27,8 @@ class restorePoolSnap(unittest.TestCase):
         logger.info("**********************************************开始setupClass，进行登录**********************************************")
         global token, projectId, projectName
         token = login()
-        projectId="f4fb64c3ff9d4c1186c9d3502af4020d"
-        projectName="TestPool"
+        projectId="eec452bb462b4edead7e7750394bcb3e"
+        projectName="LeonaTestPool"
 
         "创建1个业务池快照"
         headers = {
@@ -45,7 +45,7 @@ class restorePoolSnap(unittest.TestCase):
 
         '''获取最新的业务池快照信息'''
         global poolSnapInfo
-        poolSnapInfo = getLatestPoolSnap(projectId)
+        poolSnapInfo = getLaLeonaTestPoolSnap(projectId)
 
     def setUp(self):
         logger.info("*" * 80)

@@ -27,8 +27,8 @@ class deleteCloudDiskSnap(unittest.TestCase):
         logger.info("**********************************************开始setupClass，进行登录**********************************************")
         global token, projectId, projectName
         token = login()
-        projectId="f4fb64c3ff9d4c1186c9d3502af4020d"
-        projectName="TestPool"
+        projectId="eec452bb462b4edead7e7750394bcb3e"
+        projectName="LeonaTestPool"
 
         '''创建3个云硬盘快照用于删除'''
         headers1 ={'Content-Type':'application/json',

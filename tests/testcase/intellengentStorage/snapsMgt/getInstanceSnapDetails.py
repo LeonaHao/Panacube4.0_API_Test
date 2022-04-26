@@ -25,7 +25,7 @@ class getInstanceSnapDetails(unittest.TestCase):
             "**********************************************开始setupClass，进行登录**********************************************")
         global token, instanceSnapInfo
         token = login()
-        projectId="f4fb64c3ff9d4c1186c9d3502af4020d"
+        projectId="eec452bb462b4edead7e7750394bcb3e"
         instanceSnapInfo = getLatestInstanceSnap(projectId)
 
     def setUp(self):

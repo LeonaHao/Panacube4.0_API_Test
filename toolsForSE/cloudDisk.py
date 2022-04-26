@@ -241,8 +241,8 @@ def datachDataCloudDisk():
 
 
 
-# createCloudDisk("1","76edcd32140e47bca8c182b4d3d6c90a", "LeonaTestPool")
-# batchCreateCloudDisk(10,1,"00672318a5dd44588acb1094ae096369", "LeonaTestPool1215")
+# createCloudDisk("1","76edcd32140e47bca8c182b4d3d6c90a", "LeonaLeonaTestPool")
+# batchCreateCloudDisk(10,1,"00672318a5dd44588acb1094ae096369", "LeonaLeonaTestPool1215")
 # getCloudDiskList()
 # delCloudDisk()
 # creCloudDiskSnapshot("eff1759c-dde9-4508-93e7-b8cb57bf470e")

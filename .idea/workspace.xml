@@ -4,11 +4,11 @@
     <list default="true" id="a407d88e-2a99-45b8-b82f-bbfd69bc7385" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configs/urlConfigs.py" beforeDir="false" afterPath="$PROJECT_DIR$/configs/urlConfigs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datafiles/cloudDiskMagData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/datafiles/cloudDiskMagData.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datafiles/sharesMagData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/datafiles/sharesMagData.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datafiles/snapsMagData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/datafiles/snapsMagData.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/PanaCubeCommon.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PanaCubeCommon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/PanacubeCommonQuery.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/PanacubeCommonQuery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/linuxXshell.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/linuxXshell.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Panacube_API_Test_Report.zip" beforeDir="false" afterPath="$PROJECT_DIR$/reports/Panacube_API_Test_Report.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/storageEngineReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/storageEngineReport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/attachDataDisk.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/attachDataDisk.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/detachDataDisk.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/detachDataDisk.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/extendDataDisk.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/cloudDiskMgt/extendDataDisk.py" afterDir="false" />
@@ -21,7 +21,7 @@
       <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt/restoreCloudDiskSnap.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt/restoreCloudDiskSnap.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt/restoreInstanceSnap.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt/restoreInstanceSnap.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt/restorePoolSnap.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testcase/intellengentStorage/snapsMgt/restorePoolSnap.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/toolsForSE/dataDelete.py" beforeDir="false" afterPath="$PROJECT_DIR$/toolsForSE/dataDelete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/toolsForSE/cloudDisk.py" beforeDir="false" afterPath="$PROJECT_DIR$/toolsForSE/cloudDisk.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,23 +49,23 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="F:/Panacube4_Manager/panacube4_manager/panacube4_manager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tools4webvirtManager" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\GitProject\PanaCube4\Panacube4.0_API_Test\tools4webvirtManager" />
+      <recent name="F:\GitProject\PanaCube4\Panacube4.0_API_Test\tests\testcase\cloudCenter\netMgt\securityGroup" />
+      <recent name="F:\GitProject\PanaCube4\Panacube4.0_API_Test\tests\testcase\cloudCenter\netMgt\pubNetIP" />
+      <recent name="F:\GitProject\PanaCube4\Panacube4.0_API_Test\tests\testcase\cloudCenter\netMgt\virtualNetCard" />
+      <recent name="F:\GitProject\PanaCube4\Panacube4.0_API_Test\tests\testcase\cloudCenter\netMgt\router" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\GitProject\PanaCube4\Panacube4.0_API_Test\tests\testcase\cloudCenter\netMgt" />
       <recent name="F:\GitProject\PanaCube4\Panacube4.0_API_Test\tests\testcase\intellengentStorage" />
       <recent name="F:\Projects\PanaCube4\tests\testsuit" />
       <recent name="F:\Projects\PanaCube4\tests\testcase\intellengentStorage" />
       <recent name="E:\0PanaCubeProject\Tests\StorageEngine\Overview" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\GitProject\PanaCube4\Panacube4.0_API_Test\tests\testcase\cloudCenter\netMgt\securityGroup" />
-      <recent name="F:\GitProject\PanaCube4\Panacube4.0_API_Test\tests\testcase\cloudCenter\netMgt\pubNetIP" />
-      <recent name="F:\GitProject\PanaCube4\Panacube4.0_API_Test\tests\testcase\cloudCenter\netMgt\virtualNetCard" />
-      <recent name="F:\GitProject\PanaCube4\Panacube4.0_API_Test\tests\testcase\cloudCenter\netMgt\router" />
-      <recent name="F:\GitProject\PanaCube4\Panacube4.0_API_Test\tests\testcase\cloudCenter\netMgt\privateNet" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -80,8 +80,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.cloudDisk">
-    <configuration name="cloudDisk" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.delInstance">
+    <configuration name="creInstance" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PanaCubeProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -89,11 +89,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/toolsForSE" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tools4webvirtManager" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/toolsForSE/cloudDisk.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools4webvirtManager/creInstance.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -102,7 +102,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="dataDelete" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="dd" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PanaCubeProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -110,11 +110,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/toolsForSE" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tools4webvirtManager" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/toolsForSE/dataDelete.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools4webvirtManager/dd.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -123,7 +123,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="exNet" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="delInstance" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PanaCubeProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -131,11 +131,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/toolsForSE" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tools4webvirtManager" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/toolsForSE/exNet.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools4webvirtManager/delInstance.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -144,7 +144,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="snaps" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="intelligentStorage_allstart" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PanaCubeProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -152,11 +152,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/toolsForSE" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/testsuit" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/toolsForSE/snaps.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/testsuit/intelligentStorage_allstart.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -165,27 +165,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for putS3Info.putS3Info" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="urlConfigs" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PanaCubeProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/testcase/intellengentStorage/shares" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/configs" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;putS3Info.putS3Info&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/configs/urlConfigs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.cloudDisk" />
-        <item itemvalue="Python.snaps" />
-        <item itemvalue="Python.dataDelete" />
-        <item itemvalue="Python tests.Unittests for putS3Info.putS3Info" />
-        <item itemvalue="Python.exNet" />
+        <item itemvalue="Python.delInstance" />
+        <item itemvalue="Python.creInstance" />
+        <item itemvalue="Python.dd" />
+        <item itemvalue="Python.intelligentStorage_allstart" />
+        <item itemvalue="Python.urlConfigs" />
       </list>
     </recent_temporary>
   </component>

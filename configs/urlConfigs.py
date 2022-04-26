@@ -4,7 +4,7 @@
 配置系统中需要的url地址信息
 '''
 
-basePanaCubeUrl = 'http://192.168.2.140/v1/'
+basePanaCubeUrl = 'http://192.168.5.200/v1/'
 
 '''登录接口'''
 loginUrl = basePanaCubeUrl+'account/login'
