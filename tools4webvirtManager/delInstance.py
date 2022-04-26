@@ -42,7 +42,7 @@ def delInstanceList():
         time.sleep(5)
 
 
-def forceDelInstance():
+# def forceDelInstance():
 
 
 
